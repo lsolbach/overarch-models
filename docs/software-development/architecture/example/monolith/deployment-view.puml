@@ -1,0 +1,39 @@
+@startuml deployment-view
+!include <C4/C4_Deployment.puml>
+!include <awslib14/AWSCommon>
+!include <awslib14/AWSC4Integration>
+!include <azure/AzureCommon>
+!include <azure/AzureC4Integration>
+!include <tupadr3/common>
+
+
+LAYOUT_TOP_DOWN()
+
+
+
+
+title Deployment view for the Online Shop Monolith example
+Node(softwareDevelopment_architecture_example_monolith_dataCenter, "Data Center", $descr="The data center where the online shop is hosted.") {
+  Node(softwareDevelopment_architecture_example_monolith_perimeterNetwork, "Perimeter Network") {
+    Node(softwareDevelopment_architecture_example_monolith_webVm1, "Web VM 1", $descr="Web Server Virtual Machine 1") {
+      Node(softwareDevelopment_architecture_example_monolith_webServer, "Web Server", $type="Apache Tomcat") {
+        Container(softwareDevelopment_architecture_example_monolith_onlineShopFrontend, "Online Shop Frontend Application", $techn="AngularJS", $sprite="angularjs")
+      }
+    }
+  }
+  Node(softwareDevelopment_architecture_example_monolith_internalNetwork, "Internal Network") {
+    Node(softwareDevelopment_architecture_example_monolith_dbVm1, "DB VM 1", $descr="Database Server Virtual Machine 1") {
+      Node(softwareDevelopment_architecture_example_monolith_dbServer, "Database Server", $type="DB/2") {
+        ContainerDb(softwareDevelopment_architecture_example_monolith_onlineShopDb, "Online Shop Database", $techn="DB/2")
+      }
+    }
+    Node(softwareDevelopment_architecture_example_monolith_appVm1, "App VM 1", $descr="Application Server Virtual Machine 1") {
+      Node(softwareDevelopment_architecture_example_monolith_applicationServer, "Application Server", $type="IBM WebSphere") {
+        Container(softwareDevelopment_architecture_example_monolith_onlineShopBackend, "Online Shop Backend Application", $techn="Java EE")
+      }
+    }
+  }
+}
+Rel(softwareDevelopment_architecture_example_monolith_perimeterNetwork, softwareDevelopment_architecture_example_monolith_internalNetwork, "links to", $descr="The Perimeter Network links to the Internal Network via firewall.")
+SHOW_LEGEND()
+@enduml

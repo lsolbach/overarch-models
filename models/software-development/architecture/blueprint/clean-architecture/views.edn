@@ -1,0 +1,16 @@
+;;;;
+;;;; Clean Architecture Blueprint Views
+;;;;
+#{;
+  {:el :code-view
+   :id :software-development.architecture.blueprint.clean-architecture/code-view
+   :spec {:selection {:namespace-prefix "software-development.architecture.blueprint.clean-architecture"}
+          :linetype :orthogonal}
+   :name "Clean Architecture Blueprint Code View"
+   :title "Code View of the Clean Architecture Blueprint"
+   :desc "Shows the packages, interfaces and classes of the Clean Architecture Blueprint"
+   :ct [{:ref :software-development.architecture.blueprint.clean-architecture/adapter-depend-on-application :direction :down}
+        {:ref :software-development.architecture.blueprint.clean-architecture/in-memory-repository-implements-repository-interface :direction :up}
+        {:ref :software-development.architecture.blueprint.clean-architecture/sql-repository-implements-repository-interface :direction :up}]}
+  ;
+  }

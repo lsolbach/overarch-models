@@ -1,0 +1,630 @@
+;;;;
+;;;; Microservices Blueprint Model
+;;;;
+#{;
+  ;;;
+  ;;; Architecture Model Nodes
+  ;;;
+  {:el :person
+   :id :software-development.architecture.example.microservices/customer
+   :name "Customer"
+   :desc "A customer of the online shop"
+   :tags #{"simple"}}
+
+  {:el :system
+   :id :software-development.architecture.example.microservices/online-shop
+   :name "Online Shop"
+   :desc "An online shop system"
+   :doc "This is a simple online shop system that consists of several microservices. It serves as a blueprint for a microservices architecture."
+   :ct #{{:el :container
+          :id :software-development.architecture.example.microservices/shop-frontend
+          :name "Shop Frontend"
+          :desc "The frontend of the online shop"
+          :tech "React"
+          :tags #{"UI" "simple"}}
+
+         {:el :container
+          :id :software-development.architecture.example.microservices/account-service
+          :name "Account Service"
+          :desc "Handles user accounts"
+          :tags #{"microservice" "advanced"}}
+         {:el :container
+          :id :software-development.architecture.example.microservices/account-db
+          :subtype :database
+          :name "Account Database"
+          :desc "Stores user accounts"
+          :tech "PostgreSQL"
+          :tags #{"datastore" "advanced"}}
+
+         {:el :container
+          :id :software-development.architecture.example.microservices/account-topic
+          :subtype :queue
+          :name "Account Topic"
+          :desc "Account Events"
+          :tech "Kafka"
+          :tags #{"event-driven" "advanced"}}
+
+         {:el :container
+          :id :software-development.architecture.example.microservices/order-service
+          :name "Order Service"
+          :desc "Handles orders"
+          :tech "Java, Spring Boot"
+          :tags #{"microservice" "simple"}}
+         {:el :container
+          :id :software-development.architecture.example.microservices/order-db
+          :subtype :database
+          :name "Order Database"
+          :desc "Stores the orders"
+          :tech "PostgreSQL"
+          :tags #{"datastore" "simple"}}
+         {:el :container
+          :id :software-development.architecture.example.microservices/order-topic
+          :subtype :queue
+          :name "Order Topic"
+          :desc "Order Events"
+          :tech "Kafka"
+          :tags #{"event-driven" "simple"}}
+
+         {:el :container
+          :id :software-development.architecture.example.microservices/payment-service
+          :name "Payment Service"
+          :desc "Handles payments"
+          :tech "Kotlin, Quarkus"
+          :tags #{"microservice" "simple"}}
+         {:el :container
+          :id :software-development.architecture.example.microservices/payment-db
+          :subtype :database
+          :name "Payment DB"
+          :desc "Stores payments"
+          :tech "PostgreSQL"
+          :tags #{"datastore" "simple"}}
+         {:el :container
+          :id :software-development.architecture.example.microservices/payment-topic
+          :subtype :queue
+          :name "Payment Topic"
+          :desc "Payment Events"
+          :tech "Kafka"
+          :tags #{"event-driven" "simple"}}
+
+         {:el :container
+          :id :software-development.architecture.example.microservices/product-catalog-service
+          :name "Product Catalog Service"
+          :desc "Handles the product catalog"
+          :tech "Java, Spring Boot"
+          :tags #{"microservice" "advanced"}}
+         {:el :container
+          :id :software-development.architecture.example.microservices/product-catalog-db
+          :subtype :database
+          :name "Product Catalog Database"
+          :desc "Stores the product catalog"
+          :tech "MongoDB"
+          :tags #{"datastore" "advanced"}}
+
+         {:el :container
+          :id :software-development.architecture.example.microservices/shopping-cart-service
+          :name "Shopping Cart Service"
+          :desc "Handles the shopping cart"
+          :tags #{"microservice" "advanced"}}
+         {:el :container
+          :id :software-development.architecture.example.microservices/shopping-cart-db
+          :subtype :database
+          :name "Shopping Cart Database"
+          :desc "Stores the shopping cart"
+          :tech "MongoDB"
+          :tags #{"datastore" "advanced"}}
+         {:el :container
+          :id :software-development.architecture.example.microservices/shopping-cart-topic
+          :subtype :queue
+          :name "Shopping Cart Topic"
+          :desc "Shopping Cart Events"
+          :tech "Kafka"
+          :tags #{"event-driven" "advanced"}}
+
+         {:el :container
+          :id :software-development.architecture.example.microservices/shipping-service
+          :name "Shipping Service"
+          :desc "Handles shipping"
+          :tech "Go"
+          :tags #{"microservice" "simple"}}
+         {:el :container
+          :id :software-development.architecture.example.microservices/shipping-db
+          :subtype :database
+          :name "Shipping Database"
+          :desc "Stores the shipping data"
+          :tech "MongoDB"
+          :tags #{"datastore" "simple"}}
+         {:el :container
+          :id :software-development.architecture.example.microservices/shipping-topic
+          :subtype :queue
+          :name "Shipping Topic"
+          :desc "Shipping Events"
+          :tech "Kafka"
+          :tags #{"event-driven" "simple"}}
+
+         {:el :container
+          :id :software-development.architecture.example.microservices/notification-service
+          :name "Notification Service"
+          :desc "Handles notifications"
+          :tags #{"microservice" "simple"}}
+
+         {:el :container
+          :id :software-development.architecture.example.microservices/inventory-service
+          :name "Inventory Service"
+          :desc "Handles inventory"
+          :tech "Java, Spring Boot"
+          :tags #{"microservice" "simple"}}
+         {:el :container
+          :id :software-development.architecture.example.microservices/inventory-db
+          :subtype :database
+          :name "Inventory Database"
+          :desc "Stores the inventory"
+          :tech "PostgreSQL"
+          :tags #{"datastore" "simple"}}
+         {:el :container
+          :id :software-development.architecture.example.microservices/inventory-topic
+          :subtype :queue
+          :name "Inventory Topic"
+          :desc "Inventory Events"
+          :tech "Kafka"
+          :tags #{"event-driven" "simple"}}
+         ;
+         }}
+
+  {:el :system
+   :id :software-development.architecture.example.microservices/payment-system
+   :external true
+   :name "Payment System"
+   :desc "Handles Credit Card, PayPal, etc."
+   :doc "This is an external payment system that is used by the online shop system."
+   :tags #{"simple"}}
+
+  {:el :system
+   :id :software-development.architecture.example.microservices/logistics-system
+   :external true
+   :name "Logistics System"
+   :desc "Handles shipping with DHL, UPS, etc."
+   :doc "This is an external logistics system that is used by the online shop
+system to handle the actual shipping with companies like DHL or UPS."
+   :tags #{"advanced"}}
+
+  {:el :system
+   :id :software-development.architecture.example.microservices/email-system
+   :external true
+   :name "Email System"
+   :desc "Sends Emails e.g. to customers"
+   :doc "This is an external email system that is used by the online shop system."
+   :tags #{"simple"}}
+
+  ;;;
+  ;;; Architecture Model Relations
+  ;;;
+  ;;
+  ;; System Relations
+  ;;
+  {:el :request
+   :id :software-development.architecture.example.microservices/customer-uses-online-shop
+   :from :software-development.architecture.example.microservices/customer
+   :to :software-development.architecture.example.microservices/online-shop
+   :name "uses"
+   :desc "browse products, place orders"
+   :tags #{"system relation"}}
+  {:el :request
+   :id :software-development.architecture.example.microservices/online-shop-uses-payment-system
+   :from :software-development.architecture.example.microservices/online-shop
+   :to :software-development.architecture.example.microservices/payment-system
+   :desc "calls"
+   :doc "The online shop system uses the payment system for payments"
+   :tags #{"system relation" "restful"}}
+  {:el :request
+   :id :software-development.architecture.example.microservices/online-shop-uses-shipping-system
+   :from :software-development.architecture.example.microservices/online-shop
+   :to :software-development.architecture.example.microservices/logistics-system
+   :desc "calls"
+   :doc "The online shop system uses the logistics system for shipping"
+   :tags #{"system relation" "restful"}}
+  {:el :request
+   :id :software-development.architecture.example.microservices/online-shop-uses-email-system
+   :from :software-development.architecture.example.microservices/online-shop
+   :to :software-development.architecture.example.microservices/email-system
+   :desc "calls"
+   :doc "The online shop system uses the email system for notifications"
+   :tech "SMTP"
+   :tags #{"system relation"}}
+
+  ;;
+  ;; Container Relations
+  ;;
+  {:el :request
+   :id :software-development.architecture.example.microservices/customer-uses-shop-frontend
+   :from :software-development.architecture.example.microservices/customer
+   :to :software-development.architecture.example.microservices/shop-frontend
+   :name "uses"
+   :desc "browse products, place orders"}
+
+  {:el :request
+   :id :software-development.architecture.example.microservices/shop-frontend-uses-order-service 
+   :from :software-development.architecture.example.microservices/shop-frontend
+   :to :software-development.architecture.example.microservices/order-service
+   :name "calls"
+   :desc "get products, place orders"}
+
+  ;; data store relations
+  {:el :request
+   :id :software-development.architecture.example.microservices/account-service-uses-account-db
+   :from :software-development.architecture.example.microservices/account-service
+   :to :software-development.architecture.example.microservices/account-db
+   :name "store"
+   :desc "Account Data"
+   :doc "Stores account data in the database"
+   :tech "JDBC"
+   :tags #{"datastore"}
+   :direction :left}
+
+  {:el :request
+   :id :software-development.architecture.example.microservices/inventory-service-uses-inventory-db
+   :from :software-development.architecture.example.microservices/inventory-service
+   :to :software-development.architecture.example.microservices/inventory-db
+   :name "store"
+   :desc "Inventory Data"
+   :doc "Stores inventory data in the database"
+   :tech "JDBC"
+   :tags #{"datastore"}
+   :direction :left}
+
+  {:el :request
+   :id :software-development.architecture.example.microservices/payment-service-uses-payment-db
+   :from :software-development.architecture.example.microservices/payment-service
+   :to :software-development.architecture.example.microservices/payment-db
+   :name "store"
+   :desc "Payment Data"
+   :doc "Stores payment data in the database"
+   :tech "JDBC"
+   :tags #{"datastore"}
+   :direction :left}
+
+  {:el :request
+   :id :software-development.architecture.example.microservices/order-service-uses-order-db
+   :from :software-development.architecture.example.microservices/order-service
+   :to :software-development.architecture.example.microservices/order-db
+   :name "store"
+   :desc "Order Data"
+   :doc "Stores order data in the database."
+   :tech "JDBC"
+   :tags #{"datastore"}
+   :direction :left}
+
+  {:el :request
+   :id :software-development.architecture.example.microservices/product-catalog-service-uses-product-catalog-db
+   :from :software-development.architecture.example.microservices/product-catalog-service
+   :to :software-development.architecture.example.microservices/product-catalog-db
+   :name "store"
+   :desc "Product Catalog"
+   :doc "Reads the product catalog from the database"
+   :tech "MongoDB"
+   :tags #{"datastore"}
+   :direction :left}
+
+  {:el :request
+   :id :software-development.architecture.example.microservices/shipping-service-uses-shipping-db
+   :from :software-development.architecture.example.microservices/shipping-service
+   :to :software-development.architecture.example.microservices/shipping-db
+   :name "store"
+   :desc "Shipping Data"
+   :doc "Stores shipping data in the database"
+   :tech "MongoDB"
+   :tags #{"datastore"}
+   :direction :left}
+
+  {:el :request
+   :id :software-development.architecture.example.microservices/shopping-cart-service-uses-shopping-cart-db
+   :from :software-development.architecture.example.microservices/shopping-cart-service
+   :to :software-development.architecture.example.microservices/shopping-cart-db
+   :name "store"
+   :desc "Shopping Cart Data"
+   :doc "Stores shopping cart data in the database."
+   :tech "MongoDB"
+   :tags #{"datastore"}
+   :direction :left}
+
+  ;; SMTP relations
+  {:el :request
+   :id :software-development.architecture.example.microservices/notification-service-calls-email-system
+   :from :software-development.architecture.example.microservices/notification-service
+   :to :software-development.architecture.example.microservices/email-system
+   :name "request"
+   :desc "Send Email"
+   :doc "Sends an email notification"
+   :tech "SMTP"
+   :tags #{"restful" "event-driven" "simple"}}
+
+  ;; RESTful relations
+  {:el :request
+   :id :software-development.architecture.example.microservices/notification-service-calls-account-service
+   :from :software-development.architecture.example.microservices/notification-service
+   :to :software-development.architecture.example.microservices/account-service
+   :name "request"
+   :desc "Email for Account"
+   :doc "Requests email from account service"
+   :tech "REST"
+   :#tags {"restful" "advanced"}}
+
+  {:el :request
+   :id :software-development.architecture.example.microservices/order-service-calls-shipping-service
+   :from :software-development.architecture.example.microservices/order-service
+   :to :software-development.architecture.example.microservices/shipping-service
+   :name "request"
+   :desc "Ship Order"
+   :doc "Ships an order"
+   :tech "REST"
+   :#tags {"restful" "simple"}}
+
+  {:el :request
+   :id :software-development.architecture.example.microservices/order-service-calls-inventory-service
+   :from :software-development.architecture.example.microservices/order-service
+   :to :software-development.architecture.example.microservices/inventory-service
+   :name "request"
+   :desc "Update Inventory"
+   :doc "Updates the inventory after an order"
+   :tech "REST"
+   :#tags {"restful" "simple"}}
+  {:el :request
+   :id :software-development.architecture.example.microservices/order-service-calls-notification-service
+   :from :software-development.architecture.example.microservices/order-service
+   :to :software-development.architecture.example.microservices/notification-service
+   :name "request"
+   :desc "Notify Customer"
+   :doc "Notifies the customer account about the order"
+   :tech "REST"
+   :#tags {"restful" "simple"}}
+
+  {:el :request
+   :id :software-development.architecture.example.microservices/order-service-calls-payment-service
+   :from :software-development.architecture.example.microservices/order-service
+   :to :software-development.architecture.example.microservices/payment-service
+   :name "request"
+   :desc "Payment for Order"
+   :doc "Requests the payment for an order"
+   :tech "REST"
+   :#tags {"restful" "simple"}}
+  {:el :request
+   :id :software-development.architecture.example.microservices/payment-service-calls-payment-system
+   :from :software-development.architecture.example.microservices/payment-service
+   :to :software-development.architecture.example.microservices/payment-system
+   :name "request"
+   :desc "Trigger Payment"
+   :doc "Triggers a payment."
+   :tech "REST"
+   :#tags {"restful" "simple"}}
+  {:el :request
+   :id :software-development.architecture.example.microservices/payment-service-calls-account-service
+   :from :software-development.architecture.example.microservices/payment-service
+   :to :software-development.architecture.example.microservices/account-service
+   :name "request"
+   :desc "Payment Data"
+   :doc "Requests payment data from account service"
+   :tech "REST"
+   :#tags {"restful" "advanced"}}
+
+  {:el :request
+   :id :software-development.architecture.example.microservices/product-catalog-service-calls-inventory-service
+   :from :software-development.architecture.example.microservices/product-catalog-service
+   :to :software-development.architecture.example.microservices/inventory-service
+   :name "request"
+   :desc "Check Inventory"
+   :doc "Checks the inventory for a product"
+   :tech "REST"
+   :#tags {"restful" "advanced"}}
+  {:el :request
+   :id :software-development.architecture.example.microservices/shipping-service-calls-logistics-system
+   :from :software-development.architecture.example.microservices/shipping-service
+   :to :software-development.architecture.example.microservices/logistics-system
+   :name "request"
+   :desc "Ship Order"
+   :doc "Ships an order"
+   :tech "REST"
+   :#tags {"restful" "advanced"}}
+  {:el :request
+   :id :software-development.architecture.example.microservices/shipping-service-calls-account-service
+   :from :software-development.architecture.example.microservices/shipping-service
+   :to :software-development.architecture.example.microservices/account-service
+   :name "request"
+   :desc "Account Address"
+   :doc "Requests address from account service."
+   :tech "REST"
+   :#tags {"restful" "advanced"}}
+  {:el :request
+   :id :software-development.architecture.example.microservices/shopping-cart-service-calls-product-catalog-service
+   :from :software-development.architecture.example.microservices/shopping-cart-service
+   :to :software-development.architecture.example.microservices/product-catalog-service
+   :name "request"
+   :desc "Product Data"
+   :doc "Requests product data including price from the product catalog service."
+   :tech "REST"
+   :#tags {"restful" "advanced"}}
+  {:el :request
+   :id :software-development.architecture.example.microservices/shopping-cart-service-calls-order-service
+   :from :software-development.architecture.example.microservices/shopping-cart-service
+   :to :software-development.architecture.example.microservices/order-service
+   :name "request"
+   :desc "Create Order"
+   :doc "Creates an order from a shopping cart"
+   :tech "REST"
+   :#tags {"restful" "advanced"}}
+
+  ;; event driven container relations
+  {:el :publish
+   :id :software-development.architecture.example.microservices/account-service-publishes-to-account-topic
+   :from :software-development.architecture.example.microservices/account-service
+   :to :software-development.architecture.example.microservices/account-topic
+   :name "publish"
+   :desc "AccountCreatedEvent, AccountUpdatedEvent, AccountDeactivatedEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "advanced"}}
+  {:el :subscribe
+   :id :software-development.architecture.example.microservices/payment-service-subscribes-to-account-topic
+   :from :software-development.architecture.example.microservices/payment-service
+   :to :software-development.architecture.example.microservices/account-topic
+   :name "subscribe"
+   :desc "AccountCreatedEvent, AccountUpdatedEvent, AccountDeactivatedEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "advanced"}}
+  {:el :subscribe
+   :id :software-development.architecture.example.microservices/notification-service-subscribes-to-account-topic
+   :from :software-development.architecture.example.microservices/notification-service
+   :to :software-development.architecture.example.microservices/account-topic
+   :name "subscribe"
+   :desc "AccountCreatedEvent, AccountUpdatedEvent, AccountDeactivatedEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "advanced"}}
+
+  {:el :publish
+   :id :software-development.architecture.example.microservices/shopping-cart-service-publishes-to-shopping-cart-topic
+   :from :software-development.architecture.example.microservices/shopping-cart-service
+   :to :software-development.architecture.example.microservices/shopping-cart-topic
+   :name "publish"
+   :desc "ShoppingCartOrderedEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "advanced"}}
+  {:el :subscribe
+   :id :software-development.architecture.example.microservices/order-service-subscribes-to-shopping-cart-topic
+   :from :software-development.architecture.example.microservices/order-service
+   :to :software-development.architecture.example.microservices/shopping-cart-topic
+   :name "subscribe"
+   :desc "ShoppingCartOrderedEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "advanced"}}
+  {:el :subscribe
+   :id :software-development.architecture.example.microservices/payment-service-subscribes-to-shopping-cart-topic
+   :from :software-development.architecture.example.microservices/payment-service
+   :to :software-development.architecture.example.microservices/shopping-cart-topic
+   :name "subscribe"
+   :desc "ShoppingCartOrderedEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "advanced"}}
+
+  {:el :publish
+   :id :software-development.architecture.example.microservices/order-service-publishes-to-order-topic
+   :from :software-development.architecture.example.microservices/order-service
+   :to :software-development.architecture.example.microservices/order-topic
+   :name "publish"
+   :desc "OrderProcessedEvent, OrderCancelledEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "simple"}}
+  {:el :subscribe
+   :id :software-development.architecture.example.microservices/inventory-service-subscribes-to-order-topic
+   :from :software-development.architecture.example.microservices/inventory-service
+   :to :software-development.architecture.example.microservices/order-topic
+   :name "subscribe"
+   :desc "OrderProcessedEvent, OrderCancelledEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "advanced"}}
+  {:el :subscribe
+   :id :software-development.architecture.example.microservices/notification-service-subscribes-to-order-topic
+   :from :software-development.architecture.example.microservices/notification-service
+   :to :software-development.architecture.example.microservices/order-topic
+   :name "subscribe"
+   :desc "OrderProcessedEvent, OrderCancelledEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "simple"}}
+
+  {:el :publish
+   :id :software-development.architecture.example.microservices/inventory-service-publishes-to-inventory-topic
+   :from :software-development.architecture.example.microservices/inventory-service
+   :to :software-development.architecture.example.microservices/inventory-topic
+   :name "publish"
+   :desc "InventoryProcessedEvent, InventoryOutOfStockEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "simple"}}
+  {:el :subscribe
+   :id :software-development.architecture.example.microservices/order-service-subscribes-to-inventory-topic
+   :from :software-development.architecture.example.microservices/payment-service
+   :to :software-development.architecture.example.microservices/inventory-topic
+   :name "subscribe"
+   :desc "InventoryOutOfStockEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "advanced"}}
+  {:el :subscribe
+   :id :software-development.architecture.example.microservices/payment-service-subscribes-to-inventory-topic
+   :from :software-development.architecture.example.microservices/payment-service
+   :to :software-development.architecture.example.microservices/inventory-topic
+   :name "subscribe"
+   :desc "InventoryProcessedEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "advanced"}}
+  {:el :subscribe
+   :id :software-development.architecture.example.microservices/notification-service-subscribes-to-inventory-topic
+   :from :software-development.architecture.example.microservices/notification-service
+   :to :software-development.architecture.example.microservices/inventory-topic
+   :name "subscribe"
+   :desc "InventoryProcessedEvent, InventoryOutOfStockEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "simple"}}
+
+  {:el :publish
+   :id :software-development.architecture.example.microservices/payment-service-publishes-to-payment-topic
+   :from :software-development.architecture.example.microservices/payment-service
+   :to :software-development.architecture.example.microservices/payment-topic
+   :name "publish"
+   :desc "PaymentProcessedEvent, PaymentFailedEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "simple"}}
+  {:el :subscribe
+   :id :software-development.architecture.example.microservices/order-service-subscribes-to-payment-topic
+   :from :software-development.architecture.example.microservices/order-service
+   :to :software-development.architecture.example.microservices/payment-topic
+   :name "subscribe"
+   :desc "PaymentProcessedEvent, PaymentFailedEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "advanced"}}
+  {:el :subscribe
+   :id :software-development.architecture.example.microservices/shipping-service-subscribes-to-payment-topic
+   :from :software-development.architecture.example.microservices/shipping-service
+   :to :software-development.architecture.example.microservices/payment-topic
+   :name "subscribe"
+   :desc "PaymentProcessedEvent, PaymentFailedEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "advanced"}}
+  {:el :subscribe
+   :id :software-development.architecture.example.microservices/notification-service-subscribes-to-payment-topic
+   :from :software-development.architecture.example.microservices/notification-service
+   :to :software-development.architecture.example.microservices/payment-topic
+   :name "subscribe"
+   :desc "PaymentProcessedEvent, PaymentFailedEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "advanced"}}
+
+  {:el :publish
+   :id :software-development.architecture.example.microservices/shipping-service-publishes-to-shipping-topic
+   :from :software-development.architecture.example.microservices/shipping-service
+   :to :software-development.architecture.example.microservices/shipping-topic
+   :name "publish"
+   :desc "ShippingProcessedEvent, ShippingFailedEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "simple"}}
+  {:el :subscribe
+   :id :software-development.architecture.example.microservices/order-service-subscribes-to-shipping-topic
+   :from :software-development.architecture.example.microservices/order-service
+   :to :software-development.architecture.example.microservices/shipping-topic
+   :name "subscribe"
+   :desc "ShippingProcessedEvent, ShippingFailedEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "advanced"}}
+  {:el :subscribe
+   :id :software-development.architecture.example.microservices/notification-service-subscribes-to-shipping-topic
+   :from :software-development.architecture.example.microservices/notification-service
+   :to :software-development.architecture.example.microservices/shipping-topic
+   :name "subscribe"
+   :desc "ShippingProcessedEvent, ShippingFailedEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "simple"}}
+  {:el :subscribe
+   :id :software-development.architecture.example.microservices/payment-service-subscribes-to-shipping-topic
+   :from :software-development.architecture.example.microservices/payment-service
+   :to :software-development.architecture.example.microservices/shipping-topic
+   :name "subscribe"
+   :desc "ShippingFailedEvent"
+   :tech "Kafka"
+   :#tags {"event-driven" "simple"}}
+
+  ;
+  }

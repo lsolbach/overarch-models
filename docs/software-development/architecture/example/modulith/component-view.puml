@@ -1,0 +1,54 @@
+@startuml component-view
+!include <C4/C4_Component.puml>
+!include <awslib14/AWSCommon>
+!include <awslib14/AWSC4Integration>
+!include <azure/AzureCommon>
+!include <azure/AzureC4Integration>
+!include <tupadr3/common>
+!include <tupadr3/devicons2/angularjs>
+
+
+LAYOUT_LEFT_RIGHT()
+skinparam linetype ortho
+
+
+skinparam nodesep 120
+skinparam ranksep 120
+title Component view for the Online Shop Modulith example
+System_Ext(softwareDevelopment_architecture_example_modulith_emailSystem, "Email System", $descr="Sends Emails e.g. to customers")
+Person(softwareDevelopment_architecture_example_modulith_customer, "Customer", $descr="A customer who buys products from the online shop.")
+System_Boundary(softwareDevelopment_architecture_example_modulith_onlineShopSystem, "Online Shop") {
+  Container(softwareDevelopment_architecture_example_modulith_onlineShopFrontend, "Online Shop Frontend Application", $techn="AngularJS", $sprite="angularjs")
+  Container_Boundary(softwareDevelopment_architecture_example_modulith_onlineShopBackend, "Online Shop Backend Application") {
+    Boundary(softwareDevelopment_architecture_example_modulith_inventory, "Inventory Context") {
+      Component(softwareDevelopment_architecture_example_modulith_inventoryComponent, "Inventory Component", $descr="Handles the inventory checks and updates")
+    }
+    Boundary(softwareDevelopment_architecture_example_modulith_payment, "Payment Context") {
+      Component(softwareDevelopment_architecture_example_modulith_paymentComponent, "Payment Component", $descr="Handles the payment process")
+    }
+    Boundary(softwareDevelopment_architecture_example_modulith_orders, "Orders Context") {
+      Component(softwareDevelopment_architecture_example_modulith_orderComponent, "Order Component", $descr="Handles the orders")
+    }
+    Boundary(softwareDevelopment_architecture_example_modulith_shipping, "Shipping Context") {
+      Component(softwareDevelopment_architecture_example_modulith_shippingComponent, "Shipping Component", $descr="Handles the shipping process")
+    }
+  }
+  ContainerDb(softwareDevelopment_architecture_example_modulith_onlineShopDb, "Online Shop Database", $descr="Stores products, orders, payments, etc.", $techn="DB/2")
+}
+System_Ext(softwareDevelopment_architecture_example_modulith_logisticsSystem, "Logistics System", $descr="Handles shipping with DHL, UPS, etc.")
+System_Ext(softwareDevelopment_architecture_example_modulith_paymentSystem, "Payment System", $descr="Handles Credit Card, PayPal, etc.")
+Rel(softwareDevelopment_architecture_example_modulith_orderComponent, softwareDevelopment_architecture_example_modulith_shippingComponent, "calls", $descr="trigger shipping", $techn="Method Call")
+Rel(softwareDevelopment_architecture_example_modulith_shippingComponent, softwareDevelopment_architecture_example_modulith_logisticsSystem, "calls", $descr="process shipping", $techn="REST")
+Rel(softwareDevelopment_architecture_example_modulith_orderComponent, softwareDevelopment_architecture_example_modulith_inventoryComponent, "calls", $descr="update inventory", $techn="Method Call")
+Rel(softwareDevelopment_architecture_example_modulith_inventoryComponent, softwareDevelopment_architecture_example_modulith_onlineShopDb, "store and query", $descr="products", $techn="JDBC")
+Rel(softwareDevelopment_architecture_example_modulith_paymentComponent, softwareDevelopment_architecture_example_modulith_onlineShopDb, "store and query", $descr="payments", $techn="JDBC")
+Rel(softwareDevelopment_architecture_example_modulith_customer, softwareDevelopment_architecture_example_modulith_onlineShopFrontend, "uses", $descr="browse products, place orders", $techn="HTTPS")
+Rel(softwareDevelopment_architecture_example_modulith_orderComponent, softwareDevelopment_architecture_example_modulith_paymentComponent, "calls", $descr="trigger payment", $techn="Method Call")
+Rel(softwareDevelopment_architecture_example_modulith_orderComponent, softwareDevelopment_architecture_example_modulith_onlineShopDb, "store and query", $descr="orders", $techn="JDBC")
+Rel(softwareDevelopment_architecture_example_modulith_paymentComponent, softwareDevelopment_architecture_example_modulith_paymentSystem, "calls", $descr="process payment", $techn="REST")
+Rel(softwareDevelopment_architecture_example_modulith_onlineShopFrontend, softwareDevelopment_architecture_example_modulith_shippingComponent, "calls", $descr="shipping status", $techn="HTTPS")
+Rel(softwareDevelopment_architecture_example_modulith_shippingComponent, softwareDevelopment_architecture_example_modulith_onlineShopDb, "store and query", $descr="shipping status", $techn="JDBC")
+Rel(softwareDevelopment_architecture_example_modulith_orderComponent, softwareDevelopment_architecture_example_modulith_emailSystem, "calls", $descr="send order confirmation", $techn="SMTP")
+Rel(softwareDevelopment_architecture_example_modulith_onlineShopFrontend, softwareDevelopment_architecture_example_modulith_orderComponent, "calls", $descr="get products, place orders", $techn="HTTPS")
+SHOW_LEGEND()
+@enduml

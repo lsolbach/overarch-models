@@ -1,0 +1,319 @@
+;;;;
+;;;; Online Shop Modulith Example Model
+;;;;
+#{;
+  ;;;
+  ;;; Architecture Model
+  ;;;
+  ;;
+  ;; Nodes
+  ;;
+  {:el :person
+   :id :software-development.architecture.example.modulith/customer
+   :name "Customer"
+   :desc "A customer who buys products from the online shop."}
+  {:el :system
+   :id :software-development.architecture.example.modulith/online-shop-system
+   :name "Online Shop"
+   :desc "An online shop system that sells products to customers."
+   :ct #{{:el :container
+          :id :software-development.architecture.example.modulith/online-shop-frontend
+          :name "Online Shop Frontend Application"
+          :tech "AngularJS"}
+         {:el :container
+          :id :software-development.architecture.example.modulith/online-shop-backend
+          :name "Online Shop Backend Application"
+          :tech "Java EE"
+          :ct #{{:el :context-boundary
+                 :id :software-development.architecture.example.modulith/orders
+                 :name "Orders Context"
+                 :doc "The orders context is responsible for managing the orders."
+                 :ct #{{:el :component
+                        :id :software-development.architecture.example.modulith/order-component
+                        :name "Order Component"
+                        :desc "Handles the orders"}}}
+                {:el :context-boundary
+                 :id :software-development.architecture.example.modulith/inventory
+                 :name "Inventory Context"
+                 :doc "The inventory context is responsible for managing the inventory of products."
+                 :ct #{{:el :component
+                        :id :software-development.architecture.example.modulith/inventory-component
+                        :name "Inventory Component"
+                        :desc "Handles the inventory checks and updates"}}}
+                {:el :context-boundary
+                 :id :software-development.architecture.example.modulith/payment
+                 :name "Payment Context"
+                 :doc "The payment context is responsible for managing the payments."
+                 :ct #{{:el :component
+                        :id :software-development.architecture.example.modulith/payment-component
+                        :name "Payment Component"
+                        :desc "Handles the payment process"}}}
+                {:el :context-boundary
+                 :id :software-development.architecture.example.modulith/shipping
+                 :name "Shipping Context"
+                 :doc "The shipping context is responsible for managing the shipping."
+                 :ct #{{:el :component
+                        :id :software-development.architecture.example.modulith/shipping-component
+                        :name "Shipping Component"
+                        :desc "Handles the shipping process"}}}}}
+         {:el :container
+          :id :software-development.architecture.example.modulith/online-shop-db
+          :subtype :database
+          :name "Online Shop Database"
+          :desc "Stores products, orders, payments, etc."
+          :tech "DB/2"}}}
+  {:el :system
+   :id :software-development.architecture.example.modulith/email-system
+   :external true
+   :name "Email System"
+   :desc "Sends Emails e.g. to customers"}
+  {:el :system
+   :id :software-development.architecture.example.modulith/logistics-system
+   :external true
+   :name "Logistics System"
+   :desc "Handles shipping with DHL, UPS, etc."}
+  {:el :system
+   :id :software-development.architecture.example.modulith/payment-system
+   :external true
+   :name "Payment System"
+   :desc "Handles Credit Card, PayPal, etc."}
+
+  ;;
+  ;; Relations
+  ;; 
+  ;; system relations
+  {:el :request
+   :id :software-development.architecture.example.modulith/customer-uses-online-shop-system
+   :from :software-development.architecture.example.modulith/customer
+   :to :software-development.architecture.example.modulith/online-shop-system
+   :name "uses"
+   :desc "browse products, place orders"
+   :tech "HTTPS"}
+
+  {:el :request
+   :id :software-development.architecture.example.modulith/online-shop-system-calls-logistics-system
+   :from :software-development.architecture.example.modulith/online-shop-system
+   :to :software-development.architecture.example.modulith/logistics-system
+   :name "ship"
+   :desc "products"
+   :tech "REST"}
+
+  {:el :request
+   :id :software-development.architecture.example.modulith/online-shop-system-calls-payment-system
+   :from :software-development.architecture.example.modulith/online-shop-system
+   :to :software-development.architecture.example.modulith/payment-system
+   :name "trigger payment"
+   :desc "credit card, paypal"
+   :tech "REST"}
+
+  {:el :request
+   :id :software-development.architecture.example.modulith/online-shop-system-calls-email-system
+   :from :software-development.architecture.example.modulith/online-shop-system
+   :to :software-development.architecture.example.modulith/email-system
+   :name "sends email"
+   :desc "order confirmation, shipping notification"}
+
+  ;; container relations
+  {:el :request
+   :id :software-development.architecture.example.modulith/customer-uses-online-shop-frontend
+   :from :software-development.architecture.example.modulith/customer
+   :to :software-development.architecture.example.modulith/online-shop-frontend
+   :name "uses"
+   :desc "browse products, place orders"
+   :tech "HTTPS"}
+
+  {:el :request
+   :id :software-development.architecture.example.modulith/online-shop-frontend-uses-online-shop-backend
+   :from :software-development.architecture.example.modulith/online-shop-frontend
+   :to :software-development.architecture.example.modulith/online-shop-backend
+   :name "calls"
+   :desc "get products, place orders."
+   :tech "HTTPS"}
+
+  {:el :request
+   :id :software-development.architecture.example.modulith/online-shop-backend-uses-online-shop-db
+   :from :software-development.architecture.example.modulith/online-shop-backend
+   :to :software-development.architecture.example.modulith/online-shop-db
+   :name "store and query"
+   :desc "products, orders"
+   :tech "JDBC"}
+
+  {:el :request
+   :id :software-development.architecture.example.modulith/online-shop-backend-calls-email-system
+   :from :software-development.architecture.example.modulith/online-shop-backend
+   :to :software-development.architecture.example.modulith/email-system
+   :name "sends email"
+   :desc "order confirmation, shipping notification"}
+
+  {:el :request
+   :id :software-development.architecture.example.modulith/online-shop-backend-calls-logistics-system
+   :from :software-development.architecture.example.modulith/online-shop-backend
+   :to :software-development.architecture.example.modulith/logistics-system
+   :name "ship"
+   :desc "order"
+   :tech "REST"}
+
+  {:el :request
+   :id :software-development.architecture.example.modulith/online-shop-backend-calls-payment-system
+   :from :software-development.architecture.example.modulith/online-shop-backend
+   :to :software-development.architecture.example.modulith/payment-system
+   :name "process payment"
+   :desc "credit card, paypal"
+   :tech "REST"}
+
+  ;; component relations
+  {:el :request
+   :id :software-development.architecture.example.modulith/order-component-uses-online-shop-db
+   :from :software-development.architecture.example.modulith/order-component
+   :to :software-development.architecture.example.modulith/online-shop-db
+   :name "store and query"
+   :desc "orders"
+   :tech "JDBC"}
+  {:el :request
+   :id :software-development.architecture.example.modulith/inventory-component-uses-online-shop-db
+   :from :software-development.architecture.example.modulith/inventory-component
+   :to :software-development.architecture.example.modulith/online-shop-db
+   :name "store and query"
+   :desc "products"
+   :tech "JDBC"}
+  {:el :request
+   :id :software-development.architecture.example.modulith/payment-component-uses-online-shop-db
+   :from :software-development.architecture.example.modulith/payment-component
+   :to :software-development.architecture.example.modulith/online-shop-db
+   :name "store and query"
+   :desc "payments"
+   :tech "JDBC"}
+  {:el :request
+   :id :software-development.architecture.example.modulith/shipping-component-uses-online-shop-db
+   :from :software-development.architecture.example.modulith/shipping-component
+   :to :software-development.architecture.example.modulith/online-shop-db
+   :name "store and query"
+   :desc "shipping status"
+   :tech "JDBC"}
+
+  {:el :request
+   :id :software-development.architecture.example.modulith/online-shop-frontend-calls-order-component
+   :from :software-development.architecture.example.modulith/online-shop-frontend
+   :to :software-development.architecture.example.modulith/order-component
+   :name "calls"
+   :desc "get products, place orders"
+   :tech "HTTPS"}
+  {:el :request
+   :id :software-development.architecture.example.modulith/online-shop-frontend-calls-shipping-component
+   :from :software-development.architecture.example.modulith/online-shop-frontend
+   :to :software-development.architecture.example.modulith/shipping-component
+   :name "calls"
+   :desc "shipping status"
+   :tech "HTTPS"}
+  {:el :request
+   :id :software-development.architecture.example.modulith/order-component-calls-inventory-component
+   :from :software-development.architecture.example.modulith/order-component
+   :to :software-development.architecture.example.modulith/inventory-component
+   :name "calls"
+   :desc "update inventory"
+   :tech "Method Call"}
+  {:el :request
+   :id :software-development.architecture.example.modulith/order-component-calls-payment-component
+   :from :software-development.architecture.example.modulith/order-component
+   :to :software-development.architecture.example.modulith/payment-component
+   :name "calls"
+   :desc "trigger payment"
+   :tech "Method Call"}
+  {:el :request
+   :id :software-development.architecture.example.modulith/order-component-calls-shipping-component
+   :from :software-development.architecture.example.modulith/order-component
+   :to :software-development.architecture.example.modulith/shipping-component
+   :name "calls"
+   :desc "trigger shipping"
+   :tech "Method Call"}
+  {:el :request
+   :id :software-development.architecture.example.modulith/order-component-calls-email-system
+   :from :software-development.architecture.example.modulith/order-component
+   :to :software-development.architecture.example.modulith/email-system
+   :name "calls"
+   :desc "send order confirmation"
+   :tech "SMTP"}
+  {:el :request
+   :id :software-development.architecture.example.modulith/shipping-component-calls-logistics-system
+   :from :software-development.architecture.example.modulith/shipping-component
+   :to :software-development.architecture.example.modulith/logistics-system
+   :name "calls"
+   :desc "process shipping"
+   :tech "REST"}
+  {:el :request
+   :id :software-development.architecture.example.modulith/payment-component-calls-payment-system
+   :from :software-development.architecture.example.modulith/payment-component
+   :to :software-development.architecture.example.modulith/payment-system
+   :name "calls"
+   :desc "process payment"
+   :tech "REST"}
+  #_{:el :request
+   :id :software-development.architecture.example.modulith/shipping-component-calls-email-system
+   :from :software-development.architecture.example.modulith/shipping-component
+   :to :software-development.architecture.example.modulith/email-system
+   :name "calls"
+   :desc "send shipping notification"
+   :tech "SMTP"}
+
+
+  ;;;
+  ;;; Deployment Model
+  ;;;
+  {:el :node
+   :id :software-development.architecture.example.modulith/data-center
+   :name "Data Center"
+   :desc "The data center where the online shop is hosted."
+   :ct #{{:el :node
+          :id :software-development.architecture.example.modulith/perimeter-network
+          :name "Perimeter Network"
+          :ct #{{:el :node
+                 :id :software-development.architecture.example.modulith/web-vm1
+                 :name "Web VM 1"
+                 :desc "Web Server Virtual Machine 1"
+                 :ct #{{:el :node
+                        :id :software-development.architecture.example.modulith/web-server
+                        :name "Web Server"
+                        :tech "Apache Tomcat"}}}}}
+         {:el :node
+          :id :software-development.architecture.example.modulith/internal-network
+          :name "Internal Network"
+          :ct #{{:el :node
+                 :id :software-development.architecture.example.modulith/app-vm1
+                 :name "App VM 1"
+                 :desc "Application Server Virtual Machine 1"
+                 :ct #{{:el :node
+                        :id :software-development.architecture.example.modulith/application-server
+                        :name "Application Server"
+                        :tech "IBM WebSphere"}}}
+                {:el :node
+                 :id :software-development.architecture.example.modulith/db-vm1
+                 :name "DB VM 1"
+                 :desc "Database Server Virtual Machine 1"
+                 :ct #{{:el :node
+                        :id :software-development.architecture.example.modulith/db-server
+                        :name "Database Server"
+                        :tech "DB/2"}}}}}}}
+
+  {:el :link
+   :from :software-development.architecture.example.modulith/perimeter-network
+   :to :software-development.architecture.example.modulith/internal-network
+   :name "links to"
+   :desc "The Perimeter Network links to the Internal Network via firewall."}
+  {:el :deployed-to
+   :id :software-development.architecture.example.modulith/online-shop-frontend-deployed-on-web-server
+   :from :software-development.architecture.example.modulith/online-shop-frontend
+   :to :software-development.architecture.example.modulith/web-server
+   :name "deployed on"
+   :desc "The Online Shop Frontend is deployed on the Web Server"}
+  {:el :deployed-to
+   :from :software-development.architecture.example.modulith/online-shop-backend
+   :to :software-development.architecture.example.modulith/application-server
+   :name "deployed on"
+   :desc "The Online Shop Backend is deployed on the Application Server"}
+  {:el :deployed-to
+   :from :software-development.architecture.example.modulith/online-shop-db
+   :to :software-development.architecture.example.modulith/db-server
+   :name "deployed on"
+   :desc "The Online Shop Database is deployed on the Database Server"}
+  ;
+  }

@@ -1,0 +1,33 @@
+@startuml microservice-container-view
+!include <C4/C4_Container.puml>
+!include <awslib14/AWSCommon>
+!include <awslib14/AWSC4Integration>
+!include <azure/AzureCommon>
+!include <azure/AzureC4Integration>
+!include <tupadr3/common>
+!include <tupadr3/devicons2/postgresql>
+!include <tupadr3/devicons2/go>
+!include <tupadr3/devicons2/mongodb>
+
+
+LAYOUT_TOP_DOWN()
+
+
+
+skinparam nodesep 50
+skinparam ranksep 50
+title Container View for an Example Microservice
+Container(softwareDevelopment_architecture_example_microservices_paymentService, "Payment Service", $descr="Handles payments", $techn="Kotlin, Quarkus")
+Container(softwareDevelopment_architecture_example_microservices_inventoryService, "Inventory Service", $descr="Handles inventory", $techn="Java, Spring Boot")
+Container(softwareDevelopment_architecture_example_microservices_shippingService, "Shipping Service", $descr="Handles shipping", $techn="Go", $sprite="go")
+ContainerDb(softwareDevelopment_architecture_example_microservices_shippingDb, "Shipping Database", $descr="Stores the shipping data", $techn="MongoDB", $sprite="mongodb")
+ContainerDb(softwareDevelopment_architecture_example_microservices_inventoryDb, "Inventory Database", $descr="Stores the inventory", $techn="PostgreSQL", $sprite="postgresql")
+ContainerDb(softwareDevelopment_architecture_example_microservices_orderDb, "Order Database", $descr="Stores the orders", $techn="PostgreSQL", $sprite="postgresql")
+ContainerDb(softwareDevelopment_architecture_example_microservices_paymentDb, "Payment DB", $descr="Stores payments", $techn="PostgreSQL", $sprite="postgresql")
+Container(softwareDevelopment_architecture_example_microservices_orderService, "Order Service", $descr="Handles orders", $techn="Java, Spring Boot")
+Rel_D(softwareDevelopment_architecture_example_microservices_orderService, softwareDevelopment_architecture_example_microservices_orderDb, "store", $descr="Order Data", $techn="JDBC")
+Rel_D(softwareDevelopment_architecture_example_microservices_inventoryService, softwareDevelopment_architecture_example_microservices_inventoryDb, "store", $descr="Inventory Data", $techn="JDBC")
+Rel_D(softwareDevelopment_architecture_example_microservices_shippingService, softwareDevelopment_architecture_example_microservices_shippingDb, "store", $descr="Shipping Data", $techn="MongoDB", $sprite="mongodb,scale=0.5")
+Rel_D(softwareDevelopment_architecture_example_microservices_paymentService, softwareDevelopment_architecture_example_microservices_paymentDb, "store", $descr="Payment Data", $techn="JDBC")
+SHOW_LEGEND()
+@enduml

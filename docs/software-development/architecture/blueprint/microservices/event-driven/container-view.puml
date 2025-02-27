@@ -1,0 +1,31 @@
+@startuml container-view
+!include <C4/C4_Container.puml>
+
+
+LAYOUT_LEFT_RIGHT()
+
+
+
+
+title Container View of the Event Driven Microservices Blueprint
+System_Boundary(softwareDevelopment_architecture_blueprint_microservices_eventDriven_system, "Blueprint System") {
+  ContainerDb(softwareDevelopment_architecture_blueprint_microservices_eventDriven_datastoreC, "Datastore C", $descr="Stores the aggregate C")
+  ContainerDb(softwareDevelopment_architecture_blueprint_microservices_eventDriven_datastoreA, "Datastore A", $descr="Stores the aggregate A")
+  Container(softwareDevelopment_architecture_blueprint_microservices_eventDriven_serviceC, "Service C", $descr="Microservice")
+  ContainerDb(softwareDevelopment_architecture_blueprint_microservices_eventDriven_datastoreB, "Datastore B", $descr="Stores the aggregate B")
+  ContainerQueue(softwareDevelopment_architecture_blueprint_microservices_eventDriven_topicA, "A Topic", $descr="Topic for the aggregate A")
+  Container(softwareDevelopment_architecture_blueprint_microservices_eventDriven_serviceB, "Service B", $descr="Microservice")
+  ContainerQueue(softwareDevelopment_architecture_blueprint_microservices_eventDriven_topicB, "B Topic", $descr="Topic for the aggregate B")
+  Container(softwareDevelopment_architecture_blueprint_microservices_eventDriven_serviceA, "Service A", $descr="Microservice")
+  ContainerQueue(softwareDevelopment_architecture_blueprint_microservices_eventDriven_topicC, "C Topic", $descr="Topic for the aggregate C")
+}
+Rel(softwareDevelopment_architecture_blueprint_microservices_eventDriven_serviceA, softwareDevelopment_architecture_blueprint_microservices_eventDriven_datastoreA, "stores", $descr="aggregate A")
+Rel_D(softwareDevelopment_architecture_blueprint_microservices_eventDriven_serviceB, softwareDevelopment_architecture_blueprint_microservices_eventDriven_topicB, "publishes", $descr="domain events for aggregate B")
+Rel(softwareDevelopment_architecture_blueprint_microservices_eventDriven_serviceC, softwareDevelopment_architecture_blueprint_microservices_eventDriven_datastoreC, "stores", $descr="aggregate C")
+Rel_U(softwareDevelopment_architecture_blueprint_microservices_eventDriven_serviceC, softwareDevelopment_architecture_blueprint_microservices_eventDriven_topicB, "subscribes", $descr="domain events for aggregate B")
+Rel_D(softwareDevelopment_architecture_blueprint_microservices_eventDriven_serviceA, softwareDevelopment_architecture_blueprint_microservices_eventDriven_topicA, "publishes", $descr="domain events for aggregate A")
+Rel_U(softwareDevelopment_architecture_blueprint_microservices_eventDriven_serviceB, softwareDevelopment_architecture_blueprint_microservices_eventDriven_topicA, "subscribes", $descr="domain events for aggregate A")
+Rel(softwareDevelopment_architecture_blueprint_microservices_eventDriven_serviceB, softwareDevelopment_architecture_blueprint_microservices_eventDriven_datastoreB, "stores", $descr="aggregate B")
+Rel_D(softwareDevelopment_architecture_blueprint_microservices_eventDriven_serviceC, softwareDevelopment_architecture_blueprint_microservices_eventDriven_topicC, "publishes", $descr="domain events for aggregate C")
+SHOW_LEGEND()
+@enduml

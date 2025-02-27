@@ -1,0 +1,27 @@
+# repository (Package)
+
+# Description
+Contains the repository adapter implementations
+
+## Documentation
+The repository package contains the repository adapter implementations.
+The repository adapters implement the repository interfaces defined in the
+application layer for a concrete data store. The repository adapters are used
+by the application services to load and store domain aggregates.
+The repository adapters are driven adapters and called by the application
+services.
+## Parent
+[adapter](../../../../../software-development/architecture/blueprint/clean-architecture/adapter.md)
+
+## Classes
+| Name | Description |
+|---|---|
+|[InMemoryRepository](../../../../../software-development/architecture/blueprint/clean-architecture/adapter/repository/in-memory-repository.md)|Implements the repository interface for an in-memory data store for testing purposes|
+|[SqlRepository](../../../../../software-development/architecture/blueprint/clean-architecture/adapter/repository/sql-repository.md)|Implements the repository interface for a SQL database|
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../../../../views.md)
+
+(generated with docs/package.md.cmb)

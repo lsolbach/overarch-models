@@ -1,0 +1,192 @@
+;;;;
+;;;; Online Shop Monolith Example Model
+;;;;
+#{;
+  ;;;
+  ;;; Architecture Model
+  ;;;
+  ;;
+  ;; Nodes
+  ;;
+  {:el :person
+   :id :software-development.architecture.example.monolith/customer
+   :name "Customer"
+   :desc "A customer who buys products from the online shop."}
+  {:el :system
+   :id :software-development.architecture.example.monolith/online-shop-system
+   :name "Online Shop"
+   :desc "An online shop system that sells products to customers."
+   :tech "Java EE, Oracle, AngularJS"
+   :ct #{{:el :container
+          :id :software-development.architecture.example.monolith/online-shop-frontend
+          :name "Online Shop Frontend Application"
+          :tech "AngularJS"}
+         {:el :container
+          :id :software-development.architecture.example.monolith/online-shop-backend
+          :name "Online Shop Backend Application"
+          :tech "Java EE"}
+         {:el :container
+          :id :software-development.architecture.example.monolith/online-shop-db
+          :subtype :database
+          :name "Online Shop Database"
+          :tech "DB/2"}}}
+  {:el :system
+   :id :software-development.architecture.example.monolith/email-system
+   :external true
+   :name "Email System"
+   :desc "Sends Emails e.g. to customers"}
+  {:el :system
+   :id :software-development.architecture.example.monolith/logistics-system
+   :external true
+   :name "Logistics System"
+   :desc "Handles shipping with DHL, UPS, etc."}
+  {:el :system
+   :id :software-development.architecture.example.monolith/payment-system
+   :external true
+   :name "Payment System"
+   :desc "Handles Credit Card, PayPal, etc."}
+
+  ;;
+  ;; Relations
+  ;; 
+  ;; system relations
+  {:el :request
+   :id :software-development.architecture.example.monolith/customer-uses-online-shop-system
+   :from :software-development.architecture.example.monolith/customer
+   :to :software-development.architecture.example.monolith/online-shop-system
+   :name "uses"
+   :desc "browse products, place orders"
+   :tech "HTTPS"}
+  
+  {:el :request
+   :id :software-development.architecture.example.monolith/online-shop-system-calls-logistics-system
+   :from :software-development.architecture.example.monolith/online-shop-system
+   :to :software-development.architecture.example.monolith/logistics-system
+   :name "ship"
+   :desc "products"
+   :tech "REST"}
+
+  {:el :request
+   :id :software-development.architecture.example.monolith/online-shop-system-calls-payment-system
+   :from :software-development.architecture.example.monolith/online-shop-system
+   :to :software-development.architecture.example.monolith/payment-system
+   :name "trigger payment"
+   :desc "credit card, paypal"
+   :tech "REST"}
+
+  {:el :request
+   :id :software-development.architecture.example.monolith/online-shop-system-calls-email-system
+   :from :software-development.architecture.example.monolith/online-shop-system
+   :to :software-development.architecture.example.monolith/email-system
+   :name "sends email"
+   :desc "order confirmation, shipping notification"}
+
+  ;; container relations
+  {:el :request
+   :id :software-development.architecture.example.monolith/customer-uses-online-shop-frontend
+   :from :software-development.architecture.example.monolith/customer
+   :to :software-development.architecture.example.monolith/online-shop-frontend
+   :name "uses"
+   :desc "browse products, place orders"
+   :tech "HTTPS"}
+
+  {:el :request
+   :id :software-development.architecture.example.monolith/online-shop-frontend-uses-online-shop-backend
+   :from :software-development.architecture.example.monolith/online-shop-frontend
+   :to :software-development.architecture.example.monolith/online-shop-backend
+   :name "calls"
+   :desc "get products, place orders."
+   :tech "HTTPS"}
+
+  {:el :request
+   :id :software-development.architecture.example.monolith/online-shop-backend-uses-online-shop-db
+   :from :software-development.architecture.example.monolith/online-shop-backend
+   :to :software-development.architecture.example.monolith/online-shop-db
+   :name "store and query"
+   :desc "products, orders"
+   :tech "JDBC"}
+
+  {:el :request
+   :id :software-development.architecture.example.monolith/online-shop-backend-calls-email-system
+   :from :software-development.architecture.example.monolith/online-shop-backend
+   :to :software-development.architecture.example.monolith/email-system
+   :name "sends email"
+   :desc "order confirmation, shipping notification"}
+
+  {:el :request
+   :id :software-development.architecture.example.monolith/online-shop-backend-calls-logistics-system
+   :from :software-development.architecture.example.monolith/online-shop-backend
+   :to :software-development.architecture.example.monolith/logistics-system
+   :name "ship"
+   :desc "order"
+   :tech "REST"}
+
+  {:el :request
+   :id :software-development.architecture.example.monolith/online-shop-backend-calls-payment-system
+   :from :software-development.architecture.example.monolith/online-shop-backend
+   :to :software-development.architecture.example.monolith/payment-system
+   :name "process payment"
+   :desc "credit card, paypal"
+   :tech "REST"}
+
+  ;;;
+  ;;; Deployment Model
+  ;;;
+  {:el :node
+   :id :software-development.architecture.example.monolith/data-center
+   :name "Data Center"
+   :desc "The data center where the online shop is hosted."
+   :ct #{{:el :node
+          :id :software-development.architecture.example.monolith/perimeter-network
+          :name "Perimeter Network"
+          :ct #{{:el :node
+                 :id :software-development.architecture.example.monolith/web-vm1
+                 :name "Web VM 1"
+                 :desc "Web Server Virtual Machine 1"
+                 :ct #{{:el :node
+                        :id :software-development.architecture.example.monolith/web-server
+                        :name "Web Server"
+                        :tech "Apache Tomcat"}}}}}
+         {:el :node
+          :id :software-development.architecture.example.monolith/internal-network
+          :name "Internal Network"
+          :ct #{{:el :node
+                 :id :software-development.architecture.example.monolith/app-vm1
+                 :name "App VM 1"
+                 :desc "Application Server Virtual Machine 1"
+                 :ct #{{:el :node
+                        :id :software-development.architecture.example.monolith/application-server
+                        :name "Application Server"
+                        :tech "IBM WebSphere"}}}
+                {:el :node
+                 :id :software-development.architecture.example.monolith/db-vm1
+                 :name "DB VM 1"
+                 :desc "Database Server Virtual Machine 1"
+                 :ct #{{:el :node
+                        :id :software-development.architecture.example.monolith/db-server
+                        :name "Database Server"
+                        :tech "DB/2"}}}}}}}
+
+  {:el :link
+   :from :software-development.architecture.example.monolith/perimeter-network
+   :to :software-development.architecture.example.monolith/internal-network
+   :name "links to"
+   :desc "The Perimeter Network links to the Internal Network via firewall."}
+  {:el :deployed-to
+   :id :software-development.architecture.example.monolith/online-shop-frontend-deployed-on-web-server
+   :from :software-development.architecture.example.monolith/online-shop-frontend
+   :to :software-development.architecture.example.monolith/web-server
+   :name "deployed on"
+   :desc "The Online Shop Frontend is deployed on the Web Server"}
+  {:el :deployed-to
+   :from :software-development.architecture.example.monolith/online-shop-backend
+   :to :software-development.architecture.example.monolith/application-server
+   :name "deployed on"
+   :desc "The Online Shop Backend is deployed on the Application Server"}
+  {:el :deployed-to
+   :from :software-development.architecture.example.monolith/online-shop-db
+   :to :software-development.architecture.example.monolith/db-server
+   :name "deployed on"
+   :desc "The Online Shop Database is deployed on the Database Server"}
+  ;
+  }

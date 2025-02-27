@@ -1,0 +1,39 @@
+# Container View for the simple RESTful Communication Microservices Example
+
+## Diagram
+![Container View for the simple RESTful Communication Microservices Example](../../../../software-development/architecture/example/microservices/simple-restful-container-view.png)
+
+## Description
+Shows the containers of the simple Microservices Example and their RESTful communication.
+
+## Documentation
+With RESTful communication, the services communicateby calling each
+         other's RESTful APIs in a request/response pattern.
+         The upstream service blocks until the downstream service responds.
+         So the services are tightly coupled and the communication is synchronous. 
+         If a downstream service is slow, the upstream service has to wait for the
+         downstream service and as a result, it also responds slowly.
+         If the downstream service is down, the upstream service also fails.
+         Also one service has to know the details of the other service's API
+         and is responsible for the orchestration of the process.
+
+## User Roles
+| Name | Description |
+|---|---|
+| [Customer](../../../../software-development/architecture/example/microservices/customer.md) | A customer of the online shop |
+## Containers
+| Name | Description |
+|---|---|
+| [Inventory Service](../../../../software-development/architecture/example/microservices/inventory-service.md) | Handles inventory |
+| [Notification Service](../../../../software-development/architecture/example/microservices/notification-service.md) | Handles notifications |
+| [Order Service](../../../../software-development/architecture/example/microservices/order-service.md) | Handles orders |
+| [Payment Service](../../../../software-development/architecture/example/microservices/payment-service.md) | Handles payments |
+| [Shipping Service](../../../../software-development/architecture/example/microservices/shipping-service.md) | Handles shipping |
+| [Shop Frontend](../../../../software-development/architecture/example/microservices/shop-frontend.md) | The frontend of the online shop |
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../../../views.md)
+
+(generated with docs/views/container-view.md.cmb)

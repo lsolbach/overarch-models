@@ -1,0 +1,20 @@
+# InMemoryRepository (Class)
+
+## Description
+Implements the repository interface for an in-memory data store for testing purposes
+
+
+## Documentation
+
+## Parent
+[repository](../../../../../../software-development/architecture/blueprint/clean-architecture/adapter/repository.md)
+
+## Extended/Implemented Interfaces
+[RepositoryInterface](../../../../../../software-development/architecture/blueprint/clean-architecture/application/repository-interface.md)
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../../../../../views.md)
+
+(generated with docs/code.md.cmb)

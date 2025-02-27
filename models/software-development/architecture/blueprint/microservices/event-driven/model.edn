@@ -1,0 +1,126 @@
+;;;;
+;;;; Model for the Event Driven Microservices Blueprint
+;;;;
+#{;
+
+  ;;;
+  ;;; Architecture Model
+  ;;;
+  {:el :system
+   :id :software-development.architecture.blueprint.microservices.event-driven/system
+   :name "Blueprint System"
+   :desc "The system of the Blueprint"
+   :ct #{{:el :container
+          :id :software-development.architecture.blueprint.microservices.event-driven/service-a
+          :name "Service A"
+          :desc "Microservice"
+          :ct #{}}
+         {:el :container
+          :id :software-development.architecture.blueprint.microservices.event-driven/datastore-a
+          :subtype :database
+          :name "Datastore A"
+          :desc "Stores the aggregate A"
+          :ct #{}}
+         {:el :container
+          :id :software-development.architecture.blueprint.microservices.event-driven/topic-a
+          :subtype :queue
+          :name "A Topic"
+          :desc "Topic for the aggregate A"
+          :ct #{}}
+
+         {:el :container
+          :id :software-development.architecture.blueprint.microservices.event-driven/service-b
+          :name "Service B"
+          :desc "Microservice"
+          :ct #{}}
+         {:el :container
+          :id :software-development.architecture.blueprint.microservices.event-driven/datastore-b
+          :subtype :database
+          :name "Datastore B"
+          :desc "Stores the aggregate B"
+          :ct #{}}
+         {:el :container
+          :id :software-development.architecture.blueprint.microservices.event-driven/topic-b
+          :subtype :queue
+          :name "B Topic"
+          :desc "Topic for the aggregate B"
+          :ct #{}}
+
+         {:el :container
+          :id :software-development.architecture.blueprint.microservices.event-driven/service-c
+          :name "Service C"
+          :desc "Microservice"
+          :ct #{}}
+         {:el :container
+          :id :software-development.architecture.blueprint.microservices.event-driven/datastore-c
+          :subtype :database
+          :name "Datastore C"
+          :desc "Stores the aggregate C"
+          :ct #{}}
+         {:el :container
+          :id :software-development.architecture.blueprint.microservices.event-driven/topic-c
+          :subtype :queue
+          :name "C Topic"
+          :desc "Topic for the aggregate C"
+          :ct #{}}
+         }}
+
+  ;;
+  ;; Architecture Relations
+  ;;
+  {:el :request
+   :id :software-development.architecture.blueprint.microservices.event-driven/service-a-stores-in-datastore-a
+   :from :software-development.architecture.blueprint.microservices.event-driven/service-a
+   :to :software-development.architecture.blueprint.microservices.event-driven/datastore-a
+   :name "stores"
+   :desc "aggregate A"}
+  {:el :request
+   :id :software-development.architecture.blueprint.microservices.event-driven/service-b-stores-in-datastore-b
+   :from :software-development.architecture.blueprint.microservices.event-driven/service-b
+   :to :software-development.architecture.blueprint.microservices.event-driven/datastore-b
+   :name "stores"
+   :desc "aggregate B"}
+  {:el :request
+   :id :software-development.architecture.blueprint.microservices.event-driven/service-c-stores-in-datastore-c
+   :from :software-development.architecture.blueprint.microservices.event-driven/service-c
+   :to :software-development.architecture.blueprint.microservices.event-driven/datastore-c
+   :name "stores"
+   :desc "aggregate C"}
+
+
+  {:el :publish
+   :id :software-development.architecture.blueprint.microservices.event-driven/service-a-publishes-topic-a
+   :from :software-development.architecture.blueprint.microservices.event-driven/service-a
+   :to :software-development.architecture.blueprint.microservices.event-driven/topic-a
+   :name "publishes"
+   :desc "domain events for aggregate A"}
+
+  {:el :publish
+   :id :software-development.architecture.blueprint.microservices.event-driven/service-b-publishes-topic-b
+   :from :software-development.architecture.blueprint.microservices.event-driven/service-b
+   :to :software-development.architecture.blueprint.microservices.event-driven/topic-b
+   :name "publishes"
+   :desc "domain events for aggregate B"}
+
+  {:el :publish
+   :id :software-development.architecture.blueprint.microservices.event-driven/service-c-publishes-topic-c
+   :from :software-development.architecture.blueprint.microservices.event-driven/service-c
+   :to :software-development.architecture.blueprint.microservices.event-driven/topic-c
+   :name "publishes"
+   :desc "domain events for aggregate C"}
+
+  {:el :subscribe
+   :id :software-development.architecture.blueprint.microservices.event-driven/service-b-subscribes-topic-a
+   :from :software-development.architecture.blueprint.microservices.event-driven/service-b
+   :to :software-development.architecture.blueprint.microservices.event-driven/topic-a
+   :name "subscribes"
+   :desc "domain events for aggregate A"}
+
+  {:el :subscribe
+   :id :software-development.architecture.blueprint.microservices.event-driven/service-c-subscribes-topic-b
+   :from :software-development.architecture.blueprint.microservices.event-driven/service-c
+   :to :software-development.architecture.blueprint.microservices.event-driven/topic-b
+   :name "subscribes"
+   :desc "domain events for aggregate B"}
+  ;
+  }

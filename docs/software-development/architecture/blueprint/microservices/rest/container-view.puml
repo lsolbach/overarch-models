@@ -1,0 +1,23 @@
+@startuml container-view
+!include <C4/C4_Container.puml>
+
+
+LAYOUT_TOP_DOWN()
+
+
+
+
+title Container View of the REST Microservices Blueprint
+System_Boundary(softwareDevelopment_architecture_blueprint_microservices_rest_system, "Blueprint System") {
+  Container(softwareDevelopment_architecture_blueprint_microservices_rest_serviceA, "Service A", $descr="Microservice")
+  ContainerDb(softwareDevelopment_architecture_blueprint_microservices_rest_datastoreA, "Datastore A", $descr="Stores the aggregate A")
+  ContainerDb(softwareDevelopment_architecture_blueprint_microservices_rest_datastoreC, "Datastore C", $descr="Stores the aggregate C")
+  Container(softwareDevelopment_architecture_blueprint_microservices_rest_serviceC, "Service C", $descr="Microservice")
+  ContainerDb(softwareDevelopment_architecture_blueprint_microservices_rest_datastoreB, "Datastore A", $descr="Stores the aggregate A")
+  Container(softwareDevelopment_architecture_blueprint_microservices_rest_serviceB, "Service B", $descr="Microservice")
+}
+Rel(softwareDevelopment_architecture_blueprint_microservices_rest_serviceC, softwareDevelopment_architecture_blueprint_microservices_rest_datastoreC, "stores", $descr="aggregate C")
+Rel(softwareDevelopment_architecture_blueprint_microservices_rest_serviceB, softwareDevelopment_architecture_blueprint_microservices_rest_datastoreB, "stores", $descr="aggregate B")
+Rel(softwareDevelopment_architecture_blueprint_microservices_rest_serviceA, softwareDevelopment_architecture_blueprint_microservices_rest_datastoreA, "stores", $descr="aggregate A")
+SHOW_LEGEND()
+@enduml

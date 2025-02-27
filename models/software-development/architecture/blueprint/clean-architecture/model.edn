@@ -1,0 +1,209 @@
+;;;;
+;;;; Clean Architecture Blueprint Model
+;;;;
+#{; 
+  {:el :package
+   :id :software-development.architecture.blueprint.clean-architecture/domain
+   :name "domain"
+   :desc "Contains the domain core of the component"
+   :doc "The domain package contains the domain core of the component. It contains the
+domain model, domain services, and domain events. The domain core is implemented
+completely functional and is independent of any other layer."
+   :ct #{{:el :class
+          :id :software-development.architecture.blueprint.clean-architecture.domain/domain-aggregate
+          :name "DomainAggregate"
+          :desc "The root of a graph of domain entities and domain values with constency rules spanning the whole graph"
+          :doc "The DomainAggregate is the root of a graph of domain entities and domain values with constency rules spanning the whole graph."}
+         {:el :class
+          :id :software-development.architecture.blueprint.clean-architecture.domain/domain-entity
+          :name "DomainEntity"
+          :desc "Represents a domain object with an identity"
+          :doc "The DomainEntity represents a domain object with an identity. The identity is used to distinguish the domain object from other domain objects of the same type. The DomainEntity is part of a DomainAggregate."}
+         {:el :class
+          :id :software-development.architecture.blueprint.clean-architecture.domain/domain-value
+          :name "DomainValue"
+          :desc "Represents a domain object without an identity"
+          :doc "The DomainValue represents a domain object without an identity. The DomainValue is part of a DomainAggregate."}
+         {:el :class
+          :id :software-development.architecture.blueprint.clean-architecture.domain/domain-service
+          :name "DomainService"
+          :desc "Implements the domain logic that is not the responsibility of a domain object."
+          :doc "The (optional) DomainService implements the domain logic that is not the responsibility of a domain object.
+                The DomainService is stateless and can be called by the application services in the application layer."}
+         {:el :class
+          :id :software-development.architecture.blueprint.clean-architecture.domain/domain-event
+          :abstract true
+          :name "DomainEvent"
+          :desc "Represents a relevant event that happened in the domain"
+          :doc "The DomainEvent represents a relevant event that happened for a domain object (e.g. domain aggregate)
+                The DomainEvent is produced by the domain core and consumed by the application services
+                in the application layer and send to the queue/topic for the application or respective domain aggregate."}}}
+  {:el :package
+   :id :software-development.architecture.blueprint.clean-architecture/application
+   :name "application"
+   :desc "Contains the application services implementing the orchestration of the use
+          cases of the component"
+   :doc "The application package contains the application services implementing the orchestration
+of the use cases of the component. The application package also contains interfaces
+for the adapters needed by the application services.
+
+The application services establish transactional boundaries, load required data,
+call the domain logic from the domain core, store any results and send the
+domain events produced in the domain core.
+          
+The application services are triggered by driving adapters from the adaper layer
+and they call the driven adapters from the adapter layer."
+   :ct #{{:el :class
+          :id :software-development.architecture.blueprint.clean-architecture.application/application-service
+          :name "ApplicationService"
+          :desc "Implements the orchestration of a use case"
+          :doc "The application service implements the orchestration of a use case.
+For example it establishes transactional boundaries, loads required data, calls the
+domain logic from the domain core, stores any results and sends the domain
+events produced in the domain core."}
+         {:el :interface
+          :id :software-development.architecture.blueprint.clean-architecture.application/repository-interface
+          :name "RepositoryInterface"
+          :desc "The interface for the repository adapters"
+          :doc ""}
+         {:el :interface
+          :id :software-development.architecture.blueprint.clean-architecture.application/domain-event-publisher-interface
+          :name "DomainEventPublisherInterface"
+          :desc "The interface for the domain event publisher adapters"
+          :doc ""
+          :ct [{:el :method
+                :id :software-development.architecture.blueprint.clean-architecture.application.domain-event-publisher-interface/publish
+                :name "publish"
+                :desc "Publishes a domain event"
+                :doc "The publish method publishes a domain event to the event event queue/topic for the aggregate."}]}}}
+  {:el :package
+   :id :software-development.architecture.blueprint.clean-architecture/adapter
+   :name "adapter"
+   :desc "Contains the driving and driven adapters of the component."
+   :doc "The adapter package contains the driving and driven adapters of the component.
+The driving adapters are the interfaces from the outside world to the application
+services in the application layer.
+
+The driven adapters are the interfaces to the outside world, external systems and
+services used by the component.
+         
+The driven adapters implement the interfaces defined in the application layer."
+   :ct #{{:el :package
+          :id :software-development.architecture.blueprint.clean-architecture.adapter/rest
+          :name "rest"
+          :desc "Contains the REST adapter implementations"
+          :doc "The REST package contains the REST adapter implementations."
+          :ct #{{:el :class
+                 :id :software-development.architecture.blueprint.clean-architecture.adapter.rest/rest-controller
+                 :name "RestController"
+                 :desc "Implements the REST controller interface for the REST API"
+                 :doc "The REST controller implements the REST controller interface for the REST API.
+                       The REST controller is a driving adapter for the application services."}}}
+         {:el :package
+          :id :software-development.architecture.blueprint.clean-architecture.adapter/repository
+          :name "repository"
+          :desc "Contains the repository adapter implementations"
+          :doc "The repository package contains the repository adapter implementations.
+The repository adapters implement the repository interfaces defined in the
+application layer for a concrete data store. The repository adapters are used
+by the application services to load and store domain aggregates.
+The repository adapters are driven adapters and called by the application
+services."
+          :ct #{{:el :class
+                 :id :software-development.architecture.blueprint.clean-architecture.adapter.repository/in-memory-repository
+                 :name "InMemoryRepository"
+                 :desc "Implements the repository interface for an in-memory data store for testing purposes"
+                 :doc ""}
+                {:el :class
+                 :id :software-development.architecture.blueprint.clean-architecture.adapter.repository/sql-repository
+                 :name "SqlRepository"
+                 :desc "Implements the repository interface for a SQL database"
+                 :doc ""}}}
+         {:el :package
+          :id :software-development.architecture.blueprint.clean-architecture.adapter/event-publisher
+          :name "event-publisher"
+          :desc "Contains the domain event publisher adapter implementations"
+          :doc "The event package contains the domain event publisher adapter implementations.
+The domain event publisher adapters implement the domain event publisher
+interfaces defined in the application layer for a concrete event broker."
+          :ct #{{:el :class
+                 :id :software-development.architecture.blueprint.clean-architecture.adapter.event-publisher/kafka-event-publisher
+                 :name "KafkaEventPublisher"
+                 :desc "Implements the domain event publisher interface for a Kafka event broker."
+                 :doc "The KafkaEventPublisher implements the DomainEventPublisherInterface for a Kafka event broker.
+It acts as a Kafka producer for the domain events produced by the domain core.
+The KafkaEventPublisher is a driven adapter for the application services."}}}}}
+
+  {:el :dependency
+   :id :software-development.architecture.blueprint.clean-architecture/adapter-depend-on-application
+   :from :software-development.architecture.blueprint.clean-architecture/adapter
+   :to :software-development.architecture.blueprint.clean-architecture/application
+   :name "depends"
+   :desc "The adapter layer depends on the application layer, not the other way around"}
+  {:el :dependency
+   :id :software-development.architecture.blueprint.clean-architecture/application-depend-on-domain
+   :from :software-development.architecture.blueprint.clean-architecture/application
+   :to :software-development.architecture.blueprint.clean-architecture/domain
+   :name "depends"
+   :desc "The application layer depends on the domain layer, not the other way around"}
+
+  {:el :implementation
+   :id :software-development.architecture.blueprint.clean-architecture.adapter.event-publisher/kafka-event-publisher-implements-domain-event-publisher-interface
+   :from :software-development.architecture.blueprint.clean-architecture.adapter.event-publisher/kafka-event-publisher
+   :to :software-development.architecture.blueprint.clean-architecture.application/domain-event-publisher-interface
+   :name "implements"
+   :desc "Implements the DomainEventPublisherInterface for a Kafka event broker"}
+  {:el :implementation
+   :id :software-development.architecture.blueprint.clean-architecture/in-memory-repository-implements-repository-interface
+   :from :software-development.architecture.blueprint.clean-architecture.adapter.repository/in-memory-repository
+   :to :software-development.architecture.blueprint.clean-architecture.application/repository-interface
+   :name "implements"
+   :desc "The InMemoryRepository implements the RepositoryInterface"}
+  {:el :implementation
+   :id :software-development.architecture.blueprint.clean-architecture/sql-repository-implements-repository-interface
+   :from :software-development.architecture.blueprint.clean-architecture.adapter.repository/sql-repository
+   :to :software-development.architecture.blueprint.clean-architecture.application/repository-interface
+   :name "implements"
+   :desc "The SqlRepository implements the RepositoryInterface"}
+  {:el :dependency
+   :id :software-development.architecture.blueprint.clean-architecture.adapter.rest/rest-controller-calls-application-service
+   :from :software-development.architecture.blueprint.clean-architecture.adapter.rest/rest-controller
+   :to :software-development.architecture.blueprint.clean-architecture.application/application-service
+   :name "calls"
+   :desc "The RestController calls the ApplicationService"}
+  {:el :dependency
+   :id :software-development.architecture.blueprint.clean-architecture.application/application-service-calls-domain-service
+   :from :software-development.architecture.blueprint.clean-architecture.application/application-service
+   :to :software-development.architecture.blueprint.clean-architecture.domain/domain-service
+   :name "calls"
+   :desc "The ApplicationService calls the DomainService"}
+  {:el :dependency
+   :id :software-development.architecture.blueprint.clean-architecture.application/application-service-calls-repository-interface
+   :from :software-development.architecture.blueprint.clean-architecture.application/application-service
+   :to :software-development.architecture.blueprint.clean-architecture.application/repository-interface
+   :name "calls"
+   :desc "The ApplicationService calls the RepositoryInterface"}
+  {:el :dependency
+   :id :software-development.architecture.blueprint.clean-architecture.application/application-service-calls-domain-event-publisher-interface
+   :from :software-development.architecture.blueprint.clean-architecture.application/application-service
+   :to :software-development.architecture.blueprint.clean-architecture.application/domain-event-publisher-interface
+   :name "calls"
+   :desc "The ApplicationService calls the DomainEventPublisherInterface"}
+  {:el :composition
+   :id :software-development.architecture.blueprint.clean-architecture.domain/domain-aggregate-contains-domain-entity
+   :from :software-development.architecture.blueprint.clean-architecture.domain/domain-aggregate
+   :to :software-development.architecture.blueprint.clean-architecture.domain/domain-entity
+   :name "value"}
+  {:el :composition
+   :id :software-development.architecture.blueprint.clean-architecture.domain/domain-aggregate-contains-domain-value
+   :from :software-development.architecture.blueprint.clean-architecture.domain/domain-aggregate
+   :to :software-development.architecture.blueprint.clean-architecture.domain/domain-value
+   :name "value"}
+  {:el :dependency
+   :id :software-development.architecture.blueprint.clean-architecture.domain/domain-service-calls-domain-aggregate
+   :from :software-development.architecture.blueprint.clean-architecture.domain/domain-service
+   :to :software-development.architecture.blueprint.clean-architecture.domain/domain-aggregate
+   :name "calls"
+   :desc "The DomainService calls the DomainAggregate"}
+  ;
+  }

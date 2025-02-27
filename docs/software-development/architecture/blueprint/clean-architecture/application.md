@@ -1,0 +1,35 @@
+# application (Package)
+
+# Description
+Contains the application services implementing the orchestration of the use
+          cases of the component
+
+## Documentation
+The application package contains the application services implementing the orchestration
+of the use cases of the component. The application package also contains interfaces
+for the adapters needed by the application services.
+
+The application services establish transactional boundaries, load required data,
+call the domain logic from the domain core, store any results and send the
+domain events produced in the domain core.
+          
+The application services are triggered by driving adapters from the adaper layer
+and they call the driven adapters from the adapter layer.
+
+## Interfaces
+| Name | Description |
+|---|---|
+|[DomainEventPublisherInterface](../../../../software-development/architecture/blueprint/clean-architecture/application/domain-event-publisher-interface.md)|The interface for the domain event publisher adapters|
+|[RepositoryInterface](../../../../software-development/architecture/blueprint/clean-architecture/application/repository-interface.md)|The interface for the repository adapters|
+
+## Classes
+| Name | Description |
+|---|---|
+|[ApplicationService](../../../../software-development/architecture/blueprint/clean-architecture/application/application-service.md)|Implements the orchestration of a use case|
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../../../views.md)
+
+(generated with docs/package.md.cmb)

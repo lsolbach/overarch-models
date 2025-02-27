@@ -1,0 +1,32 @@
+# Logistics System (System)
+## Description
+Handles shipping with DHL, UPS, etc.
+
+## Technology
+
+
+
+## Interfaces
+
+### Synchronous Interfaces
+
+#### Provided Services
+
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Online Shop Backend Application](../../../../software-development/architecture/example/modulith/online-shop-backend.md) | ship | [Logistics System](../../../../software-development/architecture/example/modulith/logistics-system.md) | REST | order |
+| [Shipping Component](../../../../software-development/architecture/example/modulith/shipping-component.md) | calls | [Logistics System](../../../../software-development/architecture/example/modulith/logistics-system.md) | REST | process shipping |
+| [Online Shop](../../../../software-development/architecture/example/modulith/online-shop-system.md) | ship | [Logistics System](../../../../software-development/architecture/example/modulith/logistics-system.md) | REST | products |
+
+## System Context View
+![Context view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/context-view.png)
+
+[Context view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/context-view.md)
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+
+[List of all Views](../../../../views.md)
+
+(generated with docs/architecture-node.md.cmb)

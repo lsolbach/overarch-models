@@ -1,0 +1,66 @@
+;;;;
+;;;; Model for the REST Microservices Blueprint
+;;;;
+#{;
+  {:el :system
+   :id :software-development.architecture.blueprint.microservices.rest/system
+   :name "Blueprint System"
+   :desc "The system of the Blueprint"
+   :ct #{{:el :container
+          :id :software-development.architecture.blueprint.microservices.rest/service-a
+          :name "Service A"
+          :desc "Microservice"
+          :ct #{}}
+         {:el :container
+          :id :software-development.architecture.blueprint.microservices.rest/datastore-a
+          :subtype :database
+          :name "Datastore A"
+          :desc "Stores the aggregate A"
+          :ct #{}}
+
+         {:el :container
+          :id :software-development.architecture.blueprint.microservices.rest/service-b
+          :name "Service B"
+          :desc "Microservice"
+          :ct #{}}
+         {:el :container
+          :id :software-development.architecture.blueprint.microservices.rest/datastore-b
+          :subtype :database
+          :name "Datastore A"
+          :desc "Stores the aggregate A"
+          :ct #{}}
+
+         {:el :container
+          :id :software-development.architecture.blueprint.microservices.rest/service-c
+          :name "Service C"
+          :desc "Microservice"
+          :ct #{}}
+         {:el :container
+          :id :software-development.architecture.blueprint.microservices.rest/datastore-c
+          :subtype :database
+          :name "Datastore C"
+          :desc "Stores the aggregate C"
+          :ct #{}}}}
+
+  {:el :request
+   :id :software-development.architecture.blueprint.microservices.rest/service-a-stores-in-datastore-a
+   :from :software-development.architecture.blueprint.microservices.rest/service-a
+   :to :software-development.architecture.blueprint.microservices.rest/datastore-a
+   :name "stores"
+   :desc "aggregate A"}
+  {:el :request
+   :id :software-development.architecture.blueprint.microservices.rest/service-b-stores-in-datastore-b
+   :from :software-development.architecture.blueprint.microservices.rest/service-b
+   :to :software-development.architecture.blueprint.microservices.rest/datastore-b
+   :name "stores"
+   :desc "aggregate B"}
+  {:el :request
+   :id :software-development.architecture.blueprint.microservices.rest/service-c-stores-in-datastore-c
+   :from :software-development.architecture.blueprint.microservices.rest/service-c
+   :to :software-development.architecture.blueprint.microservices.rest/datastore-c
+   :name "stores"
+   :desc "aggregate C"}
+
+  ;
+  }
+
