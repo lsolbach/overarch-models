@@ -1,0 +1,14 @@
+;;;;
+;;;; Views for Cloud Computing
+;;;;
+#{;
+  {:el :concept-view
+   :id :softwaredevelopment.cloud/concept-view
+   :spec {:selection {:namespace :cloud}
+          :include :related
+          :layout :left-right}
+   :name "Concept View for Cloud Computing"
+   :title "Cloud Computing Concept Map"
+   :desc "Shows the concepts related to Cloud Computing."}
+  ;
+  }

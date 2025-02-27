@@ -1,0 +1,14 @@
+;;;;
+;;;; Views for the 12 Factor App
+#{;
+  {:el :concept-view
+   :id :softwaredevelopment.12factorapp/concept-view
+   :spec {:selection [{:namespace-prefix "cloud.12factor"}
+                      {:to-namespace-prefix "cloud.12factor"}]
+          :include :related
+          :layout :left-right}
+   :name "Concept View for 12 Factor Apps"
+   :title "12 Factor App Concept Map"
+   :desc "Shows the concepts related to the 12 Factor App."}
+  ;
+  }
