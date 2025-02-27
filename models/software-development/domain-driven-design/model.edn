@@ -8,7 +8,7 @@
   ;; Concepts
   ;;
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-abstract-core
+   :id :software-development.domain-driven-design/c-abstract-core
    :tags #{"Pattern"}
    :name "Abstract Core"
    :desc "The most fundamental differentiating concepts in the model, factored
@@ -31,7 +31,7 @@ specialized, detailed implementation classes are left in their own modules
 defined by subdomain."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-aggregates
+   :id :software-development.domain-driven-design/c-aggregates
    :tags #{"Pattern"}
    :name "Aggregates"
    :desc
@@ -71,7 +71,7 @@ important new insight? Such changes often improve the model's expressiveness
 and flexibility as well as resolving the transactional and distribution issues."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-anti-corruption-layer
+   :id :software-development.domain-driven-design/c-anti-corruption-layer
    :tags #{"Pattern"}
    :name "Anti-Corruption Layer"
    :desc
@@ -103,7 +103,7 @@ little or no modification to the other system. Internally, the layer translates
 in one or both directions as necessary between the two models."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-big-ball-of-mud
+   :id :software-development.domain-driven-design/c-big-ball-of-mud
    :tags #{"Pattern"}
    :name "Big Ball of Mud"
    :desc "A Big Ball of Mud is a casually, even haphazardly, structured system.
@@ -139,7 +139,7 @@ tendency for such systems to sprawl into other contexts.
 (see [Big Ball of Mud - Brian Foote and Joseph Yoder](http://www.laputan.org/mud/mud.html))"}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-bounded-context
+   :id :software-development.domain-driven-design/c-bounded-context
    :tags #{"Pattern"}
    :name "Bounded Context"
    :desc
@@ -168,7 +168,7 @@ issues outside. Standardize a single development process within the context,
 which need not be used elsewhere."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-cohesive-mechanisms
+   :id :software-development.domain-driven-design/c-cohesive-mechanisms
    :tags #{"Pattern"}
    :name "Cohesive Mechanisms"
    :desc ""
@@ -194,7 +194,7 @@ in the domain model that is not core. The segregated core takes a direct
 approach to structurally marking off the core domain."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-conformist
+   :id :software-development.domain-driven-design/c-conformist
    :tags #{"Pattern"}
    :name "Conformist"
    :desc ""
@@ -218,7 +218,7 @@ the driver’s seat, so it is good to make communication easy for them. Altruism
 may be sufficient to get them to share information with you."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-context
+   :id :software-development.domain-driven-design/c-context
    :tags #{"Pattern"}
    :name "Context"
    :desc
@@ -227,7 +227,7 @@ Statements about a model can only be understood in a context."
    :doc ""}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-context-map
+   :id :software-development.domain-driven-design/c-context-map
    :tags #{"Pattern"}
    :name "Context Map"
    :desc
@@ -267,7 +267,7 @@ The characterization of relationships is made more concrete in the following
 pages, with a set of common patterns of relationships between bounded contexts."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-continuous-integration
+   :id :software-development.domain-driven-design/c-continuous-integration
    :tags #{"Pattern"}
    :name "Continuous Integration"
    :desc "A process of merging all code and other implementation artifacts
@@ -287,7 +287,7 @@ Relentlessly exercise the ubiquitous language to hammer out a shared view of
 the model as the concepts evolve in different people's heads."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-core-domain
+   :id :software-development.domain-driven-design/c-core-domain
    :tags #{"Pattern"}
    :name "Core Domain"
    :desc "The most valuable part of the domain model."
@@ -315,7 +315,7 @@ fulfill the vision of the system.
 Justify investment in any other part by how it supports the distilled core."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-customer-supplier
+   :id :software-development.domain-driven-design/c-customer-supplier
    :tags #{"Pattern"}
    :name "Customer/Supplier"
    :desc "A clear relationship between two teams, where the downstream team is the customer
@@ -348,7 +348,7 @@ will free the upstream team to make changes without fear of side effects
 downstream."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-domain
+   :id :software-development.domain-driven-design/c-domain
    :tags #{"Pattern"}
    :name "Domain"
    :desc
@@ -357,7 +357,7 @@ The subject area to which a user applies a program is the domain of the software
    :doc ""}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-domain-events
+   :id :software-development.domain-driven-design/c-domain-events
    :tags #{"Pattern"}
    :name "Domain Events"
    :desc "A domain object to propagate relevant domain activities in a distributed system."
@@ -408,7 +408,7 @@ instances of the same event arrive at a node they can be recognised to be the
 same."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-domain-vision-statement
+   :id :software-development.domain-driven-design/c-domain-vision-statement
    :tags #{"Pattern"}
    :name "Domain Vision Statement"
    :desc "A short description of the core domain and the value it will bring."
@@ -428,7 +428,7 @@ balances diverse interests. Keep it narrow. Write this statement early and
 revise it as you gain new insight."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-entities
+   :id :software-development.domain-driven-design/c-entities
    :tags #{"Pattern"}
    :name "Entities"
    :desc
@@ -463,7 +463,7 @@ distinctions in the model.
 The model must define what it means to be the same thing."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-evolving-order
+   :id :software-development.domain-driven-design/c-evolving-order
    :tags #{"Pattern"}
    :name "Evolving Order"
    :desc "A conceptual large-scale structure that evolves with the application, possibly
@@ -493,7 +493,7 @@ What follows is a set of four particular patterns of large-scale structure that
 emerge on some projects and are representative of this kind of pattern."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-factories
+   :id :software-development.domain-driven-design/c-factories
    :tags #{"Pattern"}
    :name "Factories"
    :desc "A domain object for the creation of complex domain objects which enforce the
@@ -518,7 +518,7 @@ reference the concrete classes of the objects being instantiated. Create entire
 AGGREGATES as a piece, enforcing their invariants."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-generic-subdomains
+   :id :software-development.domain-driven-design/c-generic-subdomains
    :tags #{"Pattern"}
    :name "Generic Subdomains"
    :desc "A cohesive subdomain that is not the motivation for the project and does
@@ -543,7 +543,7 @@ than the core domain, and avoid assigning your core developers to the tasks
 off-the-shelf solutions or published models for these generic subdomains."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-hands-on-modellers
+   :id :software-development.domain-driven-design/c-hands-on-modellers
    :tags #{"Pattern"}
    :name "Hands On Modellers"
    :desc "Developers must be involved with the model and have contact with domain experts."
@@ -573,7 +573,7 @@ must consciously engage those who touch the code in a dynamic exchange of model
 ideas through the UBIQUITOUS LANGUAGE."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-highlighted-core
+   :id :software-development.domain-driven-design/c-highlighted-core
    :tags #{"Pattern"}
    :name "Highlighted Core"
    :desc "Describes the core elements of the domain and their interactions."
@@ -624,7 +624,7 @@ other ways to structurally change the model and the design itself to make the
 core domain more visible and manageable."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-knowledge-level
+   :id :software-development.domain-driven-design/c-knowledge-level
    :tags #{"Pattern"}
    :name "Knowledge-level"
    :desc "A distinct set of objects that can be used to describe and constrain the
@@ -648,14 +648,14 @@ user or super-user is able to customize.
 (see Fowler, M. 1997. Analysis Patterns: Reusable Object Models, Addison-Wesley.)"}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-clean-architecture
+   :id :software-development.domain-driven-design/c-clean-architecture
    :tags #{"Pattern"}
    :name "Clean Architecture"
    :desc ""
    :doc ""}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-large-scale-structure
+   :id :software-development.domain-driven-design/c-large-scale-structure
    :tags #{"Pattern"}
    :name "Large Scale Structure"
    :desc ""
@@ -677,7 +677,7 @@ specialized, detailed implementation classes are left in their own modules
 defined by subdomain."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-layered-archtecture
+   :id :software-development.domain-driven-design/c-layered-archtecture
    :tags #{"Pattern"}
    :name "Layered Architecture"
    :desc "Isolates the expression of the domain model and the business logic, and
@@ -718,7 +718,7 @@ domain model expressions to avoid dependencies on and references to other
 system concerns."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-model
+   :id :software-development.domain-driven-design/c-model
    :tags #{"Pattern"}
    :name "Model"
    :desc
@@ -727,7 +727,7 @@ and can be used to solve problems related to that domain."
    :doc ""}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-model-driven-design
+   :id :software-development.domain-driven-design/c-model-driven-design
    :tags #{"Pattern"}
    :name "Model Driven Design"
    :desc ""
@@ -758,7 +758,7 @@ development tools and languages that support a modeling paradigm, such as
 object-oriented programming."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-modules
+   :id :software-development.domain-driven-design/c-modules
    :tags #{"Pattern"}
    :name "Modules"
    :desc ""
@@ -790,7 +790,7 @@ partitions according to high-level domain concepts and the corresponding code
 is decoupled as well."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-open-host-service
+   :id :software-development.domain-driven-design/c-open-host-service
    :tags #{"Pattern"}
    :name "Open Host Service"
    :desc "An open protocol that gives access to your subsystem as a set of services."
@@ -820,7 +820,7 @@ build anticorruption layers. A context with an open host service might have any
 sort of relationship to contexts other than its clients."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-partnership
+   :id :software-development.domain-driven-design/c-partnership
    :tags #{"Pattern"}
    :name "Partnership"
    :desc "A partnership between the teams in charge of the two
@@ -860,7 +860,7 @@ the client system, which can be run as part of continuous integration on the
 server system."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-pluggable-component-framework
+   :id :software-development.domain-driven-design/c-pluggable-component-framework
    :tags #{"Pattern"}
    :name "Pluggable Component Framework"
    :desc "A framework that allows diverse implementations of those interfaces to be
@@ -883,7 +883,7 @@ substituted. Likewise, allow any application to use those components, so long
 as it operates strictly through the interfaces of the abstract core."}
   
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-published-language
+   :id :software-development.domain-driven-design/c-published-language
    :tags #{"Pattern"}
    :name "Published Language"
    :desc "A well-documented shared language that can express the necessary domain
@@ -910,7 +910,7 @@ organization.
 Published language is often combined with open-host service."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-repositories
+   :id :software-development.domain-driven-design/c-repositories
    :tags #{"Pattern"}
    :name "Repositories"
    :desc ""
@@ -951,7 +951,7 @@ direct access. Keep application logic focussed on the model, delegating all
 object storage and access to the repository."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-responsibility-layers
+   :id :software-development.domain-driven-design/c-responsibility-layers
    :tags #{"Pattern"}
    :name "Responsibility Layers"
    :desc ""
@@ -975,7 +975,7 @@ object, aggregate, and module fit neatly within the responsibility of one
 layer."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-segregated-core
+   :id :software-development.domain-driven-design/c-segregated-core
    :tags #{"Pattern"}
    :name "Segregated Core"
    :desc ""
@@ -994,7 +994,7 @@ elements into other objects and place them into other packages, even if this
 means refactoring the model in ways that separate highly coupled elements."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-separate-ways
+   :id :software-development.domain-driven-design/c-separate-ways
    :tags #{"Pattern"}
    :name "Separate Ways"
    :desc "A bounded context with no connection to the others at all, allowing
@@ -1011,7 +1011,7 @@ Declare a bounded context to have no connection to the others at all, allowing
 developers to find simple, specialized solutions within this small scope."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-services
+   :id :software-development.domain-driven-design/c-services
    :tags #{"Pattern"}
    :name "Services"
    :desc ""
@@ -1032,7 +1032,7 @@ these assertions in the ubiquitous language of a specific bounded context.
 Give the service a name, which also becomes part of the ubiquitous language."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-shared-kernel
+   :id :software-development.domain-driven-design/c-shared-kernel
    :tags #{"Pattern"}
    :name "Shared Kernel"
    :desc ""
@@ -1067,7 +1067,7 @@ frequently, though somewhat less often than the pace of continuous integration
 within the teams."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-system-metaphor
+   :id :software-development.domain-driven-design/c-system-metaphor
    :tags #{"Pattern"}
    :name "System Metaphor"
    :desc ""
@@ -1093,7 +1093,7 @@ the metaphor for overextension or inaptness, and be ready to drop it if it gets
 in the way."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-ubiquitous-language
+   :id :software-development.domain-driven-design/c-ubiquitous-language
    :tags #{"Pattern"}
    :name "Ubiquitous Language"
    :desc
@@ -1142,7 +1142,7 @@ words.
 Recognize that a change in the language is a change to the model."}
 
   {:el :concept
-   :id :softwaredevelopment.domaindrivendesign/c-value-objects
+   :id :software-development.domain-driven-design/c-value-objects
    :tags #{"Pattern"}
    :name "Value Objects"
    :desc
@@ -1177,188 +1177,188 @@ identity and avoid the design complexities neccessary to maintain entities."}
   ;; Relations
   ;;
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-core-domain-to-c-ubiquitous-language
-   :from :softwaredevelopment.domaindrivendesign/c-core-domain
-   :to :softwaredevelopment.domaindrivendesign/c-ubiquitous-language
+   :id :software-development.domain-driven-design/c-core-domain-to-c-ubiquitous-language
+   :from :software-development.domain-driven-design/c-core-domain
+   :to :software-development.domain-driven-design/c-ubiquitous-language
    :name "culivate rich model with"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-core-domain-to-c-generic-subdomains
-   :from :softwaredevelopment.domaindrivendesign/c-core-domain
-   :to :softwaredevelopment.domaindrivendesign/c-generic-subdomains
+   :id :software-development.domain-driven-design/c-core-domain-to-c-generic-subdomains
+   :from :software-development.domain-driven-design/c-core-domain
+   :to :software-development.domain-driven-design/c-generic-subdomains
    :name "avoid overinvesting in"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-core-domain-work-in-c-bounded-context
-   :from :softwaredevelopment.domaindrivendesign/c-core-domain
-   :to :softwaredevelopment.domaindrivendesign/c-bounded-context
+   :id :software-development.domain-driven-design/c-core-domain-work-in-c-bounded-context
+   :from :software-development.domain-driven-design/c-core-domain
+   :to :software-development.domain-driven-design/c-bounded-context
    :name "work in autonomous, clean"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-bounded-context-names-enter-c-ubiquitous-language
-   :from :softwaredevelopment.domaindrivendesign/c-bounded-context
-   :to :softwaredevelopment.domaindrivendesign/c-ubiquitous-language
+   :id :software-development.domain-driven-design/c-bounded-context-names-enter-c-ubiquitous-language
+   :from :software-development.domain-driven-design/c-bounded-context
+   :to :software-development.domain-driven-design/c-ubiquitous-language
    :name "names enter"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-bounded-context-overview-with-c-context-map
-   :from :softwaredevelopment.domaindrivendesign/c-bounded-context
-   :to :softwaredevelopment.domaindrivendesign/c-context-map
+   :id :software-development.domain-driven-design/c-bounded-context-overview-with-c-context-map
+   :from :software-development.domain-driven-design/c-bounded-context
+   :to :software-development.domain-driven-design/c-context-map
    :name "assess/overview relationships with"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-bounded-context-with-c-continuous-integration
-   :from :softwaredevelopment.domaindrivendesign/c-bounded-context
-   :to :softwaredevelopment.domaindrivendesign/c-continuous-integration
+   :id :software-development.domain-driven-design/c-bounded-context-with-c-continuous-integration
+   :from :software-development.domain-driven-design/c-bounded-context
+   :to :software-development.domain-driven-design/c-continuous-integration
    :name "keep model unified with"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-model-driven-design-structures-c-ubiquitous-language
-   :from :softwaredevelopment.domaindrivendesign/c-model-driven-design
-   :to :softwaredevelopment.domaindrivendesign/c-ubiquitous-language
+   :id :software-development.domain-driven-design/c-model-driven-design-structures-c-ubiquitous-language
+   :from :software-development.domain-driven-design/c-model-driven-design
+   :to :software-development.domain-driven-design/c-ubiquitous-language
    :name "model gives structure to"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-model-driven-design-within-c-bounded-context
-   :from :softwaredevelopment.domaindrivendesign/c-model-driven-design
-   :to :softwaredevelopment.domaindrivendesign/c-bounded-context
+   :id :software-development.domain-driven-design/c-model-driven-design-within-c-bounded-context
+   :from :software-development.domain-driven-design/c-model-driven-design
+   :to :software-development.domain-driven-design/c-bounded-context
    :name "define model within"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-model-driven-design-express-with-c-services
-   :from :softwaredevelopment.domaindrivendesign/c-model-driven-design
-   :to :softwaredevelopment.domaindrivendesign/c-services
+   :id :software-development.domain-driven-design/c-model-driven-design-express-with-c-services
+   :from :software-development.domain-driven-design/c-model-driven-design
+   :to :software-development.domain-driven-design/c-services
    :name "express model with"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-model-driven-design-express-with-c-domain-events
-   :from :softwaredevelopment.domaindrivendesign/c-model-driven-design
-   :to :softwaredevelopment.domaindrivendesign/c-domain-events
+   :id :software-development.domain-driven-design/c-model-driven-design-express-with-c-domain-events
+   :from :software-development.domain-driven-design/c-model-driven-design
+   :to :software-development.domain-driven-design/c-domain-events
    :name "express change with"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-model-driven-design-express-with-c-entities
-   :from :softwaredevelopment.domaindrivendesign/c-model-driven-design
-   :to :softwaredevelopment.domaindrivendesign/c-entities
+   :id :software-development.domain-driven-design/c-model-driven-design-express-with-c-entities
+   :from :software-development.domain-driven-design/c-model-driven-design
+   :to :software-development.domain-driven-design/c-entities
    :name "express identity with"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-model-driven-design-express-with-c-value-objects
-   :from :softwaredevelopment.domaindrivendesign/c-model-driven-design
-   :to :softwaredevelopment.domaindrivendesign/c-value-objects
+   :id :software-development.domain-driven-design/c-model-driven-design-express-with-c-value-objects
+   :from :software-development.domain-driven-design/c-model-driven-design
+   :to :software-development.domain-driven-design/c-value-objects
    :name "express state and computation with"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-model-driven-design-isolate-with-c-hexagonal-architecture
-   :from :softwaredevelopment.domaindrivendesign/c-model-driven-design
-   :to :softwaredevelopment.domaindrivendesign/c-clean-architecture
+   :id :software-development.domain-driven-design/c-model-driven-design-isolate-with-c-hexagonal-architecture
+   :from :software-development.domain-driven-design/c-model-driven-design
+   :to :software-development.domain-driven-design/c-clean-architecture
    :name "isolate domain expressions with"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-entities-push-change-with-c-domain-events
-   :from :softwaredevelopment.domaindrivendesign/c-entities
-   :to :softwaredevelopment.domaindrivendesign/c-domain-events
+   :id :software-development.domain-driven-design/c-entities-push-change-with-c-domain-events
+   :from :software-development.domain-driven-design/c-entities
+   :to :software-development.domain-driven-design/c-domain-events
    :name "push state change with"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-entities-access-with-c-repositories
-   :from :softwaredevelopment.domaindrivendesign/c-entities
-   :to :softwaredevelopment.domaindrivendesign/c-repositories
+   :id :software-development.domain-driven-design/c-entities-access-with-c-repositories
+   :from :software-development.domain-driven-design/c-entities
+   :to :software-development.domain-driven-design/c-repositories
    :name "access with"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-entities-encapsulate-with-c-aggregates
-   :from :softwaredevelopment.domaindrivendesign/c-entities
-   :to :softwaredevelopment.domaindrivendesign/c-aggregates
+   :id :software-development.domain-driven-design/c-entities-encapsulate-with-c-aggregates
+   :from :software-development.domain-driven-design/c-entities
+   :to :software-development.domain-driven-design/c-aggregates
    :name "encapsulate with"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-entities-root-of-c-aggregates
-   :from :softwaredevelopment.domaindrivendesign/c-entities
-   :to :softwaredevelopment.domaindrivendesign/c-aggregates
+   :id :software-development.domain-driven-design/c-entities-root-of-c-aggregates
+   :from :software-development.domain-driven-design/c-entities
+   :to :software-development.domain-driven-design/c-aggregates
    :name "act as root of"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-entities-encapsulate-with-c-factories
-   :from :softwaredevelopment.domaindrivendesign/c-entities
-   :to :softwaredevelopment.domaindrivendesign/c-factories
+   :id :software-development.domain-driven-design/c-entities-encapsulate-with-c-factories
+   :from :software-development.domain-driven-design/c-entities
+   :to :software-development.domain-driven-design/c-factories
    :name "encapsulate with"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-value-objects-encapsulate-with-c-aggregates
-   :from :softwaredevelopment.domaindrivendesign/c-value-objects
-   :to :softwaredevelopment.domaindrivendesign/c-aggregates
+   :id :software-development.domain-driven-design/c-value-objects-encapsulate-with-c-aggregates
+   :from :software-development.domain-driven-design/c-value-objects
+   :to :software-development.domain-driven-design/c-aggregates
    :name "encapsulate with"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-value-objects-encapsulate-with-c-factories
-   :from :softwaredevelopment.domaindrivendesign/c-value-objects
-   :to :softwaredevelopment.domaindrivendesign/c-factories
+   :id :software-development.domain-driven-design/c-value-objects-encapsulate-with-c-factories
+   :from :software-development.domain-driven-design/c-value-objects
+   :to :software-development.domain-driven-design/c-factories
    :name "encapsulate with"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-aggregates-encapsulate-with-c-factories
-   :from :softwaredevelopment.domaindrivendesign/c-aggregates
-   :to :softwaredevelopment.domaindrivendesign/c-factories
+   :id :software-development.domain-driven-design/c-aggregates-encapsulate-with-c-factories
+   :from :software-development.domain-driven-design/c-aggregates
+   :to :software-development.domain-driven-design/c-factories
    :name "encapsulate with"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-aggregates-access-with-c-repositories
-   :from :softwaredevelopment.domaindrivendesign/c-aggregates
-   :to :softwaredevelopment.domaindrivendesign/c-repositories
+   :id :software-development.domain-driven-design/c-aggregates-access-with-c-repositories
+   :from :software-development.domain-driven-design/c-aggregates
+   :to :software-development.domain-driven-design/c-repositories
    :name "access with"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-context-map-coordinate-with-c-partnership
-   :from :softwaredevelopment.domaindrivendesign/c-context-map
-   :to :softwaredevelopment.domaindrivendesign/c-partnership
+   :id :software-development.domain-driven-design/c-context-map-coordinate-with-c-partnership
+   :from :software-development.domain-driven-design/c-context-map
+   :to :software-development.domain-driven-design/c-partnership
    :name "coordinate interdependent contexts"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-context-map-overlap-contexts-c-shared-kernel
-   :from :softwaredevelopment.domaindrivendesign/c-context-map
-   :to :softwaredevelopment.domaindrivendesign/c-shared-kernel
+   :id :software-development.domain-driven-design/c-context-map-overlap-contexts-c-shared-kernel
+   :from :software-development.domain-driven-design/c-context-map
+   :to :software-development.domain-driven-design/c-shared-kernel
    :name "overlap contexts"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-context-map-coordinate-c-customer-supplier
-   :from :softwaredevelopment.domaindrivendesign/c-context-map
-   :to :softwaredevelopment.domaindrivendesign/c-customer-supplier
+   :id :software-development.domain-driven-design/c-context-map-coordinate-c-customer-supplier
+   :from :software-development.domain-driven-design/c-context-map
+   :to :software-development.domain-driven-design/c-customer-supplier
    :name "coordinate upstream/downstream"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-context-map-overlap-c-conformist
-   :from :softwaredevelopment.domaindrivendesign/c-context-map
-   :to :softwaredevelopment.domaindrivendesign/c-conformist
+   :id :software-development.domain-driven-design/c-context-map-overlap-c-conformist
+   :from :software-development.domain-driven-design/c-context-map
+   :to :software-development.domain-driven-design/c-conformist
    :name "overlap unilaterally as"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-context-map-translate-c-anti-corruption-layer
-   :from :softwaredevelopment.domaindrivendesign/c-context-map
-   :to :softwaredevelopment.domaindrivendesign/c-anti-corruption-layer
+   :id :software-development.domain-driven-design/c-context-map-translate-c-anti-corruption-layer
+   :from :software-development.domain-driven-design/c-context-map
+   :to :software-development.domain-driven-design/c-anti-corruption-layer
    :name "translate and isolate unilaterally with"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-context-map-support-c-open-host-service
-   :from :softwaredevelopment.domaindrivendesign/c-context-map
-   :to :softwaredevelopment.domaindrivendesign/c-open-host-service
+   :id :software-development.domain-driven-design/c-context-map-support-c-open-host-service
+   :from :software-development.domain-driven-design/c-context-map
+   :to :software-development.domain-driven-design/c-open-host-service
    :name "support multiple clients through"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-context-map-go-c-separate-ways
-   :from :softwaredevelopment.domaindrivendesign/c-context-map
-   :to :softwaredevelopment.domaindrivendesign/c-separate-ways
+   :id :software-development.domain-driven-design/c-context-map-go-c-separate-ways
+   :from :software-development.domain-driven-design/c-context-map
+   :to :software-development.domain-driven-design/c-separate-ways
    :name "free teams to go"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-context-map-seggregate-c-big-ball-of-mud
-   :from :softwaredevelopment.domaindrivendesign/c-context-map
-   :to :softwaredevelopment.domaindrivendesign/c-big-ball-of-mud
+   :id :software-development.domain-driven-design/c-context-map-seggregate-c-big-ball-of-mud
+   :from :software-development.domain-driven-design/c-context-map
+   :to :software-development.domain-driven-design/c-big-ball-of-mud
    :name "seggregate the conceptual messes"
    :desc ""}
   {:el :rel
-   :id :softwaredevelopment.domaindrivendesign/c-open-host-service-formalized-as-c-published-language
-   :from :softwaredevelopment.domaindrivendesign/c-open-host-service
-   :to :softwaredevelopment.domaindrivendesign/c-published-language
+   :id :software-development.domain-driven-design/c-open-host-service-formalized-as-c-published-language
+   :from :software-development.domain-driven-design/c-open-host-service
+   :to :software-development.domain-driven-design/c-published-language
    :name "formalized as"
    :desc ""}}

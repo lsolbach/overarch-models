@@ -1,0 +1,21 @@
+;;;;
+;;;; Example for Domain Driven Design with a Hexagonal Architecture
+;;;;
+#{;
+  ;;;
+  ;;; Concept Model Views
+  ;;;
+  {:el :concept-view
+   :id :software-development.domain-driven-design/concept-view
+   :spec {:selection [{:namespace-prefix "software-development.domain-driven-design"}
+                      {:to-namespace-prefix "software-development.domain-driven-design"}]
+          :include :relations
+          :layout :left-right
+          ;:graphviz {:engine :neato}
+          :markdown {:references true}}
+   :name "Domain Driven Design Patterns Concept View"
+   :title "Concept Map of the Domain Driven Design Patterns"
+   :desc "Shows the concepts of Domain Driven Design and their relationships."}
+
+  ;
+  }

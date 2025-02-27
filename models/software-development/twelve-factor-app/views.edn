@@ -1,0 +1,14 @@
+;;;;
+;;;; Views for the 12 Factor App
+#{;
+  {:el :concept-view
+   :id :software-development.twelve-factor-app/concept-view
+   :spec {:selection [{:namespace-prefix "software-development.twelve-factor-app"}
+                      {:to-namespace-prefix "software-development.twelve-factor-app"}]
+          :include :related
+          :layout :left-right}
+   :name "Concept View for Twelve Factor Apps"
+   :title "Twelve Factor App Concept Map"
+   :desc "Shows the concepts of the Twelve Factor App and their relationships."}
+  ;
+  }

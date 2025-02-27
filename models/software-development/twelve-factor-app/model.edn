@@ -6,7 +6,7 @@
   ;;; 12 Factor App Concepts
   ;;;
   {:el :concept
-   :id :softwaredevelopment.12factorapp/twelve-factor-app
+   :id :software-development.twelve-factor-app/twelve-factor-app
    :name "12 Factor App"
    :desc "is a methodology for building software-as-a-service applications"
    :doc "In the modern era, software is commonly delivered as a service: called web apps,
@@ -24,7 +24,7 @@ and which use any combination of backing services (database, queue, memory cache
    :link/reference-url "https://12factor.net/"}
 
   {:el :concept
-   :id :softwaredevelopment.12factorapp/codebase
+   :id :software-development.twelve-factor-app/codebase
    :name "Codebase"
    :desc "One codebase tracked in revision control, many deploys"
    :doc "A twelve-factor app is always tracked in a version control system, such as Git,
@@ -54,7 +54,7 @@ thus making them identifiable as different deploys of the same app."
    :link/reference-url "https://12factor.net/codebase"}
 
   {:el :concept
-   :id :softwaredevelopment.12factorapp/dependencies
+   :id :software-development.twelve-factor-app/dependencies
    :name "Dependencies"
    :desc "Explicitly declare and isolate dependencies"
    :doc "Most programming languages offer a packaging system for distributing support
@@ -91,7 +91,7 @@ into the app."
    :link/reference-url "https://12factor.net/dependencies"}
 
   {:el :concept
-   :id :softwaredevelopment.12factorapp/config
+   :id :software-development.twelve-factor-app/config
    :name "Config"
    :desc "Store config in the environment"
    :doc "An app’s config is everything that is likely to vary between deploys
@@ -140,7 +140,7 @@ deploys over its lifetime."
    :link/reference-url "https://12factor.net/config"}
 
   {:el :concept
-   :id :softwaredevelopment.12factorapp/backing-services
+   :id :software-development.twelve-factor-app/backing-services
    :name "Backing Services"
    :desc "Treat backing services as attached resources"
    :doc "A backing service is any service the app consumes over the network as part of its
@@ -176,7 +176,7 @@ and the new database attached – all without any code changes."
    :link/reference-url "https://12factor.net/backing-services"}
 
   {:el :concept
-   :id :softwaredevelopment.12factorapp/build-release-run
+   :id :software-development.twelve-factor-app/build-release-run
    :name "Build, Release, Run"
    :desc "Strictly separate build and run stages"
    :doc "A codebase is transformed into a (non-development) deploy through three stages:
@@ -213,7 +213,7 @@ complex, since errors are always in the foreground for a developer who is drivin
    :link/reference-url "https://12factor.net/build-release-run"}
 
   {:el :concept
-   :id :softwaredevelopment.12factorapp/processes
+   :id :software-development.twelve-factor-app/processes
    :name "Processes"
    :desc "Execute the app as one or more stateless processes"
    :doc "The app is executed in the execution environment as one or more processes.
@@ -249,7 +249,7 @@ time-expiration, such as Memcached or Redis."
    :link/reference-url "https://12factor.net/processes"}
 
   {:el :concept
-   :id :softwaredevelopment.12factorapp/port-binding
+   :id :software-development.twelve-factor-app/port-binding
    :name "Port Binding"
    :desc "Export services via port binding"
    :doc "Web apps are sometimes executed inside a webserver container. For example, PHP
@@ -278,7 +278,7 @@ for the consuming app."
    :link/reference-url "https://12factor.net/port-binding"}
 
   {:el :concept
-   :id :softwaredevelopment.12factorapp/concurrency
+   :id :software-development.twelve-factor-app/concurrency
    :name "Concurrency"
    :desc "Scale out via the process model"
    :doc "Any computer program, once run, is represented by one or more processes. Web apps
@@ -315,7 +315,7 @@ processes, and handle user-initiated restarts and shutdowns."
    :link/reference-url "https://12factor.net/concurrency"}
 
   {:el :concept
-   :id :softwaredevelopment.12factorapp/disposability
+   :id :software-development.twelve-factor-app/disposability
    :name "Disposability"
    :desc "Maximize robustness with fast startup and graceful shutdown"
    :doc "The twelve-factor app’s processes are disposable, meaning they can be started or
@@ -351,7 +351,7 @@ Crash-only design takes this concept to its logical conclusion."
    :link/reference-url "https://12factor.net/disposability"}
 
   {:el :concept
-   :id :softwaredevelopment.12factorapp/dev-prod-parity
+   :id :software-development.twelve-factor-app/dev-prod-parity
    :name "Dev/Prod Parity"
    :desc "Keep development, staging, and production as similar as possible"
    :doc "Keep development, staging, and production as similar as possible
@@ -421,7 +421,7 @@ services."
    :link/reference-url "https://12factor.net/dev-prod-parity"}
 
   {:el :concept
-   :id :softwaredevelopment.12factorapp/logs
+   :id :software-development.twelve-factor-app/logs
    :name "Logs"
    :desc "Treat logs as event streams"
    :doc "Logs provide visibility into the behavior of a running app. In server-based
@@ -458,7 +458,7 @@ including:
    :link/reference-url "https://12factor.net/logs"}
 
   {:el :concept
-   :id :softwaredevelopment.12factorapp/admin-processes
+   :id :software-development.twelve-factor-app/admin-processes
    :name "Admin Processes"
    :desc "Run admin/management tasks as one-off processes"
    :doc "The process formation is the array of processes that are used to do the app’s
@@ -491,75 +491,75 @@ deploy’s execution environment to run such a process."
    :link/reference-url "https://12factor.net/admin-processes"}
 
   {:el :rel
-   :id :softwaredevelopment.12factorapp/codebase-factor-of-twelve-factor-app
-   :from :softwaredevelopment.12factorapp/codebase
-   :to :softwaredevelopment.12factorapp/twelve-factor-app
+   :id :software-development.twelve-factor-app/codebase-factor-of-twelve-factor-app
+   :from :software-development.twelve-factor-app/codebase
+   :to :software-development.twelve-factor-app/twelve-factor-app
    :name "factor of"
    :desc "always tracked in a version control system"}
   {:el :rel
-   :id :softwaredevelopment.12factorapp/dependencies-factor-of-twelve-factor-app
-   :from :softwaredevelopment.12factorapp/dependencies
-   :to :softwaredevelopment.12factorapp/twelve-factor-app
+   :id :software-development.twelve-factor-app/dependencies-factor-of-twelve-factor-app
+   :from :software-development.twelve-factor-app/dependencies
+   :to :software-development.twelve-factor-app/twelve-factor-app
    :name "factor of"
    :desc "explicitly declare and isolate dependencies"}
   {:el :rel
-   :id :softwaredevelopment.12factorapp/config-factor-of-twelve-factor-app
-   :from :softwaredevelopment.12factorapp/config
-   :to :softwaredevelopment.12factorapp/twelve-factor-app
+   :id :software-development.twelve-factor-app/config-factor-of-twelve-factor-app
+   :from :software-development.twelve-factor-app/config
+   :to :software-development.twelve-factor-app/twelve-factor-app
    :name "factor of"
    :desc "store config in the environment"}
   {:el :rel
-   :id :softwaredevelopment.12factorapp/backing-services-factor-of-twelve-factor-app
-   :from :softwaredevelopment.12factorapp/backing-services
-   :to :softwaredevelopment.12factorapp/twelve-factor-app
+   :id :software-development.twelve-factor-app/backing-services-factor-of-twelve-factor-app
+   :from :software-development.twelve-factor-app/backing-services
+   :to :software-development.twelve-factor-app/twelve-factor-app
    :name "factor of"
    :desc "treat backing services as attached resources"}
   {:el :rel
-   :id :softwaredevelopment.12factorapp/build-release-run-factor-of-twelve-factor-app
-   :from :softwaredevelopment.12factorapp/build-release-run
-   :to :softwaredevelopment.12factorapp/twelve-factor-app
+   :id :software-development.twelve-factor-app/build-release-run-factor-of-twelve-factor-app
+   :from :software-development.twelve-factor-app/build-release-run
+   :to :software-development.twelve-factor-app/twelve-factor-app
    :name "factor of"
    :desc "strictly separate build and run stages"}
   {:el :rel
-   :id :softwaredevelopment.12factorapp/processes-factor-of-twelve-factor-app
-   :from :softwaredevelopment.12factorapp/processes
-   :to :softwaredevelopment.12factorapp/twelve-factor-app
+   :id :software-development.twelve-factor-app/processes-factor-of-twelve-factor-app
+   :from :software-development.twelve-factor-app/processes
+   :to :software-development.twelve-factor-app/twelve-factor-app
    :name "factor of"
    :desc "execute the app as one or more stateless processes"}
   {:el :rel
-   :id :softwaredevelopment.12factorapp/port-binding-factor-of-twelve-factor-app
-   :from :softwaredevelopment.12factorapp/port-binding
-   :to :softwaredevelopment.12factorapp/twelve-factor-app
+   :id :software-development.twelve-factor-app/port-binding-factor-of-twelve-factor-app
+   :from :software-development.twelve-factor-app/port-binding
+   :to :software-development.twelve-factor-app/twelve-factor-app
    :name "factor of"
    :desc "export services via port binding"}
   {:el :rel
-   :id :softwaredevelopment.12factorapp/concurrency-factor-of-twelve-factor-app
-   :from :softwaredevelopment.12factorapp/concurrency
-   :to :softwaredevelopment.12factorapp/twelve-factor-app
+   :id :software-development.twelve-factor-app/concurrency-factor-of-twelve-factor-app
+   :from :software-development.twelve-factor-app/concurrency
+   :to :software-development.twelve-factor-app/twelve-factor-app
    :name "factor of"
    :desc "scale out via the process model"}
   {:el :rel
-   :id :softwaredevelopment.12factorapp/disposability-factor-of-twelve-factor-app
-   :from :softwaredevelopment.12factorapp/disposability
-   :to :softwaredevelopment.12factorapp/twelve-factor-app
+   :id :software-development.twelve-factor-app/disposability-factor-of-twelve-factor-app
+   :from :software-development.twelve-factor-app/disposability
+   :to :software-development.twelve-factor-app/twelve-factor-app
    :name "factor of"
    :desc "maximize robustness with fast startup and graceful shutdown"}
   {:el :rel
-   :id :softwaredevelopment.12factorapp/dev-prod-parity-factor-of-twelve-factor-app
-   :from :softwaredevelopment.12factorapp/dev-prod-parity
-   :to :softwaredevelopment.12factorapp/twelve-factor-app
+   :id :software-development.twelve-factor-app/dev-prod-parity-factor-of-twelve-factor-app
+   :from :software-development.twelve-factor-app/dev-prod-parity
+   :to :software-development.twelve-factor-app/twelve-factor-app
    :name "factor of"
    :desc "keep development, staging, and production as similar as possible"}
   {:el :rel
-   :id :softwaredevelopment.12factorapp/logs-factor-of-twelve-factor-app
-   :from :softwaredevelopment.12factorapp/logs
-   :to :softwaredevelopment.12factorapp/twelve-factor-app
+   :id :software-development.twelve-factor-app/logs-factor-of-twelve-factor-app
+   :from :software-development.twelve-factor-app/logs
+   :to :software-development.twelve-factor-app/twelve-factor-app
    :name "factor of"
    :desc "treat logs as event streams"}
   {:el :rel
-   :id :softwaredevelopment.12factorapp/admin-processes-factor-of-twelve-factor-app
-   :from :softwaredevelopment.12factorapp/admin-processes
-   :to :softwaredevelopment.12factorapp/twelve-factor-app
+   :id :software-development.twelve-factor-app/admin-processes-factor-of-twelve-factor-app
+   :from :software-development.twelve-factor-app/admin-processes
+   :to :software-development.twelve-factor-app/twelve-factor-app
    :name "factor of"
    :desc "run admin/management tasks as one-off processes"}
   ;
