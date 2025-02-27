@@ -106,10 +106,6 @@
   :per-element true
   :id-as-name true
   :extension "md"}
- {:selection {:el :use-case}
-  :template "docs/use-cases.md.cmb"
-  :base-name "use-cases"
-  :extension "md"}
 
  {:selection {:el :technical-architecture-model-node}
   :template "docs/architecture-node.md.cmb"
@@ -144,10 +140,6 @@
   :template "docs/user-role.md.cmb"
   :per-element true
   :id-as-name true
-  :extension "md"}
- {:selection {:el :person}
-  :template "docs/user-roles.md.cmb"
-  :base-name "user-roles"
   :extension "md"}
 
  {:selection {:el :node}
