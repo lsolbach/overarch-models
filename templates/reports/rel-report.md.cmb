@@ -1,0 +1,19 @@
+<%
+;;;;
+;;;; Markdown Report Template for Relation Selections
+;;;;
+%>
+# <%= (:title ctx) %>
+
+## Selection
+```clojure
+<%= (:selection ctx) %>
+```
+## Results
+<%= (count e) %> relations selected
+
+## Relations
+ Id |Name | Type | From | To | Description 
+----|-----|------|------|----|------------
+<% (doseq [c e]%> <%= (:id c) %> | <%= (:name c) %> | <%= (:el c) %> | <%= (:from c) %> | <%= (:to c) %> | <%= (t/single-line (:desc c)) %>
+<%)%>

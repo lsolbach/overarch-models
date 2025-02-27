@@ -1,0 +1,23 @@
+<%
+;;;;
+;;;; Markdown Report Template for Node Selections
+;;;;
+%>
+# <%= (:title ctx) %>
+
+## Selection
+```clojure
+<%= (:selection ctx) %>
+```
+## Results
+<%= (count e) %> nodes selected
+
+## Nodes
+ Id |Name | Type | Subtype | Description | Techs | Tags
+----|-----|------|---------|-------------|-------|------
+<%
+(doseq [c e]
+%> <%= (:id c) %> | <%= (:name c) %> | <%= (:el c) %> | <%= (:subtype c) %> | <%= (t/single-line (:desc c)) %> | <%= (:tech c) %> | <%= (:tags c) %>
+<%
+)
+%>

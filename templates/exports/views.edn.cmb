@@ -1,0 +1,34 @@
+<%
+;;;;
+;;;; Export Template for a Model Namespace
+;;;;
+;;;; config:
+;;;;  :per-namespace true
+;;;;
+
+(def view-types
+  [:concept-view :use-case-view :context-view :container-view :component-view
+   :system-landscape-view :system-structure-view :dynamic-view
+   :state-machine-view :code-view :deployment-view :deployment-structure-view
+   :organization-structure-view :glossary-view :model-view])
+
+(defn list-views
+  ""
+  [e view-type]
+  (let [views (filter #(= view-type (:el %)) e)]
+    (when (seq views)
+%>
+;;
+;; <%= (name view-type)%>
+;;
+<%
+      (doseq [view views]
+%><%= view %>
+<%
+      ))))
+
+(doseq [view-type m/view-type-order]
+  (list-views e view-type))
+%>
+
+; (generated with <%= (:template ctx) %>)
