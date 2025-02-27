@@ -22,8 +22,8 @@ Several years of analysis shows that, compared to low performers, organizations 
 ## Relation from
 | From | Name | To | Description |
 |---|---|---|---|
-| [Commercial performance](../../software-development/dora/commercial-performance.md) |  | [Organizational performance](../../software-development/dora/organizational-performance.md) |  |
-| [Non-Commercial performance](../../software-development/dora/non-commercial-performance.md) |  | [Organizational performance](../../software-development/dora/organizational-performance.md) |  |
+| [Commercial performance](../../software-development/dora/commercial-performance.md) | leads to | [Organizational performance](../../software-development/dora/organizational-performance.md) |  |
+| [Non-Commercial performance](../../software-development/dora/non-commercial-performance.md) | leads to | [Organizational performance](../../software-development/dora/organizational-performance.md) |  |
 
 ## Concept Map
 ![Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.png)

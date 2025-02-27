@@ -16,6 +16,9 @@ Performance can be assessed according to four software delivery metrics:
 | [Change lead time](../../software-development/dora/change-lead-time.md) | measure for | [Software delivery performance](../../software-development/dora/software-delivery-performance.md) |  |
 | [Change fail rate](../../software-development/dora/change-fail-rate.md) | measure for | [Software delivery performance](../../software-development/dora/software-delivery-performance.md) |  |
 | [Deployment frequency](../../software-development/dora/deployment-frequency.md) | measure for | [Software delivery performance](../../software-development/dora/software-delivery-performance.md) |  |
+| [Climate for Learning](../../software-development/dora/climate-for-learning.md) | predicts | [Software delivery performance](../../software-development/dora/software-delivery-performance.md) |  |
+| [Fast Feedback](../../software-development/dora/fast-feedback.md) | predicts | [Software delivery performance](../../software-development/dora/software-delivery-performance.md) |  |
+| [Fast Flow](../../software-development/dora/fast-flow.md) | predicts | [Software delivery performance](../../software-development/dora/software-delivery-performance.md) |  |
 
 ## Concept Map
 ![Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.png)

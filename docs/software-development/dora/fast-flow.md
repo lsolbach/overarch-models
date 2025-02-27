@@ -20,6 +20,11 @@ Fast flow is a key predictor of software delivery performance. Fast flow is the 
 | [Trunk based development](../../software-development/dora/trunk-based-development.md) | enables | [Fast Flow](../../software-development/dora/fast-flow.md) |  |
 | [Database change management](../../software-development/dora/database-change-management.md) | enables | [Fast Flow](../../software-development/dora/fast-flow.md) |  |
 
+## Related to
+| From | Name | To | Description |
+|---|---|---|---|
+| [Fast Flow](../../software-development/dora/fast-flow.md) | predicts | [Software delivery performance](../../software-development/dora/software-delivery-performance.md) |  |
+
 ## Concept Map
 ![Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.png)
 [Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.md)

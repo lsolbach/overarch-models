@@ -18,6 +18,11 @@ A climate for learning is a key predictor of software delivery performance. A cl
 | [Documentation quality](../../software-development/dora/documentation-quality.md) | enables | [Climate for Learning](../../software-development/dora/climate-for-learning.md) |  |
 | [Transformational leadership](../../software-development/dora/transformational-leadership.md) | enables | [Climate for Learning](../../software-development/dora/climate-for-learning.md) |  |
 
+## Related to
+| From | Name | To | Description |
+|---|---|---|---|
+| [Climate for Learning](../../software-development/dora/climate-for-learning.md) | predicts | [Software delivery performance](../../software-development/dora/software-delivery-performance.md) |  |
+
 ## Concept Map
 ![Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.png)
 [Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.md)

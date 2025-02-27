@@ -18,6 +18,11 @@ Fast feedback is a key predictor of software delivery performance. Fast feedback
 | [Pervasive security](../../software-development/dora/pervasive-security.md) | enables | [Fast Feedback](../../software-development/dora/fast-feedback.md) |  |
 | [Test automation](../../software-development/dora/test-automation.md) | enables | [Fast Feedback](../../software-development/dora/fast-feedback.md) |  |
 
+## Related to
+| From | Name | To | Description |
+|---|---|---|---|
+| [Fast Feedback](../../software-development/dora/fast-feedback.md) | predicts | [Software delivery performance](../../software-development/dora/software-delivery-performance.md) |  |
+
 ## Concept Map
 ![Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.png)
 [Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.md)

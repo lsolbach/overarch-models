@@ -1125,6 +1125,24 @@ Burnout is physical, mental, or emotional exhaustion caused by overwork or stres
    :name "measure for"}
 
   {:el :rel
+   :id :software-development.dora/climate-for-learning-predicts-software-delivery-performance
+   :from :software-development.dora/climate-for-learning
+   :to :software-development.dora/software-delivery-performance
+   :name "predicts"}
+
+  {:el :rel
+   :id :software-development.dora/fast-flow-predicts-software-delivery-performance
+   :from :software-development.dora/fast-flow
+   :to :software-development.dora/software-delivery-performance
+   :name "predicts"}
+
+  {:el :rel
+   :id :software-development.dora/fast-feedback-predicts-software-delivery-performance
+   :from :software-development.dora/fast-feedback
+   :to :software-development.dora/software-delivery-performance
+   :name "predicts"}
+
+  {:el :rel
    :id :software-development.dora/well-being-less-burnout
    :from :software-development.dora/well-being
    :to :software-development.dora/less-burnout
@@ -1146,15 +1164,13 @@ Burnout is physical, mental, or emotional exhaustion caused by overwork or stres
    :id :software-development.dora/organizational-performance-commercial-performance
    :from :software-development.dora/commercial-performance
    :to :software-development.dora/organizational-performance
-   ;:name "leads to"
-   }
+   :name "leads to"}
 
   {:el :rel
    :id :software-development.dora/non-commercial-performance-organizational-performance
    :from :software-development.dora/non-commercial-performance
    :to :software-development.dora/organizational-performance
-     ;:name "leads to"
-   }
+   :name "leads to"}
 
   ;
   }
