@@ -1,0 +1,28 @@
+# Hybrid Cloud (Concept)
+## Description
+A cloud computing environment that combines public cloud services with private cloud services.
+
+## Documentation
+Hybrid cloud is a cloud computing environment that combines public cloud services with private cloud services.
+Hybrid cloud allows organizations to take advantage of the scalability, flexibility, and cost-effectiveness of public cloud services,
+while also maintaining control over sensitive data and applications in a private cloud environment.
+
+## Superordinates
+| Name | Description |
+|---|---|
+| [Cloud Deployment Model](../../software-development/cloud/cloud-deployment-model.md) | Cloud deployment models include Public Cloud, Private Cloud, Hybrid Cloud, and Multi-Cloud. |
+
+## Concept Map
+![Cloud Computing Concept Map](../../software-development/cloud/concept-view.png)
+[Cloud Computing Concept Map](../../software-development/cloud/concept-view.md)
+
+### Tags
+cloud, model, deployment
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+
+[List of all Views](../../views.md)
+
+(generated with docs/concept.md.cmb)

@@ -1,0 +1,28 @@
+# Cloud Provider (Concept)
+## Description
+A company that offers cloud computing services, such as virtual machines, storage, databases, and applications, to customers over the internet.
+
+## Documentation
+A cloud provider is a company that offers cloud computing services, such as virtual machines, storage, databases, and applications, to customers over the internet.
+Cloud providers typically offer a range of services models, including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS),
+as well as specialized services such as machine learning, artificial intelligence, and Internet of Things (IoT).
+
+## Related to
+| From | Name | To | Description |
+|---|---|---|---|
+| [Cloud Provider](../../software-development/cloud/cloud-provider.md) | provides | [Cloud Computing Platform](../../software-development/cloud/cloud-computing-platform.md) | A cloud provider provides a cloud computing platform. |
+
+## Concept Map
+![Cloud Computing Concept Map](../../software-development/cloud/concept-view.png)
+[Cloud Computing Concept Map](../../software-development/cloud/concept-view.md)
+
+### Tags
+cloud, provider
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+
+[List of all Views](../../views.md)
+
+(generated with docs/concept.md.cmb)

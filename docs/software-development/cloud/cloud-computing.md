@@ -1,0 +1,40 @@
+# Cloud Computing (Concept)
+## Description
+A model for enabling ubiquitous, convenient, on-demand
+          network access to a shared pool of configurable computing resources (e.g.,
+          networks, servers, storage, applications, and services) that can be rapidly
+          provisioned and released with minimal management effort or service provider
+          interaction.
+
+## Features
+| Name | Description |
+|---|---|
+| [Broad network access](../../software-development/cloud/broad-network-access.md) | Capabilities are available over the network and accessed through standard mechanisms that promote use by heterogeneous thin or thick client platforms (e.g., mobile phones, tablets, laptops, and workstations). |
+| [Cloud Adoption Framework](../../software-development/cloud/cloud-adoption-framework.md) | A set of best practices, guidelines, and tools for organizations to plan, implement, and manage their cloud adoption journey. The framework provides a structured approach to cloud adoption, including assessment, planning, migration, and optimization phases. |
+| [Cloud Deployment Model](../../software-development/cloud/cloud-deployment-model.md) | Cloud deployment models include Public Cloud, Private Cloud, Hybrid Cloud, and Multi-Cloud. |
+| [Cloud Service Model](../../software-development/cloud/cloud-service-model.md) | The type of service provided by a cloud provider |
+| [Measured service](../../software-development/cloud/measured-service.md) | Cloud systems automatically control and optimize resource use by leveraging a metering capability1 at some level of abstraction appropriate to the type of service (e.g., storage, processing, bandwidth, and active user accounts). Resource usage can be monitored, controlled, and reported, providing transparency for both the provider and consumer of the utilized service. |
+| [On-demand self-service](../../software-development/cloud/on-demand-self-service.md) | A consumer can unilaterally provision computing capabilities, such as server time and network storage, as needed automatically without requiring human interaction with each service provider. |
+| [Rapid elasticity](../../software-development/cloud/rapid-elasticity.md) | Capabilities can be elastically provisioned and released, in some cases automatically, to scale rapidly outward and inward commensurate with demand. To the consumer, the capabilities available for provisioning often appear unlimited and can be appropriated in any quantity at any time. |
+| [Resource pooling](../../software-development/cloud/resource-pooling.md) | The provider's computing resources are pooled to serve multiple consumers using a multi-tenant model, with different physical and virtual resources dynamically assigned and reassigned according to consumer demand. |
+| [Well-Architected Framework](../../software-development/cloud/well-architected-framework.md) | A set of best practices and guidelines for designing, building, and optimizing cloud-based applications. The framework provides a structured approach to evaluating the architecture of cloud applications across five pillars: operational excellence, security, reliability, performance efficiency, and cost optimization. |
+
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Cloud Computing Platform](../../software-development/cloud/cloud-computing-platform.md) | implements | [Cloud Computing](../../software-development/cloud/cloud-computing.md) | A cloud computing platform implements cloud computing. |
+
+## Concept Map
+![Cloud Computing Concept Map](../../software-development/cloud/concept-view.png)
+[Cloud Computing Concept Map](../../software-development/cloud/concept-view.md)
+
+### Tags
+cloud
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+
+[List of all Views](../../views.md)
+
+(generated with docs/concept.md.cmb)

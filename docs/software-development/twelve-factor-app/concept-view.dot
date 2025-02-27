@@ -1,0 +1,36 @@
+digraph "Twelve Factor App Concept Map" {
+  labelloc= "t"
+  label="Twelve Factor App Concept Map"
+  rankdir="LR"
+
+  layout=dot
+software_development_twelve_factor_app__disposability [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Disposability</B><BR/><FONT POINT-SIZE="10"><I>Maximize robustness with fast startup<BR/>and graceful shutdown </I></FONT>>]
+software_development_twelve_factor_app__config [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Config</B><BR/><FONT POINT-SIZE="10"><I>Store config in the environment </I></FONT>>]
+software_development_twelve_factor_app__twelve_factor_app [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>12 Factor App</B><BR/><FONT POINT-SIZE="10"><I>is a methodology for building<BR/>software-as-a-service applications </I></FONT>>]
+software_development_twelve_factor_app__concurrency [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Concurrency</B><BR/><FONT POINT-SIZE="10"><I>Scale out via the process model </I></FONT>>]
+software_development_twelve_factor_app__backing_services [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Backing Services</B><BR/><FONT POINT-SIZE="10"><I>Treat backing services as attached<BR/>resources </I></FONT>>]
+software_development_twelve_factor_app__logs [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Logs</B><BR/><FONT POINT-SIZE="10"><I>Treat logs as event streams </I></FONT>>]
+software_development_twelve_factor_app__port_binding [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Port Binding</B><BR/><FONT POINT-SIZE="10"><I>Export services via port binding </I></FONT>>]
+software_development_twelve_factor_app__codebase [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Codebase</B><BR/><FONT POINT-SIZE="10"><I>One codebase tracked in revision<BR/>control, many deploys </I></FONT>>]
+software_development_twelve_factor_app__build_release_run [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Build, Release, Run</B><BR/><FONT POINT-SIZE="10"><I>Strictly separate build and run stages </I></FONT>>]
+software_development_twelve_factor_app__dependencies [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Dependencies</B><BR/><FONT POINT-SIZE="10"><I>Explicitly declare and isolate<BR/>dependencies </I></FONT>>]
+software_development_twelve_factor_app__processes [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Processes</B><BR/><FONT POINT-SIZE="10"><I>Execute the app as one or more stateless<BR/>processes </I></FONT>>]
+software_development_twelve_factor_app__dev_prod_parity [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Dev/Prod Parity</B><BR/><FONT POINT-SIZE="10"><I>Keep development, staging, and<BR/>production as similar as possible </I></FONT>>]
+software_development_twelve_factor_app__admin_processes [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Admin Processes</B><BR/><FONT POINT-SIZE="10"><I>Run admin/management tasks as one-off<BR/>processes </I></FONT>>]
+ 
+software_development_twelve_factor_app__concurrency -> software_development_twelve_factor_app__twelve_factor_app [label=<factor of<BR/><FONT POINT-SIZE="10"><I>scale out via the process model </I></FONT>>]
+software_development_twelve_factor_app__processes -> software_development_twelve_factor_app__twelve_factor_app [label=<factor of<BR/><FONT POINT-SIZE="10"><I>execute the app as one or more stateless<BR/>processes </I></FONT>>]
+software_development_twelve_factor_app__config -> software_development_twelve_factor_app__twelve_factor_app [label=<factor of<BR/><FONT POINT-SIZE="10"><I>store config in the environment </I></FONT>>]
+software_development_twelve_factor_app__backing_services -> software_development_twelve_factor_app__twelve_factor_app [label=<factor of<BR/><FONT POINT-SIZE="10"><I>treat backing services as attached<BR/>resources </I></FONT>>]
+software_development_twelve_factor_app__disposability -> software_development_twelve_factor_app__twelve_factor_app [label=<factor of<BR/><FONT POINT-SIZE="10"><I>maximize robustness with fast startup<BR/>and graceful shutdown </I></FONT>>]
+software_development_twelve_factor_app__dev_prod_parity -> software_development_twelve_factor_app__twelve_factor_app [label=<factor of<BR/><FONT POINT-SIZE="10"><I>keep development, staging, and<BR/>production as similar as possible </I></FONT>>]
+software_development_twelve_factor_app__logs -> software_development_twelve_factor_app__twelve_factor_app [label=<factor of<BR/><FONT POINT-SIZE="10"><I>treat logs as event streams </I></FONT>>]
+software_development_twelve_factor_app__admin_processes -> software_development_twelve_factor_app__twelve_factor_app [label=<factor of<BR/><FONT POINT-SIZE="10"><I>run admin/management tasks as one-off<BR/>processes </I></FONT>>]
+software_development_twelve_factor_app__codebase -> software_development_twelve_factor_app__twelve_factor_app [label=<factor of<BR/><FONT POINT-SIZE="10"><I>always tracked in a version control<BR/>system </I></FONT>>]
+software_development_twelve_factor_app__dependencies -> software_development_twelve_factor_app__twelve_factor_app [label=<factor of<BR/><FONT POINT-SIZE="10"><I>explicitly declare and isolate<BR/>dependencies </I></FONT>>]
+software_development_twelve_factor_app__build_release_run -> software_development_twelve_factor_app__twelve_factor_app [label=<factor of<BR/><FONT POINT-SIZE="10"><I>strictly separate build and run stages </I></FONT>>]
+software_development_twelve_factor_app__port_binding -> software_development_twelve_factor_app__twelve_factor_app [label=<factor of<BR/><FONT POINT-SIZE="10"><I>export services via port binding </I></FONT>>]
+ 
+}
+
+// (generated by Overarch with template views/model-view.dot.cmb)

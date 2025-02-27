@@ -1,0 +1,175 @@
+# Concept Map of the Domain Driven Design Patterns
+
+## Diagram
+![Concept Map of the Domain Driven Design Patterns](../../software-development/domain-driven-design/concept-view.png)
+
+## Description
+Shows the concepts of Domain Driven Design and their relationships.
+
+## Concepts
+### [Abstract Core](../../software-development/domain-driven-design/c-abstract-core.md)
+The most fundamental differentiating concepts in the model, factored
+into distinct classes, abstract classes, or interfaces.
+
+### [Aggregates](../../software-development/domain-driven-design/c-aggregates.md)
+Aggregates are collections of entities and value objects with their
+associations and form a transactional unit. Aggregates are referenced as a
+whole by an aggregate root entity, parts of the aggregate must not be
+referenced from outside. The aggregate root is responsible for the enforcement
+of the busines rules and invariants of the aggregate.
+
+### [Anti-Corruption Layer](../../software-development/domain-driven-design/c-anti-corruption-layer.md)
+The anti-corruption layer is an architectural layer to separate the domain
+model from outside models. It enables the domain model to access the data of
+the outside model as expected by the domain model.
+In a clean architecture, an adapter is the place to implement the anti-
+corruption layer by mapping the outside model to the domain model.
+
+### [Big Ball of Mud](../../software-development/domain-driven-design/c-big-ball-of-mud.md)
+A Big Ball of Mud is a casually, even haphazardly, structured system.
+Its organization, if one can call it that, is dictated more by expediency than
+design. Yet, its enduring popularity cannot merely be indicative of a general
+disregard for architecture.
+
+### [Bounded Context](../../software-development/domain-driven-design/c-bounded-context.md)
+A descrition of a boundary (typically a subsystem or the work of
+a particular team) within which a particular model is defined and applicable.
+
+### [Clean Architecture](../../software-development/domain-driven-design/c-clean-architecture.md)
+
+
+### [Cohesive Mechanisms](../../software-development/domain-driven-design/c-cohesive-mechanisms.md)
+
+
+### [Conformist](../../software-development/domain-driven-design/c-conformist.md)
+
+
+### [Context](../../software-development/domain-driven-design/c-context.md)
+The setting in which a word or statement appears that determines its meaning.
+Statements about a model can only be understood in a context.
+
+### [Context Map](../../software-development/domain-driven-design/c-context-map.md)
+ The context map provides an overview for all models and their boundaries and
+interfaces.
+
+### [Continuous Integration](../../software-development/domain-driven-design/c-continuous-integration.md)
+A process of merging all code and other implementation artifacts
+frequently, with automated tests to flag fragmentation quickly.
+
+### [Core Domain](../../software-development/domain-driven-design/c-core-domain.md)
+The most valuable part of the domain model.
+
+### [Customer/Supplier](../../software-development/domain-driven-design/c-customer-supplier.md)
+A clear relationship between two teams, where the downstream team is the customer
+of the upstream team.
+
+### [Domain](../../software-development/domain-driven-design/c-domain.md)
+A sphere of knowledge, influence or activity.
+The subject area to which a user applies a program is the domain of the software.
+
+### [Domain Events](../../software-development/domain-driven-design/c-domain-events.md)
+A domain object to propagate relevant domain activities in a distributed system.
+
+### [Domain Vision Statement](../../software-development/domain-driven-design/c-domain-vision-statement.md)
+A short description of the core domain and the value it will bring.
+
+### [Entities](../../software-development/domain-driven-design/c-entities.md)
+Objects in the domain model which are defined by their identity rather than
+by their state. For example a Person is normally modelled as an entity. It
+represents the same person even when the attributes change. It is also a
+different person, even if it has the same state as another person.
+
+### [Evolving Order](../../software-development/domain-driven-design/c-evolving-order.md)
+A conceptual large-scale structure that evolves with the application, possibly
+changing to a completely different type of structure along the way.
+
+### [Factories](../../software-development/domain-driven-design/c-factories.md)
+A domain object for the creation of complex domain objects which enforce the
+invariants of these objects on creation.
+
+### [Generic Subdomains](../../software-development/domain-driven-design/c-generic-subdomains.md)
+A cohesive subdomain that is not the motivation for the project and does
+not capoure specialized knowledge.
+
+### [Hands On Modellers](../../software-development/domain-driven-design/c-hands-on-modellers.md)
+Developers must be involved with the model and have contact with domain experts.
+
+### [Highlighted Core](../../software-development/domain-driven-design/c-highlighted-core.md)
+Describes the core elements of the domain and their interactions.
+
+### [Knowledge-level](../../software-development/domain-driven-design/c-knowledge-level.md)
+A distinct set of objects that can be used to describe and constrain the
+structure and behavior of the basic model.
+
+### [Large Scale Structure](../../software-development/domain-driven-design/c-large-scale-structure.md)
+
+
+### [Layered Architecture](../../software-development/domain-driven-design/c-layered-archtecture.md)
+Isolates the expression of the domain model and the business logic, and
+eliminates any dependency on infrastructure, user interface, or application logic
+that is not business logic.
+
+### [Model](../../software-development/domain-driven-design/c-model.md)
+A system of abstractions that describes selected aspects of a domain
+and can be used to solve problems related to that domain.
+
+### [Model Driven Design](../../software-development/domain-driven-design/c-model-driven-design.md)
+
+
+### [Modules](../../software-development/domain-driven-design/c-modules.md)
+
+
+### [Open Host Service](../../software-development/domain-driven-design/c-open-host-service.md)
+An open protocol that gives access to your subsystem as a set of services.
+
+### [Partnership](../../software-development/domain-driven-design/c-partnership.md)
+A partnership between the teams in charge of the two
+contexts, when the teams will succeed or fail together.
+
+### [Pluggable Component Framework](../../software-development/domain-driven-design/c-pluggable-component-framework.md)
+A framework that allows diverse implementations of those interfaces to be
+freely substituted.
+
+### [Published Language](../../software-development/domain-driven-design/c-published-language.md)
+A well-documented shared language that can express the necessary domain
+information as a common medium of communication, translating as necessary into
+and out of that language.
+
+### [Repositories](../../software-development/domain-driven-design/c-repositories.md)
+
+
+### [Responsibility Layers](../../software-development/domain-driven-design/c-responsibility-layers.md)
+
+
+### [Segregated Core](../../software-development/domain-driven-design/c-segregated-core.md)
+
+
+### [Separate Ways](../../software-development/domain-driven-design/c-separate-ways.md)
+A bounded context with no connection to the others at all, allowing
+developers to find simple, specialized solutions within this small scope.
+
+### [Services](../../software-development/domain-driven-design/c-services.md)
+
+
+### [Shared Kernel](../../software-development/domain-driven-design/c-shared-kernel.md)
+
+
+### [System Metaphor](../../software-development/domain-driven-design/c-system-metaphor.md)
+
+
+### [Ubiquitous Language](../../software-development/domain-driven-design/c-ubiquitous-language.md)
+A language around the domain model used by all team members within a
+bounded context to connect all the activities of the team with the software.
+
+### [Value Objects](../../software-development/domain-driven-design/c-value-objects.md)
+An object in the domain model, which has no conceptional identity but are
+identified by their state. Value objects should be modelled as immutable.
+
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+[List of all Views](../../views.md)
+
+(generated with docs/views/concept-view.md.cmb)
+
