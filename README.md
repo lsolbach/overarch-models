@@ -6,6 +6,7 @@ Currently it contains models about
 * Software Architecture
 * Cloud Computing
 * Domain Driven Design
+* DORA
 * 12 Factor Apps
 
 ## Documentation generated from the models
