@@ -1,0 +1,28 @@
+# Continouos integration (Concept)
+## Description
+Learn about common mistakes, ways to measure, and how to improve on your continuous integration efforts.
+
+## Documentation
+Software systems are complex, and an apparently simple, self-contained change to a single file can have unintended side effects on the overall system. When a large number of developers work on related systems, coordinating code updates is a hard problem, and changes from different developers can be incompatible.
+
+The practice of continuous integration (CI) was created to address these problems. CI follows the principle that if something takes a lot of time and energy, you should do it more often, forcing you to make it less painful. By creating rapid feedback loops and ensuring that developers work in small batches, CI enables teams to produce high quality software, to reduce the cost of ongoing software development and maintenance, and to increase the productivity of the teams.
+
+## Related to
+| From | Name | To | Description |
+|---|---|---|---|
+| [Continouos integration](../../software-development/dora/continuous-integration.md) | enables | [Fast Feedback](../../software-development/dora/fast-feedback.md) |  |
+
+## Concept Map
+![Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.png)
+[Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.md)
+
+### Tags
+capability, technical, core
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+
+[List of all Views](../../views.md)
+
+(generated with docs/concept.md.cmb)

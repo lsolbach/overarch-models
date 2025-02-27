@@ -1,0 +1,42 @@
+# Working in small batches (Concept)
+## Description
+Create shorter lead times and faster feedback loops by working in small batches. Learn common obstacles to this critical capability and how to overcome them.
+
+## Documentation
+Working in small batches is an essential principle in any discipline where feedback loops are important, or you want to learn quickly from your decisions. Working in small batches allows you to rapidly test hypotheses about whether a particular improvement is likely to have the effect you want, and if not, lets you course correct or revisit assumptions. Although this article applies to any type of change that includes organizational transformation and process improvement, it focuses primarily on software delivery.
+
+Working in small batches is part of lean product management. Together with capabilities like visibility of work in the value stream, team experimentation, and visibility into customer feedback, working in small batches predicts software delivery performance and organizational performance.
+
+One reason work is done in large batches is because of the large fixed cost of handing off changes. In traditional phased approaches to software development, handoffs from development to test or from test to IT operations consist of whole releases: months worth of work by teams consisting of tens or hundreds of people. With this traditional approach, collecting feedback on a change can take weeks or months.
+
+In contrast, DevOps practices, which utilize cross-functional teams and lightweight approaches, allow for software to progress from development through test and operations into production in a matter of minutes. However, this rapid progression requires working with code in small batches.
+
+Working in small batches has many benefits:
+
+    * It reduces the time it takes to get feedback on changes, making it easier to triage and remediate problems.
+    * It increases efficiency and motivation.
+    * It prevents your organization from succumbing to the sunk-cost fallacy.
+
+You can apply the small batches approach at the feature and the product level. As an illustration, a minimum viable product, or MVP, is a prototype of a product with just enough features to enable validated learning about the product and its business model.
+
+Continuous delivery builds upon working in small batches and tries to get every change in version control as early as possible. A goal of continuous delivery is to change the economics of the software delivery process, making it viable to work in small batches. This approach provides fast, comprehensive feedback to teams so that they can improve their work.
+
+## Related to
+| From | Name | To | Description |
+|---|---|---|---|
+| [Working in small batches](../../software-development/dora/working-in-small-batches.md) | enables | [Fast Flow](../../software-development/dora/fast-flow.md) |  |
+
+## Concept Map
+![Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.png)
+[Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.md)
+
+### Tags
+process, capability
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+
+[List of all Views](../../views.md)
+
+(generated with docs/concept.md.cmb)

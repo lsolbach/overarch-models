@@ -1,0 +1,29 @@
+# Less rework (Concept)
+## Description
+Fixing things that weren’t done right the first time and, like change fail rate, is a proxy measure for quality.
+
+## Documentation
+One measure of whether teams are building quality into their work is the how they spend their time. Are they able to focus their time devoting effort and energy on developing new features and supporting infrastructure? Or do teams spend most of their time correcting problems, remediating issues, and responding to defects and customer-support work (that is, fixing issues that arise because quality was not built in up front)? We conceptualize this time into two categories. The first category is proactive or new work, in which we are able to design, create, and work on features, tests, and infrastructure in a structured and productive way to create value for our organizations.
+
+The second category is called reactive unplanned work, or rework. Unplanned work includes any break/fix work, emergency software deployments and patches, responding to urgent audit documentation requests, and so on. Rework is fixing things that weren’t done right the first time and, like change fail rate, is a proxy measure for quality.
+
+
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Well being](../../software-development/dora/well-being.md) | leads to | [Less rework](../../software-development/dora/less-rework.md) |  |
+
+## Concept Map
+![Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.png)
+[Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.md)
+
+### Tags
+outcome
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+
+[List of all Views](../../views.md)
+
+(generated with docs/concept.md.cmb)

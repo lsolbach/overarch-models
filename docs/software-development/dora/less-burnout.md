@@ -1,0 +1,44 @@
+# Less burnout (Concept)
+## Description
+Less physical, mental, or emotional exhaustion caused by overwork or stress
+
+## Documentation
+Burnout is physical, mental, or emotional exhaustion caused by overwork or stress.
+But it’s more than just being overworked or stressed. Burnout can make the things
+we once loved about our work and life seem insignificant and dull. It often
+manifests itself as a feeling of helplessness, and is correlated with
+pathological cultures and unproductive, wasteful work. Dr. Christina Maslach,
+professor of psychology at the University of California at Berkeley and a
+pioneering researcher on job burnout, found six organizational risk factors
+that predict burnout:
+
+* Work overload. Job demands that exceed human limits.
+* Lack of control. Inability to influence decisions that affect your job.
+* Insufficient rewards. Insufficient financial, institutional, or social rewards.
+* Breakdown of community. Unsupportive workplace environment.
+* Absence of fairness. Lack of fairness in decision-making processes.
+* Value conflicts. Mismatch in organizational values and the individual’s values.
+
+Maslach found that most organizations try to fix the person and ignore the work
+environment, even though data shows that fixing the environment has a higher
+likelihood of success. Management has the power to change all of these risk factors.
+
+## Relation from
+| From | Name | To | Description |
+|---|---|---|---|
+| [Well being](../../software-development/dora/well-being.md) | leads to | [Less burnout](../../software-development/dora/less-burnout.md) |  |
+
+## Concept Map
+![Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.png)
+[Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.md)
+
+### Tags
+outcome
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+
+[List of all Views](../../views.md)
+
+(generated with docs/concept.md.cmb)
