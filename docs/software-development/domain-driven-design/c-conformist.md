@@ -32,7 +32,7 @@ may be sufficient to get them to share information with you.
 [Concept Map of the Domain Driven Design Patterns](../../software-development/domain-driven-design/concept-view.md)
 
 ### Tags
-Pattern
+pattern
 
 
 ## Navigation

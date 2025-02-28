@@ -1,0 +1,26 @@
+# Building Blocks (Concept)
+## Description
+Part II: The Building Blocks of a Model-Driven Design
+
+## Documentation
+These patterns cast widely held best practices of object-oriented design in the
+light of domain-driven design. They guide decisions to clarify the model and to
+keep the model and implementation aligned with each other, each reinforcing the
+other’s effectiveness. Careful crafting the details of individual model
+elements gives developers a steady platform from which to explore models and to
+keep them in close correspondence with the implementation.
+
+## Concept Map
+![Concept Map of the Domain Driven Design Patterns](../../software-development/domain-driven-design/concept-view.png)
+[Concept Map of the Domain Driven Design Patterns](../../software-development/domain-driven-design/concept-view.md)
+
+### Tags
+part
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+
+[List of all Views](../../views.md)
+
+(generated with docs/concept.md.cmb)

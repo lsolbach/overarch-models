@@ -29,7 +29,7 @@ Give the service a name, which also becomes part of the ubiquitous language.
 [Concept Map of the Domain Driven Design Patterns](../../software-development/domain-driven-design/concept-view.md)
 
 ### Tags
-Pattern
+pattern
 
 
 ## Navigation

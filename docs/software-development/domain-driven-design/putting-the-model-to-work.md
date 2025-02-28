@@ -1,0 +1,37 @@
+# Putting the Model to Work (Concept)
+## Description
+Part I: Putting the Model to Work
+
+## Documentation
+Domain-Driven Design is an approach to the development of complex software in which we:
+
+1. Focus on the core domain.
+2. Explore models in a creative collaboration of domain practitioners and software practitioners.
+3. Speak a ubiquitous language within an explicitly bounded context.
+
+This three-point summary of DDD depends on the definition of the terms, which
+are defined in this booklet.
+
+Many projects do modeling work without getting much real benefit in the end.
+The patterns of DDD distill successful practices from projects where dramatic
+benefits have come from modeling. Taken together, they lay out a quite
+different approach to modeling and software development that runs from fine
+details to high-level vision. Rigorous modeling conventions must be balanced
+with free exploration of models in collaboration with non-technical people.
+Tactics and strategy must be combined to succeed, and DDD addresses both
+tactical and strategic design.
+
+## Concept Map
+![Concept Map of the Domain Driven Design Patterns](../../software-development/domain-driven-design/concept-view.png)
+[Concept Map of the Domain Driven Design Patterns](../../software-development/domain-driven-design/concept-view.md)
+
+### Tags
+part
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+
+[List of all Views](../../views.md)
+
+(generated with docs/concept.md.cmb)

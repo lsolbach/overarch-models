@@ -58,7 +58,7 @@ Recognize that a change in the language is a change to the model.
 [Concept Map of the Domain Driven Design Patterns](../../software-development/domain-driven-design/concept-view.md)
 
 ### Tags
-Pattern
+definition, pattern
 
 
 ## Navigation

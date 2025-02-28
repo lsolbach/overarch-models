@@ -27,7 +27,7 @@ user or super-user is able to customize.
 [Concept Map of the Domain Driven Design Patterns](../../software-development/domain-driven-design/concept-view.md)
 
 ### Tags
-Pattern
+pattern
 
 
 ## Navigation

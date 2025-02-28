@@ -33,7 +33,7 @@ emerge on some projects and are representative of this kind of pattern.
 [Concept Map of the Domain Driven Design Patterns](../../software-development/domain-driven-design/concept-view.md)
 
 ### Tags
-Pattern
+pattern
 
 
 ## Navigation

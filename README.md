@@ -1,6 +1,5 @@
 # Overarch Models
-This repository contains models for  [Overarch](https://github.com/soulspace-org/overarch) that capture ideas for software development.
-Ideas may include concepts, patterns, architecture blueprints.
+This repository contains models for  [Overarch](https://github.com/soulspace-org/overarch) that capture ideas for software development and related topics. This includes concepts, patterns, architecture blueprints, etc.
 
 Currently it contains models about
 * Software Architecture
@@ -34,9 +33,11 @@ This script does not generate any images, but you
 can use the preview features/plugins of your editor or IDE to see the images.
 
 ## Copyright
+The model files are © 2024 Ludger Solbach.
+
+For the information in the models, additional copyrights may apply, which are
+documented in the READMEs in the respective model folders.
 
 ## License
 
-## Version
-0.1.0
 

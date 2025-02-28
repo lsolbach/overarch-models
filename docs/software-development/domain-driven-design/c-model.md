@@ -11,7 +11,7 @@ and can be used to solve problems related to that domain.
 [Concept Map of the Domain Driven Design Patterns](../../software-development/domain-driven-design/concept-view.md)
 
 ### Tags
-Pattern
+definition
 
 
 ## Navigation

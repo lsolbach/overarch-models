@@ -4,16 +4,141 @@
 #{;;;
   ;;; Concept Model
   ;;;
+
+  {:el :concept
+   :id :software-development.domain-driven-design/domain-driven-design
+   :name "Domain Driven Design"
+   :desc "An approach to the development of complex software
+in which we focus on the core domain, explore models in a creative
+collaboration of domain practitioners and software practitioners, and speak a
+ubiquitous language within an explicitly bounded context."}
   ;;
-  ;; Concepts
+  ;; Definitions
   ;;
   {:el :concept
-   :id :software-development.domain-driven-design/c-abstract-core
-   :tags #{"Pattern"}
-   :name "Abstract Core"
-   :desc "The most fundamental differentiating concepts in the model, factored
+   :id :software-development.domain-driven-design/upstream-downstream
+   :name "upsteam-downstream"
+   :desc "A relationship between two groups in which the “upstream” group’s actions
+affect project success of the “downstream” group, but the actions of the
+downstream do not significantly affect projects upstream."
+   :doc "A relationship between two groups in which the “upstream” group’s actions
+affect project success of the “downstream” group, but the actions of the
+downstream do not significantly affect projects upstream (e.g. If two cities
+are along the same river, the upstream city’s pollution primarily affects the
+downstream city). The upstream team may succeed independently of the fate of
+the downstream team."
+   :tags #{"definition"}}
+
+  {:el :concept
+   :id :software-development.domain-driven-design/mutually-dependent
+   :name "mutually dependent"
+   :desc "A situation in which two software development projects in separate contexts
+must both be delivered in order for either to be considered a success."
+   :doc "A situation in which two software development projects in separate contexts
+must both be delivered in order for either to be considered a success.
+When two systems each rely on information or functionality of the other - something
+we would generally try to avoid - naturally we see the projects that build them
+as interdependent. Yet there are also mutually dependent projects where system
+dependencies run only one direction. When the depended-on system has little
+value without the dependent system and the integration with that system
+- perhaps because this is the only place it is used -  then a failure to
+deliver the dependent system would be a failure of both projects."
+   :tags #{"definition"}}
+
+  {:el :concept
+   :id :software-development.domain-driven-design/free
+   :name "free"
+   :desc "A software development context in which the direction, success or failure of
+development work in other contexts has little effect on delivery."
+   :doc "A software development context in which the direction, success or failure of
+development work in other contexts has little effect on delivery."
+   :tags #{"definition"}}
+
+  ;;
+  ;; Parts as boundaries
+  ;;
+  {:el :concept
+   :id :software-development.domain-driven-design/putting-the-model-to-work
+   :name "Putting the Model to Work"
+   :desc "Part I: Putting the Model to Work"
+   :doc "Domain-Driven Design is an approach to the development of complex software in which we:
+
+1. Focus on the core domain.
+2. Explore models in a creative collaboration of domain practitioners and software practitioners.
+3. Speak a ubiquitous language within an explicitly bounded context.
+
+This three-point summary of DDD depends on the definition of the terms, which
+are defined in this booklet.
+
+Many projects do modeling work without getting much real benefit in the end.
+The patterns of DDD distill successful practices from projects where dramatic
+benefits have come from modeling. Taken together, they lay out a quite
+different approach to modeling and software development that runs from fine
+details to high-level vision. Rigorous modeling conventions must be balanced
+with free exploration of models in collaboration with non-technical people.
+Tactics and strategy must be combined to succeed, and DDD addresses both
+tactical and strategic design."
+   :tags #{"part"}}
+  
+{:el :concept
+ :id :software-development.domain-driven-design/building-blocks
+ :name "Building Blocks"
+ :desc "Part II: The Building Blocks of a Model-Driven Design"
+ :doc "These patterns cast widely held best practices of object-oriented design in the
+light of domain-driven design. They guide decisions to clarify the model and to
+keep the model and implementation aligned with each other, each reinforcing the
+other’s effectiveness. Careful crafting the details of individual model
+elements gives developers a steady platform from which to explore models and to
+keep them in close correspondence with the implementation."
+ :tags #{"part"}}
+
+{:el :concept
+ :id :software-development.domain-driven-design/supple-design
+ :name "Supple Design"
+ :desc "Part III: Supple Design"
+ :doc "To have a project accelerate as development proceeds — rather than get weighed
+down by its own legacy — demands a design that is a pleasure to work with,
+inviting to change. A supple design.
+
+Supple design is the complement to deep modeling.
+
+Developers play two roles, each of which must be served by the design. The same
+person might well play both roles — even switch back and forth in minutes — but
+the relationship to the code is different nonetheless.
+One role is the developer of a client, who weaves the domain objects into the
+application code or other domain layer code, utilizing capabilities of the
+design. A supple design reveals a deep underlying model that makes its potential clear.
+The client developer can flexibly use a minimal set of loosely coupled concepts
+to express a range of scenarios in the domain. Design elements fit together in
+a natural way with a result that is predictable, clearly characterized, and
+robust.
+
+Equally important, the design must serve the developer working to
+change it. To be open to change, a design must be easy to understand, revealing
+that same underlying model that the client developer is drawing on. It must
+follow the contours of a deep model of the domain, so most changes bend the
+design at flexible points. The effects of its code must be transparently
+obvious, so the consequences of a change will be easy to anticipate.
+ * Making behavior obvious
+ * Reducing the cost of change
+ * Creating software developers to work with
+"
+ :tags #{"part"}}
+
+{:el :concept
+ :id :software-development.domain-driven-design/strategic-design
+ :name "Strategic Design"
+ :desc "Part IV: Context Mapping for Strategic Design"
+ :doc ""
+ :tags #{"part"}}
+
+{:el :concept
+ :id :software-development.domain-driven-design/c-abstract-core
+ :tags #{"pattern"}
+ :name "Abstract Core"
+ :desc "The most fundamental differentiating concepts in the model, factored
 into distinct classes, abstract classes, or interfaces."
-   :doc "Even the core domain model usually has so much detail that communicating the
+ :doc "Even the core domain model usually has so much detail that communicating the
 big picture can be difficult.
 
 When there is a lot of interaction between subdomains in separate modules,
@@ -32,7 +157,7 @@ defined by subdomain."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-aggregates
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Aggregates"
    :desc
    "Aggregates are collections of entities and value objects with their
@@ -72,7 +197,7 @@ and flexibility as well as resolving the transactional and distribution issues."
 
   {:el :concept
    :id :software-development.domain-driven-design/c-anti-corruption-layer
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Anti-Corruption Layer"
    :desc
    "The anti-corruption layer is an architectural layer to separate the domain
@@ -104,7 +229,7 @@ in one or both directions as necessary between the two models."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-big-ball-of-mud
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Big Ball of Mud"
    :desc "A Big Ball of Mud is a casually, even haphazardly, structured system.
 Its organization, if one can call it that, is dictated more by expediency than
@@ -140,7 +265,7 @@ tendency for such systems to sprawl into other contexts.
 
   {:el :concept
    :id :software-development.domain-driven-design/c-bounded-context
-   :tags #{"Pattern"}
+   :tags #{"definition" "pattern"}
    :name "Bounded Context"
    :desc
    "A descrition of a boundary (typically a subsystem or the work of
@@ -169,7 +294,7 @@ which need not be used elsewhere."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-cohesive-mechanisms
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Cohesive Mechanisms"
    :desc ""
    :doc "Computations sometimes reach a level of complexity that begins to bloat the
@@ -195,7 +320,7 @@ approach to structurally marking off the core domain."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-conformist
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Conformist"
    :desc ""
    :doc "When two development teams have an upstream/downstream relationship in which the
@@ -219,7 +344,7 @@ may be sufficient to get them to share information with you."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-context
-   :tags #{"Pattern"}
+   :tags #{"definition"}
    :name "Context"
    :desc
    "The setting in which a word or statement appears that determines its meaning.
@@ -228,7 +353,7 @@ Statements about a model can only be understood in a context."
 
   {:el :concept
    :id :software-development.domain-driven-design/c-context-map
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Context Map"
    :desc
    " The context map provides an overview for all models and their boundaries and
@@ -268,7 +393,7 @@ pages, with a set of common patterns of relationships between bounded contexts."
 
   {:el :concept
    :id :software-development.domain-driven-design/c-continuous-integration
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Continuous Integration"
    :desc "A process of merging all code and other implementation artifacts
 frequently, with automated tests to flag fragmentation quickly."
@@ -288,7 +413,7 @@ the model as the concepts evolve in different people's heads."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-core-domain
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Core Domain"
    :desc "The most valuable part of the domain model."
    :doc "In a large system, there are so many contributing components, all complicated
@@ -316,7 +441,7 @@ Justify investment in any other part by how it supports the distilled core."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-customer-supplier
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Customer/Supplier"
    :desc "A clear relationship between two teams, where the downstream team is the customer
 of the upstream team."
@@ -349,7 +474,7 @@ downstream."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-domain
-   :tags #{"Pattern"}
+   :tags #{"definition"}
    :name "Domain"
    :desc
    "A sphere of knowledge, influence or activity.
@@ -358,7 +483,7 @@ The subject area to which a user applies a program is the domain of the software
 
   {:el :concept
    :id :software-development.domain-driven-design/c-domain-events
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Domain Events"
    :desc "A domain object to propagate relevant domain activities in a distributed system."
    :doc "Something happened that domain experts care about.
@@ -409,7 +534,7 @@ same."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-domain-vision-statement
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Domain Vision Statement"
    :desc "A short description of the core domain and the value it will bring."
    :doc "At the beginning of a project, the model usually doesn't even exist, yet the
@@ -429,7 +554,7 @@ revise it as you gain new insight."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-entities
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Entities"
    :desc
    "Objects in the domain model which are defined by their identity rather than
@@ -464,7 +589,7 @@ The model must define what it means to be the same thing."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-evolving-order
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Evolving Order"
    :desc "A conceptual large-scale structure that evolves with the application, possibly
 changing to a completely different type of structure along the way."
@@ -494,7 +619,7 @@ emerge on some projects and are representative of this kind of pattern."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-factories
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Factories"
    :desc "A domain object for the creation of complex domain objects which enforce the
 invariants of these objects on creation."
@@ -519,7 +644,7 @@ AGGREGATES as a piece, enforcing their invariants."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-generic-subdomains
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Generic Subdomains"
    :desc "A cohesive subdomain that is not the motivation for the project and does
 not capoure specialized knowledge."
@@ -544,7 +669,7 @@ off-the-shelf solutions or published models for these generic subdomains."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-hands-on-modellers
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Hands On Modellers"
    :desc "Developers must be involved with the model and have contact with domain experts."
    :doc "If the people who write the code do not feel responsible for the model, or
@@ -574,7 +699,7 @@ ideas through the UBIQUITOUS LANGUAGE."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-highlighted-core
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Highlighted Core"
    :desc "Describes the core elements of the domain and their interactions."
    :doc "A domain vision statement identifies the core domain in broad terms, but it
@@ -625,7 +750,7 @@ core domain more visible and manageable."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-knowledge-level
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Knowledge-level"
    :desc "A distinct set of objects that can be used to describe and constrain the
 structure and behavior of the basic model."
@@ -649,14 +774,14 @@ user or super-user is able to customize.
 
   {:el :concept
    :id :software-development.domain-driven-design/c-clean-architecture
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Clean Architecture"
    :desc ""
    :doc ""}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-large-scale-structure
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Large Scale Structure"
    :desc ""
    :doc "Even the core domain model usually has so much detail that communicating the
@@ -678,7 +803,7 @@ defined by subdomain."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-layered-archtecture
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Layered Architecture"
    :desc "Isolates the expression of the domain model and the business logic, and
 eliminates any dependency on infrastructure, user interface, or application logic
@@ -719,7 +844,7 @@ system concerns."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-model
-   :tags #{"Pattern"}
+   :tags #{"definition"}
    :name "Model"
    :desc
    "A system of abstractions that describes selected aspects of a domain
@@ -728,7 +853,7 @@ and can be used to solve problems related to that domain."
 
   {:el :concept
    :id :software-development.domain-driven-design/c-model-driven-design
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Model Driven Design"
    :desc ""
    :doc "Tightly relating the code to an underlying model gives the code meaning and
@@ -759,7 +884,7 @@ object-oriented programming."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-modules
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Modules"
    :desc ""
    :doc "Everyone uses modules, but few treat them as a full-fledged part of the model.
@@ -791,7 +916,7 @@ is decoupled as well."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-open-host-service
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Open Host Service"
    :desc "An open protocol that gives access to your subsystem as a set of services."
    :doc "Typically for each bounded context, you will define a translation layer for
@@ -821,7 +946,7 @@ sort of relationship to contexts other than its clients."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-partnership
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Partnership"
    :desc "A partnership between the teams in charge of the two
 contexts, when the teams will succeed or fail together."
@@ -861,7 +986,7 @@ server system."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-pluggable-component-framework
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Pluggable Component Framework"
    :desc "A framework that allows diverse implementations of those interfaces to be
 freely substituted."
@@ -884,7 +1009,7 @@ as it operates strictly through the interfaces of the abstract core."}
   
   {:el :concept
    :id :software-development.domain-driven-design/c-published-language
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Published Language"
    :desc "A well-documented shared language that can express the necessary domain
 information as a common medium of communication, translating as necessary into
@@ -911,7 +1036,7 @@ Published language is often combined with open-host service."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-repositories
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Repositories"
    :desc ""
    :doc "Query access to aggregates expressed in the ubiquitous language.
@@ -952,7 +1077,7 @@ object storage and access to the repository."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-responsibility-layers
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Responsibility Layers"
    :desc ""
    :doc "In object-oriented design, individual objects are assigned narrow sets of
@@ -976,7 +1101,7 @@ layer."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-segregated-core
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Segregated Core"
    :desc ""
    :doc "Elements in the model may partially serve the core domain and partially play
@@ -995,7 +1120,7 @@ means refactoring the model in ways that separate highly coupled elements."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-separate-ways
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Separate Ways"
    :desc "A bounded context with no connection to the others at all, allowing
 developers to find simple, specialized solutions within this small scope."
@@ -1012,7 +1137,7 @@ developers to find simple, specialized solutions within this small scope."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-services
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Services"
    :desc ""
    :doc "Sometimes, it just isn't a thing.
@@ -1033,7 +1158,7 @@ Give the service a name, which also becomes part of the ubiquitous language."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-shared-kernel
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Shared Kernel"
    :desc ""
    :doc "Sharing a part of the model and associated code is a very intimate
@@ -1068,7 +1193,7 @@ within the teams."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-system-metaphor
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "System Metaphor"
    :desc ""
    :doc "Metaphorical thinking is pervasive in software development, especially with
@@ -1094,7 +1219,7 @@ in the way."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-ubiquitous-language
-   :tags #{"Pattern"}
+   :tags #{"definition" "pattern"}
    :name "Ubiquitous Language"
    :desc
    "A language around the domain model used by all team members within a
@@ -1143,7 +1268,7 @@ Recognize that a change in the language is a change to the model."}
 
   {:el :concept
    :id :software-development.domain-driven-design/c-value-objects
-   :tags #{"Pattern"}
+   :tags #{"pattern"}
    :name "Value Objects"
    :desc
    "An object in the domain model, which has no conceptional identity but are

@@ -1,0 +1,47 @@
+# Supple Design (Concept)
+## Description
+Part III: Supple Design
+
+## Documentation
+To have a project accelerate as development proceeds — rather than get weighed
+down by its own legacy — demands a design that is a pleasure to work with,
+inviting to change. A supple design.
+
+Supple design is the complement to deep modeling.
+
+Developers play two roles, each of which must be served by the design. The same
+person might well play both roles — even switch back and forth in minutes — but
+the relationship to the code is different nonetheless.
+One role is the developer of a client, who weaves the domain objects into the
+application code or other domain layer code, utilizing capabilities of the
+design. A supple design reveals a deep underlying model that makes its potential clear.
+The client developer can flexibly use a minimal set of loosely coupled concepts
+to express a range of scenarios in the domain. Design elements fit together in
+a natural way with a result that is predictable, clearly characterized, and
+robust.
+
+Equally important, the design must serve the developer working to
+change it. To be open to change, a design must be easy to understand, revealing
+that same underlying model that the client developer is drawing on. It must
+follow the contours of a deep model of the domain, so most changes bend the
+design at flexible points. The effects of its code must be transparently
+obvious, so the consequences of a change will be easy to anticipate.
+ * Making behavior obvious
+ * Reducing the cost of change
+ * Creating software developers to work with
+
+
+## Concept Map
+![Concept Map of the Domain Driven Design Patterns](../../software-development/domain-driven-design/concept-view.png)
+[Concept Map of the Domain Driven Design Patterns](../../software-development/domain-driven-design/concept-view.md)
+
+### Tags
+part
+
+
+## Navigation
+[List of views in namespace](./views-in-namespace.md)
+
+[List of all Views](../../views.md)
+
+(generated with docs/concept.md.cmb)

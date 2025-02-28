@@ -1,10 +1,11 @@
-# Domain (Concept)
+# free (Concept)
 ## Description
-A sphere of knowledge, influence or activity.
-The subject area to which a user applies a program is the domain of the software.
+A software development context in which the direction, success or failure of
+development work in other contexts has little effect on delivery.
 
 ## Documentation
-
+A software development context in which the direction, success or failure of
+development work in other contexts has little effect on delivery.
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../../software-development/domain-driven-design/concept-view.png)

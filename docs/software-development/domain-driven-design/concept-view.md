@@ -35,6 +35,9 @@ disregard for architecture.
 A descrition of a boundary (typically a subsystem or the work of
 a particular team) within which a particular model is defined and applicable.
 
+### [Building Blocks](../../software-development/domain-driven-design/building-blocks.md)
+Part II: The Building Blocks of a Model-Driven Design
+
 ### [Clean Architecture](../../software-development/domain-driven-design/c-clean-architecture.md)
 
 
@@ -66,6 +69,12 @@ of the upstream team.
 ### [Domain](../../software-development/domain-driven-design/c-domain.md)
 A sphere of knowledge, influence or activity.
 The subject area to which a user applies a program is the domain of the software.
+
+### [Domain Driven Design](../../software-development/domain-driven-design/domain-driven-design.md)
+An approach to the development of complex software
+in which we focus on the core domain, explore models in a creative
+collaboration of domain practitioners and software practitioners, and speak a
+ubiquitous language within an explicitly bounded context.
 
 ### [Domain Events](../../software-development/domain-driven-design/c-domain-events.md)
 A domain object to propagate relevant domain activities in a distributed system.
@@ -135,6 +144,9 @@ A well-documented shared language that can express the necessary domain
 information as a common medium of communication, translating as necessary into
 and out of that language.
 
+### [Putting the Model to Work](../../software-development/domain-driven-design/putting-the-model-to-work.md)
+Part I: Putting the Model to Work
+
 ### [Repositories](../../software-development/domain-driven-design/c-repositories.md)
 
 
@@ -154,6 +166,12 @@ developers to find simple, specialized solutions within this small scope.
 ### [Shared Kernel](../../software-development/domain-driven-design/c-shared-kernel.md)
 
 
+### [Strategic Design](../../software-development/domain-driven-design/strategic-design.md)
+Part IV: Context Mapping for Strategic Design
+
+### [Supple Design](../../software-development/domain-driven-design/supple-design.md)
+Part III: Supple Design
+
 ### [System Metaphor](../../software-development/domain-driven-design/c-system-metaphor.md)
 
 
@@ -164,6 +182,19 @@ bounded context to connect all the activities of the team with the software.
 ### [Value Objects](../../software-development/domain-driven-design/c-value-objects.md)
 An object in the domain model, which has no conceptional identity but are
 identified by their state. Value objects should be modelled as immutable.
+
+### [free](../../software-development/domain-driven-design/free.md)
+A software development context in which the direction, success or failure of
+development work in other contexts has little effect on delivery.
+
+### [mutually dependent](../../software-development/domain-driven-design/mutually-dependent.md)
+A situation in which two software development projects in separate contexts
+must both be delivered in order for either to be considered a success.
+
+### [upsteam-downstream](../../software-development/domain-driven-design/upstream-downstream.md)
+A relationship between two groups in which the “upstream” group’s actions
+affect project success of the “downstream” group, but the actions of the
+downstream do not significantly affect projects upstream.
 
 
 

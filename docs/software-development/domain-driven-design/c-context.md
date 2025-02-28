@@ -11,7 +11,7 @@ Statements about a model can only be understood in a context.
 [Concept Map of the Domain Driven Design Patterns](../../software-development/domain-driven-design/concept-view.md)
 
 ### Tags
-Pattern
+definition
 
 
 ## Navigation

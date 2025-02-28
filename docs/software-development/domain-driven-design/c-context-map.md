@@ -59,7 +59,7 @@ pages, with a set of common patterns of relationships between bounded contexts.
 [Concept Map of the Domain Driven Design Patterns](../../software-development/domain-driven-design/concept-view.md)
 
 ### Tags
-Pattern
+pattern
 
 
 ## Navigation
