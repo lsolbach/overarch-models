@@ -5,7 +5,7 @@ Currently it contains models about
 * Software Architecture
 * Cloud Computing
 * Domain Driven Design
-* DORA
+* DORA State of DevOps
 * 12 Factor Apps
 
 ## Documentation generated from the models
@@ -39,5 +39,4 @@ For the information in the models, additional copyrights may apply, which are
 documented in the READMEs in the respective model folders.
 
 ## License
-
 
