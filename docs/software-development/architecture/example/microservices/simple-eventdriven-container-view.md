@@ -18,22 +18,44 @@ Events are stored in the topic and will be processed when the service is up.
 
 The process could be reconfigured by changing the connections to the topics and the policies.
 This is also called a 'Pipes and Filters' architecture.
-## Containers
-| Name | Description |
-|---|---|
-| [Inventory Service](../../../../software-development/architecture/example/microservices/inventory-service.md) | Handles inventory |
-| [Inventory Topic](../../../../software-development/architecture/example/microservices/inventory-topic.md) | Inventory Events |
-| [Notification Service](../../../../software-development/architecture/example/microservices/notification-service.md) | Handles notifications |
-| [Order Service](../../../../software-development/architecture/example/microservices/order-service.md) | Handles orders |
-| [Order Topic](../../../../software-development/architecture/example/microservices/order-topic.md) | Order Events |
-| [Payment Service](../../../../software-development/architecture/example/microservices/payment-service.md) | Handles payments |
-| [Payment Topic](../../../../software-development/architecture/example/microservices/payment-topic.md) | Payment Events |
-| [Shipping Service](../../../../software-development/architecture/example/microservices/shipping-service.md) | Handles shipping |
-| [Shipping Topic](../../../../software-development/architecture/example/microservices/shipping-topic.md) | Shipping Events |
 
+## Containers
+| Container | Description |
+|---|---|
+| [Inventory Service](../../../../software-development/architecture/example/microservices/inventory-service.md)| Handles inventory |
+| [Inventory Topic](../../../../software-development/architecture/example/microservices/inventory-topic.md)| Inventory Events |
+| [Notification Service](../../../../software-development/architecture/example/microservices/notification-service.md)| Handles notifications |
+| [Order Service](../../../../software-development/architecture/example/microservices/order-service.md)| Handles orders |
+| [Order Topic](../../../../software-development/architecture/example/microservices/order-topic.md)| Order Events |
+| [Payment Service](../../../../software-development/architecture/example/microservices/payment-service.md)| Handles payments |
+| [Payment Topic](../../../../software-development/architecture/example/microservices/payment-topic.md)| Payment Events |
+| [Shipping Service](../../../../software-development/architecture/example/microservices/shipping-service.md)| Handles shipping |
+| [Shipping Topic](../../../../software-development/architecture/example/microservices/shipping-topic.md)| Shipping Events |
+
+## Asynchronous Publish/Produce
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Shipping Service](../../../../software-development/architecture/example/microservices/shipping-service.md) | publish | [Shipping Topic](../../../../software-development/architecture/example/microservices/shipping-topic.md) | ShippingProcessedEvent, ShippingFailedEvent |
+| [Inventory Service](../../../../software-development/architecture/example/microservices/inventory-service.md) | publish | [Inventory Topic](../../../../software-development/architecture/example/microservices/inventory-topic.md) | InventoryProcessedEvent, InventoryOutOfStockEvent |
+| [Payment Service](../../../../software-development/architecture/example/microservices/payment-service.md) | publish | [Payment Topic](../../../../software-development/architecture/example/microservices/payment-topic.md) | PaymentProcessedEvent, PaymentFailedEvent |
+| [Order Service](../../../../software-development/architecture/example/microservices/order-service.md) | publish | [Order Topic](../../../../software-development/architecture/example/microservices/order-topic.md) | OrderProcessedEvent, OrderCancelledEvent |
+
+## Asynchronous Subscribe/Consume
+| From | Name | To | Technology | Description |
+|---|---|---|---|---|
+| [Notification Service](../../../../software-development/architecture/example/microservices/notification-service.md) | subscribe | [Payment Topic](../../../../software-development/architecture/example/microservices/payment-topic.md) | PaymentProcessedEvent, PaymentFailedEvent |
+| [Shipping Service](../../../../software-development/architecture/example/microservices/shipping-service.md) | subscribe | [Payment Topic](../../../../software-development/architecture/example/microservices/payment-topic.md) | PaymentProcessedEvent, PaymentFailedEvent |
+| [Notification Service](../../../../software-development/architecture/example/microservices/notification-service.md) | subscribe | [Order Topic](../../../../software-development/architecture/example/microservices/order-topic.md) | OrderProcessedEvent, OrderCancelledEvent |
+| [Notification Service](../../../../software-development/architecture/example/microservices/notification-service.md) | subscribe | [Inventory Topic](../../../../software-development/architecture/example/microservices/inventory-topic.md) | InventoryProcessedEvent, InventoryOutOfStockEvent |
+| [Inventory Service](../../../../software-development/architecture/example/microservices/inventory-service.md) | subscribe | [Order Topic](../../../../software-development/architecture/example/microservices/order-topic.md) | OrderProcessedEvent, OrderCancelledEvent |
+| [Notification Service](../../../../software-development/architecture/example/microservices/notification-service.md) | subscribe | [Shipping Topic](../../../../software-development/architecture/example/microservices/shipping-topic.md) | ShippingProcessedEvent, ShippingFailedEvent |
+| [Payment Service](../../../../software-development/architecture/example/microservices/payment-service.md) | subscribe | [Inventory Topic](../../../../software-development/architecture/example/microservices/inventory-topic.md) | InventoryProcessedEvent |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
+
 [List of all Views](../../../../views.md)
 
-(generated with docs/views/container-view.md.cmb)
+
+(generated by [Overarch](https://github.com/soulspace-org/overarch) with template docs/views/view.md.cmb)
+
