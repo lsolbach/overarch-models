@@ -1,9 +1,11 @@
 ;;;;
-;;;; Concept Model for Cloud Computing
+;;;; Model for Cloud Computing
 #{;
   ;;;
-  ;;; Concepts
+  ;;; Concept Model
   ;;;
+
+  ;; Nodes
   {:el :concept
    :id :software-development.cloud/cloud-computing
    :name "Cloud Computing"
@@ -21,7 +23,7 @@
           time and network storage, as needed automatically without requiring human
           interaction with each service provider."
    :tags #{"cloud" "characteristic"}}
-  
+
   {:el :concept
    :id :software-development.cloud/broad-network-access
    :name "Broad network access"
@@ -29,7 +31,7 @@
           mechanisms that promote use by heterogeneous thin or thick client platforms
           (e.g., mobile phones, tablets, laptops, and workstations)."
    :tags #{"cloud" "characteristic"}}
-  
+
   {:el :concept
    :id :software-development.cloud/resource-pooling
    :name "Resource pooling"
@@ -37,7 +39,7 @@
           using a multi-tenant model, with different physical and virtual resources
           dynamically assigned and reassigned according to consumer demand."
    :tags #{"cloud" "characteristic"}}
-  
+
   {:el :concept
    :id :software-development.cloud/rapid-elasticity
    :name "Rapid elasticity"
@@ -46,7 +48,7 @@
           To the consumer, the capabilities available for provisioning often appear
           unlimited and can be appropriated in any quantity at any time."
    :tags #{"cloud" "characteristic"}}
-  
+
   {:el :concept
    :id :software-development.cloud/measured-service
    :name "Measured service"
@@ -61,117 +63,14 @@
    :id :software-development.cloud/cloud-service-model
    :name "Cloud Service Model"
    :desc "The type of service provided by a cloud provider"
-   :tags #{"cloud" "service model"}}
+   :tags #{"model"}}
   
-  {:el :concept
-   :id :software-development.cloud/iaas
-   :name "Infrastructure as a Service (IaaS)"
-   :desc "Provides virtualized network and computing resources over the internet"
-   :doc "Infrastructure as a Service (IaaS) is a cloud service model that provides virtualized
-computing resources over the Internet. IaaS provides virtual machines, storage, and networking
-resources that can be used to build, deploy, and manage applications in the cloud. It is
-essentially a replica of a traditional data center, but hosted and managed by a cloud provider."
-   :tags #{"cloud" "service model"}}
-  
-  {:el :concept
-   :id :software-development.cloud/paas
-   :name "Platform as a Service (PaaS)"
-   :desc "Provides a platform of services allowing customers to develop, run, and manage applications without the complexity managing virtual machines"
-   :doc "Platform as a Service (PaaS) is a cloud service model that provides a platform of services allowing customers to
-develop, run, and manage applications without the complexity of building and maintaining the infrastructure typically
-associated with developing and launching an app. It provides a complete development and deployment environment in the
-cloud, with resources that allow developers to build, test, and deploy applications based on computing, storage, and
-networking services provided by the cloud provider."
-   :tags #{"cloud" "service model"}}
-  
-  {:el :concept
-   :id :software-development.cloud/saas
-   :name "Software as a Service (SaaS)"
-   :desc "A software distribution model in which a third-party provider hosts applications in the cloud and makes them available to customers over the Internet"
-   :doc "Software as a Service (SaaS) is a software distribution model in which a third-party provider hosts applications
-and makes them available to customers over the Internet. SaaS is one of three main categories of cloud computing,
-alongside Infrastructure as a Service (IaaS) and Platform as a Service (PaaS). SaaS applications are typically
-accessed through a web browser, with users paying a subscription fee to access the software. SaaS applications
-are hosted and maintained by the service provider, with updates and maintenance handled by the provider rather
-than the end user."
-   :tags #{"cloud" "service model"}}
-  
-  {:el :concept
-   :id :software-development.cloud/caas
-   :name "Container as a Service (CaaS)"
-   :desc "Allows users to manage and deploy containers, which are lightweight, standalone, executable packages that include everything needed to run an application, including the code, runtime, system tools, libraries, and settings."
-   :doc "Container as a Service (CaaS) is a cloud computing service that allows users to
-manage and deploy containers, which are lightweight, standalone, executable
-packages that include everything needed to run an application,
-including the code, runtime, system tools, libraries, and settings.
-CaaS provides a platform for running containerized applications in the cloud,
-with features such as container orchestration, scaling, and monitoring.
-CaaS abstracts the underlying infrastructure and allows developers to focus on
-building and deploying containerized applications without worrying about managing
-servers or infrastructure."
-   :tags #{"cloud" "service model"}}
-  
-  {:el :concept
-   :id :software-development.cloud/faas
-   :name "Function as a Service (FaaS)"
-   :desc "Allows users to run pieces of code in response to events or triggers in a serverless deployment."
-   :doc "Function as a Service (FaaS) is a cloud computing service that allows users to run
-pieces of code in response to events or triggers in a serverless deployment. FaaS abstracts the
-underlying infrastructure and allows developers to focus on writing and deploying functions that
-respond to specific events or triggers.
-FaaS is a pay-as-you-go service, with users only paying for the compute time used
-to run the functions. FaaS is ideal for event-driven applications, such as IoT
-applications, real-time data processing, and webhooks."
-   :tags #{"cloud" "service model"}}
-  
-  
-  {:el :concept
-   :id :software-development.cloud/on-premises
-   :name "On Premises"
-   :desc "Refers to the deployment of software or services on a company's own
-          hardware or servers, rather than on a cloud provider's infrastructure."
-   :tags #{"cloud" "deployment" "model"}}
-
   {:el :concept
    :id :software-development.cloud/cloud-deployment-model
    :name "Cloud Deployment Model"
    :desc "Cloud deployment models include Public Cloud, Private Cloud, Hybrid Cloud, and
           Multi-Cloud."
-   :tags #{"cloud" "deployment" "model"}}
-  
-  {:el :concept
-   :id :software-development.cloud/public-cloud
-   :name "Public Cloud"
-   :desc "Type of cloud computing in which a service provider makes resources
-          such as virtual machines, applications, or storage available to the general public over
-          the internet. Public cloud services may be free or offered on a pay-per-usage model."
-   :tags #{"cloud" "deployment" "model"}}
-  
-  {:el :concept
-   :id :software-development.cloud/private-cloud
-   :name "Private Cloud"
-   :desc "Type of cloud computing in which resources are dedicated to a single
-          organization or user group. Private cloud services may be hosted on-premises or by a third-party
-          service provider."
-   :tags #{"cloud" "deployment" "model"}}
-  
-  {:el :concept
-   :id :software-development.cloud/hybrid-cloud
-   :name "Hybrid Cloud"
-   :desc "A cloud computing environment that combines public cloud services with private cloud services."
-   :doc "Hybrid cloud is a cloud computing environment that combines public cloud services with private cloud services.
-Hybrid cloud allows organizations to take advantage of the scalability, flexibility, and cost-effectiveness of public cloud services,
-while also maintaining control over sensitive data and applications in a private cloud environment."
-   :tags #{"cloud" "deployment" "model"}}
-  
-  {:el :concept
-   :id :software-development.cloud/multi-cloud
-   :name "Multi-Cloud"
-   :desc "A cloud computing strategy that involves using multiple cloud services from different providers."
-   :doc "Multi-cloud is a cloud computing strategy that involves using multiple cloud services from different providers.
-Multi-cloud allows organizations to avoid vendor lock-in, reduce costs, and improve performance by leveraging the strengths of different cloud providers.
-Organizations may use multiple cloud services for different workloads, applications, or regions, or to take advantage of specialized services offered by different providers."
-   :tags #{"cloud" "deployment" "model"}}
+   :tags #{"model"}}
 
   {:el :concept
    :id :software-development.cloud/cloud-provider
@@ -181,7 +80,7 @@ Organizations may use multiple cloud services for different workloads, applicati
 Cloud providers typically offer a range of services models, including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS),
 as well as specialized services such as machine learning, artificial intelligence, and Internet of Things (IoT)."
    :tags #{"cloud" "provider"}}
-  
+
   {:el :concept
    :id :software-development.cloud/cloud-computing-platform
    :name "Cloud Computing Platform"
@@ -206,7 +105,7 @@ as well as specialized services such as machine learning, artificial intelligenc
           a wide range of cloud services, including virtual machines, databases, AI, machine learning, and IoT,
           as well as developer tools and services for building, deploying, and managing applications on the cloud."
    :tags #{"cloud" "platform" "provider"}}
-  
+
   {:el :concept
    :id :software-development.cloud/google-cloud
    :name "Google Cloud"
@@ -214,7 +113,7 @@ as well as specialized services such as machine learning, artificial intelligenc
           range of cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well
           as developer tools and services for building, deploying, and managing applications on the cloud."
    :tags #{"cloud" "platform" "provider"}}
-  
+
   {:el :concept
    :id :software-development.cloud/ibm-cloud
    :name "IBM Cloud"
@@ -222,7 +121,7 @@ as well as specialized services such as machine learning, artificial intelligenc
           cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well as developer
           tools and services for building, deploying, and managing applications on the cloud."
    :tags #{"cloud" "platform" "provider"}}
-  
+
   {:el :concept
    :id :software-development.cloud/oracle-cloud
    :name "Oracle Cloud"
@@ -230,7 +129,7 @@ as well as specialized services such as machine learning, artificial intelligenc
           range of cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well
           as developer tools and services for building, deploying, and managing applications on the cloud."
    :tags #{"cloud" "platform" "provider"}}
-  
+
   {:el :concept
    :id :software-development.cloud/alibaba-cloud
    :name "Alibaba Cloud"
@@ -238,7 +137,7 @@ as well as specialized services such as machine learning, artificial intelligenc
           range of cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well
           as developer tools and services for building, deploying, and managing applications on the cloud."
    :tags #{"cloud" "platform" "provider"}}
-  
+
   {:el :concept
    :id :software-development.cloud/tencent-cloud
    :name "Tencent Cloud"
@@ -273,87 +172,6 @@ as well as specialized services such as machine learning, artificial intelligenc
           cloud deployment model, and implementation of the migration plan."
    :tags #{"cloud" "migration" "strategy"}}
 
-  ;; the following concepts are cloud migration concepts or strategies (e.g. 7 Rs from AWS)
-  {:el :concept
-   :id :software-development.cloud/rearchitect
-   :name "Rearchitect"
-   :desc "Rearchitecting, also known as 'rebuild', involves redesigning an application to take advantage of
-          cloud-native features and capabilities. This approach is used to optimize an application for the cloud
-          and improve its performance, scalability, and reliability."
-   :tags #{"cloud" "migration" "strategy"}}
-  
-  {:el :concept
-   :id :software-development.cloud/rebuild
-   :name "Rebuild"
-   :desc "Rebuilding, also known as 'rearchitect', involves redeveloping an application from scratch using cloud-native technologies and
-          services. This approach is used to create a new, cloud-native application that is optimized for the
-          cloud and takes advantage of its features and capabilities."
-   :tags #{"cloud" "migration" "strategy"}}
-  
-  {:el :concept
-   :id :software-development.cloud/refactor
-   :name "Refactor"
-   :desc "Refactoring, also known as 'replatform,' involves making minor changes to an application before
-          migrating it to the cloud. This approach is used to optimize an application for the cloud without
-          completely redesigning it."
-   :tags #{"cloud" "migration" "strategy"}}
-  
-  {:el :concept
-   :id :software-development.cloud/rehost
-   :name "Rehost"
-   :desc "Rehosting, also known as 'lift and shift,' involves moving an application from an on-premises
-          environment to the cloud without making any changes to the application itself. This approach is
-          often used for applications that are not cloud-native and do not take advantage of cloud-specific
-          features."
-   :tags #{"cloud" "migration" "strategy"}}
-  
-  {:el :concept
-   :id :software-development.cloud/relocate
-   :name "Relocate"
-   :desc "Relocating an application to a different cloud provider or region. This approach is used to improve
-          performance, reduce costs, or comply with regulatory requirements by moving an application to a different
-          cloud environment."
-   :tags #{"cloud" "migration" "strategy"}}
-  
-  {:el :concept
-   :id :software-development.cloud/replace
-   :name "Replace"
-   :desc "Replacing an application with a commercial off-the-shelf (COTS) software or a cloud-based service.
-          This approach is used to modernize an application and take advantage of new features and capabilities
-          offered by third-party solutions."
-   :tags #{"cloud" "migration" "strategy"}}
-  
-  {:el :concept
-   :id :software-development.cloud/replatform
-   :name "Replatform"
-   :desc "Replatforming, also known as 'lift, tinker, and shift,' involves making minor changes to an
-          application before migrating it to the cloud. This approach is used to optimize an application
-          for the cloud without completely redesigning it."
-   :tags #{"cloud" "migration" "strategy"}}
-  
-  {:el :concept
-   :id :software-development.cloud/repurchase
-   :name "Repurchase"
-   :desc "Repurchasing an application by moving from an on-premises deployment to a cloud-based service or
-          vice versa. This approach is used to change the licensing model, reduce costs, or take advantage of
-          new features and capabilities offered by cloud-based services."
-   :tags #{"cloud" "migration" "strategy"}}
-  
-  {:el :concept
-   :id :software-development.cloud/retain
-   :name "Retain"
-   :desc "Retaining involves keeping an application in its current state and not migrating it to the cloud.
-          This approach is typically used for applications that are not suitable for the cloud due to technical,
-          regulatory, or business constraints."
-   :tags #{"cloud" "migration" "strategy"}}
-  
-  {:el :concept
-   :id :software-development.cloud/retire
-   :name "Retire"
-   :desc "Retiring involves decommissioning an application that is no longer needed or relevant. This approach
-          is used to reduce the complexity and cost of an organization's application portfolio."
-   :tags #{"cloud" "migration" "strategy"}}
-  
 
   {:el :concept
    :id :software-development.cloud/cloud-migration-assessment
@@ -363,14 +181,14 @@ as well as specialized services such as machine learning, artificial intelligenc
           typically includes an inventory of existing assets, an analysis of dependencies and interdependencies,
           and a risk assessment to identify potential challenges and opportunities."
    :tags #{"cloud" "migration" "assessment"}}
-  
+
   {:el :concept
    :id :software-development.cloud/cloud-migration-plan
    :name "Cloud Migration Plan"
    :desc "Cloud migration plan is a detailed roadmap for moving applications, data, and other business elements
           to a cloud computing environment. A cloud migration plan typically includes a timeline, budget, resource
           allocation, risk management strategy, and communication plan to ensure a successful migration."
-   :tags #{"cloud" "migration" "plan"}} 
+   :tags #{"cloud" "migration" "plan"}}
 
   {:el :concept
    :id :software-development.cloud/cloud-migration-execution
@@ -471,42 +289,6 @@ as well as specialized services such as machine learning, artificial intelligenc
    :desc "A cloud computing platform implements cloud computing."
    :tags #{"cloud" "platform"}}
 
-  {:el :is-a
-   :id :software-development.cloud/iaas-is-a-cloud-service-model
-   :from :software-development.cloud/iaas
-   :to :software-development.cloud/cloud-service-model
-   :name "is a"
-   :desc "IaaS is a cloud service model."
-   :tags #{"cloud" "service" "model"}}
-  {:el :is-a
-   :id :software-development.cloud/paas-is-a-cloud-service-model
-   :from :software-development.cloud/paas
-   :to :software-development.cloud/cloud-service-model
-   :name "is a"
-   :desc "PaaS is a cloud service model."
-   :tags #{"cloud" "service" "model"}}
-  {:el :is-a
-   :id :software-development.cloud/saas-is-a-cloud-service-model
-   :from :software-development.cloud/saas
-   :to :software-development.cloud/cloud-service-model
-   :name "is a"
-   :desc "SaaS is a cloud service model."
-   :tags #{"cloud" "service" "model"}}
-  {:el :is-a
-   :id :software-development.cloud/caas-is-a-cloud-service-model
-   :from :software-development.cloud/caas
-   :to :software-development.cloud/cloud-service-model
-   :name "is a"
-   :desc "CaaS is a cloud service model."
-   :tags #{"cloud" "service" "model"}}
-  {:el :is-a
-   :id :software-development.cloud/faas-is-a-cloud-service-model
-   :from :software-development.cloud/faas
-   :to :software-development.cloud/cloud-service-model
-   :name "is a"
-   :desc "FaaS is a cloud service model."
-   :tags #{"cloud" "service" "model"}}
-
   {:el :has
    :id :software-development.cloud/cloud-computing-has-cloud-deployment-model
    :from :software-development.cloud/cloud-computing
@@ -514,114 +296,8 @@ as well as specialized services such as machine learning, artificial intelligenc
    :name "has"
    :desc "Cloud computing has cloud deployment models."
    :tags #{"cloud" "deployment" "model"}}
-  {:el :is-a
-   :id :software-development.cloud/public-cloud-is-a-cloud-deployment-model
-   :from :software-development.cloud/public-cloud
-   :to :software-development.cloud/cloud-deployment-model
-   :name "is a"
-   :desc "Public Cloud is a cloud deployment model."
-   :tags #{"cloud" "deployment" "model"}}
-  {:el :is-a
-   :id :software-development.cloud/private-cloud-is-a-cloud-deployment-model
-   :from :software-development.cloud/private-cloud
-   :to :software-development.cloud/cloud-deployment-model
-   :name "is a"
-   :desc "Private Cloud is a cloud deployment model."
-   :tags #{"cloud" "deployment" "model"}}
-  {:el :is-a
-   :id :software-development.cloud/hybrid-cloud-is-a-cloud-deployment-model
-   :from :software-development.cloud/hybrid-cloud
-   :to :software-development.cloud/cloud-deployment-model
-   :name "is a"
-   :desc "Hybrid Cloud is a cloud deployment model."
-   :tags #{"cloud" "deployment" "model"}}
-  {:el :is-a
-   :id :software-development.cloud/multi-cloud-is-a-cloud-deployment-model
-   :from :software-development.cloud/multi-cloud
-   :to :software-development.cloud/cloud-deployment-model
-   :name "is a"
-   :desc "Multi-Cloud is a cloud deployment model."
-   :tags #{"cloud" "deployment" "model"}}
 
-  {:el :is-a
-   :id :software-development.cloud/rearchitect-is-a-cloud-migration-strategy
-   :from :software-development.cloud/rearchitect
-   :to :software-development.cloud/cloud-migration-strategy
-   :name "is a"
-   :desc "Rearchitect is a cloud migration strategy."
-   :tags #{"cloud" "migration" "strategy"}}
-  {:el :is-a
-   :id :software-development.cloud/rebuild-is-a-cloud-migration-strategy
-   :from :software-development.cloud/rebuild
-   :to :software-development.cloud/cloud-migration-strategy
-   :name "is a"
-   :desc "Rebuild is a cloud migration strategy."
-   :tags #{"cloud" "migration" "strategy"}}
-  {:el :is-a
-   :id :software-development.cloud/refactor-is-a-cloud-migration-strategy
-   :from :software-development.cloud/refactor
-   :to :software-development.cloud/cloud-migration-strategy
-   :name "is a"
-   :desc "Refactor is a cloud migration strategy."
-   :tags #{"cloud" "migration" "strategy"}}
-  {:el :is-a
-   :id :software-development.cloud/rehost-is-a-cloud-migration-strategy
-   :from :software-development.cloud/rehost
-   :to :software-development.cloud/cloud-migration-strategy
-   :name "is a"
-   :desc "Rehost is a cloud migration strategy."
-   :tags #{"cloud" "migration" "strategy"}}
-  {:el :is-a
-   :id :software-development.cloud/relocate-is-a-cloud-migration-strategy
-   :from :software-development.cloud/relocate
-   :to :software-development.cloud/cloud-migration-strategy
-   :name "is a"
-   :desc "Relocate is a cloud migration strategy."
-   :tags #{"cloud" "migration" "strategy"}}
-  {:el :is-a
-   :id :software-development.cloud/replace-is-a-cloud-migration-strategy
-   :from :software-development.cloud/replace
-   :to :software-development.cloud/cloud-migration-strategy
-   :name "is a"
-   :desc "Replace is a cloud migration strategy."
-   :tags #{"cloud" "migration" "strategy"}}
-  {:el :is-a
-   :id :software-development.cloud/replatform-is-a-cloud-migration-strategy
-   :from :software-development.cloud/replatform
-   :to :software-development.cloud/cloud-migration-strategy
-   :name "is a"
-   :desc "Replatform is a cloud migration strategy."
-   :tags #{"cloud" "migration" "strategy"}}
-  {:el :is-a
-   :id :software-development.cloud/repurchase-is-a-cloud-migration-strategy
-   :from :software-development.cloud/repurchase
-   :to :software-development.cloud/cloud-migration-strategy
-   :name "is a"
-   :desc "Repurchase is a cloud migration strategy."
-   :tags #{"cloud" "migration" "strategy"}}
-  {:el :is-a
-   :id :software-development.cloud/retain-is-a-cloud-migration-strategy
-   :from :software-development.cloud/retain
-   :to :software-development.cloud/cloud-migration-strategy
-   :name "is a"
-   :desc "Retain is a cloud migration strategy."
-   :tags #{"cloud" "migration" "strategy"}}
-  {:el :is-a
-   :id :software-development.cloud/retire-is-a-cloud-migration-strategy
-   :from :software-development.cloud/retire
-   :to :software-development.cloud/cloud-migration-strategy
-   :name "is a"
-   :desc "Retire is a cloud migration strategy."
-   :tags #{"cloud" "migration" "strategy"}}
   {:el :rel
-   :id :software-development.cloud/rebuild-is-synonym-of-rearchitect
-   :from :software-development.cloud/rebuild
-   :to :software-development.cloud/rearchitect
-   :name "synonym of"
-   :desc "Rebuild is a synonym of Rearchitect."
-   :tags #{"cloud" "migration" "strategy"}}
-
-  {:el :rel 
    :id :software-development.cloud/cloud-provider-provides-cloud-computing-platform
    :from :software-development.cloud/cloud-provider
    :to :software-development.cloud/cloud-computing-platform
@@ -675,7 +351,7 @@ as well as specialized services such as machine learning, artificial intelligenc
    :to :software-development.cloud/cloud-migration-strategy
    :name "has"
    :desc "The Cloud Adoption Framework has cloud migration strategies."}
-  
+
   {:el :has
    :id :software-development.cloud/cloud-computing-has-well-architected-framework
    :from :software-development.cloud/cloud-computing

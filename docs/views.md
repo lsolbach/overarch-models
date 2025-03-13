@@ -3,7 +3,11 @@
 ## Concept Views
 | Title | Description |
 |---|---|
+| [Concept View for Cloud Migration](./software-development/cloud/migration/concept-view.md) | Shows the concepts related to cloud migration and their relationships. |
 | [Concept View for Cloud Computing](./software-development/cloud/concept-view.md) | Shows the concepts related to Cloud Computing and their relationships. |
+| [Concept View for Cloud Deployment Models](./software-development/cloud/deployment-model/concept-view.md) | Shows the concepts related to cloud deployment models and their relationships. |
+| [Concept View for Cloud Providers](./software-development/cloud/provider/concept-view.md) | Shows the concepts related to cloud providers and their relationships. |
+| [Concept View for Cloud Service Models](./software-development/cloud/service-model/concept-view.md) | Shows the concepts related to cloud service models and their relationships. |
 | [DORA Concept View](./software-development/dora/concept-view.md) | Shows a concept map of the DevOps Research and Assessment (DORA) State of DevOps model |
 | [Domain Driven Design Patterns Concept View](./software-development/domain-driven-design/concept-view.md) | Shows the concepts of Domain Driven Design and their relationships. |
 | [Concept View for Twelve Factor Apps](./software-development/twelve-factor-app/concept-view.md) | Shows the concepts of the Twelve Factor App and their relationships. |

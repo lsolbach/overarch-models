@@ -1,0 +1,15 @@
+;;;;
+;;;; Views for Cloud Service Model
+;;;;
+#{;
+  {:el :concept-view
+   :id :software-development.cloud.migration/concept-view
+   :spec {:selection [{:namespace-prefix "software-development.cloud.migration"}
+                      {:to-namespace-prefix "software-development.cloud.migration"}]
+          :include :related
+          :layout :left-right}
+   :name "Concept View for Cloud Migration"
+   :title "Cloud  Migration Concept Map"
+   :desc "Shows the concepts related to cloud migration and their relationships."}
+  ;
+  }

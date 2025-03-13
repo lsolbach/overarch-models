@@ -1,0 +1,83 @@
+;;;;
+;;;; Model for Cloud Deployment Model
+;;;;
+#{;
+  ;;;
+  ;;; Concept Model
+  ;;;
+
+  ;; Nodes
+  {:el :concept
+   :id :software-development.cloud.deployment-model/on-premises
+   :name "On Premises"
+   :desc "Refers to the deployment of software or services on a company's own
+          hardware or servers, rather than on a cloud provider's infrastructure."
+   :tags #{"cloud" "deployment" "model"}}
+
+  {:el :concept
+   :id :software-development.cloud.deployment-model/public-cloud
+   :name "Public Cloud"
+   :desc "Type of cloud computing in which a service provider makes resources
+          such as virtual machines, applications, or storage available to the general public over
+          the internet. Public cloud services may be free or offered on a pay-per-usage model."
+   :tags #{"cloud" "deployment" "model"}}
+
+  {:el :concept
+   :id :software-development.cloud.deployment-model/private-cloud
+   :name "Private Cloud"
+   :desc "Type of cloud computing in which resources are dedicated to a single
+          organization or user group. Private cloud services may be hosted on-premises or by a third-party
+          service provider."
+   :tags #{"cloud" "deployment" "model"}}
+
+  {:el :concept
+   :id :software-development.cloud.deployment-model/hybrid-cloud
+   :name "Hybrid Cloud"
+   :desc "A cloud computing environment that combines public cloud services with private cloud services."
+   :doc "Hybrid cloud is a cloud computing environment that combines public cloud services with private cloud services.
+Hybrid cloud allows organizations to take advantage of the scalability, flexibility, and cost-effectiveness of public cloud services,
+while also maintaining control over sensitive data and applications in a private cloud environment."
+   :tags #{"cloud" "deployment" "model"}}
+
+  {:el :concept
+   :id :software-development.cloud.deployment-model/multi-cloud
+   :name "Multi-Cloud"
+   :desc "A cloud computing strategy that involves using multiple cloud services from different providers."
+   :doc "Multi-cloud is a cloud computing strategy that involves using multiple cloud services from different providers.
+Multi-cloud allows organizations to avoid vendor lock-in, reduce costs, and improve performance by leveraging the strengths of different cloud providers.
+Organizations may use multiple cloud services for different workloads, applications, or regions, or to take advantage of specialized services offered by different providers."
+   :tags #{"cloud" "deployment" "model"}}
+
+
+  ;; Relationships
+  {:el :is-a
+   :id :software-development.cloud.deployment-model/public-cloud-is-a-cloud-deployment-model
+   :from :software-development.cloud.deployment-model/public-cloud
+   :to :software-development.cloud/cloud-deployment-model
+   :name "is a"
+   :desc "Public Cloud is a cloud deployment model."
+   :tags #{"cloud" "deployment" "model"}}
+  {:el :is-a
+   :id :software-development.cloud.deployment-model/private-cloud-is-a-cloud-deployment-model
+   :from :software-development.cloud.deployment-model/private-cloud
+   :to :software-development.cloud/cloud-deployment-model
+   :name "is a"
+   :desc "Private Cloud is a cloud deployment model."
+   :tags #{"cloud" "deployment" "model"}}
+  {:el :is-a
+   :id :software-development.cloud.deployment-model/hybrid-cloud-is-a-cloud-deployment-model
+   :from :software-development.cloud.deployment-model/hybrid-cloud
+   :to :software-development.cloud/cloud-deployment-model
+   :name "is a"
+   :desc "Hybrid Cloud is a cloud deployment model."
+   :tags #{"cloud" "deployment" "model"}}
+  {:el :is-a
+   :id :software-development.cloud.deployment-model/multi-cloud-is-a-cloud-deployment-model
+   :from :software-development.cloud.deployment-model/multi-cloud
+   :to :software-development.cloud/cloud-deployment-model
+   :name "is a"
+   :desc "Multi-Cloud is a cloud deployment model."
+   :tags #{"cloud" "deployment" "model"}}
+
+  ;
+  }

@@ -1,0 +1,110 @@
+;;;;
+;;;; Model for Cloud Service Model
+;;;;
+#{;
+  ;;;
+  ;;; Concept Model
+  ;;;
+
+  ;; Nodes
+  {:el :concept
+   :id :software-development.cloud.service-model/iaas
+   :name "Infrastructure as a Service (IaaS)"
+   :desc "Provides virtualized network and computing resources over the internet"
+   :doc "Infrastructure as a Service (IaaS) is a cloud service model that provides virtualized
+computing resources over the Internet. IaaS provides virtual machines, storage, and networking
+resources that can be used to build, deploy, and manage applications in the cloud. It is
+essentially a replica of a traditional data center, but hosted and managed by a cloud provider."
+   :tags #{"model"}}
+
+  {:el :concept
+   :id :software-development.cloud.service-model/paas
+   :name "Platform as a Service (PaaS)"
+   :desc "Provides a platform of services allowing customers to develop, run, and manage applications without the complexity managing virtual machines"
+   :doc "Platform as a Service (PaaS) is a cloud service model that provides a platform of services allowing customers to
+develop, run, and manage applications without the complexity of building and maintaining the infrastructure typically
+associated with developing and launching an app. It provides a complete development and deployment environment in the
+cloud, with resources that allow developers to build, test, and deploy applications based on computing, storage, and
+networking services provided by the cloud provider."
+   :tags #{"model"}}
+
+  {:el :concept
+   :id :software-development.cloud.service-model/saas
+   :name "Software as a Service (SaaS)"
+   :desc "A software distribution model in which a third-party provider hosts applications in the cloud and makes them available to customers over the Internet"
+   :doc "Software as a Service (SaaS) is a software distribution model in which a third-party provider hosts applications
+and makes them available to customers over the Internet. SaaS is one of three main categories of cloud computing,
+alongside Infrastructure as a Service (IaaS) and Platform as a Service (PaaS). SaaS applications are typically
+accessed through a web browser, with users paying a subscription fee to access the software. SaaS applications
+are hosted and maintained by the service provider, with updates and maintenance handled by the provider rather
+than the end user."
+   :tags #{"model"}}
+
+  {:el :concept
+   :id :software-development.cloud.service-model/caas
+   :name "Container as a Service (CaaS)"
+   :desc "Allows users to manage and deploy containers, which are lightweight, standalone, executable packages that include everything needed to run an application, including the code, runtime, system tools, libraries, and settings."
+   :doc "Container as a Service (CaaS) is a cloud computing service that allows users to
+manage and deploy containers, which are lightweight, standalone, executable
+packages that include everything needed to run an application,
+including the code, runtime, system tools, libraries, and settings.
+CaaS provides a platform for running containerized applications in the cloud,
+with features such as container orchestration, scaling, and monitoring.
+CaaS abstracts the underlying infrastructure and allows developers to focus on
+building and deploying containerized applications without worrying about managing
+servers or infrastructure."
+   :tags #{"model"}}
+
+  {:el :concept
+   :id :software-development.cloud.service-model/faas
+   :name "Function as a Service (FaaS)"
+   :desc "Allows users to run pieces of code in response to events or triggers in a serverless deployment."
+   :doc "Function as a Service (FaaS) is a cloud computing service that allows users to run
+pieces of code in response to events or triggers in a serverless deployment. FaaS abstracts the
+underlying infrastructure and allows developers to focus on writing and deploying functions that
+respond to specific events or triggers.
+FaaS is a pay-as-you-go service, with users only paying for the compute time used
+to run the functions. FaaS is ideal for event-driven applications, such as IoT
+applications, real-time data processing, and webhooks."
+   :tags #{"model"}}
+
+  ;; Relationships
+  {:el :is-a
+   :id :software-development.cloud.service-model/iaas-is-a-cloud-service-model
+   :from :software-development.cloud.service-model/iaas
+   :to :software-development.cloud/cloud-service-model
+   :name "is a"
+   :desc "IaaS is a cloud service model."
+   :tags #{"model"}}
+  {:el :is-a
+   :id :software-development.cloud.service-model/paas-is-a-cloud-service-model
+   :from :software-development.cloud.service-model/paas
+   :to :software-development.cloud/cloud-service-model
+   :name "is a"
+   :desc "PaaS is a cloud service model."
+   :tags #{"service" "model"}}
+  {:el :is-a
+   :id :software-development.cloud.service-model/saas-is-a-cloud-service-model
+   :from :software-development.cloud.service-model/saas
+   :to :software-development.cloud/cloud-service-model
+   :name "is a"
+   :desc "SaaS is a cloud service model."
+   :tags #{"model"}}
+  {:el :is-a
+   :id :software-development.cloud.service-model/caas-is-a-cloud-service-model
+   :from :software-development.cloud.service-model/caas
+   :to :software-development.cloud/cloud-service-model
+   :name "is a"
+   :desc "CaaS is a cloud service model."
+   :tags #{"model"}}
+  {:el :is-a
+   :id :software-development.cloud.service-model/faas-is-a-cloud-service-model
+   :from :software-development.cloud.service-model/faas
+   :to :software-development.cloud/cloud-service-model
+   :name "is a"
+   :desc "FaaS is a cloud service model."
+   :tags #{"model"}}
+
+
+  ;
+  }

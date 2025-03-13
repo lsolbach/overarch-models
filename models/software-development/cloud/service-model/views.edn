@@ -1,0 +1,15 @@
+;;;;
+;;;; Views for Cloud Service Model
+;;;;
+#{;
+  {:el :concept-view
+   :id :software-development.cloud.service-model/concept-view
+   :spec {:selection [{:namespace-prefix "software-development.cloud.service-model"}
+                      {:to-namespace-prefix "software-development.cloud.service-model"}]
+          :include :related
+          :layout :left-right}
+   :name "Concept View for Cloud Service Models"
+   :title "Cloud Service Models Concept Map"
+   :desc "Shows the concepts related to cloud service models and their relationships."}
+  ;
+  }

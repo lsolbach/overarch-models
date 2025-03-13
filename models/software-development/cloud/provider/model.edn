@@ -1,0 +1,169 @@
+;;;;
+;;;; Model for Cloud Provider
+;;;;
+#{;
+  ;;;
+  ;;; Concept Model
+  ;;;
+
+  ;; Nodes
+  {:el :concept
+   :id :software-development.cloud.provider/amazon
+   :name "Amazon"
+   :desc "Amazon Web Services (AWS) is a subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis."}
+
+  {:el :concept
+   :id :software-development.cloud.provider/google
+   :name "Google"
+   :desc "Google Cloud Platform, offered by Google, is a suite of cloud computing services that runs on the same infrastructure that Google uses internally for its end-user products, such as Google Search, Gmail, file storage, and YouTube."}
+
+  {:el :concept
+   :id :software-development.cloud.provider/microsoft
+   :name "Microsoft"
+   :desc "Microsoft Azure, commonly referred to as Azure, is a cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services through Microsoft-managed data centers."}
+
+  {:el :concept
+   :id :software-development.cloud.provider/ibm
+   :name "IBM"
+   :desc "IBM Cloud is a suite of cloud computing services from IBM that offers both platform as a service (PaaS) and infrastructure as a service (IaaS) options."}
+
+  {:el :concept
+   :id :software-development.cloud.provider/oracle
+   :name "Oracle"
+   :desc "Oracle Cloud is a cloud computing service offered by Oracle Corporation providing servers, storage, network, applications, and services through a global network of Oracle Corporation managed data centers."}
+
+  {:el :concept
+   :id :software-development.cloud.provider/alibaba
+   :name "Alibaba"
+   :desc "Alibaba Cloud, also known as Aliyun, is a Chinese cloud computing company, a subsidiary of Alibaba Group. Alibaba Cloud provides a comprehensive suite of global cloud computing services to power both international customers’ online businesses and Alibaba Group’s own e-commerce ecosystem."}
+
+  {:el :concept
+   :id :software-development.cloud.provider/tencent
+   :name "Tencent"
+   :desc "Tencent Cloud is a cloud computing service provided by Tencent, a Chinese multinational conglomerate holding company. Tencent Cloud provides a wide range of cloud services, including computing, storage, databases, security, and networking, to help businesses build and deploy applications in the cloud."}
+
+  {:el :concept
+   :id :software-development.cloud.provider/baidu
+   :name "Baidu"
+   :desc "Baidu Cloud is a cloud computing service provided by Baidu, a Chinese multinational technology company specializing in Internet-related services and products. Baidu Cloud offers a range of cloud services, including computing, storage, databases, and AI, to help businesses build and deploy applications in the cloud."}
+
+  {:el :concept
+   :id :software-development.cloud.provider/huawei
+   :name "Huawei"
+   :desc "Huawei Cloud is a cloud computing service provided by Huawei, a Chinese multinational technology company. Huawei Cloud offers a wide range of cloud services, including computing, storage, databases, security, and AI, to help businesses build and deploy applications in the cloud."}
+
+  {:el :concept
+   :id :software-development.cloud.provider/sap
+   :name "SAP"
+   :desc "SAP Cloud Platform is a cloud computing service provided by SAP, a German multinational software corporation. SAP Cloud Platform offers a range of cloud services, including computing, storage, databases, security, and AI, to help businesses build and deploy applications in the cloud."}
+
+  {:el :concept
+   :id :software-development.cloud.provider/vmware
+   :name "VMware"
+   :desc "VMware Cloud is a cloud computing service provided by VMware, an American cloud computing and virtualization technology company. VMware Cloud offers a range of cloud services, including computing, storage, databases, security, and networking, to help businesses build and deploy applications in the cloud."}
+
+  {:el :concept
+   :id :software-development.cloud.provider/redhat
+   :name "Red Hat"
+   :desc "Red Hat OpenShift is a cloud computing service provided by Red Hat, an American multinational software company. Red Hat OpenShift offers a range of cloud services, including computing, storage, databases, security, and AI, to help businesses build and deploy applications in the cloud."}
+
+  ;; Relationships
+  {:el :is-a
+   :id :software-development.cloud.provider/amazon-is-a-cloud-provider
+   :from :software-development.cloud.provider/amazon
+   :to :software-development.cloud/cloud-provider
+   :name "is a"
+   :desc "Amazon is a cloud provider."
+   :tags #{}}
+
+  {:el :is-a
+   :id :software-development.cloud.provider/google-is-a-cloud-provider
+   :from :software-development.cloud.provider/google
+   :to :software-development.cloud/cloud-provider
+   :name "is a"
+   :desc "Google is a cloud provider."
+   :tags #{}}
+
+  {:el :is-a
+   :id :software-development.cloud.provider/microsoft-is-a-cloud-provider
+   :from :software-development.cloud.provider/microsoft
+   :to :software-development.cloud/cloud-provider
+   :name "is a"
+   :desc "Microsoft is a cloud provider."
+   :tags #{}}
+
+  {:el :is-a
+   :id :software-development.cloud.provider/ibm-is-a-cloud-provider
+   :from :software-development.cloud.provider/ibm
+   :to :software-development.cloud/cloud-provider
+   :name "is a"
+   :desc "IBM is a cloud provider."
+   :tags #{}}
+
+  {:el :is-a
+   :id :software-development.cloud.provider/oracle-is-a-cloud-provider
+   :from :software-development.cloud.provider/oracle
+   :to :software-development.cloud/cloud-provider
+   :name "is a"
+   :desc "Oracle is a cloud provider."
+   :tags #{}}
+
+  {:el :is-a
+   :id :software-development.cloud.provider/alibaba-is-a-cloud-provider
+   :from :software-development.cloud.provider/alibaba
+   :to :software-development.cloud/cloud-provider
+   :name "is a"
+   :desc "Alibaba is a cloud provider."
+   :tags #{}}
+
+  {:el :is-a
+   :id :software-development.cloud.provider/tencent-is-a-cloud-provider
+   :from :software-development.cloud.provider/tencent
+   :to :software-development.cloud/cloud-provider
+   :name "is a"
+   :desc "Tencent is a cloud provider."
+   :tags #{}}
+
+  {:el :is-a
+   :id :software-development.cloud.provider/baidu-is-a-cloud-provider
+   :from :software-development.cloud.provider/baidu
+   :to :software-development.cloud/cloud-provider
+   :name "is a"
+   :desc "Baidu is a cloud provider."
+   :tags #{}}
+
+  {:el :is-a
+   :id :software-development.cloud.provider/huawei-is-a-cloud-provider
+   :from :software-development.cloud.provider/huawei
+   :to :software-development.cloud/cloud-provider
+   :name "is a"
+   :desc "Huawei is a cloud provider."
+   :tags #{}}
+
+  {:el :is-a
+   :id :software-development.cloud.provider/sap-is-a-cloud-provider
+   :from :software-development.cloud.provider/sap
+   :to :software-development.cloud/cloud-provider
+   :name "is a"
+   :desc "SAP is a cloud provider."
+   :tags #{}}
+
+  {:el :is-a
+   :id :software-development.cloud.provider/vmware-is-a-cloud-provider
+   :from :software-development.cloud.provider/vmware
+   :to :software-development.cloud/cloud-provider
+   :name "is a"
+   :desc "VMware is a cloud provider."
+   :tags #{}}
+
+  {:el :is-a
+   :id :software-development.cloud.provider/redhat-is-a-cloud-provider
+   :from :software-development.cloud.provider/redhat
+   :to :software-development.cloud/cloud-provider
+   :name "is a"
+   :desc "Red Hat is a cloud provider."
+   :tags #{}}
+
+  
+  ;
+  }

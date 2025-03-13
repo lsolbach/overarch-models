@@ -5,15 +5,15 @@ The type of service provided by a cloud provider
 
 
 ## Tags
-cloud, service model
+model
 ## Subordinates
 | Concept | Description |
 |---|---|
-| [Container as a Service (CaaS)](../../software-development/cloud/caas.md)| Allows users to manage and deploy containers, which are lightweight, standalone, executable packages that include everything needed to run an application, including the code, runtime, system tools, libraries, and settings. |
-| [Function as a Service (FaaS)](../../software-development/cloud/faas.md)| Allows users to run pieces of code in response to events or triggers in a serverless deployment. |
-| [Infrastructure as a Service (IaaS)](../../software-development/cloud/iaas.md)| Provides virtualized network and computing resources over the internet |
-| [Platform as a Service (PaaS)](../../software-development/cloud/paas.md)| Provides a platform of services allowing customers to develop, run, and manage applications without the complexity managing virtual machines |
-| [Software as a Service (SaaS)](../../software-development/cloud/saas.md)| A software distribution model in which a third-party provider hosts applications in the cloud and makes them available to customers over the Internet |
+| [Container as a Service (CaaS)](../../software-development/cloud/service-model/caas.md)| Allows users to manage and deploy containers, which are lightweight, standalone, executable packages that include everything needed to run an application, including the code, runtime, system tools, libraries, and settings. |
+| [Function as a Service (FaaS)](../../software-development/cloud/service-model/faas.md)| Allows users to run pieces of code in response to events or triggers in a serverless deployment. |
+| [Infrastructure as a Service (IaaS)](../../software-development/cloud/service-model/iaas.md)| Provides virtualized network and computing resources over the internet |
+| [Platform as a Service (PaaS)](../../software-development/cloud/service-model/paas.md)| Provides a platform of services allowing customers to develop, run, and manage applications without the complexity managing virtual machines |
+| [Software as a Service (SaaS)](../../software-development/cloud/service-model/saas.md)| A software distribution model in which a third-party provider hosts applications in the cloud and makes them available to customers over the Internet |
 ## Feature of
 | Concept | Description |
 |---|---|

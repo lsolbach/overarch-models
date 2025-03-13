@@ -1,0 +1,179 @@
+;;;;
+;;;; Model for Cloud Migration
+;;;;
+#{;
+  ;;;
+  ;;; Concept Model
+  ;;;
+
+  ;; Nodes
+  ;; the following concepts are cloud migration concepts or strategies (e.g. 7 Rs from AWS)
+  {:el :concept
+   :id :software-development.cloud.migration/rearchitect
+   :name "Rearchitect"
+   :desc "Rearchitecting, also known as 'rebuild', involves redesigning an application to take advantage of
+          cloud-native features and capabilities. This approach is used to optimize an application for the cloud
+          and improve its performance, scalability, and reliability."
+   :tags #{"strategy"}}
+
+  {:el :concept
+   :id :software-development.cloud.migration/rebuild
+   :name "Rebuild"
+   :desc "Rebuilding, also known as 'rearchitect', involves redeveloping an application from scratch using cloud-native technologies and
+          services. This approach is used to create a new, cloud-native application that is optimized for the
+          cloud and takes advantage of its features and capabilities."
+   :tags #{"strategy"}}
+
+  {:el :concept
+   :id :software-development.cloud.migration/refactor
+   :name "Refactor"
+   :desc "Refactoring, also known as 'replatform,' involves making minor changes to an application before
+          migrating it to the cloud. This approach is used to optimize an application for the cloud without
+          completely redesigning it."
+   :tags #{"strategy"}}
+
+  {:el :concept
+   :id :software-development.cloud.migration/rehost
+   :name "Rehost"
+   :desc "Rehosting, also known as 'lift and shift,' involves moving an application from an on-premises
+          environment to the cloud without making any changes to the application itself. This approach is
+          often used for applications that are not cloud-native and do not take advantage of cloud-specific
+          features."
+   :tags #{"strategy"}}
+
+  {:el :concept
+   :id :software-development.cloud.migration/relocate
+   :name "Relocate"
+   :desc "Relocating an application to a different cloud provider or region. This approach is used to improve
+          performance, reduce costs, or comply with regulatory requirements by moving an application to a different
+          cloud environment."
+   :tags #{"strategy"}}
+
+  {:el :concept
+   :id :software-development.cloud.migration/replace
+   :name "Replace"
+   :desc "Replacing an application with a commercial off-the-shelf (COTS) software or a cloud-based service.
+          This approach is used to modernize an application and take advantage of new features and capabilities
+          offered by third-party solutions."
+   :tags #{"strategy"}}
+
+  {:el :concept
+   :id :software-development.cloud.migration/replatform
+   :name "Replatform"
+   :desc "Replatforming, also known as 'lift, tinker, and shift,' involves making minor changes to an
+          application before migrating it to the cloud. This approach is used to optimize an application
+          for the cloud without completely redesigning it."
+   :tags #{"strategy"}}
+
+  {:el :concept
+   :id :software-development.cloud.migration/repurchase
+   :name "Repurchase"
+   :desc "Repurchasing an application by moving from an on-premises deployment to a cloud-based service or
+          vice versa. This approach is used to change the licensing model, reduce costs, or take advantage of
+          new features and capabilities offered by cloud-based services."
+   :tags #{"strategy"}}
+
+  {:el :concept
+   :id :software-development.cloud.migration/retain
+   :name "Retain"
+   :desc "Retaining involves keeping an application in its current state and not migrating it to the cloud.
+          This approach is typically used for applications that are not suitable for the cloud due to technical,
+          regulatory, or business constraints."
+   :tags #{"strategy"}}
+
+  {:el :concept
+   :id :software-development.cloud.migration/retire
+   :name "Retire"
+   :desc "Retiring involves decommissioning an application that is no longer needed or relevant. This approach
+          is used to reduce the complexity and cost of an organization's application portfolio."
+   :tags #{"strategy"}}
+
+  {:el :concept
+   :id :software-development.cloud.migration/lift-and-shift
+   :name "Lift and Shift"
+   :desc "Lift and shift, also known as 'rehost,' involves moving an application from an on-premises environment
+          to the cloud without making any changes to the application itself. This approach is often used for
+          applications that are not cloud-native and do not take advantage of cloud-specific features."
+   :tags #{"strategy"}}
+
+  ;; Relationships
+  {:el :is-a
+   :id :software-development.cloud.migration/rearchitect-is-a-cloud-migration-strategy
+   :from :software-development.cloud.migration/rearchitect
+   :to :software-development.cloud/cloud-migration-strategy
+   :name "is a"
+   :desc "migration strategy"
+   :tags #{"strategy"}}
+  {:el :is-a
+   :id :software-development.cloud.migration/rehost-is-a-cloud-migration-strategy
+   :from :software-development.cloud.migration/rehost
+   :to :software-development.cloud/cloud-migration-strategy
+   :name "is a"
+   :desc "migration strategy"
+   :tags #{"strategy"}}
+  {:el :is-a
+   :id :software-development.cloud.migration/relocate-is-a-cloud-migration-strategy
+   :from :software-development.cloud.migration/relocate
+   :to :software-development.cloud/cloud-migration-strategy
+   :name "is a"
+   :desc "migration strategy"
+   :tags #{"strategy"}}
+  {:el :is-a
+   :id :software-development.cloud.migration/replace-is-a-cloud-migration-strategy
+   :from :software-development.cloud.migration/replace
+   :to :software-development.cloud/cloud-migration-strategy
+   :name "is a"
+   :desc "migration strategy"
+   :tags #{"strategy"}}
+  {:el :is-a
+   :id :software-development.cloud.migration/replatform-is-a-cloud-migration-strategy
+   :from :software-development.cloud.migration/replatform
+   :to :software-development.cloud/cloud-migration-strategy
+   :name "is a"
+   :desc "migration strategy"
+   :tags #{"strategy"}}
+  {:el :is-a
+   :id :software-development.cloud.migration/repurchase-is-a-cloud-migration-strategy
+   :from :software-development.cloud.migration/repurchase
+   :to :software-development.cloud/cloud-migration-strategy
+   :name "is a"
+   :desc "migration strategy"
+   :tags #{"strategy"}}
+  {:el :is-a
+   :id :software-development.cloud.migration/retain-is-a-cloud-migration-strategy
+   :from :software-development.cloud.migration/retain
+   :to :software-development.cloud/cloud-migration-strategy
+   :name "is a"
+   :desc "migration strategy"
+   :tags #{"strategy"}}
+  {:el :is-a
+   :id :software-development.cloud.migration/retire-is-a-cloud-migration-strategy
+   :from :software-development.cloud.migration/retire
+   :to :software-development.cloud/cloud-migration-strategy
+   :name "is a"
+   :desc "migration strategy"
+   :tags #{"strategy"}}
+  {:el :rel
+   :id :software-development.cloud.migration/rebuild-is-synonym-of-rearchitect
+   :from :software-development.cloud.migration/rebuild
+   :to :software-development.cloud.migration/rearchitect
+   :name "synonym of"
+   :desc ""
+   :tags #{"strategy"}}
+  {:el :rel
+   :id :software-development.cloud.migration/refactor-is-synonym-of-replatform
+   :from :software-development.cloud.migration/refactor
+   :to :software-development.cloud.migration/replatform
+   :name "synonym of"
+   :desc ""
+   :tags #{"strategy"}}
+  {:el :rel
+   :id :software-development.cloud.migration/lift-and-shift-is-synonym-of-rehost
+   :from :software-development.cloud.migration/lift-and-shift
+   :to :software-development.cloud.migration/rehost
+   :name "synonym of"
+   :desc ""
+   :tags #{"strategy"}}
+
+  ;
+  }

@@ -1,0 +1,15 @@
+;;;;
+;;;; Views for Cloud Service Model
+;;;;
+#{;
+  {:el :concept-view
+   :id :software-development.cloud.provider/concept-view
+   :spec {:selection [{:namespace-prefix "software-development.cloud.provider"}
+                      {:to-namespace-prefix "software-development.cloud.provider"}]
+          :include :related
+          :layout :left-right}
+   :name "Concept View for Cloud Providers"
+   :title "Cloud Providers Concept Map"
+   :desc "Shows the concepts related to cloud providers and their relationships."}
+  ;
+  }

@@ -6,14 +6,14 @@ Cloud deployment models include Public Cloud, Private Cloud, Hybrid Cloud, and
 
 
 ## Tags
-cloud, model, deployment
+model
 ## Subordinates
 | Concept | Description |
 |---|---|
-| [Hybrid Cloud](../../software-development/cloud/hybrid-cloud.md)| A cloud computing environment that combines public cloud services with private cloud services. |
-| [Multi-Cloud](../../software-development/cloud/multi-cloud.md)| A cloud computing strategy that involves using multiple cloud services from different providers. |
-| [Private Cloud](../../software-development/cloud/private-cloud.md)| Type of cloud computing in which resources are dedicated to a single organization or user group. Private cloud services may be hosted on-premises or by a third-party service provider. |
-| [Public Cloud](../../software-development/cloud/public-cloud.md)| Type of cloud computing in which a service provider makes resources such as virtual machines, applications, or storage available to the general public over the internet. Public cloud services may be free or offered on a pay-per-usage model. |
+| [Hybrid Cloud](../../software-development/cloud/deployment-model/hybrid-cloud.md)| A cloud computing environment that combines public cloud services with private cloud services. |
+| [Multi-Cloud](../../software-development/cloud/deployment-model/multi-cloud.md)| A cloud computing strategy that involves using multiple cloud services from different providers. |
+| [Private Cloud](../../software-development/cloud/deployment-model/private-cloud.md)| Type of cloud computing in which resources are dedicated to a single organization or user group. Private cloud services may be hosted on-premises or by a third-party service provider. |
+| [Public Cloud](../../software-development/cloud/deployment-model/public-cloud.md)| Type of cloud computing in which a service provider makes resources such as virtual machines, applications, or storage available to the general public over the internet. Public cloud services may be free or offered on a pay-per-usage model. |
 ## Feature of
 | Concept | Description |
 |---|---|
