@@ -1,8 +1,8 @@
 ;;;;
-;;;; DORA DevOps Model
+;;;; Overarch Model for DORA State of DevOps 
 ;;;;
 #{;;;
-  ;;; DORA DevOps Concept Model
+  ;;; Concept Model
   ;;;
 
   ;;
@@ -15,17 +15,37 @@
    :id :software-development.dora/climate-for-learning
    :name "Climate for Learning"
    :desc "A key predictor of software delivery performance"
-   :doc "A climate for learning is a key predictor of software delivery performance. A climate for learning is a work environment where it is safe to learn from mistakes, where people are encouraged to experiment, and where there is a high degree of trust. A climate for learning is part of a wider group of capabilities, including team experimentation, working in small batches, and visibility of work in the value stream, that together represent a lean approach to product management. When these capabilities are applied together, they help predict software delivery performance and organizational performance."}
+   :doc "A climate for learning is a key predictor of software delivery performance.
+A climate for learning is a work environment where it is safe to learn from
+mistakes, where people are encouraged to experiment, and where there is a high
+degree of trust. A climate for learning is part of a wider group of
+capabilities, including team experimentation, working in small batches, and
+visibility of work in the value stream, that together represent a lean approach
+to product management. When these capabilities are applied together, they help
+predict software delivery performance and organizational performance."
+   :tags #{"predictor"}}
   {:el :concept
    :id :software-development.dora/fast-flow
    :name "Fast Flow"
    :desc "A key predictor of software delivery performance."
-   :doc "Fast flow is a key predictor of software delivery performance. Fast flow is the movement of work from development through testing and deployment into operations. Fast flow is part of a wider group of capabilities, including working in small batches, team experimentation, and visibility of work in the value stream, that together represent a lean approach to product management. When these capabilities are applied together, they help predict software delivery performance and organizational performance."}
+   :doc "Fast flow is a key predictor of software delivery performance. Fast flow is
+the movement of work from development through testing and deployment into
+operations. Fast flow is part of a wider group of capabilities, including
+working in small batches, team experimentation, and visibility of work in the
+value stream, that together represent a lean approach to product management.
+When these capabilities are applied together, they help predict software
+delivery performance and organizational performance."}
   {:el :concept
    :id :software-development.dora/fast-feedback
    :name "Fast Feedback"
    :desc "A key predictor of software delivery performance."
-   :doc "Fast feedback is a key predictor of software delivery performance. Fast feedback is the ability to get information about the impact of a change quickly. Fast feedback is part of a wider group of capabilities, including working in small batches, team experimentation, and visibility of work in the value stream, that together represent a lean approach to product management. When these capabilities are applied together, they help predict software delivery performance and organizational performance."}
+   :doc "Fast feedback is a key predictor of software delivery performance.
+Fast feedback is the ability to get information about the impact of a change
+quickly. Fast feedback is part of a wider group of capabilities, including
+working in small batches, team experimentation, and visibility of work in the
+value stream, that together represent a lean approach to product management.
+When these capabilities are applied together, they help predict software
+delivery performance and organizational performance."}
 
   {:el :concept
    :id :software-development.dora/code-maintainability
