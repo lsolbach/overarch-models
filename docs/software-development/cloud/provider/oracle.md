@@ -7,6 +7,10 @@ Oracle Cloud is a cloud computing service offered by Oracle Corporation providin
 | Concept | Description |
 |---|---|
 | [Cloud Provider](../../../software-development/cloud/cloud-provider.md)| A company that offers cloud computing services, such as virtual machines, storage, databases, and applications, to customers over the internet. |
+## Other Relations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Oracle](../../../software-development/cloud/provider/oracle.md) | provides | [Oracle Cloud](../../../software-development/cloud/platform/oracle-cloud.md) |  |
 
 ## Concept Map
 ![Cloud Providers Concept Map](../../../software-development/cloud/provider/concept-view.png)

@@ -7,6 +7,10 @@ Google Cloud Platform, offered by Google, is a suite of cloud computing services
 | Concept | Description |
 |---|---|
 | [Cloud Provider](../../../software-development/cloud/cloud-provider.md)| A company that offers cloud computing services, such as virtual machines, storage, databases, and applications, to customers over the internet. |
+## Other Relations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Google](../../../software-development/cloud/provider/google.md) | provides | [Google Cloud](../../../software-development/cloud/platform/google-cloud.md) |  |
 
 ## Concept Map
 ![Cloud Providers Concept Map](../../../software-development/cloud/provider/concept-view.png)

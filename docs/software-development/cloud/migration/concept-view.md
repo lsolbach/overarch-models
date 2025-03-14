@@ -25,14 +25,14 @@ Shows the concepts related to cloud migration and their relationships.
 ## Generalizations
 | From | Name | To | Description |
 |---|---|---|---|
-| [Retain](../../../software-development/cloud/migration/retain.md) | is a | [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) |  |
-| [Replatform](../../../software-development/cloud/migration/replatform.md) | is a | [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) |  |
-| [Rearchitect](../../../software-development/cloud/migration/rearchitect.md) | is a | [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) |  |
-| [Repurchase](../../../software-development/cloud/migration/repurchase.md) | is a | [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) |  |
-| [Retire](../../../software-development/cloud/migration/retire.md) | is a | [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) |  |
-| [Rehost](../../../software-development/cloud/migration/rehost.md) | is a | [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) |  |
-| [Replace](../../../software-development/cloud/migration/replace.md) | is a | [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) |  |
-| [Relocate](../../../software-development/cloud/migration/relocate.md) | is a | [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) |  |
+| [Retain](../../../software-development/cloud/migration/retain.md) | is a | [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) | migration strategy |
+| [Relocate](../../../software-development/cloud/migration/relocate.md) | is a | [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) | migration strategy |
+| [Replatform](../../../software-development/cloud/migration/replatform.md) | is a | [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) | migration strategy |
+| [Rearchitect](../../../software-development/cloud/migration/rearchitect.md) | is a | [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) | migration strategy |
+| [Repurchase](../../../software-development/cloud/migration/repurchase.md) | is a | [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) | migration strategy |
+| [Replace](../../../software-development/cloud/migration/replace.md) | is a | [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) | migration strategy |
+| [Rehost](../../../software-development/cloud/migration/rehost.md) | is a | [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) | migration strategy |
+| [Retire](../../../software-development/cloud/migration/retire.md) | is a | [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) | migration strategy |
 
 ## Other Relationships
 | From | Name | To | Description |

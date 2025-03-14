@@ -91,79 +91,6 @@ as well as specialized services such as machine learning, artificial intelligenc
    :tags #{"cloud" "platform"}}
 
   {:el :concept
-   :id :software-development.cloud/azure
-   :name "Azure"
-   :desc "A cloud computing platform and service created by Microsoft. Azure offers a wide range
-          of cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well
-          as developer tools and services for building, deploying, and managing applications on the cloud."
-   :tags #{"cloud" "platform" "provider"}}
-
-  {:el :concept
-   :id :software-development.cloud/aws
-   :name "Amazon Web Services (AWS)"
-   :desc "A cloud computing platform and service created by Amazon. AWS offers
-          a wide range of cloud services, including virtual machines, databases, AI, machine learning, and IoT,
-          as well as developer tools and services for building, deploying, and managing applications on the cloud."
-   :tags #{"cloud" "platform" "provider"}}
-
-  {:el :concept
-   :id :software-development.cloud/google-cloud
-   :name "Google Cloud"
-   :desc "A cloud computing platform and service created by Google. Google Cloud offers a wide
-          range of cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well
-          as developer tools and services for building, deploying, and managing applications on the cloud."
-   :tags #{"cloud" "platform" "provider"}}
-
-  {:el :concept
-   :id :software-development.cloud/ibm-cloud
-   :name "IBM Cloud"
-   :desc "A cloud computing platform and service created by IBM. IBM Cloud offers a wide range of
-          cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well as developer
-          tools and services for building, deploying, and managing applications on the cloud."
-   :tags #{"cloud" "platform" "provider"}}
-
-  {:el :concept
-   :id :software-development.cloud/oracle-cloud
-   :name "Oracle Cloud"
-   :desc "A cloud computing platform and service created by Oracle. Oracle Cloud offers a wide
-          range of cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well
-          as developer tools and services for building, deploying, and managing applications on the cloud."
-   :tags #{"cloud" "platform" "provider"}}
-
-  {:el :concept
-   :id :software-development.cloud/alibaba-cloud
-   :name "Alibaba Cloud"
-   :desc "A cloud computing platform and service created by Alibaba. Alibaba Cloud offers a wide
-          range of cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well
-          as developer tools and services for building, deploying, and managing applications on the cloud."
-   :tags #{"cloud" "platform" "provider"}}
-
-  {:el :concept
-   :id :software-development.cloud/tencent-cloud
-   :name "Tencent Cloud"
-   :desc "A cloud computing platform and service created by Tencent. Tencent Cloud offers a wide
-          range of cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well
-          as developer tools and services for building, deploying, and managing applications on the cloud."
-   :tags #{"cloud" "platform" "provider"}}
-
-  {:el :concept
-   :id :software-development.cloud/cloud-adoption-framework
-   :name "Cloud Adoption Framework"
-   :desc "A set of best practices, guidelines, and tools for organizations
-          to plan, implement, and manage their cloud adoption journey. The framework provides a structured
-          approach to cloud adoption, including assessment, planning, migration, and optimization phases."
-   :tags #{"cloud" "framework"}}
-
-  {:el :concept
-   :id :software-development.cloud/well-architected-framework
-   :name "Well-Architected Framework"
-   :desc "A set of best practices and guidelines for designing, building,
-          and optimizing cloud-based applications. The framework provides a structured approach to evaluating
-          the architecture of cloud applications across five pillars: operational excellence, security, reliability,
-          performance efficiency, and cost optimization."
-   :tags #{"cloud" "architecture" "framework"}}
-
-  {:el :concept
    :id :software-development.cloud/cloud-migration-strategy
    :name "Cloud Migration Strategy"
    :desc "A plan for moving applications, data, and other business elements
@@ -171,51 +98,6 @@ as well as specialized services such as machine learning, artificial intelligenc
           of the current environment, identification of workloads to be migrated, selection of the appropriate
           cloud deployment model, and implementation of the migration plan."
    :tags #{"cloud" "migration" "strategy"}}
-
-
-  {:el :concept
-   :id :software-development.cloud/cloud-migration-assessment
-   :name "Cloud Migration Assessment"
-   :desc "Cloud migration assessment is the process of evaluating an organization's current environment, workloads,
-          and applications to determine their suitability for migration to the cloud. A cloud migration assessment
-          typically includes an inventory of existing assets, an analysis of dependencies and interdependencies,
-          and a risk assessment to identify potential challenges and opportunities."
-   :tags #{"cloud" "migration" "assessment"}}
-
-  {:el :concept
-   :id :software-development.cloud/cloud-migration-plan
-   :name "Cloud Migration Plan"
-   :desc "Cloud migration plan is a detailed roadmap for moving applications, data, and other business elements
-          to a cloud computing environment. A cloud migration plan typically includes a timeline, budget, resource
-          allocation, risk management strategy, and communication plan to ensure a successful migration."
-   :tags #{"cloud" "migration" "plan"}}
-
-  {:el :concept
-   :id :software-development.cloud/cloud-migration-execution
-   :name "Cloud Migration Execution"
-   :desc "Cloud migration execution is the process of implementing a cloud migration plan and moving applications,
-          data, and other business elements to a cloud computing environment. Cloud migration execution typically
-          involves provisioning cloud resources, migrating data, testing applications, and monitoring performance
-          to ensure a successful migration."
-   :tags #{"cloud" "migration" "execution"}}
-
-  {:el :concept
-   :id :software-development.cloud/cloud-migration-validation
-   :name "Cloud Migration Validation"
-   :desc "Cloud migration validation is the process of verifying that applications, data, and other business elements
-          have been successfully migrated to a cloud computing environment and are functioning as expected. Cloud
-          migration validation typically involves testing applications, monitoring performance, and validating data
-          integrity to ensure a successful migration."
-   :tags #{"cloud" "migration" "validation"}}
-
-  {:el :concept
-   :id :software-development.cloud/cloud-migration-optimization
-   :name "Cloud Migration Optimization"
-   :desc "Cloud migration optimization is the process of fine-tuning applications, data, and other business elements
-          in a cloud computing environment to improve performance, reduce costs, and maximize the benefits of cloud
-          migration. Cloud migration optimization typically involves monitoring performance, analyzing usage patterns,
-          and making adjustments to optimize resource utilization and efficiency."
-   :tags #{"cloud" "migration" "optimization"}}
 
   {:el :concept
    :id :software-development.cloud/landing-zone
@@ -303,48 +185,6 @@ as well as specialized services such as machine learning, artificial intelligenc
    :to :software-development.cloud/cloud-computing-platform
    :name "provides"
    :desc "A cloud provider provides a cloud computing platform."}
-  {:el :is-a
-   :id :software-development.cloud/azure-is-a-cloud-computing-platform
-   :from :software-development.cloud/azure
-   :to :software-development.cloud/cloud-computing-platform
-   :name "is a"
-   :desc "Azure is a cloud computing platform."}
-  {:el :is-a
-   :id :software-development.cloud/aws-is-a-cloud-computing-platform
-   :from :software-development.cloud/aws
-   :to :software-development.cloud/cloud-computing-platform
-   :name "is a"
-   :desc "AWS is a cloud computing platform."}
-  {:el :is-a
-   :id :software-development.cloud/google-cloud-is-a-cloud-computing-platform
-   :from :software-development.cloud/google-cloud
-   :to :software-development.cloud/cloud-computing-platform
-   :name "is a"
-   :desc "Google Cloud is a cloud computing platform."}
-  {:el :is-a
-   :id :software-development.cloud/ibm-cloud-is-a-cloud-computing-platform
-   :from :software-development.cloud/ibm-cloud
-   :to :software-development.cloud/cloud-computing-platform
-   :name "is a"
-   :desc "IBM Cloud is a cloud computing platform."}
-  {:el :is-a
-   :id :software-development.cloud/oracle-cloud-is-a-cloud-computing-platform
-   :from :software-development.cloud/oracle-cloud
-   :to :software-development.cloud/cloud-computing-platform
-   :name "is a"
-   :desc "Oracle Cloud is a cloud computing platform."}
-  {:el :is-a
-   :id :software-development.cloud/alibaba-cloud-is-a-cloud-computing-platform
-   :from :software-development.cloud/alibaba-cloud
-   :to :software-development.cloud/cloud-computing-platform
-   :name "is a"
-   :desc "Alibaba Cloud is a cloud computing platform."}
-  {:el :is-a
-   :id :software-development.cloud/tencent-cloud-is-a-cloud-computing-platform
-   :from :software-development.cloud/tencent-cloud
-   :to :software-development.cloud/cloud-computing-platform
-   :name "is a"
-   :desc "Tencent Cloud is a cloud computing platform."}
   {:el :has
    :id :software-development.cloud/cloud-adoption-framework-has-cloud-migration-strategy
    :from :software-development.cloud/cloud-adoption-framework

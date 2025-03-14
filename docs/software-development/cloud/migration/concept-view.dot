@@ -18,16 +18,16 @@ software_development_cloud_migration__retire [shape=ellipse style=filled fillcol
 software_development_cloud_migration__replace [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Replace</B><BR/><FONT POINT-SIZE="10"><I>Replacing an application with a<BR/>commercial off-the-shelf (COTS) software<BR/>or a cloud-based service. This approach<BR/>is used to modernize an application and<BR/>take advantage of new features and<BR/>capabilities offered by third-party<BR/>solutions. </I></FONT>>]
  
 software_development_cloud_migration__lift_and_shift -> software_development_cloud_migration__rehost [label=<synonym of<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
-software_development_cloud_migration__retain -> software_development_cloud__cloud_migration_strategy [label=<is a<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
-software_development_cloud_migration__replatform -> software_development_cloud__cloud_migration_strategy [label=<is a<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
-software_development_cloud_migration__rearchitect -> software_development_cloud__cloud_migration_strategy [label=<is a<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
-software_development_cloud_migration__repurchase -> software_development_cloud__cloud_migration_strategy [label=<is a<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
-software_development_cloud_migration__retire -> software_development_cloud__cloud_migration_strategy [label=<is a<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
-software_development_cloud_migration__rehost -> software_development_cloud__cloud_migration_strategy [label=<is a<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
-software_development_cloud_migration__replace -> software_development_cloud__cloud_migration_strategy [label=<is a<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_cloud_migration__retain -> software_development_cloud__cloud_migration_strategy [label=<is a<BR/><FONT POINT-SIZE="10"><I>migration strategy </I></FONT>>]
+software_development_cloud_migration__relocate -> software_development_cloud__cloud_migration_strategy [label=<is a<BR/><FONT POINT-SIZE="10"><I>migration strategy </I></FONT>>]
+software_development_cloud_migration__replatform -> software_development_cloud__cloud_migration_strategy [label=<is a<BR/><FONT POINT-SIZE="10"><I>migration strategy </I></FONT>>]
 software_development_cloud_migration__refactor -> software_development_cloud_migration__replatform [label=<synonym of<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
-software_development_cloud_migration__relocate -> software_development_cloud__cloud_migration_strategy [label=<is a<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_cloud_migration__rearchitect -> software_development_cloud__cloud_migration_strategy [label=<is a<BR/><FONT POINT-SIZE="10"><I>migration strategy </I></FONT>>]
+software_development_cloud_migration__repurchase -> software_development_cloud__cloud_migration_strategy [label=<is a<BR/><FONT POINT-SIZE="10"><I>migration strategy </I></FONT>>]
+software_development_cloud_migration__replace -> software_development_cloud__cloud_migration_strategy [label=<is a<BR/><FONT POINT-SIZE="10"><I>migration strategy </I></FONT>>]
 software_development_cloud_migration__rebuild -> software_development_cloud_migration__rearchitect [label=<synonym of<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_cloud_migration__rehost -> software_development_cloud__cloud_migration_strategy [label=<is a<BR/><FONT POINT-SIZE="10"><I>migration strategy </I></FONT>>]
+software_development_cloud_migration__retire -> software_development_cloud__cloud_migration_strategy [label=<is a<BR/><FONT POINT-SIZE="10"><I>migration strategy </I></FONT>>]
  
 }
 

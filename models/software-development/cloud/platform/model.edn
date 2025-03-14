@@ -1,0 +1,111 @@
+;;;;
+;;;; Model for Cloud Provider
+;;;;
+#{;
+  ;;;
+  ;;; Concept Model
+  ;;;
+
+  ;; Nodes
+  {:el :concept
+   :id :software-development.cloud.platform/azure
+   :name "Azure"
+   :desc "A cloud computing platform and service created by Microsoft. Azure offers a wide range
+          of cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well
+          as developer tools and services for building, deploying, and managing applications on the cloud."
+   :tags #{"cloud" "platform" "azure"}}
+
+  {:el :concept
+   :id :software-development.cloud.platform/aws
+   :name "Amazon Web Services (AWS)"
+   :desc "A cloud computing platform and service created by Amazon. AWS offers
+          a wide range of cloud services, including virtual machines, databases, AI, machine learning, and IoT,
+          as well as developer tools and services for building, deploying, and managing applications on the cloud."
+   :tags #{"cloud" "platform" "aws"}}
+
+  {:el :concept
+   :id :software-development.cloud.platform/google-cloud
+   :name "Google Cloud"
+   :desc "A cloud computing platform and service created by Google. Google Cloud offers a wide
+          range of cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well
+          as developer tools and services for building, deploying, and managing applications on the cloud."
+   :tags #{"cloud" "platform" "google"}}
+
+  {:el :concept
+   :id :software-development.cloud.platform/ibm-cloud
+   :name "IBM Cloud"
+   :desc "A cloud computing platform and service created by IBM. IBM Cloud offers a wide range of
+          cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well as developer
+          tools and services for building, deploying, and managing applications on the cloud."
+   :tags #{"cloud" "platform" "ibm"}}
+
+  {:el :concept
+   :id :software-development.cloud.platform/oracle-cloud
+   :name "Oracle Cloud"
+   :desc "A cloud computing platform and service created by Oracle. Oracle Cloud offers a wide
+          range of cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well
+          as developer tools and services for building, deploying, and managing applications on the cloud."
+   :tags #{"cloud" "platform" "oracle"}}
+
+  {:el :concept
+   :id :software-development.cloud.platform/alibaba-cloud
+   :name "Alibaba Cloud"
+   :desc "A cloud computing platform and service created by Alibaba. Alibaba Cloud offers a wide
+          range of cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well
+          as developer tools and services for building, deploying, and managing applications on the cloud."
+   :tags #{"cloud" "platform" "alibaba"}}
+
+  {:el :concept
+   :id :software-development.cloud.platform/tencent-cloud
+   :name "Tencent Cloud"
+   :desc "A cloud computing platform and service created by Tencent. Tencent Cloud offers a wide
+          range of cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well
+          as developer tools and services for building, deploying, and managing applications on the cloud."
+   :tags #{"cloud" "platform" "tencent"}}
+
+  
+  ;; Relationships
+  {:el :is-a
+   :id :software-development.cloud.platform/azure-is-a-cloud-computing-platform
+   :from :software-development.cloud.platform/azure
+   :to :software-development.cloud/cloud-computing-platform
+   :name "is a"
+   :desc "cloud computing platform."}
+  {:el :is-a
+   :id :software-development.cloud.platform/aws-is-a-cloud-computing-platform
+   :from :software-development.cloud.platform/aws
+   :to :software-development.cloud/cloud-computing-platform
+   :name "is a"
+   :desc "cloud computing platform."}
+  {:el :is-a
+   :id :software-development.cloud.platform/google-cloud-is-a-cloud-computing-platform
+   :from :software-development.cloud.platform/google-cloud
+   :to :software-development.cloud/cloud-computing-platform
+   :name "is a"
+   :desc "cloud computing platform."}
+  {:el :is-a
+   :id :software-development.cloud.platform/ibm-cloud-is-a-cloud-computing-platform
+   :from :software-development.cloud.platform/ibm-cloud
+   :to :software-development.cloud/cloud-computing-platform
+   :name "is a"
+   :desc "cloud computing platform."}
+  {:el :is-a
+   :id :software-development.cloud.platform/oracle-cloud-is-a-cloud-computing-platform
+   :from :software-development.cloud.platform/oracle-cloud
+   :to :software-development.cloud/cloud-computing-platform
+   :name "is a"
+   :desc "cloud computing platform."}
+  {:el :is-a
+   :id :software-development.cloud.platform/alibaba-cloud-is-a-cloud-computing-platform
+   :from :software-development.cloud.platform/alibaba-cloud
+   :to :software-development.cloud/cloud-computing-platform
+   :name "is a"
+   :desc "cloud computing platform."}
+  {:el :is-a
+   :id :software-development.cloud.platform/tencent-cloud-is-a-cloud-computing-platform
+   :from :software-development.cloud.platform/tencent-cloud
+   :to :software-development.cloud/cloud-computing-platform
+   :name "is a"
+   :desc "cloud computing platform."}
+  ;
+  }

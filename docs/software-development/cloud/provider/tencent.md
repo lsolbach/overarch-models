@@ -7,6 +7,10 @@ Tencent Cloud is a cloud computing service provided by Tencent, a Chinese multin
 | Concept | Description |
 |---|---|
 | [Cloud Provider](../../../software-development/cloud/cloud-provider.md)| A company that offers cloud computing services, such as virtual machines, storage, databases, and applications, to customers over the internet. |
+## Other Relations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Tencent](../../../software-development/cloud/provider/tencent.md) | provides | [Tencent Cloud](../../../software-development/cloud/platform/tencent-cloud.md) |  |
 
 ## Concept Map
 ![Cloud Providers Concept Map](../../../software-development/cloud/provider/concept-view.png)

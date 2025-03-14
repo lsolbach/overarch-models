@@ -1,10 +1,10 @@
-# Cloud Providers Concept Map
+# Cloud Platforms Concept Map
 
 ## Diagram
-![Cloud Providers Concept Map](../../../software-development/cloud/provider/concept-view.png)
+![Cloud Platforms Concept Map](../../../software-development/cloud/platform/concept-view.png)
 
 ## Description
-Shows the concepts related to cloud providers and their relationships.
+Shows the concepts related to cloud platforms and their relationships.
 
 ## Concepts
 | Concept | Description |
@@ -14,7 +14,7 @@ Shows the concepts related to cloud providers and their relationships.
 | [Amazon](../../../software-development/cloud/provider/amazon.md)| Amazon Web Services (AWS) is a subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis. |
 | [Amazon Web Services (AWS)](../../../software-development/cloud/platform/aws.md)| A cloud computing platform and service created by Amazon. AWS offers a wide range of cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well as developer tools and services for building, deploying, and managing applications on the cloud. |
 | [Azure](../../../software-development/cloud/platform/azure.md)| A cloud computing platform and service created by Microsoft. Azure offers a wide range of cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well as developer tools and services for building, deploying, and managing applications on the cloud. |
-| [Cloud Provider](../../../software-development/cloud/cloud-provider.md)| A company that offers cloud computing services, such as virtual machines, storage, databases, and applications, to customers over the internet. |
+| [Cloud Computing Platform](../../../software-development/cloud/cloud-computing-platform.md)| A  set of tools, services, and infrastructure that enables developers to build, deploy, and manage applications on the cloud. Cloud computing platforms may include services such as virtual machines, databases, AI, machine learning, and IoT, as well as developer tools for building and deploying applications. |
 | [Google](../../../software-development/cloud/provider/google.md)| Google Cloud Platform, offered by Google, is a suite of cloud computing services that runs on the same infrastructure that Google uses internally for its end-user products, such as Google Search, Gmail, file storage, and YouTube. |
 | [Google Cloud](../../../software-development/cloud/platform/google-cloud.md)| A cloud computing platform and service created by Google. Google Cloud offers a wide range of cloud services, including virtual machines, databases, AI, machine learning, and IoT, as well as developer tools and services for building, deploying, and managing applications on the cloud. |
 | [IBM](../../../software-development/cloud/provider/ibm.md)| IBM Cloud is a suite of cloud computing services from IBM that offers both platform as a service (PaaS) and infrastructure as a service (IaaS) options. |
@@ -28,13 +28,13 @@ Shows the concepts related to cloud providers and their relationships.
 ## Generalizations
 | From | Name | To | Description |
 |---|---|---|---|
-| [Alibaba](../../../software-development/cloud/provider/alibaba.md) | is a | [Cloud Provider](../../../software-development/cloud/cloud-provider.md) | cloud provider. |
-| [Google](../../../software-development/cloud/provider/google.md) | is a | [Cloud Provider](../../../software-development/cloud/cloud-provider.md) | cloud provider. |
-| [Oracle](../../../software-development/cloud/provider/oracle.md) | is a | [Cloud Provider](../../../software-development/cloud/cloud-provider.md) | cloud provider. |
-| [Tencent](../../../software-development/cloud/provider/tencent.md) | is a | [Cloud Provider](../../../software-development/cloud/cloud-provider.md) | cloud provider. |
-| [Microsoft](../../../software-development/cloud/provider/microsoft.md) | is a | [Cloud Provider](../../../software-development/cloud/cloud-provider.md) | cloud provider. |
-| [IBM](../../../software-development/cloud/provider/ibm.md) | is a | [Cloud Provider](../../../software-development/cloud/cloud-provider.md) | cloud provider. |
-| [Amazon](../../../software-development/cloud/provider/amazon.md) | is a | [Cloud Provider](../../../software-development/cloud/cloud-provider.md) | cloud provider. |
+| [IBM Cloud](../../../software-development/cloud/platform/ibm-cloud.md) | is a | [Cloud Computing Platform](../../../software-development/cloud/cloud-computing-platform.md) | cloud computing platform. |
+| [Alibaba Cloud](../../../software-development/cloud/platform/alibaba-cloud.md) | is a | [Cloud Computing Platform](../../../software-development/cloud/cloud-computing-platform.md) | cloud computing platform. |
+| [Oracle Cloud](../../../software-development/cloud/platform/oracle-cloud.md) | is a | [Cloud Computing Platform](../../../software-development/cloud/cloud-computing-platform.md) | cloud computing platform. |
+| [Google Cloud](../../../software-development/cloud/platform/google-cloud.md) | is a | [Cloud Computing Platform](../../../software-development/cloud/cloud-computing-platform.md) | cloud computing platform. |
+| [Azure](../../../software-development/cloud/platform/azure.md) | is a | [Cloud Computing Platform](../../../software-development/cloud/cloud-computing-platform.md) | cloud computing platform. |
+| [Tencent Cloud](../../../software-development/cloud/platform/tencent-cloud.md) | is a | [Cloud Computing Platform](../../../software-development/cloud/cloud-computing-platform.md) | cloud computing platform. |
+| [Amazon Web Services (AWS)](../../../software-development/cloud/platform/aws.md) | is a | [Cloud Computing Platform](../../../software-development/cloud/cloud-computing-platform.md) | cloud computing platform. |
 
 ## Other Relationships
 | From | Name | To | Description |

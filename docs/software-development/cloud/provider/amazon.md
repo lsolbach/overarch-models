@@ -7,6 +7,10 @@ Amazon Web Services (AWS) is a subsidiary of Amazon providing on-demand cloud co
 | Concept | Description |
 |---|---|
 | [Cloud Provider](../../../software-development/cloud/cloud-provider.md)| A company that offers cloud computing services, such as virtual machines, storage, databases, and applications, to customers over the internet. |
+## Other Relations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Amazon](../../../software-development/cloud/provider/amazon.md) | provides | [Amazon Web Services (AWS)](../../../software-development/cloud/platform/aws.md) |  |
 
 ## Concept Map
 ![Cloud Providers Concept Map](../../../software-development/cloud/provider/concept-view.png)
