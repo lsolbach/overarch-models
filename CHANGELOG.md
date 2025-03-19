@@ -1,5 +1,8 @@
 # Change Log
 
+## 2025/03/15
+* refactored the cloud concept model
+
 ## 2025/03/12
 * updated overarch and templates
 
