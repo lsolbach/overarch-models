@@ -1,0 +1,33 @@
+;;;;
+;;;; Overarch Model for the Event Driven Architecture Blueprint
+;;;;
+#{;
+
+  ;;;
+  ;;;
+  ;;;
+
+  {:el :class
+   :id :architecture.blueprint.event-driven/event
+   :abstact true
+   :name "Event"
+   :desc "abstract event"
+   :ct [{:el :field
+         :type "string"
+         :name "id"
+         :desc "the id of the event"}
+        {:el :field
+         :type "string"
+         :name "type"
+         :desc "the type of the event"}
+        {:el :field
+         :type "string"
+         :name "source"
+         :desc "the source of the event"}
+        {:el :field
+         :type "timestamp"
+         :name "creationtime"
+         :desc "the time the event was created"}]}
+
+  ; 
+  }
