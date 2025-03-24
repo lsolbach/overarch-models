@@ -35,8 +35,24 @@ can use the preview features/plugins of your editor or IDE to see the images.
 ## Copyright
 The model files are © 2024 Ludger Solbach.
 
-For the information in the models, additional copyrights may apply, which are
-documented in the READMEs in the respective model folders.
+### 12 Factor App
+Text Copyright (c) 2012 Adam Wiggins
+
+### Domain Driven Design
+Domain Driven Design pattern descriptions by
+**Eric Evans, DOMAIN-DRIVEN DESIGN, Addison-Wesley, © Eric Evans, 2004.**
+
+### DORA
+DORA is a program run by Google Cloud
 
 ## License
+[CC BY](https://creativecommons.org/licenses/by/4.0/)
 
+### 12 Factor App
+[MIT License](https://github.com/heroku/12factor/blob/main/LICENSE)
+
+### Domain Driven Design
+[CC BY](https://creativecommons.org/licenses/by/4.0/)
+
+### DORA
+[CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)
