@@ -32,27 +32,19 @@ the artifacts will be triggered.
 This script does not generate any images, but you
 can use the preview features/plugins of your editor or IDE to see the images.
 
-## Copyright
+## Copyright and Licenses
 The model files are © 2024 Ludger Solbach.
+Licensed under [CC BY](https://creativecommons.org/licenses/by/4.0/).
 
 ### 12 Factor App
-Text Copyright (c) 2012 Adam Wiggins
+Copyright (c) 2012 Adam Wiggins.
+Licensed under [MIT License](https://github.com/heroku/12factor/blob/main/LICENSE).
 
 ### Domain Driven Design
-Domain Driven Design pattern descriptions by
-**Eric Evans, DOMAIN-DRIVEN DESIGN, Addison-Wesley, © Eric Evans, 2004.**
+Domain Driven Design pattern descriptions by 
+*Eric Evans, DOMAIN-DRIVEN DESIGN, Addison-Wesley, © Eric Evans, 2004.*
+Licensed under [CC BY](https://creativecommons.org/licenses/by/4.0/).
 
 ### DORA
-DORA is a program run by Google Cloud
-
-## License
-[CC BY](https://creativecommons.org/licenses/by/4.0/)
-
-### 12 Factor App
-[MIT License](https://github.com/heroku/12factor/blob/main/LICENSE)
-
-### Domain Driven Design
-[CC BY](https://creativecommons.org/licenses/by/4.0/)
-
-### DORA
-[CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+DORA is a program run by Google Cloud.
+Licensed under [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
