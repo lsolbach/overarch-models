@@ -8,15 +8,15 @@ Microservice
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Service C](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-c.md) | stores | [Datastore C](../../../../../software-development/architecture/blueprint/microservices/event-driven/datastore-c.md) | aggregate C |
+| [Service C](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-c.md) | stores | [Datastore C](../../../../../software-development/architecture/blueprint/microservices/event-driven/datastore-c.md) |  | aggregate C |
 ## Outgoing Asynchronous Publish/Produce
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Service C](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-c.md) | publishes | [C Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-c.md) | domain events for aggregate C |
+| [Service C](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-c.md) | publishes | [C Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-c.md) |  | domain events for aggregate C |
 ## Outgoing Asynchronous Subscribe/Consume
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Service C](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-c.md) | subscribes | [B Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-b.md) | domain events for aggregate B |
+| [Service C](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-c.md) | subscribes | [B Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-b.md) |  | domain events for aggregate B |
 
 ## Container View
 ![Container View of the Event Driven Microservices Blueprint](../../../../../software-development/architecture/blueprint/microservices/event-driven/container-view.png)

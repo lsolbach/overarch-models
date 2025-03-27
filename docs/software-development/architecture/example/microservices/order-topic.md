@@ -14,12 +14,12 @@ event-driven, simple
 ## Incoming Asynchronous Publish/Produce 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Order Service](../../../../software-development/architecture/example/microservices/order-service.md) | publish | [Order Topic](../../../../software-development/architecture/example/microservices/order-topic.md) | OrderProcessedEvent, OrderCancelledEvent |
+| [Order Service](../../../../software-development/architecture/example/microservices/order-service.md) | publish | [Order Topic](../../../../software-development/architecture/example/microservices/order-topic.md) | Kafka | OrderProcessedEvent, OrderCancelledEvent |
 ## Incoming Asynchronous Subscribe/Consume 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Inventory Service](../../../../software-development/architecture/example/microservices/inventory-service.md) | subscribe | [Order Topic](../../../../software-development/architecture/example/microservices/order-topic.md) | OrderProcessedEvent, OrderCancelledEvent |
-| [Notification Service](../../../../software-development/architecture/example/microservices/notification-service.md) | subscribe | [Order Topic](../../../../software-development/architecture/example/microservices/order-topic.md) | OrderProcessedEvent, OrderCancelledEvent |
+| [Inventory Service](../../../../software-development/architecture/example/microservices/inventory-service.md) | subscribe | [Order Topic](../../../../software-development/architecture/example/microservices/order-topic.md) | Kafka | OrderProcessedEvent, OrderCancelledEvent |
+| [Notification Service](../../../../software-development/architecture/example/microservices/notification-service.md) | subscribe | [Order Topic](../../../../software-development/architecture/example/microservices/order-topic.md) | Kafka | OrderProcessedEvent, OrderCancelledEvent |
 
 ## Container View
 ![Container view for the Microservices example](../../../../software-development/architecture/example/microservices/container-view.png)

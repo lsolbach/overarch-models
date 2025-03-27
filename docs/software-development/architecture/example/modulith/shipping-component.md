@@ -8,13 +8,13 @@ Handles the shipping process
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Order Component](../../../../software-development/architecture/example/modulith/order-component.md) | calls | [Shipping Component](../../../../software-development/architecture/example/modulith/shipping-component.md) | trigger shipping |
-| [Online Shop Frontend Application](../../../../software-development/architecture/example/modulith/online-shop-frontend.md) | calls | [Shipping Component](../../../../software-development/architecture/example/modulith/shipping-component.md) | shipping status |
+| [Order Component](../../../../software-development/architecture/example/modulith/order-component.md) | calls | [Shipping Component](../../../../software-development/architecture/example/modulith/shipping-component.md) | Method Call | trigger shipping |
+| [Online Shop Frontend Application](../../../../software-development/architecture/example/modulith/online-shop-frontend.md) | calls | [Shipping Component](../../../../software-development/architecture/example/modulith/shipping-component.md) | HTTPS | shipping status |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Shipping Component](../../../../software-development/architecture/example/modulith/shipping-component.md) | calls | [Logistics System](../../../../software-development/architecture/example/modulith/logistics-system.md) | process shipping |
-| [Shipping Component](../../../../software-development/architecture/example/modulith/shipping-component.md) | store and query | [Online Shop Database](../../../../software-development/architecture/example/modulith/online-shop-db.md) | shipping status |
+| [Shipping Component](../../../../software-development/architecture/example/modulith/shipping-component.md) | calls | [Logistics System](../../../../software-development/architecture/example/modulith/logistics-system.md) | REST | process shipping |
+| [Shipping Component](../../../../software-development/architecture/example/modulith/shipping-component.md) | store and query | [Online Shop Database](../../../../software-development/architecture/example/modulith/online-shop-db.md) | JDBC | shipping status |
 
 ## Component View
 ![Component view for the Online Shop Modulith example](../../../../software-development/architecture/example/modulith/component-view.png)

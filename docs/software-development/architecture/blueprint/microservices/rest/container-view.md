@@ -24,9 +24,9 @@ Shows the containers of the REST Microservices Blueprint
 ## Synchronous Requests
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Service C](../../../../../software-development/architecture/blueprint/microservices/rest/service-c.md) | stores | [Datastore C](../../../../../software-development/architecture/blueprint/microservices/rest/datastore-c.md) | aggregate C |
-| [Service B](../../../../../software-development/architecture/blueprint/microservices/rest/service-b.md) | stores | [Datastore A](../../../../../software-development/architecture/blueprint/microservices/rest/datastore-b.md) | aggregate B |
-| [Service A](../../../../../software-development/architecture/blueprint/microservices/rest/service-a.md) | stores | [Datastore A](../../../../../software-development/architecture/blueprint/microservices/rest/datastore-a.md) | aggregate A |
+| [Service C](../../../../../software-development/architecture/blueprint/microservices/rest/service-c.md) | stores | [Datastore C](../../../../../software-development/architecture/blueprint/microservices/rest/datastore-c.md) |  | aggregate C |
+| [Service B](../../../../../software-development/architecture/blueprint/microservices/rest/service-b.md) | stores | [Datastore A](../../../../../software-development/architecture/blueprint/microservices/rest/datastore-b.md) |  | aggregate B |
+| [Service A](../../../../../software-development/architecture/blueprint/microservices/rest/service-a.md) | stores | [Datastore A](../../../../../software-development/architecture/blueprint/microservices/rest/datastore-a.md) |  | aggregate A |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

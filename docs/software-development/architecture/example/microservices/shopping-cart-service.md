@@ -11,13 +11,13 @@ advanced, microservice
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Shopping Cart Service](../../../../software-development/architecture/example/microservices/shopping-cart-service.md) | request | [Product Catalog Service](../../../../software-development/architecture/example/microservices/product-catalog-service.md) | Product Data |
-| [Shopping Cart Service](../../../../software-development/architecture/example/microservices/shopping-cart-service.md) | request | [Order Service](../../../../software-development/architecture/example/microservices/order-service.md) | Create Order |
-| [Shopping Cart Service](../../../../software-development/architecture/example/microservices/shopping-cart-service.md) | store | [Shopping Cart Database](../../../../software-development/architecture/example/microservices/shopping-cart-db.md) | Shopping Cart Data |
+| [Shopping Cart Service](../../../../software-development/architecture/example/microservices/shopping-cart-service.md) | request | [Product Catalog Service](../../../../software-development/architecture/example/microservices/product-catalog-service.md) | REST | Product Data |
+| [Shopping Cart Service](../../../../software-development/architecture/example/microservices/shopping-cart-service.md) | request | [Order Service](../../../../software-development/architecture/example/microservices/order-service.md) | REST | Create Order |
+| [Shopping Cart Service](../../../../software-development/architecture/example/microservices/shopping-cart-service.md) | store | [Shopping Cart Database](../../../../software-development/architecture/example/microservices/shopping-cart-db.md) | MongoDB | Shopping Cart Data |
 ## Outgoing Asynchronous Publish/Produce
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Shopping Cart Service](../../../../software-development/architecture/example/microservices/shopping-cart-service.md) | publish | [Shopping Cart Topic](../../../../software-development/architecture/example/microservices/shopping-cart-topic.md) | ShoppingCartOrderedEvent |
+| [Shopping Cart Service](../../../../software-development/architecture/example/microservices/shopping-cart-service.md) | publish | [Shopping Cart Topic](../../../../software-development/architecture/example/microservices/shopping-cart-topic.md) | Kafka | ShoppingCartOrderedEvent |
 
 ## Container View
 ![Container view for the Microservices example](../../../../software-development/architecture/example/microservices/container-view.png)

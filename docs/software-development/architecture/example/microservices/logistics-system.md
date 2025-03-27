@@ -13,8 +13,8 @@ system to handle the actual shipping with companies like DHL or UPS.
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md) |  | [Logistics System](../../../../software-development/architecture/example/microservices/logistics-system.md) | calls |
-| [Shipping Service](../../../../software-development/architecture/example/microservices/shipping-service.md) | request | [Logistics System](../../../../software-development/architecture/example/microservices/logistics-system.md) | Ship Order |
+| [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md) |  | [Logistics System](../../../../software-development/architecture/example/microservices/logistics-system.md) |  | calls |
+| [Shipping Service](../../../../software-development/architecture/example/microservices/shipping-service.md) | request | [Logistics System](../../../../software-development/architecture/example/microservices/logistics-system.md) | REST | Ship Order |
 
 ## System Context View
 ![Context view for the Microservices example](../../../../software-development/architecture/example/microservices/context-view.png)

@@ -8,7 +8,7 @@ Topic for the aggregate C
 ## Incoming Asynchronous Publish/Produce 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Service C](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-c.md) | publishes | [C Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-c.md) | domain events for aggregate C |
+| [Service C](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-c.md) | publishes | [C Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-c.md) |  | domain events for aggregate C |
 
 ## Container View
 ![Container View of the Event Driven Microservices Blueprint](../../../../../software-development/architecture/blueprint/microservices/event-driven/container-view.png)

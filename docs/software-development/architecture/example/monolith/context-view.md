@@ -22,10 +22,10 @@ Shows the systems of the Online Shop Monolith example and their relations
 ## Synchronous Requests
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | sends email | [Email System](../../../../software-development/architecture/example/monolith/email-system.md) | order confirmation, shipping notification |
-| [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | ship | [Logistics System](../../../../software-development/architecture/example/monolith/logistics-system.md) | products |
-| [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | trigger payment | [Payment System](../../../../software-development/architecture/example/monolith/payment-system.md) | credit card, paypal |
-| [Customer](../../../../software-development/architecture/example/monolith/customer.md) | uses | [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | browse products, place orders |
+| [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | sends email | [Email System](../../../../software-development/architecture/example/monolith/email-system.md) |  | order confirmation, shipping notification |
+| [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | ship | [Logistics System](../../../../software-development/architecture/example/monolith/logistics-system.md) | REST | products |
+| [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | trigger payment | [Payment System](../../../../software-development/architecture/example/monolith/payment-system.md) | REST | credit card, paypal |
+| [Customer](../../../../software-development/architecture/example/monolith/customer.md) | uses | [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | HTTPS | browse products, place orders |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

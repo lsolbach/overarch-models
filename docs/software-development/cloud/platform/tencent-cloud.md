@@ -7,7 +7,7 @@ A cloud computing platform and service created by Tencent. Tencent Cloud offers 
 
 
 ## Tags
-cloud, provider, platform
+tencent, cloud, platform
 ## Superordinates
 | Concept | Description |
 |---|---|

@@ -15,13 +15,13 @@ Java EE, Oracle, AngularJS
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Customer](../../../../software-development/architecture/example/monolith/customer.md) | uses | [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | browse products, place orders |
+| [Customer](../../../../software-development/architecture/example/monolith/customer.md) | uses | [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | HTTPS | browse products, place orders |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | sends email | [Email System](../../../../software-development/architecture/example/monolith/email-system.md) | order confirmation, shipping notification |
-| [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | ship | [Logistics System](../../../../software-development/architecture/example/monolith/logistics-system.md) | products |
-| [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | trigger payment | [Payment System](../../../../software-development/architecture/example/monolith/payment-system.md) | credit card, paypal |
+| [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | sends email | [Email System](../../../../software-development/architecture/example/monolith/email-system.md) |  | order confirmation, shipping notification |
+| [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | ship | [Logistics System](../../../../software-development/architecture/example/monolith/logistics-system.md) | REST | products |
+| [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | trigger payment | [Payment System](../../../../software-development/architecture/example/monolith/payment-system.md) | REST | credit card, paypal |
 
 ## System Context View
 ![Context view for the Online Shop Monolith example](../../../../software-development/architecture/example/monolith/context-view.png)

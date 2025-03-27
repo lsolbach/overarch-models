@@ -8,7 +8,7 @@ Stores the aggregate A
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Service B](../../../../../software-development/architecture/blueprint/microservices/rest/service-b.md) | stores | [Datastore A](../../../../../software-development/architecture/blueprint/microservices/rest/datastore-b.md) | aggregate B |
+| [Service B](../../../../../software-development/architecture/blueprint/microservices/rest/service-b.md) | stores | [Datastore A](../../../../../software-development/architecture/blueprint/microservices/rest/datastore-b.md) |  | aggregate B |
 
 ## Container View
 ![Container View of the REST Microservices Blueprint](../../../../../software-development/architecture/blueprint/microservices/rest/container-view.png)

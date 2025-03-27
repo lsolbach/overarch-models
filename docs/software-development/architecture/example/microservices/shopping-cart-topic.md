@@ -14,12 +14,12 @@ event-driven, advanced
 ## Incoming Asynchronous Publish/Produce 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Shopping Cart Service](../../../../software-development/architecture/example/microservices/shopping-cart-service.md) | publish | [Shopping Cart Topic](../../../../software-development/architecture/example/microservices/shopping-cart-topic.md) | ShoppingCartOrderedEvent |
+| [Shopping Cart Service](../../../../software-development/architecture/example/microservices/shopping-cart-service.md) | publish | [Shopping Cart Topic](../../../../software-development/architecture/example/microservices/shopping-cart-topic.md) | Kafka | ShoppingCartOrderedEvent |
 ## Incoming Asynchronous Subscribe/Consume 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Order Service](../../../../software-development/architecture/example/microservices/order-service.md) | subscribe | [Shopping Cart Topic](../../../../software-development/architecture/example/microservices/shopping-cart-topic.md) | ShoppingCartOrderedEvent |
-| [Payment Service](../../../../software-development/architecture/example/microservices/payment-service.md) | subscribe | [Shopping Cart Topic](../../../../software-development/architecture/example/microservices/shopping-cart-topic.md) | ShoppingCartOrderedEvent |
+| [Order Service](../../../../software-development/architecture/example/microservices/order-service.md) | subscribe | [Shopping Cart Topic](../../../../software-development/architecture/example/microservices/shopping-cart-topic.md) | Kafka | ShoppingCartOrderedEvent |
+| [Payment Service](../../../../software-development/architecture/example/microservices/payment-service.md) | subscribe | [Shopping Cart Topic](../../../../software-development/architecture/example/microservices/shopping-cart-topic.md) | Kafka | ShoppingCartOrderedEvent |
 
 ## Container View
 ![Container view for the Microservices example](../../../../software-development/architecture/example/microservices/container-view.png)

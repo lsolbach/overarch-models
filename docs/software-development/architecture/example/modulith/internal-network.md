@@ -13,7 +13,7 @@
 ## Links to
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Perimeter Network](../../../../software-development/architecture/example/modulith/perimeter-network.md) | links to | [Internal Network](../../../../software-development/architecture/example/modulith/internal-network.md) | The Perimeter Network links to the Internal Network via firewall. |
+| [Perimeter Network](../../../../software-development/architecture/example/modulith/perimeter-network.md) | links to | [Internal Network](../../../../software-development/architecture/example/modulith/internal-network.md) |  | The Perimeter Network links to the Internal Network via firewall. |
 
 
 ## Deployment

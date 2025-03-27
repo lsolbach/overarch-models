@@ -7,7 +7,7 @@ A cloud computing platform and service created by Oracle. Oracle Cloud offers a 
 
 
 ## Tags
-cloud, provider, platform
+cloud, oracle, platform
 ## Superordinates
 | Concept | Description |
 |---|---|

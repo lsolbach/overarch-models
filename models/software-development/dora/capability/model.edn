@@ -7,8 +7,994 @@
   ;;;
 
   ;; Nodes
+  ;; Capabilities
+  ;; https://dora.dev/devops-capabilities/
+  {:el :concept
+   :id :software-development.dora.capability/climate-for-learning
+   :name "Climate for Learning"
+   :desc "A key predictor of software delivery performance"
+   :doc "A climate for learning is a key predictor of software delivery performance.
+A climate for learning is a work environment where it is safe to learn from
+mistakes, where people are encouraged to experiment, and where there is a high
+degree of trust. A climate for learning is part of a wider group of
+capabilities, including team experimentation, working in small batches, and
+visibility of work in the value stream, that together represent a lean approach
+to product management. When these capabilities are applied together, they help
+predict software delivery performance and organizational performance."
+   :tags #{"predictor"}}
+  {:el :concept
+   :id :software-development.dora.capability/fast-flow
+   :name "Fast Flow"
+   :desc "A key predictor of software delivery performance."
+   :doc "Fast flow is a key predictor of software delivery performance. Fast flow is
+the movement of work from development through testing and deployment into
+operations. Fast flow is part of a wider group of capabilities, including
+working in small batches, team experimentation, and visibility of work in the
+value stream, that together represent a lean approach to product management.
+When these capabilities are applied together, they help predict software
+delivery performance and organizational performance."
+   :tags #{"predictor"}}
+  {:el :concept
+   :id :software-development.dora.capability/fast-feedback
+   :name "Fast Feedback"
+   :desc "A key predictor of software delivery performance."
+   :doc "Fast feedback is a key predictor of software delivery performance.
+Fast feedback is the ability to get information about the impact of a change
+quickly. Fast feedback is part of a wider group of capabilities, including
+working in small batches, team experimentation, and visibility of work in the
+value stream, that together represent a lean approach to product management.
+When these capabilities are applied together, they help predict software
+delivery performance and organizational performance."
+   :tags #{"predictor"}}
+
+
+
+  {:el :concept
+   :id :software-development.dora.capability/code-maintainability
+   :name "Code maintainability"
+   :desc "Make it easy for developers to find, reuse, and change code, and keep dependencies up-to-date."
+   :doc "It takes a lot of code to run the systems we build: The Android operating system runs on 12 to 15 million lines of code, Google’s monolithic code repository contains over 1 billion lines of code, and a typical smartphone app has 50,000 lines of code.
+  
+  The 2019 State of DevOps Report from DevOps Research and Assessment (DORA) research shows that the ability of teams to maintain their code effectively is one of a number of technical practices that contribute positively to success with continuous delivery.
+  
+  If your team is doing a good job with code maintainability, the following are true:
+  
+      * It’s easy for the team to find examples in the codebase, reuse other people’s code, and change code maintained by other teams if necessary.
+      * It’s easy for the team to add new dependencies to their project, and to migrate to a new version of a dependency.
+      * The team’s dependencies are stable and rarely break the code.
+  
+  These findings highlight the importance of making it easy for developers to find, reuse, and change code across the whole organization’s codebase, and also of implementing practices and tools to help with dependency management.
+  
+  Code maintainability is a capability that requires organization-wide coordination, since it relies on being able to search, reuse, and change other teams’ code. Managing dependencies effectively is often a major source of pain when working with large codebases and large organizations. Tooling that can help avoid problems with dependencies or illuminate the consequences of code changes can improve design decisions and code quality for all engineers, which in turn enables them to work faster and create more stable, reliable software.
+  "
+   :tags #{"capability" "technical" "core"}
+   :link/reference-url "https://dora.dev/capabilities/code-maintainability/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/continuous-delivery
+   :name "Continouos delivery"
+   :desc "Make deploying software a reliable, low-risk process that can be performed on demand at any time."
+   :doc "Continuous delivery is the ability to release changes of all kinds on demand quickly, safely, and sustainably. Teams that practice continuous delivery well are able to release software and make changes to production in a low-risk way at any time—including during normal business hours—without impacting users.
+  
+  You can apply the principles and practices of continuous delivery to any software context, including the following:
+  
+      * Updating services in a complex distributed system.
+      * Upgrading mainframe software.
+      * Making infrastructure configuration changes.
+      * Making database schema changes.
+      * Updating firmware automatically.
+      * Releasing new versions of a mobile app.
+  
+  When your team practices continuous delivery, you can answer “yes” to the following questions:
+  
+      * Is our software in a deployable state throughout its lifecycle?
+      * Do we prioritize keeping the software deployable over working on new features?
+      * Is fast feedback on the quality and deployability of the system we are working on available to everyone on the team?
+      * When we get feedback that the system is not deployable (such as failing builds or tests), do we make fixing these issues our highest priority?
+      * Can we deploy our system to production, or to end users, at any time, on demand?
+  
+  Continuous delivery is commonly conflated with continuous deployment, but they are separate practices. Continuous deployment is when teams try to deploy every code change to production as soon as possible. Continuous deployment works well for web services, but can’t be applied to software such as firmware or mobile apps. Continuous delivery is applied to all kinds of software including firmware and mainframe systems, and in highly regulated environments. You can and should start with continuous delivery, even if you never intend to start using continuous deployment.
+  
+  Continuous delivery and continuous deployment are mistakenly viewed as risky and not suited to regulated or safety critical domains. In fact, the goal of continuous delivery is to reduce software risk, and DORA research has shown consistently that high performers achieve higher levels of reliability and availability. The technical practices that drive continuous delivery—continuous testing, shifting left on security, and comprehensive testing and observability—are even more important in highly regulated and safety-critical domains. Continuous delivery has been successfully applied many times in highly regulated domains such as financial services and government."
+   :tags #{"capability" "technical" "core"}
+   :link/reference-url "https://dora.dev/capabilities/continuous-delivery/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/continuous-integration
+   :name "Continouos integration"
+   :desc "Learn about common mistakes, ways to measure, and how to improve on your continuous integration efforts."
+   :doc "Software systems are complex, and an apparently simple, self-contained change to a single file can have unintended side effects on the overall system. When a large number of developers work on related systems, coordinating code updates is a hard problem, and changes from different developers can be incompatible.
+  
+  The practice of continuous integration (CI) was created to address these problems. CI follows the principle that if something takes a lot of time and energy, you should do it more often, forcing you to make it less painful. By creating rapid feedback loops and ensuring that developers work in small batches, CI enables teams to produce high quality software, to reduce the cost of ongoing software development and maintenance, and to increase the productivity of the teams."
+   :tags #{"capability" "technical" "core"}
+   :link/reference-url "https://dora.dev/capabilities/continuous-integration/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/customer-feedback
+   :name "Customer feedback"
+   :desc "Drive better organizational outcomes by gathering customer feedback and incorporating it into product and feature design."
+   :doc "In software projects, developers often work on products for months or years, sometimes for multiple releases without validating whether the features they’re building are actually helping users solve their problems, or whether the features are being used at all.
+  
+  Customer feedback is part of a wider group of capabilities, including visibility of work in the value stream, working in small batches, and team experimentation, that together represent a lean approach to product management.
+  
+  When these capabilities are applied together, they help predict the following:
+  
+      * Software delivery performance, which is measured in terms of delivery speed, stability, and availability.
+      * Organizational performance, which is measured in terms of profitability, market share, and productivity.
+  
+  DevOps Research and Assessment (DORA) research shows (PDF) that teams achieve higher performance when they work in organizations that utilize those capabilities and also do the following:
+  
+      * Collect customer satisfaction metrics regularly.
+      * Seek out and attend to customer feedback on product and feature quality.
+      * Use this feedback to help design products and features."
+   :tags #{"capability" "process"}
+   :link/reference-url "https://dora.dev/capabilities/customer-feedback/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/database-change-management
+   :name "Database change management"
+   :desc "Make sure database changes don't cause problems or slow you down."
+   :doc "Database changes are often a major source of risk and delay when performing deployments. DevOps Research and Assessment (DORA) investigated which database-related practices help during the process of implementing continuous delivery, improving both software delivery performance and availability.
+  
+  DORA’s research found that integrating database work into the software delivery process positively contributes to continuous delivery. But how can your teams improve your database delivery as part of implementing continuous delivery? A few practices predict performance outcomes.
+  
+  DORA discovered that good communication and comprehensive configuration management that includes the database matter. Teams that do well at continuous delivery store their database changes as scripts in version control and manage these changes in the same way they manage production application changes. Furthermore, when changes to the application require database changes, these teams discuss them with the people responsible for the production database, and ensure the engineering team has visibility into the progress of pending database changes.
+  
+  When teams follow these practices, database changes don’t slow them down or cause problems when they perform code deployments."
+   :tags #{"capability" "technical" "core"}
+   :link/reference-url "https://dora.dev/capabilities/database-change-management/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/deployment-automation
+   :name "Deployment automation"
+   :desc "Best practices and approaches for deployment automation and reducing manual intervention in the release process."
+   :doc "Deployment automation is what enables you to deploy your software to testing and production environments with the push of a button. Automation is essential to reduce the risk of production deployments. It’s also essential for providing fast feedback on the quality of your software by allowing teams to do comprehensive testing as soon as possible after changes.
+  
+  An automated deployment process has the following inputs:
+  
+      * Packages created by the continuous integration (CI) process (these packages should be deployable to any environment, including production).
+      * Scripts to configure the environment, deploy the packages, and perform a deployment test (sometimes known as a smoke test).
+      * Environment-specific configuration information.
+  
+  We recommend that you store the scripts and configuration information in version control. Your deployment process should download the packages from an artifact repository (for example, Artifact Registry, Nexus, Artifactory, or your CI tool’s built-in repository).
+  
+  The scripts usually perform the following tasks:
+  
+      * Prepare the target environment, perhaps by installing and configuring any necessary software, or by starting up a virtual host from a pre-prepared image in a cloud provider such as Google Cloud.
+      * Deploy the packages.
+      * Perform any deployment-related tasks such as running database migration scripts.
+      * Perform any required configuration.
+      * Perform a deployment test to make sure that any necessary external services are reachable, and that the system is functioning."
+   :tags #{"capability" "technical" "core"}
+   :link/reference-url "https://dora.dev/capabilities/deployment-automation/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/documentation-quality
+   :name "Documentation quality"
+   :desc "Maintain accurate, well-organized, user-centric internal documentation to empower teams throughout the software development process."
+   :doc "Documentation quality interacts with technical capabilities to improve organizational performance. This interaction dramatically amplifies the impact that software teams can deliver toward achieving an organization’s overarching goals. Practices which contribute to documentation quality include:
+  
+      * Documenting critical use cases for your products and services.
+      * Creating clear guidelines for updating and editing existing documentation.
+      * Defining owners.
+      * Including documentation as part of the software development process.
+      * Recognizing documentation work during performance reviews and promotions."
+   :tags #{"capability" "process" "core"}
+   :link/reference-url "https://dora.dev/capabilities/documentation-quality/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/empowering-teams-to-choose-tools
+   :name "Empowering teams to choose tools"
+   :desc "Empower teams to make informed decisions on tools and technologies. Learn how these decisions drive more effective software delivery."
+   :doc "If you want to achieve higher software delivery performance and increase the job satisfaction of your technical staff, you should empower them to make informed choices about the tools and technologies they use to do their work. Research (PDF) from the DevOps Research and Assessment (DORA) team shows this contributes to better continuous delivery and higher software delivery performance. Teams that can choose their own tools are able to make these choices based on how they work and the tasks they need to perform. No one knows better than practitioners what they need to be effective, so it’s not surprising that practitioner tool choice helps to drive better outcomes.
+  
+  Allowing teams to choose tools doesn’t mean each team is given free rein to select any tool they want. Introducing technologies without any constraints can increase technical debt and fragility. However, when you combine tool choice with other capabilities—for example, a full view of the system, fast feedback, and the understanding that they are responsible for the code that they write—it helps your technologists make wise decisions about tools they will use and need to support. This pattern has been observed at companies like Google and Netflix, where a preferred technical stack is supported by default. But if a team feels strongly that a different tool or technology is best for their case, they are free to choose it. Teams understand that their choice comes with the understanding that they must also do the work of supporting this new technical stack."
+   :tags #{"capability" "technical" "core"}
+   :link/reference-url "https://dora.dev/capabilities/teams-empowered-to-choose-tools/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/flexible-infrastructure
+   :name "Flexible infrastructure"
+   :desc "Find out how to manage cloud infrastructure effectively so you can achieve higher levels of agility, availability, and cost visibility."
+   :doc "Infrastructure flexibility is often a motivation for organizations to adopt cloud computing. However, the use of a cloud provider alone may not be sufficient to achieve the desired agility. DORA’s research uses a definition from The USA’s National Institute of Standards and Technology (NIST) to establish the five essential characteristics that enable cloud computing to provide its full potential benefit to an organization:
+  
+      * On-demand self-service
+      * Broad network access
+      * Resource pooling
+      * Rapid elasticity
+      * Measured service"
+   :tags #{"capability" "technical" "core"}
+   :link/reference-url "https://dora.dev/capabilities/flexible-infrastructure/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/monitoring-and-observability
+   :name "Monitoring and Observability"
+   :desc "Learn how to build tooling to help you understand and debug your production systems."
+   :doc "Good monitoring is a staple of high-performing teams. DevOps Research and Assessment (DORA) research shows that a comprehensive monitoring and observability solution, along with a number of other technical practices, positively contributes to continuous delivery.
+  
+  DORA’s research defined these terms as follows:
+  
+  Monitoring is tooling or a technical solution that allows teams to watch and understand the state of their systems. Monitoring is based on gathering predefined sets of metrics or logs.
+  
+  Observability is tooling or a technical solution that allows teams to actively debug their system. Observability is based on exploring properties and patterns not defined in advance.
+  
+  To do a good job with monitoring and observability, your teams should have the following:
+  
+      * Reporting on the overall health of systems (Are my systems functioning? Do my systems have sufficient resources available?).
+      * Reporting on system state as experienced by customers (Do my customers know if my system is down and have a bad experience?).
+      * Monitoring for key business and systems metrics.
+      * Tooling to help you understand and debug your systems in production.
+      * Tooling to find information about things you did not previously know (that is, you can identify unknown unknowns).
+      * Access to tools and data that help trace, understand, and diagnose infrastructure problems in your production environment, including interactions between services."
+   :tags #{"capability" "technical" "core"}
+   :link/reference-url "https://dora.dev/capabilities/monitoring-and-observability/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/test-automation
+   :name "Test automation"
+   :desc "Improve software quality by building reliable automated test suites and performing all kinds of testing throughout the software delivery lifecycle."
+   :doc "The key to building quality into software is getting fast feedback on the impact of changes throughout the software delivery lifecycle. Traditionally, teams relied on manual testing and code inspection to verify systems’ correctness. These inspections and tests typically occurred in a separate phase after “dev complete.” This approach has the following drawbacks:
+  
+      Manual regression testing is time-consuming to execute and expensive to perform, which makes it a bottleneck in the process. Software can’t be released frequently and developers can’t get quick feedback.
+      Manual tests and inspections are not reliable, because people are poor at repetitive tasks like manual regression tests, and it is hard to predict the impact of changes on a complex software system through inspection.
+      Once software is “dev complete”, developers have to wait a long time to get feedback on their changes. This usually results in substantial work to triage defects and fix them. Performance, security, and reliability problems often require design changes that are even more expensive to address when discovered at this stage.
+      Long feedback cycles also make it harder for developers to learn how to build quality code, and under schedule pressure development teams can sometimes treat quality as “somebody else’s problem”.
+      When developers aren’t responsible for testing their own code it’s hard for them to learn how to write testable code.
+      For systems that evolve over time, keeping test documentation up to date requires considerable effort.
+  
+  Instead, teams should:
+  
+      Perform all types of testing continuously throughout the software delivery lifecycle.
+      Create and curate fast, reliable suites of automated tests which are run as part of your continuous delivery pipelines.
+  
+  Not only does this help teams build (and learn how to build) high quality software faster, DORA’s research shows that it also drives improved software stability, reduced team burnout, and lower deployment pain."
+   :tags #{"capability" "technical" "core"}
+   :link/reference-url "https://dora.dev/capabilities/test-automation/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/test-data-management
+   :name "Test data management"
+   :desc "Understand the right strategies for managing test data effectively along with approaches to provide fast, secure data access for testing."
+   :doc "Automated testing is a key component of modern software delivery practices. The ability to execute a comprehensive set of unit, integration, and system tests is essential to verify that your app or service behaves as expected, and can be safely deployed to production. To ensure that your tests are validating realistic scenarios, it’s critical to supply the tests with realistic data.
+  
+  Test data is important because it’s required by all kinds of tests throughout your test suite, including manual and automated tests. Good test data lets you validate common or high value user journeys, test for edge cases, reproduce defects, and simulate errors.
+  
+  However, it’s hard to use and manage test data effectively. Over-reliance on data defined outside of test scope can make your tests brittle and increase maintenance costs. Dependencies on external data sources can introduce delays and impact test performance. Copying production data introduces risk because it might contain sensitive information. To address these challenges, you need to manage your test data carefully and strategically."
+   :tags #{"capability" "technical" "core"}
+   :link/reference-url "https://dora.dev/capabilities/test-data-management/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/trunk-based-development
+   :name "Trunk based development"
+   :desc "Prevent merge-conflict hassles with trunk-based development practices."
+   :doc "There are two main patterns for developer teams to work together using version control. One is to use feature branches, where either a developer or a group of developers create a branch usually from trunk (also known as main or mainline) and then work in isolation on that branch until the feature they are building is complete. When the team considers the feature ready to go, they merge the feature branch back to trunk.
+  
+  The second pattern is known as trunk-based development, where each developer divides their own work into small batches and merges that work into trunk at least once (and potentially several times) a day. The key difference between these approaches is scope. Feature branches typically involve multiple developers and take days or even weeks of work. In contrast, branches in trunk-based development typically last no more than a few hours, with many developers merging their individual changes into trunk frequently."
+   :tags #{"capability" "technical" "core"}
+   :link/reference-url "https://dora.dev/capabilities/trunk-based-development/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/version-control
+   :name "Version Control"
+   :desc "A guide to implementing the right version control practices for reproducibility and traceability."
+   :doc "Version control systems like Git, Subversion, and Mercurial provide a
+  logical means to organize files and coordinate their creation, controlled
+  access, updating, and deletion across teams and organizations. Version control
+  is closely related to automation. In fact, automation and continuous integration
+  rely on these files for the source code of the automation itself, as well as
+  the configuration to be automated and the data to be distributed.
+  
+  In order to improve software delivery, teams need to use version control for source
+  code, test and deployment scripts, infrastructure and application configuration
+  information, and the many libraries and packages they depend upon. In the version
+  control system, teams must be able to query the current (and historical) state of
+  their environments. Version control also offers direct benefits such as disaster
+  recovery and auditability.
+  
+  Research shows that comprehensive use of version control, among other capabilities,
+  predicts continuous delivery. In particular, version control helps you meet these
+  critical requirements:
+      * Reproducibility. Teams must be able to provision any environment in a fully
+        automated fashion, and know that any new environment reproduced from the same
+        configuration is identical. A prerequisite for achieving this goal is having
+        the scripts and configuration information that are required to provision an
+        environment stored in a shared, accessible system.
+      * Traceability. Teams should be able to pick any environment and determine
+        quickly and precisely the versions of every dependency used to create that
+        environment. They should also be able to compare two versions of an
+        environment and see what has changed between them.
+  
+  These capabilities give teams several important benefits:
+  
+   * Disaster recovery. When something goes wrong with an environment—for example,
+     a hardware failure or a security breach—teams need to be able to reproduce
+     that environment in a deterministic amount of time in order to be able to
+     restore service.
+   * Auditability. To demonstrate the integrity of the delivery process, teams
+     must be able to show the path backward from every deployment to the elements
+     it came from, including their version. You enable this through comprehensive
+     configuration management combined with deployment pipelines.
+   * Higher quality. The software delivery process is often subject to long
+     delays waiting for development, testing, and production environments to be
+     prepared. When this preparation can be done automatically from version
+     control, teams can get feedback on the impact of their changes more rapidly,
+     enabling teams to build quality into their software.
+   * Capacity management. When teams want to add more capacity to their
+     environments, the ability to create reproductions of existing servers is
+     essential. This capability enables the horizontal scaling of modern
+     cloud-based distributed systems.
+   * Response to defects. When teams discover a critical defect, or a
+     vulnerability in some component of their system, they need to release a new
+     version of their software as quickly as possible. Storing all artifacts in
+     version control means teams can roll back to a previously verified working
+     state quickly and reliably.
+  
+  As environments become more complex and heterogeneous, it’s progressively
+  harder to achieve these goals. It’s impossible to achieve perfect
+  reproducibility and traceability for a complex enterprise system (at a
+  minimum, every real system has state). Thus, a key part of configuration
+  management is working to simplify the architecture, environments, and
+  processes to reduce the investment required to achieve the expected
+     benefits."
+   :tags #{"capability" "technical" "core"}
+   :link/reference-url "https://dora.dev/capabilities/version-control/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/loosely-coupled-teams
+   :name "Loosely coupled teams"
+   :desc "Enable teams to test, deploy, and change systems without dependencies on other teams"
+   :doc "Research from the DORA team shows that effective organizational and technical
+  structures are predictors for achieving continuous delivery. Whether you’re
+  using Kubernetes or mainframes, your architecture enables teams to adopt
+  practices that foster higher levels of software delivery performance.
+  
+  When teams adopt continuous delivery practices, adopting the following
+  architectural practices drives successful outcomes:
+  
+  * Teams can make large-scale changes to the design of their systems without the
+    permission of somebody outside the team or depending on other teams.
+  * Teams are able to complete work without needing fine-grained communication
+    and coordination with people outside the team.
+  * Teams deploy and release their product or service on demand, independently
+    of the services it depends on or of other services that depend on it.
+  * Teams do most of their testing on demand, without requiring an integrated
+    test environment.
+  * Teams can deploy during normal business hours with negligible downtime.
+  
+  It’s possible to achieve these outcomes with mainframe technologies.
+  It’s also possible to fail to achieve them even when using the latest, most
+  trendy technologies. Many organizations invest lots of time and effort in
+  adopting technologies, but fail to achieve critical software delivery outcomes,
+  due to limitations imposed by architecture.
+  
+  When the architecture of the system is designed to enable teams to test,
+  deploy, and change systems without dependencies on other teams, teams
+  require little communication to get work done. In other words, both the
+  architecture and the teams are loosely coupled.
+  
+  This connection between communication bandwidth and systems architecture was
+  first discussed by Melvin Conway, who said, “organizations which design systems
+  … are constrained to produce designs which are copies of the communication
+  structures of these organizations.” To counteract tightly-coupled architectures
+  and help support better communication patterns, teams and organizations can use
+  the Inverse Conway Maneuver, whereby team structures and patterns are designed
+  to promote the expected architectural state. In this way, team communication
+  patterns support and enforce the architectural patterns that are built.
+  
+  With a tightly coupled architecture, small changes can result in large-scale,
+  cascading failures. As a result, anyone working in one part of the system must
+  constantly coordinate with anyone else working in another part of the system,
+  including navigating complex and bureaucratic change management processes.
+  
+  Microservices architectures are supposed to enable these outcomes, as should
+  any true service-oriented architecture. In practice, many so-called
+  service-oriented architectures don’t permit testing and deploying services
+  independently of each other, and thus won’t let teams achieve higher software
+  delivery performance. It’s essential to be strict about these outcomes when
+  implementing service-oriented and microservice architectures."
+   :tags #{"capability" "process" "core"}
+   :link/reference-url "https://dora.dev/capabilities/loosely-coupled-teams/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/monitoring-systems-inform-business-decisions
+   :name "Monitoring systems inform business decisions"
+   :desc "Improve monitoring across infrastructure platforms, middleware, and the application tier, so you can provide fast feedback to developers."
+   :doc "Monitoring is the process of collecting, analyzing, and using information
+  to track applications and infrastructure in order to guide business decisions.
+  Monitoring is a key capability because it gives you insight into your systems
+  and your work. Properly implemented, monitoring also gives you rapid feedback
+  so that you can quickly find and fix problems early in the software development
+  lifecycle.
+  
+  Monitoring also helps you communicate information about your systems to people
+  in other areas of the software development and delivery pipeline, and to other
+  parts of the business. Knowledge acquired downstream in operations might get
+  integrated into upstream teams, such as development and product management.
+  For example, the knowledge gained from operating a highly scalable application
+  that uses a NoSQL database as a data store can be valuable information for
+  developers as they build a similar application.
+  
+  This knowledge transfer allows teams to quickly identify learnings, whether
+  they stem from a production issue, a deployment error, or your customer usage
+  patterns. You can then share these learnings across your organization to help
+  people and systems improve."
+   :tags #{"capability" "process"}
+   :link/reference-url "https://dora.dev/capabilities/monitoring-systems/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/proactive-failure-notification
+   :name "Proactive failure notification"
+   :desc "Set proactive failure notifications to identify critical issues and act on problems before they arise."
+   :doc "Proactive failure notification is the practice of generating
+  notifications when monitored values approach known failure thresholds,
+  and not waiting for the system to alert you it has already failed — or
+  worse, to find out from customers that your application or service is
+  down. Using this approach, you can identify and potentially resolve
+  issues before they become serious or start to impact your users. The 2014
+  DevOps Research and Assessment (DORA) research showed that proactive
+  monitoring is a significant predictor of software delivery performance.
+  According to DORA research, teams that use proactive notification can diagnose
+  and solve problems quickly. When failures are instead primarily reported by a
+  source external to the operations team, such as by the network operations
+  center (NOC) — or worse, by customers — rather than internal monitoring,
+  performance suffers."
+   :tags #{"capability" "process"}
+   :link/reference-url "https://dora.dev/capabilities/proactive-failure-notification/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/pervasive-security
+   :name "Pervasive security"
+   :desc "Build security into the software development lifecycle without compromising delivery speed."
+   :doc "Security is everyone’s responsibility. The 2016 State of DevOps Report research
+  shows that high-performing teams spend 50 percent less time remediating
+  security issues than low-performing teams. By better integrating information
+  security (InfoSec) objectives into daily work, teams can achieve higher levels
+  of software delivery performance and build more secure systems. This idea is
+  also known as shifting left, because concerns, including security concerns, are
+  addressed earlier in the software development lifecycle (that is, left in a
+  left-to-right schedule diagram).
+  
+  In software development, there are at least these four activities: design,
+  develop, test, and release. In a traditional software development cycle,
+  testing (including security testing), happens after development is complete.
+  This typically means that a team discovers significant problems, including
+  architectural flaws, that are expensive to fix.
+  
+  After defects are discovered, developers must then find the contributing
+  factors and how to fix them. In complex production systems, it’s not usually a
+  single cause; instead, it’s often a series of factors that interact to cause a
+  defect. Defects involving security, performance, and availability are expensive
+  and time-consuming to remedy; they often require architectural changes.
+  The time required to find the defect, develop a solution, and fully test the
+  fix are unpredictable. This can further push out delivery dates.
+  
+  Continuous delivery borrows from lean thinking the concept of building quality
+  into the product throughout the process. As W. Edwards Deming says in his
+  Fourteen Points for the Transformation of Management, “Cease dependence on
+  inspection to achieve quality. Eliminate the need for inspection on a mass
+  basis by building quality into the product in the first place.” In this model,
+  rather than taking a purely phased approach, developers work with security and
+  testing experts to design and deliver work in small batches throughout the
+  product lifecycle.
+  
+  Research from DevOps Research and Assessment (DORA) shows that teams can
+  achieve better outcomes by making security a part of everyone’s daily work
+  instead of testing for security concerns at the end of the process. This means
+  integrating security testing and controls into the daily work of development,
+  QA, and operations. Ideally, much of this work can be automated and put into
+  your deployment pipeline. By automating these activities, you can generate
+  evidence on demand to demonstrate that your controls are operating effectively;
+  this information is useful to auditors, assessors, and anyone else working in
+  the value stream.
+  
+  ### How to implement improved security quality
+  Shifting the security review process “left” or earlier in the software
+  development lifecycle requires several changes from traditional information
+  security methods, but is not a significant deviation from traditional software
+  development methods on closer inspection.
+  
+  #### Get InfoSec involved in software design
+  The InfoSec team should get involved in the design phase for all projects.
+  When a project design begins, a security review can be added as a gating factor
+  for releasing the design to the development stage. This review process might
+  represent a fundamental change in the development process. This change might
+  require developer training. It might also require you to increase the staff of
+  the InfoSec team, and provide organizational support for the change. While
+  including InfoSec might represent a change in your organization, including new
+  stakeholders in design is not a new concept and should be embraced when
+  considering the benefits.
+  
+  #### Develop security-approved tools
+  Providing developers with preapproved libraries and tools that include input
+  from the InfoSec team can help standardize developer code. Using standard code
+  makes it easier for the InfoSec team to review the code. Standard code allows
+  automated testing to check that developer are using preapproved libraries.
+  This can also help scale the input and influence from InfoSec, because that
+  team is typically understaffed compared to developers and testers.
+  
+  #### Develop automated testing
+  Building security tests into the automated testing process means that code can
+  be continuously tested at scale without requiring a manual review. Automated
+  testing can identify common security vulnerabilities, and it can be applied
+  uniformly as a part of a continuous integration pipeline or build process.
+  Automated testing does require you to design and develop automated security
+  tests, both initially and as an on-going effort as new security tests are
+  identified. This is another opportunity to scale the input from the InfoSec
+  team.
+  
+  ### Common pitfalls
+  Some common pitfalls that prevent teams from shifting security left include the
+  following:
+  
+  * **Failing to collaborate with the InfoSec team**. The biggest mistake is when
+    teams fail to collaborate with their InfoSec teams. InfoSec is a vitally
+    important function in an era where threats are ubiquitous and ongoing.
+  * **Understaffing InfoSec teams**. InfoSec teams are often poorly staffed.
+    James Wickett, Senior Security Engineer at Verica, cites a ratio of 1 InfoSec
+    person per 10 infrastructure people per 100 developers in large companies.
+  * **Engaging too late with the InfoSec team**. In many cases, the InfoSec gets
+    involved only at the end of the software delivery lifecycle, when it is
+    usually painful and expensive to make changes that are necessary to improve
+    security.
+  * **Being unfamiliar with common security risks**. Many developers are unaware
+    of common security risks such as the OWASP Top 10 and how to prevent them.
+  
+  ### Ways to improve security quality
+  You can improve software delivery performance and security quality by doing the
+  following:
+  
+  * Conduct security reviews. Conduct a security review for all major
+    features while ensuring that the security review process doesn’t slow down
+    development.
+  * Build preapproved code. Have the InfoSec team build preapproved,
+    easy-to-consume libraries, packages, toolchains, and processes for developers
+    and IT operations to use in their work.
+  * Integrate security review into every phase. Integrate InfoSec into the
+    daily work of the entire software delivery lifecycle. This includes having
+    the InfoSec team provide input during the design of the application,
+    attending software demos, and providing feedback during demos.
+  * Test for security. Test security requirements as a part of the automated
+    testing process including areas where preapproved code should be used.
+  * Invite InfoSec to demos. If you include the InfoSec team in your
+    application demos, they can spot security-related weaknesses early, which
+    gives the team ample time to fix.
+  
+  ### Ways to measure security quality
+  Based on the stated ways to improve outlined above, you can measure security in
+  the following ways.
+  
+  Factor to test | What to measure | Goal
+  ---|---|---
+  Whether features undergo a security review | The percentage of features that undergo security review early in the design process. | This percentage should go up over time.
+  Whether security review slows down the development cycle | How much time the review add to the development process. | The time that security reviews take should go down until it reaches an agreed-to minimum.
+  How well security is integrated into the delivery lifecycle | The degree of InfoSec involvement in each step of the software delivery lifecycle. For example, you can measure the number of security reviews captured at each of the stages of the software development lifecycle (design, develop, test, and release). | This value should go up until it reaches a value that suggests that InfoSec is fully integrated into the lifecycle.
+  Whether automated testing covers security requirements | The involvement of the InfoSec team in writing automated tests. As InfoSec gains greater input into the testing process, the number or percentage of security requirements that are included in the automated testing process. | This percentage should go up over time.
+  The use of preapproved libraries, packages, toolchains, and processes | Initially, whether InfoSec is engaged in tools development. As work progresses, the number of InfoSec-approved libraries, packages, and toolchains that are available, or the number of these resources that are used by the development and operations teams. | Engagement should increase over time until the organization agrees that InfoSec oversight of tools is at the correct level. Similarly, the percentage or number of preapproved tools in use should increase until the team uses all the tools that InfoSec has created or approved."
+   :tags #{"capability" "process" "core"}
+   :link/reference-url "https://dora.dev/capabilities/pervasive-security/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/streamlining-change-approval
+   :name "Streamlining change approval"
+   :desc "Replace heavyweight change-approval processes with peer review, to get the benefits of a more reliable, compliant release process without sacrificing speed."
+   :doc "Most IT organizations have change management processes to manage the life cycle of changes to IT services, both internal and customer-facing. These processes are often the primary controls to reduce the operational and security risks of change.
+  
+  Change management processes often include approvals by external reviewers or change approval boards (CABs) to promote changes through the system.
+  
+  Compliance managers and security managers rely on change management processes to validate compliance requirements, which typically require evidence that all changes are appropriately authorized.
+  
+  Research by DevOps Research and Assessment (DORA), presented in the 2019 State of DevOps Report (PDF), finds that change approvals are best implemented through peer review during the development process, supplemented by automation to detect, prevent, and correct bad changes early in the software delivery life cycle. Techniques such as continuous testing, continuous integration, and comprehensive monitoring and observability provide early and automated detection, visibility, and fast feedback.
+  
+  Further, organizations can improve their performance by doing a better job of communicating the existing process and helping teams navigate it efficiently. When team members have a clear understanding of the change approval process, this drives higher performance."
+   :tags #{"capability" "process" "core"}
+   :link/reference-url "https://dora.dev/capabilities/streamlining-change-approval/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/team-experimentation
+   :name "Team experimentation"
+   :desc "Innovate faster by building empowered teams that can try out new ideas without approval from people outside the team."
+   :doc "Even in many so-called agile teams, developers can only work on requirements or stories that are given to them. And despite the developers’ specialist knowledge, or what they discover in the development process, they can’t change those requirements and stories. In truly agile teams, what’s written on the story card is a reminder of a conversation between customers and the team. Stories start from the business outcome that they are trying to achieve or the problem they are trying to solve. Teams then decide on what needs to be done, and test whether it will achieve the outcome or solve the problem.
+  
+  For your organization to fully benefit from modern software development techniques, you must empower your teams to experiment with real users to achieve agreed-upon business outcomes. In this paradigm, developers can quickly prototype and test ideas as they discover more about users and about the problem, and design solutions. Teams then incorporate what they learned into the design of the product or service. Using the lean product management method, these practices help teams ship features that add value to the organization, and ship those features more frequently.
+  
+  Team experimentation is part of lean product management. This approach is often used in combination with capabilities like visibility of work in the value stream, working in small batches, and visibility into customer feedback. These capabilities predict software delivery performance and organizational performance."
+   :tags #{"capability" "process"}
+   :link/reference-url "https://dora.dev/capabilities/team-experimentation/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/visibility-of-work-in-the-value-stream
+   :name "Visibility of work in the value stream"
+   :desc "Understand and visualize the flow of work from idea to customer outcome in order to drive higher performance."
+   :doc "Visibility of work represents the extent to which teams have a good understanding of the flow of work from the business all the way through to customers, and whether they have visibility into this flow, including the status of products and features. Visibility of work is part of a wider group of capabilities that represent lean product management; these capabilities include working in small batches, team experimentation, and visibility into customer feedback. These capabilities predict both software delivery performance and organizational performance (which is measured in terms of profitability, market share, and productivity)."
+   :tags #{"capability" "process"}
+   :link/reference-url "https://dora.dev/capabilities/work-visibility-in-value-stream/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/visual-management
+   :name "Visual management"
+   :desc "Learn about the principles of visual management to promote information sharing, get a common understanding of where the team is, and how to improve."
+   :doc "It’s a common practice for teams that are adopting lean development practices to display key information about their processes in team areas where everybody can see it. Visual management boards can create a shared understanding of where the team is in terms of its operational effectiveness. They can also help identify and remove obstacles in the path to higher performance."
+   :tags #{"capability" "process"}
+   :link/reference-url "https://dora.dev/capabilities/visual-management/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/work-in-process-limits
+   :name "Work in process limits"
+   :desc "Prioritize work, limit the amount of things that people are working on, and focus on getting a small number of high-priority tasks done."
+   :doc "When faced with too much work and too few people to do it, rookie managers assign people to work on multiple tasks in the hope of increasing throughput. Unfortunately, the result is that tasks take longer to get done, and the team burns out in the process.
+  
+  Instead, you should do the following:
+  
+      * Prioritize work
+      * Limit how much people work on
+      * Focus on completing a small number of high-priority tasks
+  
+  The manufacturing sector has a long history of limiting the amount of work in process (WIP). Factories don’t hold large amounts of inventory. Instead, when a customer orders a product, parts are made in-house, on-demand or are pulled from suppliers upstream as needed, and the company then assembles the product just in time. When you implement this process correctly, you end up with shorter lead times, higher quality, lower costs, and less waste."
+   :tags #{"capability" "process"}
+   :link/reference-url ""}
+
+  {:el :concept
+   :id :software-development.dora.capability/working-in-small-batches
+   :name "Working in small batches"
+   :desc "Create shorter lead times and faster feedback loops by working in small batches. Learn common obstacles to this critical capability and how to overcome them."
+   :doc "Working in small batches is an essential principle in any discipline where feedback loops are important, or you want to learn quickly from your decisions. Working in small batches allows you to rapidly test hypotheses about whether a particular improvement is likely to have the effect you want, and if not, lets you course correct or revisit assumptions. Although this article applies to any type of change that includes organizational transformation and process improvement, it focuses primarily on software delivery.
+  
+  Working in small batches is part of lean product management. Together with capabilities like visibility of work in the value stream, team experimentation, and visibility into customer feedback, working in small batches predicts software delivery performance and organizational performance.
+  
+  One reason work is done in large batches is because of the large fixed cost of handing off changes. In traditional phased approaches to software development, handoffs from development to test or from test to IT operations consist of whole releases: months worth of work by teams consisting of tens or hundreds of people. With this traditional approach, collecting feedback on a change can take weeks or months.
+  
+  In contrast, DevOps practices, which utilize cross-functional teams and lightweight approaches, allow for software to progress from development through test and operations into production in a matter of minutes. However, this rapid progression requires working with code in small batches.
+  
+  Working in small batches has many benefits:
+  
+      * It reduces the time it takes to get feedback on changes, making it easier to triage and remediate problems.
+      * It increases efficiency and motivation.
+      * It prevents your organization from succumbing to the sunk-cost fallacy.
+  
+  You can apply the small batches approach at the feature and the product level. As an illustration, a minimum viable product, or MVP, is a prototype of a product with just enough features to enable validated learning about the product and its business model.
+  
+  Continuous delivery builds upon working in small batches and tries to get every change in version control as early as possible. A goal of continuous delivery is to change the economics of the software delivery process, making it viable to work in small batches. This approach provides fast, comprehensive feedback to teams so that they can improve their work."
+   :tags #{"capability" "process"}
+   :link/reference-url "https://dora.dev/capabilities/working-in-small-batches/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/generative-organizational-culture
+   :name "Generative organizational culture"
+   :desc "Discover how growing a generative, high-trust culture drives better organizational and software delivery performance."
+   :doc "According to research by DevOps Research and Assessment (DORA), organizational culture that is high-trust and emphasizes information flow is predictive of software delivery performance and organizational performance in technology. The idea that a good culture that optimizes information flow is predictive of good outcomes is not a new idea; it is based on research by sociologist Dr. Ron Westrum. Westrum’s research included human factors in system safety, particularly in the context of accidents in technological domains such as aviation and healthcare.
+  
+  In his work with these high risk, highly complex fields, Westrum noted that such a culture influences the way information flows through an organization. Westrum provides three characteristics of good information:
+  
+      1. It provides answers to the questions that the receiver needs answered.
+      2. It is timely.
+      3. It is presented in such a way that the receiver can use it effectively.
+  
+  In his research, he developed the following typology of organizational cultures.
+           
+  Pathological | Bureaucratic | Generative
+  ---|---|---
+  Power oriented | Rule oriented | Performance oriented
+  Low cooperation | Modest cooperation | High cooperation
+  Messengers “shot” | Messengers neglected | Messengers trained
+  Responsibilities shirked | Narrow responsibilities | Risks are shared
+  Bridging discouraged | Bridging tolerated | Bridging encouraged
+  Failure leads to scapegoating | Failure leads to justice | Failure leads to inquiry
+  Novelty crushed | Novelty leads to problems | Novelty implemented
+  
+  Table 1: The Westrum organizational typology model: How organizations process information (Source: Ron Westrum, “A typology of organisation culture”, BMJ Quality & Safety 13, no. 2(2004), doi:10.1136/qshc.2003.009522.)
+  
+  Similar to Dr. Westrum’s findings, DORA research shows that a high-trust, generative culture predicts software delivery and organizational performance in technology.
+  
+  Research from a large two-year study at Google found similar results: that high performing teams need a culture of trust and psychological safety, meaningful work, and clarity. In the 2019 State of DevOps Report further analysis shows that a culture of psychological safety is predictive of software delivery performance, organizational performance, and productivity."
+   :tags #{"capability" "culture" "core"}
+   :link/reference-url "https://dora.dev/capabilities/generative-organizational-culture/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/well-being
+   :name "Well being"
+   :desc "A focus on employee happiness and work environment can improve organizational performance while helping retain talent."
+   :doc "Well-being is a reflection of individuals’ happiness and job satisfaction. Increased well-being predicts organizational performance and employees’ job tenure. DORA has studied the impact of deployment pain, rework, and burnout on well-being.
+
+### Deployment pain
+Deployment pain is a measure of the fear and anxiety that engineers and technical staff feel when they push code into production. It also measures the extent to which deployments are disruptive rather than easy and pain-free. Where deployments are most painful, you’ll find the poorest software delivery performance, organizational performance, and organizational culture.
+
+Teams can reduce deployment pain by implementing the technical practices that drive continuous delivery. Put another way, the technical practices that improve our ability to deliver software with both speed and stability also reduce the stress and anxiety associated with pushing code into production.
+
+### Rework
+One measure of whether teams are building quality into their work is the how they spend their time. Are they able to focus their time devoting effort and energy on developing new features and supporting infrastructure? Or do teams spend most of their time correcting problems, remediating issues, and responding to defects and customer-support work (that is, fixing issues that arise because quality was not built in up front)? We conceptualize this time into two categories. The first category is proactive or new work, in which we are able to design, create, and work on features, tests, and infrastructure in a structured and productive way to create value for our organizations.
+
+The second category is called reactive unplanned work, or rework. Unplanned work includes any break/fix work, emergency software deployments and patches, responding to urgent audit documentation requests, and so on. Rework is fixing things that weren’t done right the first time and, like change fail rate, is a proxy measure for quality.
+
+In the 2016 State of DevOps survey, we asked people about the percentage of time they spent on rework and unplanned work, and on new work such as designing and building new features. High performers reported spending 49 percent of their time on new work and 21 percent on unplanned work or rework. By contrast, low performers spend 38 percent of their time on new work and 27 percent on unplanned work or rework. Thus, high performers spend 29 percent more time on new work than low performers, and 22 percent less time on unplanned work and rework.
+
+Continuous delivery predicts lower levels of unplanned work and rework in a statistically significant way, showing that implementing the technical practices behind continuous delivery drives higher quality.
+
+In the 2018 Accelerate State of DevOps survey, we asked our respondents how they spend their time and found that across the board, elite performers are getting the most value-add time out of their days and are spending the least amount of time doing non-value-add work of all groups, followed by high performers and medium performers. Low performers are doing the worst on all dimensions in terms of value-add vs. non-value-add time, as shown in the table below.
+
+Time spent | Elite | High | Medium | Low
+---|---|---|---|---
+New work | 50% | 50% | 40% | 30%
+Unplanned work and rework | 19.5% | 20% | 20% | 20%
+Remediating security issues | 5% | 5% | 5% | 10%
+Working on defects identified by end users | 10% | 10% | 10% | 20%
+Customer support work | 5% | 10% | 10% | 5%
+
+### Burnout
+Burnout is physical, mental, or emotional exhaustion caused by overwork or stress. But it’s more than just being overworked or stressed. Burnout can make the things we once loved about our work and life seem insignificant and dull. It often manifests itself as a feeling of helplessness, and is correlated with pathological cultures and unproductive, wasteful work. Dr Christina Maslach, professor of psychology at the University of California at Berkeley and a pioneering researcher on job burnout, found six organizational risk factors that predict burnout:
+
+Work overload. Job demands that exceed human limits.
+Lack of control. Inability to influence decisions that affect your job.
+Insufficient rewards. Insufficient financial, institutional, or social rewards.
+Breakdown of community. Unsupportive workplace environment.
+Absence of fairness. Lack of fairness in decision-making processes.
+Value conflicts. Mismatch in organizational values and the individual’s values.
+Maslach found that most organizations try to fix the person and ignore the work environment, even though data shows that fixing the environment has a higher likelihood of success. Management has the power to change all of these risk factors."
+   :tags #{"capability" "culture"}
+   :link/reference-url "https://dora.dev/capabilities/well-being/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/job-satisfaction
+   :name "Job satisfaction"
+   :desc "Find out about the importance of ensuring your people have the tools and resources to do their job, and of making good use of their skills and abilities."
+   :doc "Early analysis performed by DevOps Research and Assessment (DORA) found that job satisfaction is a predictor of organizational performance. Having engaged employees doing meaningful work drives business value.
+
+Everybody knows how job satisfaction feels. It’s about doing work that’s challenging and meaningful, and being empowered to exercise skills and judgment. Where there’s job satisfaction, employees bring the best of themselves to work: their engagement, their creativity, and their strongest thinking. The result is more innovation in any area of the business, including technology.
+
+There’s a virtuous circle when it comes to the benefits of job satisfaction. People do better work when they feel supported by their employers, when they have the tools and resources to do their work, and when they feel their judgment is valued. Better work results in higher software delivery performance, which results in higher organizational performance.
+
+This cycle of continuous improvement and learning is what sets successful companies apart, enabling them to innovate, get ahead of the competition, and win."
+   :tags #{"capability" "culture"}
+   :link/reference-url "https://dora.dev/capabilities/job-satisfaction/"}
+
+  {:el :concept
+   :id :software-development.dora.capability/learning-culture
+   :name "Learning culture"
+   :desc "Grow a learning culture and understand its impact on your organizational performance."
+   :doc "Research from the DevOps Research and Assessment (DORA) team shows that an organizational culture that values learning contributes to software delivery performance with the following:
+
+    * Increased deployment frequency
+    * Reduced lead time for changes, time to restore service, and change failure rate
+    * Strong team culture
+
+The climate for learning in your organization is directly related to the extent to which your organization treats learning as strategic:
+
+    * Does your organization view learning as an investment necessary for growth?
+    * Is learning seen as a necessary burden, undertaken only grudgingly?
+    * Is learning completely avoided?
+
+Research done in other areas, such as accounting, has also shown that a climate for learning is predictive of performance gains."
+   :tags #{"capability" "culture"}}
+
+  {:el :concept
+   :id :software-development.dora.capability/transformational-leadership
+   :name "Transformational leadership"
+   :desc "Learn how effective leaders influence software delivery performance by driving the adoption of technical and product management capabilities."
+   :doc "DevOps Research and Assessment (DORA) research shows that effective leadership has a measurable, significant impact on software delivery outcomes. However, rather than driving these outcomes directly, effective transformational leaders influence software delivery performance by enabling the adoption of technical and product management capabilities and practices by practitioners, which in turn drives the outcomes leaders care about.
+
+To study the role of leadership in DevOps transformations, DORA used a measure of transformational leadership that includes five dimensions. According to this model, validated in Dimensions of transformational leadership: Conceptual and empirical extensions (Rafferty, A. E., & Griffin, M. A.), the five characteristics of a transformational leader are the following:
+
+    * Vision: Understands clearly where their team and the organization are going, and where they want the team to be in five years.
+    * Inspirational communication: Says positive things about the team; says things that make employees proud to be a part of their organization; encourages people to see changing conditions as situations full of opportunities.
+    * Intellectual stimulation: Challenges team members to think about old problems in new ways and to rethink some of their basic assumptions about their work; has ideas that force team members to rethink some things that they have never questioned before.
+    * Supportive leadership: Considers others’ personal feelings before acting; behaves in a manner which is thoughtful of others’ personal needs; sees that the interests of team members are given due consideration.
+    * Personal recognition: Commends team members when they do a better than average job; acknowledges improvement in quality of team members' work; personally compliments team members when they do outstanding work.
+
+These five characteristics of transformational leadership are highly correlated with software delivery performance. In fact, DORA observed statistically significant differences in leadership characteristics between high-, medium- and low- performing software delivery teams (see the 2017 State of DevOps Report pp12-19). High-performing teams reported having leaders with the strongest behaviors across all dimensions. In contrast, low-performing teams reported the lowest levels of these leadership characteristics.
+
+What was most striking, however, was that teams with the least transformative leaders (the bottom third) were also far less likely to be high performers at software delivery — in fact, they were half as likely to exhibit high software delivery performance. This validates common experience: Though there are many DevOps and technology transformation success stories emerging from the grassroots, it is far easier to achieve success when you have effective, transformational leadership.
+
+Moving beyond correlation to look at how effective transformational leaders achieve results, the results are interesting. The DORA team created a predictive model using a technique called structural equation modeling to test the relationships between transformational leadership, a number of technical and product management practices, and software delivery and organizational performance."
+   :tags #{"capability" "culture"}
+   :link/reference-url "https://dora.dev/capabilities/transformational-leadership/"}
+
+  
 
   ;; Relationships
+
+  {:el :rel
+   :id :software-development.dora.capability/code-maintainability-enables-climate-for-learning
+   :from :software-development.dora.capability/code-maintainability
+   :to :software-development.dora.capability/climate-for-learning
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/documentation-quality-enables-climate-for-learning
+   :from :software-development.dora.capability/documentation-quality
+   :to :software-development.dora.capability/climate-for-learning
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/empowering-teams-to-choose-tools-enables-climate-for-learning
+   :from :software-development.dora.capability/empowering-teams-to-choose-tools
+   :to :software-development.dora.capability/climate-for-learning
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/generative-organizational-culture-enables-climate-for-learning
+   :from :software-development.dora.capability/generative-organizational-culture
+   :to :software-development.dora.capability/climate-for-learning
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/job-satisfaction-enables-climate-for-learning
+   :from :software-development.dora.capability/job-satisfaction
+   :to :software-development.dora.capability/climate-for-learning
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/learning-culture-enables-climate-for-learning
+   :from :software-development.dora.capability/learning-culture
+   :to :software-development.dora.capability/climate-for-learning
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/team-experimentation-enables-climate-for-learning
+   :from :software-development.dora.capability/team-experimentation
+   :to :software-development.dora.capability/climate-for-learning
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/transformational-leadership-enables-climate-for-learning
+   :from :software-development.dora.capability/transformational-leadership
+   :to :software-development.dora.capability/climate-for-learning
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/well-being-enables-climate-for-learning
+   :from :software-development.dora.capability/well-being
+   :to :software-development.dora.capability/climate-for-learning
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/continuous-delivery-enables-fast-flow
+   :from :software-development.dora.capability/continuous-delivery
+   :to :software-development.dora.capability/fast-flow
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/database-change-management-enables-fast-flow
+   :from :software-development.dora.capability/database-change-management
+   :to :software-development.dora.capability/fast-flow
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/deployment-automation-enables-fast-flow
+   :from :software-development.dora.capability/deployment-automation
+   :to :software-development.dora.capability/fast-flow
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/flexible-infrastructure-enables-fast-flow
+   :from :software-development.dora.capability/flexible-infrastructure
+   :to :software-development.dora.capability/fast-flow
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/loosely-coupled-teams-enables-fast-flow
+   :from :software-development.dora.capability/loosely-coupled-teams
+   :to :software-development.dora.capability/fast-flow
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/streamlining-change-approval-enables-fast-flow
+   :from :software-development.dora.capability/streamlining-change-approval
+   :to :software-development.dora.capability/fast-flow
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/trunk-based-development-enables-fast-flow
+   :from :software-development.dora.capability/trunk-based-development
+   :to :software-development.dora.capability/fast-flow
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/version-control-enables-fast-flow
+   :from :software-development.dora.capability/version-control
+   :to :software-development.dora.capability/fast-flow
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/visual-management-enables-fast-flow
+   :from :software-development.dora.capability/visual-management
+   :to :software-development.dora.capability/fast-flow
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/work-in-process-limits-enables-fast-flow
+   :from :software-development.dora.capability/work-in-process-limits
+   :to :software-development.dora.capability/fast-flow
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/working-in-small-batches-enables-fast-flow
+   :from :software-development.dora.capability/working-in-small-batches
+   :to :software-development.dora.capability/fast-flow
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/continuous-integration-enables-fast-feedback
+   :from :software-development.dora.capability/continuous-integration
+   :to :software-development.dora.capability/fast-feedback
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/customer-feedback-enables-fast-feedback
+   :from :software-development.dora.capability/customer-feedback
+   :to :software-development.dora.capability/fast-feedback
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/monitoring-and-observability-enables-fast-feedback
+   :from :software-development.dora.capability/monitoring-and-observability
+   :to :software-development.dora.capability/fast-feedback
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/monitoring-systems-inform-business-decisions-enables-fast-feedback
+   :from :software-development.dora.capability/monitoring-systems-inform-business-decisions
+   :to :software-development.dora.capability/fast-feedback
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/pervasive-security-enables-fast-feedback
+   :from :software-development.dora.capability/pervasive-security
+   :to :software-development.dora.capability/fast-feedback
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/proactive-failure-notification-enables-fast-feedback
+   :from :software-development.dora.capability/proactive-failure-notification
+   :to :software-development.dora.capability/fast-feedback
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/test-automation-enables-fast-feedback
+   :from :software-development.dora.capability/test-automation
+   :to :software-development.dora.capability/fast-feedback
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/test-data-management-enables-fast-feedback
+   :from :software-development.dora.capability/test-data-management
+   :to :software-development.dora.capability/fast-feedback
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/visibility-of-work-in-the-value-stream-enables-fast-feedback
+   :from :software-development.dora.capability/visibility-of-work-in-the-value-stream
+   :to :software-development.dora.capability/fast-feedback
+   :name "enables"}
+
+  {:el :rel
+   :id :software-development.dora.capability/climate-for-learning-predicts-software-delivery-performance
+   :from :software-development.dora.capability/climate-for-learning
+   :to :software-development.dora/software-delivery-performance
+   :name "predicts"}
+
+  {:el :rel
+   :id :software-development.dora.capability/fast-flow-predicts-software-delivery-performance
+   :from :software-development.dora.capability/fast-flow
+   :to :software-development.dora/software-delivery-performance
+   :name "predicts"}
+
+  {:el :rel
+   :id :software-development.dora.capability/fast-feedback-predicts-software-delivery-performance
+   :from :software-development.dora.capability/fast-feedback
+   :to :software-development.dora/software-delivery-performance
+   :name "predicts"}
+
+  {:el :rel
+   :id :software-development.dora.capability/well-being-less-burnout
+   :from :software-development.dora.capability/well-being
+   :to :software-development.dora/less-burnout
+   :name "leads to"}
+
+  {:el :rel
+   :id :software-development.dora.capability/well-being-less-deployment-pain
+   :from :software-development.dora.capability/well-being
+   :to :software-development.dora/less-deployment-pain
+   :name "leads to"}
+
 
   ;
   }

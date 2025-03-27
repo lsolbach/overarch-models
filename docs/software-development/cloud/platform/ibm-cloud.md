@@ -7,7 +7,7 @@ A cloud computing platform and service created by IBM. IBM Cloud offers a wide r
 
 
 ## Tags
-cloud, provider, platform
+cloud, ibm, platform
 ## Superordinates
 | Concept | Description |
 |---|---|

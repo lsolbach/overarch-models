@@ -6,8 +6,8 @@ Handles Credit Card, PayPal, etc.
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Online Shop Backend Application](../../../../software-development/architecture/example/monolith/online-shop-backend.md) | process payment | [Payment System](../../../../software-development/architecture/example/monolith/payment-system.md) | credit card, paypal |
-| [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | trigger payment | [Payment System](../../../../software-development/architecture/example/monolith/payment-system.md) | credit card, paypal |
+| [Online Shop Backend Application](../../../../software-development/architecture/example/monolith/online-shop-backend.md) | process payment | [Payment System](../../../../software-development/architecture/example/monolith/payment-system.md) | REST | credit card, paypal |
+| [Online Shop](../../../../software-development/architecture/example/monolith/online-shop-system.md) | trigger payment | [Payment System](../../../../software-development/architecture/example/monolith/payment-system.md) | REST | credit card, paypal |
 
 ## System Context View
 ![Context view for the Online Shop Monolith example](../../../../software-development/architecture/example/monolith/context-view.png)

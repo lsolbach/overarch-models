@@ -9,8 +9,8 @@ simple
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Customer](../../../../software-development/architecture/example/microservices/customer.md) | uses | [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md) | browse products, place orders |
-| [Customer](../../../../software-development/architecture/example/microservices/customer.md) | uses | [Shop Frontend](../../../../software-development/architecture/example/microservices/shop-frontend.md) | browse products, place orders |
+| [Customer](../../../../software-development/architecture/example/microservices/customer.md) | uses | [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md) |  | browse products, place orders |
+| [Customer](../../../../software-development/architecture/example/microservices/customer.md) | uses | [Shop Frontend](../../../../software-development/architecture/example/microservices/shop-frontend.md) |  | browse products, place orders |
 
 
 ## Navigation

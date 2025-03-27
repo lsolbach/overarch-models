@@ -8,11 +8,11 @@ Topic for the aggregate B
 ## Incoming Asynchronous Publish/Produce 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Service B](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-b.md) | publishes | [B Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-b.md) | domain events for aggregate B |
+| [Service B](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-b.md) | publishes | [B Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-b.md) |  | domain events for aggregate B |
 ## Incoming Asynchronous Subscribe/Consume 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Service C](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-c.md) | subscribes | [B Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-b.md) | domain events for aggregate B |
+| [Service C](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-c.md) | subscribes | [B Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-b.md) |  | domain events for aggregate B |
 
 ## Container View
 ![Container View of the Event Driven Microservices Blueprint](../../../../../software-development/architecture/blueprint/microservices/event-driven/container-view.png)

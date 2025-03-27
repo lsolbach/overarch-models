@@ -11,14 +11,14 @@ Java EE
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Online Shop Frontend Application](../../../../software-development/architecture/example/monolith/online-shop-frontend.md) | calls | [Online Shop Backend Application](../../../../software-development/architecture/example/monolith/online-shop-backend.md) | get products, place orders. |
+| [Online Shop Frontend Application](../../../../software-development/architecture/example/monolith/online-shop-frontend.md) | calls | [Online Shop Backend Application](../../../../software-development/architecture/example/monolith/online-shop-backend.md) | HTTPS | get products, place orders. |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Online Shop Backend Application](../../../../software-development/architecture/example/monolith/online-shop-backend.md) | process payment | [Payment System](../../../../software-development/architecture/example/monolith/payment-system.md) | credit card, paypal |
-| [Online Shop Backend Application](../../../../software-development/architecture/example/monolith/online-shop-backend.md) | sends email | [Email System](../../../../software-development/architecture/example/monolith/email-system.md) | order confirmation, shipping notification |
-| [Online Shop Backend Application](../../../../software-development/architecture/example/monolith/online-shop-backend.md) | ship | [Logistics System](../../../../software-development/architecture/example/monolith/logistics-system.md) | order |
-| [Online Shop Backend Application](../../../../software-development/architecture/example/monolith/online-shop-backend.md) | store and query | [Online Shop Database](../../../../software-development/architecture/example/monolith/online-shop-db.md) | products, orders |
+| [Online Shop Backend Application](../../../../software-development/architecture/example/monolith/online-shop-backend.md) | process payment | [Payment System](../../../../software-development/architecture/example/monolith/payment-system.md) | REST | credit card, paypal |
+| [Online Shop Backend Application](../../../../software-development/architecture/example/monolith/online-shop-backend.md) | sends email | [Email System](../../../../software-development/architecture/example/monolith/email-system.md) |  | order confirmation, shipping notification |
+| [Online Shop Backend Application](../../../../software-development/architecture/example/monolith/online-shop-backend.md) | ship | [Logistics System](../../../../software-development/architecture/example/monolith/logistics-system.md) | REST | order |
+| [Online Shop Backend Application](../../../../software-development/architecture/example/monolith/online-shop-backend.md) | store and query | [Online Shop Database](../../../../software-development/architecture/example/monolith/online-shop-db.md) | JDBC | products, orders |
 ## Deployed to
 | Node | Description |
 |---|---|

@@ -15,7 +15,7 @@ The second category is called reactive unplanned work, or rework. Unplanned work
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|
-| [Well being](../../software-development/dora/well-being.md) | leads to | [Less rework](../../software-development/dora/less-rework.md) |  |
+| [Well being](../../software-development/dora/capability/well-being.md) | leads to | [Less rework](../../software-development/dora/less-rework.md) |  |
 
 ## Concept Map
 ![Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.png)

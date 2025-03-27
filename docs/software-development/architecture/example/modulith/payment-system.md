@@ -6,9 +6,9 @@ Handles Credit Card, PayPal, etc.
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Payment Component](../../../../software-development/architecture/example/modulith/payment-component.md) | calls | [Payment System](../../../../software-development/architecture/example/modulith/payment-system.md) | process payment |
-| [Online Shop Backend Application](../../../../software-development/architecture/example/modulith/online-shop-backend.md) | process payment | [Payment System](../../../../software-development/architecture/example/modulith/payment-system.md) | credit card, paypal |
-| [Online Shop](../../../../software-development/architecture/example/modulith/online-shop-system.md) | trigger payment | [Payment System](../../../../software-development/architecture/example/modulith/payment-system.md) | credit card, paypal |
+| [Payment Component](../../../../software-development/architecture/example/modulith/payment-component.md) | calls | [Payment System](../../../../software-development/architecture/example/modulith/payment-system.md) | REST | process payment |
+| [Online Shop Backend Application](../../../../software-development/architecture/example/modulith/online-shop-backend.md) | process payment | [Payment System](../../../../software-development/architecture/example/modulith/payment-system.md) | REST | credit card, paypal |
+| [Online Shop](../../../../software-development/architecture/example/modulith/online-shop-system.md) | trigger payment | [Payment System](../../../../software-development/architecture/example/modulith/payment-system.md) | REST | credit card, paypal |
 
 ## System Context View
 ![Context view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/context-view.png)

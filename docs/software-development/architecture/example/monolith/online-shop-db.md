@@ -11,7 +11,7 @@ DB/2
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Online Shop Backend Application](../../../../software-development/architecture/example/monolith/online-shop-backend.md) | store and query | [Online Shop Database](../../../../software-development/architecture/example/monolith/online-shop-db.md) | products, orders |
+| [Online Shop Backend Application](../../../../software-development/architecture/example/monolith/online-shop-backend.md) | store and query | [Online Shop Database](../../../../software-development/architecture/example/monolith/online-shop-db.md) | JDBC | products, orders |
 ## Deployed to
 | Node | Description |
 |---|---|

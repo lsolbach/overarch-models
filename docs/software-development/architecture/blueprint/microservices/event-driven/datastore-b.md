@@ -8,7 +8,7 @@ Stores the aggregate B
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Service B](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-b.md) | stores | [Datastore B](../../../../../software-development/architecture/blueprint/microservices/event-driven/datastore-b.md) | aggregate B |
+| [Service B](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-b.md) | stores | [Datastore B](../../../../../software-development/architecture/blueprint/microservices/event-driven/datastore-b.md) |  | aggregate B |
 
 ## Container View
 ![Container View of the Event Driven Microservices Blueprint](../../../../../software-development/architecture/blueprint/microservices/event-driven/container-view.png)

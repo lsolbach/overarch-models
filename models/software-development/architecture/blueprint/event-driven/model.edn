@@ -8,7 +8,7 @@
   ;;;
 
   {:el :class
-   :id :architecture.blueprint.event-driven/event
+   :id :software-development.architecture.blueprint.event-driven/event
    :abstact true
    :name "Event"
    :desc "abstract event"

@@ -7,7 +7,7 @@ A cloud computing platform and service created by Microsoft. Azure offers a wide
 
 
 ## Tags
-cloud, provider, platform
+cloud, azure, platform
 ## Superordinates
 | Concept | Description |
 |---|---|

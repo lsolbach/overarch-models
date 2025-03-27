@@ -7,7 +7,7 @@ A cloud computing platform and service created by Amazon. AWS offers
 
 
 ## Tags
-cloud, provider, platform
+cloud, aws, platform
 ## Superordinates
 | Concept | Description |
 |---|---|

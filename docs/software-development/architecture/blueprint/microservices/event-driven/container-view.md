@@ -27,22 +27,22 @@ Shows the containers of the Event Driven Microservices Blueprint
 ## Synchronous Requests
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Service A](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-a.md) | stores | [Datastore A](../../../../../software-development/architecture/blueprint/microservices/event-driven/datastore-a.md) | aggregate A |
-| [Service C](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-c.md) | stores | [Datastore C](../../../../../software-development/architecture/blueprint/microservices/event-driven/datastore-c.md) | aggregate C |
-| [Service B](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-b.md) | stores | [Datastore B](../../../../../software-development/architecture/blueprint/microservices/event-driven/datastore-b.md) | aggregate B |
+| [Service A](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-a.md) | stores | [Datastore A](../../../../../software-development/architecture/blueprint/microservices/event-driven/datastore-a.md) |  | aggregate A |
+| [Service C](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-c.md) | stores | [Datastore C](../../../../../software-development/architecture/blueprint/microservices/event-driven/datastore-c.md) |  | aggregate C |
+| [Service B](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-b.md) | stores | [Datastore B](../../../../../software-development/architecture/blueprint/microservices/event-driven/datastore-b.md) |  | aggregate B |
 
 ## Asynchronous Publish/Produce
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Service B](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-b.md) | publishes | [B Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-b.md) | domain events for aggregate B |
-| [Service A](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-a.md) | publishes | [A Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-a.md) | domain events for aggregate A |
-| [Service C](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-c.md) | publishes | [C Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-c.md) | domain events for aggregate C |
+| [Service B](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-b.md) | publishes | [B Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-b.md) |  | domain events for aggregate B |
+| [Service A](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-a.md) | publishes | [A Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-a.md) |  | domain events for aggregate A |
+| [Service C](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-c.md) | publishes | [C Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-c.md) |  | domain events for aggregate C |
 
 ## Asynchronous Subscribe/Consume
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Service C](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-c.md) | subscribes | [B Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-b.md) | domain events for aggregate B |
-| [Service B](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-b.md) | subscribes | [A Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-a.md) | domain events for aggregate A |
+| [Service C](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-c.md) | subscribes | [B Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-b.md) |  | domain events for aggregate B |
+| [Service B](../../../../../software-development/architecture/blueprint/microservices/event-driven/service-b.md) | subscribes | [A Topic](../../../../../software-development/architecture/blueprint/microservices/event-driven/topic-a.md) |  | domain events for aggregate A |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

@@ -8,11 +8,11 @@ Handles the inventory checks and updates
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Order Component](../../../../software-development/architecture/example/modulith/order-component.md) | calls | [Inventory Component](../../../../software-development/architecture/example/modulith/inventory-component.md) | update inventory |
+| [Order Component](../../../../software-development/architecture/example/modulith/order-component.md) | calls | [Inventory Component](../../../../software-development/architecture/example/modulith/inventory-component.md) | Method Call | update inventory |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Inventory Component](../../../../software-development/architecture/example/modulith/inventory-component.md) | store and query | [Online Shop Database](../../../../software-development/architecture/example/modulith/online-shop-db.md) | products |
+| [Inventory Component](../../../../software-development/architecture/example/modulith/inventory-component.md) | store and query | [Online Shop Database](../../../../software-development/architecture/example/modulith/online-shop-db.md) | JDBC | products |
 
 ## Component View
 ![Component view for the Online Shop Modulith example](../../../../software-development/architecture/example/modulith/component-view.png)

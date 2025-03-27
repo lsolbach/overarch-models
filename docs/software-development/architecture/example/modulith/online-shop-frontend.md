@@ -11,13 +11,13 @@ AngularJS
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Customer](../../../../software-development/architecture/example/modulith/customer.md) | uses | [Online Shop Frontend Application](../../../../software-development/architecture/example/modulith/online-shop-frontend.md) | browse products, place orders |
+| [Customer](../../../../software-development/architecture/example/modulith/customer.md) | uses | [Online Shop Frontend Application](../../../../software-development/architecture/example/modulith/online-shop-frontend.md) | HTTPS | browse products, place orders |
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Online Shop Frontend Application](../../../../software-development/architecture/example/modulith/online-shop-frontend.md) | calls | [Shipping Component](../../../../software-development/architecture/example/modulith/shipping-component.md) | shipping status |
-| [Online Shop Frontend Application](../../../../software-development/architecture/example/modulith/online-shop-frontend.md) | calls | [Online Shop Backend Application](../../../../software-development/architecture/example/modulith/online-shop-backend.md) | get products, place orders. |
-| [Online Shop Frontend Application](../../../../software-development/architecture/example/modulith/online-shop-frontend.md) | calls | [Order Component](../../../../software-development/architecture/example/modulith/order-component.md) | get products, place orders |
+| [Online Shop Frontend Application](../../../../software-development/architecture/example/modulith/online-shop-frontend.md) | calls | [Shipping Component](../../../../software-development/architecture/example/modulith/shipping-component.md) | HTTPS | shipping status |
+| [Online Shop Frontend Application](../../../../software-development/architecture/example/modulith/online-shop-frontend.md) | calls | [Online Shop Backend Application](../../../../software-development/architecture/example/modulith/online-shop-backend.md) | HTTPS | get products, place orders. |
+| [Online Shop Frontend Application](../../../../software-development/architecture/example/modulith/online-shop-frontend.md) | calls | [Order Component](../../../../software-development/architecture/example/modulith/order-component.md) | HTTPS | get products, place orders |
 ## Deployed to
 | Node | Description |
 |---|---|

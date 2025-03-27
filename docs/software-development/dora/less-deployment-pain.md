@@ -14,7 +14,7 @@ Teams can reduce deployment pain by implementing the technical practices that dr
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|
-| [Well being](../../software-development/dora/well-being.md) | leads to | [Less deployment pain](../../software-development/dora/less-deployment-pain.md) |  |
+| [Well being](../../software-development/dora/capability/well-being.md) | leads to | [Less deployment pain](../../software-development/dora/less-deployment-pain.md) |  |
 
 ## Concept Map
 ![Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.png)

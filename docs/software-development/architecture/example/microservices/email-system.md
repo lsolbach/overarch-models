@@ -12,8 +12,8 @@ This is an external email system that is used by the online shop system.
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md) |  | [Email System](../../../../software-development/architecture/example/microservices/email-system.md) | calls |
-| [Notification Service](../../../../software-development/architecture/example/microservices/notification-service.md) | request | [Email System](../../../../software-development/architecture/example/microservices/email-system.md) | Send Email |
+| [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md) |  | [Email System](../../../../software-development/architecture/example/microservices/email-system.md) | SMTP | calls |
+| [Notification Service](../../../../software-development/architecture/example/microservices/notification-service.md) | request | [Email System](../../../../software-development/architecture/example/microservices/email-system.md) | SMTP | Send Email |
 
 ## System Context View
 ![Context view for the Microservices example](../../../../software-development/architecture/example/microservices/context-view.png)

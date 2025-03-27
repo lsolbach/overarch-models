@@ -30,7 +30,7 @@ likelihood of success. Management has the power to change all of these risk fact
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|
-| [Well being](../../software-development/dora/well-being.md) | leads to | [Less burnout](../../software-development/dora/less-burnout.md) |  |
+| [Well being](../../software-development/dora/capability/well-being.md) | leads to | [Less burnout](../../software-development/dora/less-burnout.md) |  |
 
 ## Concept Map
 ![Concept Map for DevOps Research and Assessment (DORA)](../../software-development/dora/concept-view.png)

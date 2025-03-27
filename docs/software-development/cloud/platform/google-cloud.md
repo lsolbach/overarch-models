@@ -7,7 +7,7 @@ A cloud computing platform and service created by Google. Google Cloud offers a 
 
 
 ## Tags
-cloud, provider, platform
+cloud, google, platform
 ## Superordinates
 | Concept | Description |
 |---|---|

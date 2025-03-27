@@ -7,7 +7,7 @@ A cloud computing platform and service created by Alibaba. Alibaba Cloud offers 
 
 
 ## Tags
-cloud, provider, platform
+alibaba, cloud, platform
 ## Superordinates
 | Concept | Description |
 |---|---|

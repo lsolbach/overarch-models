@@ -187,7 +187,7 @@ as well as specialized services such as machine learning, artificial intelligenc
    :desc "A cloud provider provides a cloud computing platform."}
   {:el :has
    :id :software-development.cloud/cloud-adoption-framework-has-cloud-migration-strategy
-   :from :software-development.cloud/cloud-adoption-framework
+   :from :software-development.cloud.framework/cloud-adoption-framework
    :to :software-development.cloud/cloud-migration-strategy
    :name "has"
    :desc "The Cloud Adoption Framework has cloud migration strategies."}
@@ -195,13 +195,13 @@ as well as specialized services such as machine learning, artificial intelligenc
   {:el :has
    :id :software-development.cloud/cloud-computing-has-well-architected-framework
    :from :software-development.cloud/cloud-computing
-   :to :software-development.cloud/well-architected-framework
+   :to :software-development.cloud.framework/well-architected-framework
    :name "has"
    :desc "Cloud Computing has Well-Architected Framework."}
   {:el :has
    :id :software-development.cloud/cloud-computing-has-cloud-adoption-framework
    :from :software-development.cloud/cloud-computing
-   :to :software-development.cloud/cloud-adoption-framework
+   :to :software-development.cloud.framework/cloud-adoption-framework
    :name "has"
    :desc "Cloud Computing has Cloud Adoption Framework."}}
   ;
