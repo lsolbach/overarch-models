@@ -4,9 +4,8 @@
 #{;
 
   ;;;
+  ;;; Code Model
   ;;;
-  ;;;
-
   {:el :class
    :id :software-development.architecture.blueprint.event-driven/event
    :abstact true
