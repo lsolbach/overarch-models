@@ -1,0 +1,33 @@
+digraph "Concept Map of the Domain Driven Design Building Blocks Patterns" {
+  labelloc= "t"
+  label="Concept Map of the Domain Driven Design Building Blocks Patterns"
+  rankdir="LR"
+
+  layout=dot
+software_development_domain_driven_design_building_blocks__c_value_objects [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Value Objects</B><BR/><FONT POINT-SIZE="10"><I>An object in the domain model, which has<BR/>no conceptional identity but are<BR/>identified by their state. Value objects<BR/>should be modelled as immutable. </I></FONT>>]
+software_development_domain_driven_design_building_blocks__c_aggregates [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Aggregates</B><BR/><FONT POINT-SIZE="10"><I>Aggregates are collections of entities<BR/>and value objects with their<BR/>associations and form a transactional<BR/>unit. Aggregates are referenced as a<BR/>whole by an aggregate root entity, parts<BR/>of the aggregate must not be referenced<BR/>from outside. The aggregate root is<BR/>responsible for the enforcement of the<BR/>busines rules and invariants of the<BR/>aggregate. </I></FONT>>]
+software_development_domain_driven_design_building_blocks__c_entities [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Entities</B><BR/><FONT POINT-SIZE="10"><I>Objects in the domain model which are<BR/>defined by their identity rather than by<BR/>their state. For example a Person is<BR/>normally modelled as an entity. It<BR/>represents the same person even when the<BR/>attributes change. It is also a<BR/>different person, even if it has the<BR/>same state as another person. </I></FONT>>]
+software_development_domain_driven_design_building_blocks__c_repositories [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Repositories</B><BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design__c_model_driven_design [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Model Driven Design</B><BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_building_blocks__c_factories [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Factories</B><BR/><FONT POINT-SIZE="10"><I>A domain object for the creation of<BR/>complex domain objects which enforce the<BR/>invariants of these objects on creation. </I></FONT>>]
+software_development_domain_driven_design_building_blocks__c_services [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Services</B><BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_building_blocks__c_domain_events [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Domain Events</B><BR/><FONT POINT-SIZE="10"><I>A domain object to propagate relevant<BR/>domain activities in a distributed<BR/>system. </I></FONT>>]
+software_development_domain_driven_design_building_blocks__c_modules [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Modules</B><BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+ 
+software_development_domain_driven_design_building_blocks__c_entities -> software_development_domain_driven_design_building_blocks__c_aggregates [label=<encapsulate with<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_building_blocks__c_value_objects -> software_development_domain_driven_design_building_blocks__c_aggregates [label=<encapsulate with<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_building_blocks__c_entities -> software_development_domain_driven_design_building_blocks__c_domain_events [label=<push state change with<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_building_blocks__c_entities -> software_development_domain_driven_design_building_blocks__c_repositories [label=<access with<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design__c_model_driven_design -> software_development_domain_driven_design_building_blocks__c_entities [label=<express identity with<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_building_blocks__c_aggregates -> software_development_domain_driven_design_building_blocks__c_repositories [label=<access with<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_building_blocks__c_value_objects -> software_development_domain_driven_design_building_blocks__c_factories [label=<encapsulate with<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_building_blocks__c_entities -> software_development_domain_driven_design_building_blocks__c_aggregates [label=<act as root of<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design__c_model_driven_design -> software_development_domain_driven_design_building_blocks__c_services [label=<express model with<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design__c_model_driven_design -> software_development_domain_driven_design_building_blocks__c_domain_events [label=<express change with<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_building_blocks__c_entities -> software_development_domain_driven_design_building_blocks__c_factories [label=<encapsulate with<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design__c_model_driven_design -> software_development_domain_driven_design_building_blocks__c_value_objects [label=<express state and computation with<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_building_blocks__c_aggregates -> software_development_domain_driven_design_building_blocks__c_factories [label=<encapsulate with<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+ 
+}
+
+// (generated by Overarch with template views/view.dot.cmb)

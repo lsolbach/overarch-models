@@ -37,10 +37,10 @@ object-oriented programming.
 | From | Name | To | Description |
 |---|---|---|---|
 | [Model Driven Design](../../software-development/domain-driven-design/c-model-driven-design.md) | define model within | [Bounded Context](../../software-development/domain-driven-design/c-bounded-context.md) |  |
-| [Model Driven Design](../../software-development/domain-driven-design/c-model-driven-design.md) | express change with | [Domain Events](../../software-development/domain-driven-design/c-domain-events.md) |  |
-| [Model Driven Design](../../software-development/domain-driven-design/c-model-driven-design.md) | express identity with | [Entities](../../software-development/domain-driven-design/c-entities.md) |  |
-| [Model Driven Design](../../software-development/domain-driven-design/c-model-driven-design.md) | express model with | [Services](../../software-development/domain-driven-design/c-services.md) |  |
-| [Model Driven Design](../../software-development/domain-driven-design/c-model-driven-design.md) | express state and computation with | [Value Objects](../../software-development/domain-driven-design/c-value-objects.md) |  |
+| [Model Driven Design](../../software-development/domain-driven-design/c-model-driven-design.md) | express change with | [Domain Events](../../software-development/domain-driven-design/building-blocks/c-domain-events.md) |  |
+| [Model Driven Design](../../software-development/domain-driven-design/c-model-driven-design.md) | express identity with | [Entities](../../software-development/domain-driven-design/building-blocks/c-entities.md) |  |
+| [Model Driven Design](../../software-development/domain-driven-design/c-model-driven-design.md) | express model with | [Services](../../software-development/domain-driven-design/building-blocks/c-services.md) |  |
+| [Model Driven Design](../../software-development/domain-driven-design/c-model-driven-design.md) | express state and computation with | [Value Objects](../../software-development/domain-driven-design/building-blocks/c-value-objects.md) |  |
 | [Model Driven Design](../../software-development/domain-driven-design/c-model-driven-design.md) | isolate domain expressions with | [Clean Architecture](../../software-development/domain-driven-design/c-clean-architecture.md) |  |
 | [Model Driven Design](../../software-development/domain-driven-design/c-model-driven-design.md) | model gives structure to | [Ubiquitous Language](../../software-development/domain-driven-design/c-ubiquitous-language.md) |  |
 

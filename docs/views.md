@@ -10,6 +10,7 @@
 | [Concept View for Cloud Providers](./software-development/cloud/provider/concept-view.md) | Shows the concepts related to cloud providers and their relationships. |
 | [Concept View for Cloud Service Models](./software-development/cloud/service-model/concept-view.md) | Shows the concepts related to cloud service models and their relationships. |
 | [DORA Concept View](./software-development/dora/concept-view.md) | Shows a concept map of the DevOps Research and Assessment (DORA) State of DevOps model |
+| [Domain Driven Design Building Blocks Concept View](./software-development/domain-driven-design/building-blocks/concept-view.md) | Shows the building block patterns and their relationships. |
 | [Domain Driven Design Patterns Concept View](./software-development/domain-driven-design/concept-view.md) | Shows the concepts of Domain Driven Design and their relationships. |
 | [Concept View for Twelve Factor Apps](./software-development/twelve-factor-app/concept-view.md) | Shows the concepts of the Twelve Factor App and their relationships. |
 ## System Context Views
