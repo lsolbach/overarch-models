@@ -1,0 +1,32 @@
+digraph "Concept Map of the Domain Driven Design Context Mapping for Strategic Design Patterns" {
+  labelloc= "t"
+  label="Concept Map of the Domain Driven Design Context Mapping for Strategic Design Patterns"
+  rankdir="LR"
+
+  layout=dot
+software_development_domain_driven_design_context_mapping__c_published_language [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Published Language</B><BR/><FONT POINT-SIZE="10"><I>A well-documented shared language that<BR/>can express the necessary domain<BR/>information as a common medium of<BR/>communication, translating as necessary<BR/>into and out of that language. </I></FONT>>]
+software_development_domain_driven_design_context_mapping__c_anti_corruption_layer [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Anti-Corruption Layer</B><BR/><FONT POINT-SIZE="10"><I>The anti-corruption layer is an<BR/>architectural layer to separate the<BR/>domain model from outside models. It<BR/>enables the domain model to access the<BR/>data of the outside model as expected by<BR/>the domain model. In a clean<BR/>architecture, an adapter is the place to<BR/>implement the anti- corruption layer by<BR/>mapping the outside model to the domain<BR/>model. </I></FONT>>]
+software_development_domain_driven_design_context_mapping__c_big_ball_of_mud [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Big Ball of Mud</B><BR/><FONT POINT-SIZE="10"><I>A Big Ball of Mud is a casually, even<BR/>haphazardly, structured system. Its<BR/>organization, if one can call it that,<BR/>is dictated more by expediency than<BR/>design. Yet, its enduring popularity<BR/>cannot merely be indicative of a general<BR/>disregard for architecture. </I></FONT>>]
+software_development_domain_driven_design_context_mapping__c_conformist [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Conformist</B><BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_modelling__c_bounded_context [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Bounded Context</B><BR/><FONT POINT-SIZE="10"><I>A descrition of a boundary (typically a<BR/>subsystem or the work of a particular<BR/>team) within which a particular model is<BR/>defined and applicable. </I></FONT>>]
+software_development_domain_driven_design_context_mapping__c_partnership [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Partnership</B><BR/><FONT POINT-SIZE="10"><I>A partnership between the teams in<BR/>charge of the two contexts, when the<BR/>teams will succeed or fail together. </I></FONT>>]
+software_development_domain_driven_design_context_mapping__c_customer_supplier [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Customer/Supplier</B><BR/><FONT POINT-SIZE="10"><I>A clear relationship between two teams,<BR/>where the downstream team is the<BR/>customer of the upstream team. </I></FONT>>]
+software_development_domain_driven_design_context_mapping__c_separate_ways [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Separate Ways</B><BR/><FONT POINT-SIZE="10"><I>A bounded context with no connection to<BR/>the others at all, allowing developers<BR/>to find simple, specialized solutions<BR/>within this small scope. </I></FONT>>]
+software_development_domain_driven_design_context_mapping__c_context_map [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Context Map</B><BR/><FONT POINT-SIZE="10"><I> The context map provides an overview<BR/>for all models and their boundaries and<BR/>interfaces. </I></FONT>>]
+software_development_domain_driven_design_context_mapping__c_shared_kernel [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Shared Kernel</B><BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_context_mapping__c_open_host_service [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Open Host Service</B><BR/><FONT POINT-SIZE="10"><I>An open protocol that gives access to<BR/>your subsystem as a set of services. </I></FONT>>]
+ 
+software_development_domain_driven_design_context_mapping__c_context_map -> software_development_domain_driven_design_context_mapping__c_conformist [label=<overlap unilaterally as<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_context_mapping__c_context_map -> software_development_domain_driven_design_context_mapping__c_anti_corruption_layer [label=<translate and isolate unilaterally with<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_context_mapping__c_context_map -> software_development_domain_driven_design_context_mapping__c_big_ball_of_mud [label=<seggregate the conceptual messes<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_context_mapping__c_open_host_service -> software_development_domain_driven_design_context_mapping__c_published_language [label=<formalized as<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_context_mapping__c_context_map -> software_development_domain_driven_design_context_mapping__c_open_host_service [label=<support multiple clients through<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_modelling__c_bounded_context -> software_development_domain_driven_design_context_mapping__c_context_map [label=<assess/overview relationships with<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_context_mapping__c_context_map -> software_development_domain_driven_design_context_mapping__c_customer_supplier [label=<coordinate upstream/downstream<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_context_mapping__c_context_map -> software_development_domain_driven_design_context_mapping__c_separate_ways [label=<free teams to go<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_context_mapping__c_context_map -> software_development_domain_driven_design_context_mapping__c_partnership [label=<coordinate interdependent contexts<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_context_mapping__c_context_map -> software_development_domain_driven_design_context_mapping__c_shared_kernel [label=<overlap contexts<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+ 
+}
+
+// (generated by Overarch with template views/view.dot.cmb)

@@ -56,7 +56,7 @@ same.
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|
-| [Model Driven Design](../../../software-development/domain-driven-design/c-model-driven-design.md) | express change with | [Domain Events](../../../software-development/domain-driven-design/building-blocks/c-domain-events.md) |  |
+| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | express change with | [Domain Events](../../../software-development/domain-driven-design/building-blocks/c-domain-events.md) |  |
 | [Entities](../../../software-development/domain-driven-design/building-blocks/c-entities.md) | push state change with | [Domain Events](../../../software-development/domain-driven-design/building-blocks/c-domain-events.md) |  |
 
 ## Concept Map

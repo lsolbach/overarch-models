@@ -1,0 +1,17 @@
+#{
+  ;;;
+  ;;; Concept Model Views
+  ;;;
+  {:el :concept-view
+   :id :software-development.domain-driven-design.context-mapping/concept-view
+   :spec {:selection [{:namespace-prefix "software-development.domain-driven-design.context-mapping"}
+                      {:to-namespace-prefix "software-development.domain-driven-design.context-mapping"}]
+          :include :related
+          :layout :left-right
+          ;:graphviz {:engine :neato}
+          :markdown {:references true}}
+   :name "DDD Context Mapping for Strategic Design Concept View"
+   :title "Concept Map of the Domain Driven Design Context Mapping for Strategic Design Patterns"
+   :desc "Shows the patterns of context mapping for strategic design and their relationships."}
+
+}

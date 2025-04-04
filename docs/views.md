@@ -10,8 +10,11 @@
 | [Concept View for Cloud Providers](./software-development/cloud/provider/concept-view.md) | Shows the concepts related to cloud providers and their relationships. |
 | [Concept View for Cloud Service Models](./software-development/cloud/service-model/concept-view.md) | Shows the concepts related to cloud service models and their relationships. |
 | [DORA Concept View](./software-development/dora/concept-view.md) | Shows a concept map of the DevOps Research and Assessment (DORA) State of DevOps model |
-| [Domain Driven Design Building Blocks Concept View](./software-development/domain-driven-design/building-blocks/concept-view.md) | Shows the building block patterns and their relationships. |
+| [DDD Building Blocks Concept View](./software-development/domain-driven-design/building-blocks/concept-view.md) | Shows the building block patterns and their relationships. |
+| [DDD Context Mapping for Strategic Design Concept View](./software-development/domain-driven-design/context-mapping/concept-view.md) | Shows the patterns of context mapping for strategic design and their relationships. |
+| [DDD Distillation for Strategic Design Concept View](./software-development/domain-driven-design/distillation/concept-view.md) | Shows the distilation patterns and their relationships. |
 | [Domain Driven Design Patterns Concept View](./software-development/domain-driven-design/concept-view.md) | Shows the concepts of Domain Driven Design and their relationships. |
+| [DDD Putting the Model to Work Concept View](./software-development/domain-driven-design/modelling/concept-view.md) | Shows the modelling patterns and their relationships. |
 | [Concept View for Twelve Factor Apps](./software-development/twelve-factor-app/concept-view.md) | Shows the concepts of the Twelve Factor App and their relationships. |
 ## System Context Views
 | Title | Description |

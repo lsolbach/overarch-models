@@ -1,3 +1,6 @@
+;;;;
+;;;; Views for Domain Driven Design: Building Blocks
+;;;;
 #{
   ;;;
   ;;; Concept Model Views
@@ -10,7 +13,7 @@
           :layout :left-right
           ;:graphviz {:engine :neato}
           :markdown {:references true}}
-   :name "Domain Driven Design Building Blocks Concept View"
+   :name "DDD Building Blocks Concept View"
    :title "Concept Map of the Domain Driven Design Building Blocks Patterns"
    :desc "Shows the building block patterns and their relationships."}
 

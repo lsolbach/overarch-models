@@ -13,7 +13,7 @@ Shows the building block patterns and their relationships.
 | [Domain Events](../../../software-development/domain-driven-design/building-blocks/c-domain-events.md)| A domain object to propagate relevant domain activities in a distributed system. |
 | [Entities](../../../software-development/domain-driven-design/building-blocks/c-entities.md)| Objects in the domain model which are defined by their identity rather than by their state. For example a Person is normally modelled as an entity. It represents the same person even when the attributes change. It is also a different person, even if it has the same state as another person. |
 | [Factories](../../../software-development/domain-driven-design/building-blocks/c-factories.md)| A domain object for the creation of complex domain objects which enforce the invariants of these objects on creation. |
-| [Model Driven Design](../../../software-development/domain-driven-design/c-model-driven-design.md)|  |
+| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md)|  |
 | [Modules](../../../software-development/domain-driven-design/building-blocks/c-modules.md)|  |
 | [Repositories](../../../software-development/domain-driven-design/building-blocks/c-repositories.md)|  |
 | [Services](../../../software-development/domain-driven-design/building-blocks/c-services.md)|  |
@@ -30,10 +30,10 @@ Shows the building block patterns and their relationships.
 | [Value Objects](../../../software-development/domain-driven-design/building-blocks/c-value-objects.md) | encapsulate with | [Factories](../../../software-development/domain-driven-design/building-blocks/c-factories.md) |  |
 | [Entities](../../../software-development/domain-driven-design/building-blocks/c-entities.md) | encapsulate with | [Factories](../../../software-development/domain-driven-design/building-blocks/c-factories.md) |  |
 | [Aggregates](../../../software-development/domain-driven-design/building-blocks/c-aggregates.md) | encapsulate with | [Factories](../../../software-development/domain-driven-design/building-blocks/c-factories.md) |  |
-| [Model Driven Design](../../../software-development/domain-driven-design/c-model-driven-design.md) | express change with | [Domain Events](../../../software-development/domain-driven-design/building-blocks/c-domain-events.md) |  |
-| [Model Driven Design](../../../software-development/domain-driven-design/c-model-driven-design.md) | express identity with | [Entities](../../../software-development/domain-driven-design/building-blocks/c-entities.md) |  |
-| [Model Driven Design](../../../software-development/domain-driven-design/c-model-driven-design.md) | express model with | [Services](../../../software-development/domain-driven-design/building-blocks/c-services.md) |  |
-| [Model Driven Design](../../../software-development/domain-driven-design/c-model-driven-design.md) | express state and computation with | [Value Objects](../../../software-development/domain-driven-design/building-blocks/c-value-objects.md) |  |
+| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | express change with | [Domain Events](../../../software-development/domain-driven-design/building-blocks/c-domain-events.md) |  |
+| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | express identity with | [Entities](../../../software-development/domain-driven-design/building-blocks/c-entities.md) |  |
+| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | express model with | [Services](../../../software-development/domain-driven-design/building-blocks/c-services.md) |  |
+| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | express state and computation with | [Value Objects](../../../software-development/domain-driven-design/building-blocks/c-value-objects.md) |  |
 | [Entities](../../../software-development/domain-driven-design/building-blocks/c-entities.md) | push state change with | [Domain Events](../../../software-development/domain-driven-design/building-blocks/c-domain-events.md) |  |
 
 ## Navigation

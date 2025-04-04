@@ -26,7 +26,7 @@ Give the service a name, which also becomes part of the ubiquitous language.
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|
-| [Model Driven Design](../../../software-development/domain-driven-design/c-model-driven-design.md) | express model with | [Services](../../../software-development/domain-driven-design/building-blocks/c-services.md) |  |
+| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | express model with | [Services](../../../software-development/domain-driven-design/building-blocks/c-services.md) |  |
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Building Blocks Patterns](../../../software-development/domain-driven-design/building-blocks/concept-view.png)

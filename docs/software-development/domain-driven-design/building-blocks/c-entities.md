@@ -43,7 +43,7 @@ The model must define what it means to be the same thing.
 | [Entities](../../../software-development/domain-driven-design/building-blocks/c-entities.md) | act as root of | [Aggregates](../../../software-development/domain-driven-design/building-blocks/c-aggregates.md) |  |
 | [Entities](../../../software-development/domain-driven-design/building-blocks/c-entities.md) | encapsulate with | [Aggregates](../../../software-development/domain-driven-design/building-blocks/c-aggregates.md) |  |
 | [Entities](../../../software-development/domain-driven-design/building-blocks/c-entities.md) | encapsulate with | [Factories](../../../software-development/domain-driven-design/building-blocks/c-factories.md) |  |
-| [Model Driven Design](../../../software-development/domain-driven-design/c-model-driven-design.md) | express identity with | [Entities](../../../software-development/domain-driven-design/building-blocks/c-entities.md) |  |
+| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | express identity with | [Entities](../../../software-development/domain-driven-design/building-blocks/c-entities.md) |  |
 | [Entities](../../../software-development/domain-driven-design/building-blocks/c-entities.md) | push state change with | [Domain Events](../../../software-development/domain-driven-design/building-blocks/c-domain-events.md) |  |
 
 ## Concept Map

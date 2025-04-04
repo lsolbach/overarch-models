@@ -12,7 +12,7 @@ pattern
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|
-| [Model Driven Design](../../software-development/domain-driven-design/c-model-driven-design.md) | isolate domain expressions with | [Clean Architecture](../../software-development/domain-driven-design/c-clean-architecture.md) |  |
+| [Model Driven Design](../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | isolate domain expressions with | [Clean Architecture](../../software-development/domain-driven-design/c-clean-architecture.md) |  |
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Patterns](../../software-development/domain-driven-design/concept-view.png)

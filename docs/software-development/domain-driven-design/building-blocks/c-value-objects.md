@@ -38,7 +38,7 @@ identity and avoid the design complexities neccessary to maintain entities.
 |---|---|---|---|
 | [Value Objects](../../../software-development/domain-driven-design/building-blocks/c-value-objects.md) | encapsulate with | [Aggregates](../../../software-development/domain-driven-design/building-blocks/c-aggregates.md) |  |
 | [Value Objects](../../../software-development/domain-driven-design/building-blocks/c-value-objects.md) | encapsulate with | [Factories](../../../software-development/domain-driven-design/building-blocks/c-factories.md) |  |
-| [Model Driven Design](../../../software-development/domain-driven-design/c-model-driven-design.md) | express state and computation with | [Value Objects](../../../software-development/domain-driven-design/building-blocks/c-value-objects.md) |  |
+| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | express state and computation with | [Value Objects](../../../software-development/domain-driven-design/building-blocks/c-value-objects.md) |  |
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Building Blocks Patterns](../../../software-development/domain-driven-design/building-blocks/concept-view.png)

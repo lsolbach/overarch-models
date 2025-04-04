@@ -1,5 +1,8 @@
 # Change Log
 
+## 2025-04-04
+* refactored domain driven design model
+
 ## 2025-04-03
 * refactored domain driven design model
 
