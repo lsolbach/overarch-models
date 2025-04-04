@@ -194,7 +194,7 @@ is decoupled as well."}
    :id :software-development.domain-driven-design.building-blocks/c-repositories
    :tags #{"pattern"}
    :name "Repositories"
-   :desc ""
+   :desc "Query access to aggregates expressed in the ubiquitous language"
    :doc "Query access to aggregates expressed in the ubiquitous language.
 
 Proliferation of traversable associations used only for finding things muddles
@@ -235,7 +235,7 @@ object storage and access to the repository."}
    :id :software-development.domain-driven-design.building-blocks/c-services
    :tags #{"pattern"}
    :name "Services"
-   :desc ""
+   :desc "contains functionality which is not the responsiblity of an entity or value object"
    :doc "Sometimes, it just isn't a thing.
 
 Some concepts from the domain aren't natural to model as objects. Forcing the
