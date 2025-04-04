@@ -18,7 +18,7 @@ Shows the modelling patterns and their relationships.
 | [Entities](../../../software-development/domain-driven-design/building-blocks/c-entities.md)| Objects in the domain model which are defined by their identity rather than by their state. For example a Person is normally modelled as an entity. It represents the same person even when the attributes change. It is also a different person, even if it has the same state as another person. |
 | [Hands On Modellers](../../../software-development/domain-driven-design/modelling/c-hands-on-modellers.md)| Developers must be involved with the model and have contact with domain experts. |
 | [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md)|  |
-| [Services](../../../software-development/domain-driven-design/building-blocks/c-services.md)|  |
+| [Services](../../../software-development/domain-driven-design/building-blocks/c-services.md)| contains functionality which is not the responsiblity of an entity or value object |
 | [Ubiquitous Language](../../../software-development/domain-driven-design/modelling/c-ubiquitous-language.md)| A language around the domain model used by all team members within a bounded context to connect all the activities of the team with the software. |
 | [Value Objects](../../../software-development/domain-driven-design/building-blocks/c-value-objects.md)| An object in the domain model, which has no conceptional identity but are identified by their state. Value objects should be modelled as immutable. |
 

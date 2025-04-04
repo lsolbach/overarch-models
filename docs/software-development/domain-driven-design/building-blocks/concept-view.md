@@ -15,8 +15,8 @@ Shows the building block patterns and their relationships.
 | [Factories](../../../software-development/domain-driven-design/building-blocks/c-factories.md)| A domain object for the creation of complex domain objects which enforce the invariants of these objects on creation. |
 | [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md)|  |
 | [Modules](../../../software-development/domain-driven-design/building-blocks/c-modules.md)|  |
-| [Repositories](../../../software-development/domain-driven-design/building-blocks/c-repositories.md)|  |
-| [Services](../../../software-development/domain-driven-design/building-blocks/c-services.md)|  |
+| [Repositories](../../../software-development/domain-driven-design/building-blocks/c-repositories.md)| Query access to aggregates expressed in the ubiquitous language |
+| [Services](../../../software-development/domain-driven-design/building-blocks/c-services.md)| contains functionality which is not the responsiblity of an entity or value object |
 | [Value Objects](../../../software-development/domain-driven-design/building-blocks/c-value-objects.md)| An object in the domain model, which has no conceptional identity but are identified by their state. Value objects should be modelled as immutable. |
 
 ## Other Relationships

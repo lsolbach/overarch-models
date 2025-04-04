@@ -1,7 +1,7 @@
 
 # Services (Concept)
 ## Description
-
+contains functionality which is not the responsiblity of an entity or value object
 
 
 ## Tags

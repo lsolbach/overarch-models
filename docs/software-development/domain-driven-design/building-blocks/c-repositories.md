@@ -1,7 +1,7 @@
 
 # Repositories (Concept)
 ## Description
-
+Query access to aggregates expressed in the ubiquitous language
 
 
 ## Tags

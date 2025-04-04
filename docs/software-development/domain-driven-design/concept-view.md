@@ -47,11 +47,11 @@ Shows the concepts of Domain Driven Design and their relationships.
 | [Pluggable Component Framework](../../software-development/domain-driven-design/large-scale-structure/c-pluggable-component-framework.md)| A framework that allows diverse implementations of those interfaces to be freely substituted. |
 | [Published Language](../../software-development/domain-driven-design/context-mapping/c-published-language.md)| A well-documented shared language that can express the necessary domain information as a common medium of communication, translating as necessary into and out of that language. |
 | [Putting the Model to Work](../../software-development/domain-driven-design/putting-the-model-to-work.md)| Part I: Putting the Model to Work |
-| [Repositories](../../software-development/domain-driven-design/building-blocks/c-repositories.md)|  |
+| [Repositories](../../software-development/domain-driven-design/building-blocks/c-repositories.md)| Query access to aggregates expressed in the ubiquitous language |
 | [Responsibility Layers](../../software-development/domain-driven-design/large-scale-structure/c-responsibility-layers.md)|  |
 | [Segregated Core](../../software-development/domain-driven-design/distillation/c-segregated-core.md)|  |
 | [Separate Ways](../../software-development/domain-driven-design/context-mapping/c-separate-ways.md)| A bounded context with no connection to the others at all, allowing developers to find simple, specialized solutions within this small scope. |
-| [Services](../../software-development/domain-driven-design/building-blocks/c-services.md)|  |
+| [Services](../../software-development/domain-driven-design/building-blocks/c-services.md)| contains functionality which is not the responsiblity of an entity or value object |
 | [Shared Kernel](../../software-development/domain-driven-design/context-mapping/c-shared-kernel.md)|  |
 | [Supple Design](../../software-development/domain-driven-design/supple-design.md)| Part III: Supple Design |
 | [System Metaphor](../../software-development/domain-driven-design/large-scale-structure/c-system-metaphor.md)|  |
