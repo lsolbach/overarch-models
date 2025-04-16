@@ -27,8 +27,7 @@ package "domain" as softwareDevelopment_architecture_blueprint_cleanArchitecture
   abstract class "DomainEvent" as softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainEvent {}
 }
 package "application" as softwareDevelopment_architecture_blueprint_cleanArchitecture_application {
-  interface "RepositoryInterface" as softwareDevelopment_architecture_blueprint_cleanArchitecture_application_repositoryInterface {
-  }
+  interface "RepositoryInterface" as softwareDevelopment_architecture_blueprint_cleanArchitecture_application_repositoryInterface {}
   interface "DomainEventPublisherInterface" as softwareDevelopment_architecture_blueprint_cleanArchitecture_application_domainEventPublisherInterface {
     publish()
   }

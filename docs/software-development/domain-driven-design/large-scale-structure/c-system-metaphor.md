@@ -29,6 +29,11 @@ bounded contexts. But because all metaphors are inexact, continually reexamine
 the metaphor for overextension or inaptness, and be ready to drop it if it gets
 in the way.
 
+## Concept Map
+![Concept Map of the Domain Driven Design Large-scale Structure for Strategic Design Patterns](../../../software-development/domain-driven-design/large-scale-structure/concept-view.png)
+
+[Concept Map of the Domain Driven Design Large-scale Structure for Strategic Design Patterns](../../../software-development/domain-driven-design/large-scale-structure/concept-view.md)
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

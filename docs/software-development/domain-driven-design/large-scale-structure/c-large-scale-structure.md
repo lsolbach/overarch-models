@@ -25,6 +25,11 @@ components. Place this abstract overall model in its own module, while the
 specialized, detailed implementation classes are left in their own modules
 defined by subdomain.
 
+## Concept Map
+![Concept Map of the Domain Driven Design Large-scale Structure for Strategic Design Patterns](../../../software-development/domain-driven-design/large-scale-structure/concept-view.png)
+
+[Concept Map of the Domain Driven Design Large-scale Structure for Strategic Design Patterns](../../../software-development/domain-driven-design/large-scale-structure/concept-view.md)
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

@@ -13,8 +13,10 @@
 | [DDD Building Blocks Concept View](./software-development/domain-driven-design/building-blocks/concept-view.md) | Shows the building block patterns and their relationships. |
 | [DDD Context Mapping for Strategic Design Concept View](./software-development/domain-driven-design/context-mapping/concept-view.md) | Shows the patterns of context mapping for strategic design and their relationships. |
 | [DDD Distillation for Strategic Design Concept View](./software-development/domain-driven-design/distillation/concept-view.md) | Shows the distilation patterns and their relationships. |
+| [DDD Large-scale Structure for Strategic Design Concept View](./software-development/domain-driven-design/large-scale-structure/concept-view.md) | Shows the large-scale structure patterns and their relationships. |
 | [Domain Driven Design Patterns Concept View](./software-development/domain-driven-design/concept-view.md) | Shows the concepts of Domain Driven Design and their relationships. |
 | [DDD Putting the Model to Work Concept View](./software-development/domain-driven-design/modelling/concept-view.md) | Shows the modelling patterns and their relationships. |
+| [DDD Supple Design Concept View](./software-development/domain-driven-design/supple-design/concept-view.md) | Shows the supple design patterns and their relationships. |
 | [Concept View for Twelve Factor Apps](./software-development/twelve-factor-app/concept-view.md) | Shows the concepts of the Twelve Factor App and their relationships. |
 ## System Context Views
 | Title | Description |

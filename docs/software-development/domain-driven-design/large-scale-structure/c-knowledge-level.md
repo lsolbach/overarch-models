@@ -27,6 +27,11 @@ A group of objects that describe how another group of objects should behave.
   
   (see Fowler, M. 1997. Analysis Patterns: Reusable Object Models, Addison-Wesley.)
 
+## Concept Map
+![Concept Map of the Domain Driven Design Large-scale Structure for Strategic Design Patterns](../../../software-development/domain-driven-design/large-scale-structure/concept-view.png)
+
+[Concept Map of the Domain Driven Design Large-scale Structure for Strategic Design Patterns](../../../software-development/domain-driven-design/large-scale-structure/concept-view.md)
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
