@@ -4,6 +4,24 @@
 abstract event
 
 
+## Fields
+### creationtime
+timestamp creationtime
+ 
+the time the event was created
+### id
+string id
+ 
+the id of the event
+### source
+string source
+ 
+the source of the event
+### type
+string type
+ 
+the type of the event
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

@@ -1,5 +1,5 @@
 # Overarch Models
-This repository contains models for  [Overarch](https://github.com/soulspace-org/overarch) that capture ideas for software development and related topics. This includes concepts, patterns, architecture blueprints, etc.
+This repository contains models for [Overarch](https://github.com/soulspace-org/overarch) that capture ideas for software development and related topics. This includes concepts, patterns, architecture blueprints, etc.
 
 Currently it contains models about
 * Software Architecture

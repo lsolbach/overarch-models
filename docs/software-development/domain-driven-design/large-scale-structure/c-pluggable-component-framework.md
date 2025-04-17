@@ -26,6 +26,11 @@ that allows diverse implementations of those interfaces to be freely
 substituted. Likewise, allow any application to use those components, so long
 as it operates strictly through the interfaces of the abstract core.
 
+## Concept Map
+![Concept Map of the Domain Driven Design Large-scale Structure for Strategic Design Patterns](../../../software-development/domain-driven-design/large-scale-structure/concept-view.png)
+
+[Concept Map of the Domain Driven Design Large-scale Structure for Strategic Design Patterns](../../../software-development/domain-driven-design/large-scale-structure/concept-view.md)
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

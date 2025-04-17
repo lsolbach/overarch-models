@@ -38,6 +38,11 @@ Design free-for-alls produce systems no one can make sense of as a whole, and
 | [Evolving Order](../../../software-development/domain-driven-design/large-scale-structure/c-evolving-order.md) | concepts enter | [Core Domain](../../../software-development/domain-driven-design/distillation/c-core-domain.md) |  |
 | [Core Domain](../../../software-development/domain-driven-design/distillation/c-core-domain.md) | structure through | [Evolving Order](../../../software-development/domain-driven-design/large-scale-structure/c-evolving-order.md) |  |
 
+## Concept Map
+![Concept Map of the Domain Driven Design Large-scale Structure for Strategic Design Patterns](../../../software-development/domain-driven-design/large-scale-structure/concept-view.png)
+
+[Concept Map of the Domain Driven Design Large-scale Structure for Strategic Design Patterns](../../../software-development/domain-driven-design/large-scale-structure/concept-view.md)
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

@@ -12,11 +12,14 @@ Shows the concepts of Domain Driven Design and their relationships.
 | [Abstract Core](../../software-development/domain-driven-design/distillation/c-abstract-core.md)| The most fundamental differentiating concepts in the model, factored into distinct classes, abstract classes, or interfaces. |
 | [Aggregates](../../software-development/domain-driven-design/building-blocks/c-aggregates.md)| Aggregates are collections of entities and value objects with their associations and form a transactional unit. Aggregates are referenced as a whole by an aggregate root entity, parts of the aggregate must not be referenced from outside. The aggregate root is responsible for the enforcement of the busines rules and invariants of the aggregate. |
 | [Anti-Corruption Layer](../../software-development/domain-driven-design/context-mapping/c-anti-corruption-layer.md)| The anti-corruption layer is an architectural layer to separate the domain model from outside models. It enables the domain model to access the data of the outside model as expected by the domain model. In a clean architecture, an adapter is the place to implement the anti- corruption layer by mapping the outside model to the domain model. |
+| [Assertions](../../software-development/domain-driven-design/supple-design/assertions.md)| state post-conditions of operations and invariants of classes and aggregates |
 | [Big Ball of Mud](../../software-development/domain-driven-design/context-mapping/c-big-ball-of-mud.md)| A Big Ball of Mud is a casually, even haphazardly, structured system. Its organization, if one can call it that, is dictated more by expediency than design. Yet, its enduring popularity cannot merely be indicative of a general disregard for architecture. |
 | [Bounded Context](../../software-development/domain-driven-design/modelling/c-bounded-context.md)| A descrition of a boundary (typically a subsystem or the work of a particular team) within which a particular model is defined and applicable. |
 | [Building Blocks](../../software-development/domain-driven-design/building-blocks.md)| Part II: The Building Blocks of a Model-Driven Design |
 | [Clean Architecture](../../software-development/domain-driven-design/c-clean-architecture.md)|  |
+| [Closure of Operations](../../software-development/domain-driven-design/supple-design/closure-of-operations.md)| define an operation whose return type is the same as the type of its argument(s) |
 | [Cohesive Mechanisms](../../software-development/domain-driven-design/distillation/c-cohesive-mechanisms.md)|  |
+| [Conceptual Contours](../../software-development/domain-driven-design/supple-design/conceptual-contours.md)| decompose design elements into cohesive units |
 | [Conformist](../../software-development/domain-driven-design/context-mapping/c-conformist.md)|  |
 | [Context](../../software-development/domain-driven-design/c-context.md)| The setting in which a word or statement appears that determines its meaning. Statements about a model can only be understood in a context. |
 | [Context Map](../../software-development/domain-driven-design/context-mapping/c-context-map.md)| The context map provides an overview for all models and their boundaries and interfaces. |
@@ -24,17 +27,20 @@ Shows the concepts of Domain Driven Design and their relationships.
 | [Continuous Integration](../../software-development/domain-driven-design/modelling/c-continuous-integration.md)| A process of merging all code and other implementation artifacts frequently, with automated tests to flag fragmentation quickly. |
 | [Core Domain](../../software-development/domain-driven-design/distillation/c-core-domain.md)| The most valuable part of the domain model. |
 | [Customer/Supplier](../../software-development/domain-driven-design/context-mapping/c-customer-supplier.md)| A clear relationship between two teams, where the downstream team is the customer of the upstream team. |
+| [Declarative Design](../../software-development/domain-driven-design/supple-design/declarative-design.md)|  |
 | [Distillation](../../software-development/domain-driven-design/distillation.md)| Part V: Distillation for Strategic Design |
 | [Domain](../../software-development/domain-driven-design/c-domain.md)| A sphere of knowledge, influence or activity. The subject area to which a user applies a program is the domain of the software. |
 | [Domain Driven Design](../../software-development/domain-driven-design/domain-driven-design.md)| An approach to the development of complex software in which we focus on the core domain, explore models in a creative collaboration of domain practitioners and software practitioners, and speak a ubiquitous language within an explicitly bounded context. |
 | [Domain Events](../../software-development/domain-driven-design/building-blocks/c-domain-events.md)| A domain object to propagate relevant domain activities in a distributed system. |
 | [Domain Vision Statement](../../software-development/domain-driven-design/distillation/c-domain-vision-statement.md)| A short description of the core domain and the value it will bring. |
 | [Entities](../../software-development/domain-driven-design/building-blocks/c-entities.md)| Objects in the domain model which are defined by their identity rather than by their state. For example a Person is normally modelled as an entity. It represents the same person even when the attributes change. It is also a different person, even if it has the same state as another person. |
+| [Established Formalisms](../../software-development/domain-driven-design/supple-design/established-formalisms.md)|  |
 | [Evolving Order](../../software-development/domain-driven-design/large-scale-structure/c-evolving-order.md)| A conceptual large-scale structure that evolves with the application, possibly changing to a completely different type of structure along the way. |
 | [Factories](../../software-development/domain-driven-design/building-blocks/c-factories.md)| A domain object for the creation of complex domain objects which enforce the invariants of these objects on creation. |
 | [Generic Subdomains](../../software-development/domain-driven-design/distillation/c-generic-subdomains.md)| A cohesive subdomain that is not the motivation for the project and does not capoure specialized knowledge. |
 | [Hands On Modellers](../../software-development/domain-driven-design/modelling/c-hands-on-modellers.md)| Developers must be involved with the model and have contact with domain experts. |
 | [Highlighted Core](../../software-development/domain-driven-design/distillation/c-highlighted-core.md)| Describes the core elements of the domain and their interactions. |
+| [Intention-Revealing Interfaces](../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md)| name classes and operations to describe their effect and purpose |
 | [Knowledge-level](../../software-development/domain-driven-design/large-scale-structure/c-knowledge-level.md)| A distinct set of objects that can be used to describe and constrain the structure and behavior of the basic model. |
 | [Large Scale Structure](../../software-development/domain-driven-design/large-scale-structure/c-large-scale-structure.md)|  |
 | [Large-scale Structure](../../software-development/domain-driven-design/large-scale-structure.md)| Part VI: Large-scale Structure for Strategic Design |
@@ -53,6 +59,8 @@ Shows the concepts of Domain Driven Design and their relationships.
 | [Separate Ways](../../software-development/domain-driven-design/context-mapping/c-separate-ways.md)| A bounded context with no connection to the others at all, allowing developers to find simple, specialized solutions within this small scope. |
 | [Services](../../software-development/domain-driven-design/building-blocks/c-services.md)| contains functionality which is not the responsiblity of an entity or value object |
 | [Shared Kernel](../../software-development/domain-driven-design/context-mapping/c-shared-kernel.md)|  |
+| [Side-Effect-Free Functions](../../software-development/domain-driven-design/supple-design/side-effect-free-functions.md)| implement logic with functions that return results without observable side effects |
+| [Standalone Classes](../../software-development/domain-driven-design/supple-design/standalone-classes.md)| when possible create classes that are self-contained and can be understood alone |
 | [Supple Design](../../software-development/domain-driven-design/supple-design.md)| Part III: Supple Design |
 | [System Metaphor](../../software-development/domain-driven-design/large-scale-structure/c-system-metaphor.md)|  |
 | [Ubiquitous Language](../../software-development/domain-driven-design/modelling/c-ubiquitous-language.md)| A language around the domain model used by all team members within a bounded context to connect all the activities of the team with the software. |
