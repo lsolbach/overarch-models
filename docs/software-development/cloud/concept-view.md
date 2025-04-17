@@ -1,7 +1,7 @@
-# Cloud Computing Concept Map
+# Concept Map for Cloud Computing
 
 ## Diagram
-![Cloud Computing Concept Map](../../software-development/cloud/concept-view.png)
+![Concept Map for Cloud Computing](../../software-development/cloud/concept-view.png)
 
 ## Description
 Shows the concepts related to Cloud Computing and their relationships.

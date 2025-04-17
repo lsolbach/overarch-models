@@ -14,9 +14,9 @@ cloud, model, deployment
 | [Cloud Deployment Model](../../../software-development/cloud/cloud-deployment-model.md)| Cloud deployment models include Public Cloud, Private Cloud, Hybrid Cloud, and Multi-Cloud. |
 
 ## Concept Map
-![Cloud Deployment Models Concept Map](../../../software-development/cloud/deployment-model/concept-view.png)
+![Concept Map for Cloud Deployment Models](../../../software-development/cloud/deployment-model/concept-view.png)
 
-[Cloud Deployment Models Concept Map](../../../software-development/cloud/deployment-model/concept-view.md)
+[Concept Map for Cloud Deployment Models](../../../software-development/cloud/deployment-model/concept-view.md)
 
 
 ## Navigation

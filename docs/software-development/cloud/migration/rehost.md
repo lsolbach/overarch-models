@@ -19,9 +19,9 @@ strategy
 | [Lift and Shift](../../../software-development/cloud/migration/lift-and-shift.md) | synonym of | [Rehost](../../../software-development/cloud/migration/rehost.md) |  |
 
 ## Concept Map
-![Cloud  Migration Concept Map](../../../software-development/cloud/migration/concept-view.png)
+![Concept Map for Cloud Migration](../../../software-development/cloud/migration/concept-view.png)
 
-[Cloud  Migration Concept Map](../../../software-development/cloud/migration/concept-view.md)
+[Concept Map for Cloud Migration](../../../software-development/cloud/migration/concept-view.md)
 
 
 ## Navigation

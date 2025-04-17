@@ -13,9 +13,9 @@ Microsoft Azure, commonly referred to as Azure, is a cloud computing service cre
 | [Microsoft](../../../software-development/cloud/provider/microsoft.md) | provides | [Azure](../../../software-development/cloud/platform/azure.md) |  |
 
 ## Concept Map
-![Cloud Providers Concept Map](../../../software-development/cloud/provider/concept-view.png)
+![Cloud Providers Concept View](../../../software-development/cloud/provider/concept-view.png)
 
-[Cloud Providers Concept Map](../../../software-development/cloud/provider/concept-view.md)
+[Cloud Providers Concept View](../../../software-development/cloud/provider/concept-view.md)
 
 
 ## Navigation

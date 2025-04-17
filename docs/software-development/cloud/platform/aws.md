@@ -18,9 +18,9 @@ cloud, aws, platform
 | [Amazon](../../../software-development/cloud/provider/amazon.md) | provides | [Amazon Web Services (AWS)](../../../software-development/cloud/platform/aws.md) |  |
 
 ## Concept Map
-![Cloud Platforms Concept Map](../../../software-development/cloud/platform/concept-view.png)
+![Concept Map for Cloud Platforms](../../../software-development/cloud/platform/concept-view.png)
 
-[Cloud Platforms Concept Map](../../../software-development/cloud/platform/concept-view.md)
+[Concept Map for Cloud Platforms](../../../software-development/cloud/platform/concept-view.md)
 
 
 ## Navigation

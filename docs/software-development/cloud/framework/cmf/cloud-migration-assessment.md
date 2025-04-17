@@ -9,6 +9,15 @@ Cloud migration assessment is the process of evaluating an organization's curren
 
 ## Tags
 cloud, migration, assessment
+## Other Relations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Cloud Migration Assessment](../../../../software-development/cloud/framework/cmf/cloud-migration-assessment.md) | is a step of | [Cloud Migration Framework](../../../../software-development/cloud/framework/cloud-migration-framework.md) |  |
+
+## Concept Map
+![Concept Map for Cloud Migration Framework](../../../../software-development/cloud/framework/cmf/concept-view.png)
+
+[Concept Map for Cloud Migration Framework](../../../../software-development/cloud/framework/cmf/concept-view.md)
 
 
 ## Navigation

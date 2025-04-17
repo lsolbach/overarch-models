@@ -4,14 +4,14 @@ digraph "Concept Map of the Domain Driven Design Supple Design Patterns" {
   rankdir="LR"
 
   layout=dot
-software_development_domain_driven_design_supple_design__closure_of_operations [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Closure of Operations</B><BR/><FONT POINT-SIZE="10"><I>define an operation whose return type is<BR/>the same as the type of its argument(s) </I></FONT>>]
-software_development_domain_driven_design_supple_design__conceptual_contours [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Conceptual Contours</B><BR/><FONT POINT-SIZE="10"><I>decompose design elements into cohesive<BR/>units </I></FONT>>]
-software_development_domain_driven_design_supple_design__declarative_design [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Declarative Design</B><BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
-software_development_domain_driven_design_supple_design__intention_revealing_interfaces [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Intention-Revealing Interfaces</B><BR/><FONT POINT-SIZE="10"><I>name classes and operations to describe<BR/>their effect and purpose </I></FONT>>]
 software_development_domain_driven_design_supple_design__assertions [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Assertions</B><BR/><FONT POINT-SIZE="10"><I>state post-conditions of operations and<BR/>invariants of classes and aggregates </I></FONT>>]
-software_development_domain_driven_design_supple_design__established_formalisms [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Established Formalisms</B><BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
-software_development_domain_driven_design_supple_design__standalone_classes [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Standalone Classes</B><BR/><FONT POINT-SIZE="10"><I>when possible create classes that are<BR/>self-contained and can be understood<BR/>alone </I></FONT>>]
+software_development_domain_driven_design_supple_design__conceptual_contours [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Conceptual Contours</B><BR/><FONT POINT-SIZE="10"><I>decompose design elements into cohesive<BR/>units </I></FONT>>]
 software_development_domain_driven_design_supple_design__side_effect_free_functions [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Side-Effect-Free Functions</B><BR/><FONT POINT-SIZE="10"><I>implement logic with functions that<BR/>return results without observable side<BR/>effects </I></FONT>>]
+software_development_domain_driven_design_supple_design__standalone_classes [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Standalone Classes</B><BR/><FONT POINT-SIZE="10"><I>when possible create classes that are<BR/>self-contained and can be understood<BR/>alone </I></FONT>>]
+software_development_domain_driven_design_supple_design__established_formalisms [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Established Formalisms</B><BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_domain_driven_design_supple_design__intention_revealing_interfaces [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Intention-Revealing Interfaces</B><BR/><FONT POINT-SIZE="10"><I>name classes and operations to describe<BR/>their effect and purpose </I></FONT>>]
+software_development_domain_driven_design_supple_design__closure_of_operations [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Closure of Operations</B><BR/><FONT POINT-SIZE="10"><I>define an operation whose return type is<BR/>the same as the type of its argument(s) </I></FONT>>]
+software_development_domain_driven_design_supple_design__declarative_design [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Declarative Design</B><BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
  
  
 }

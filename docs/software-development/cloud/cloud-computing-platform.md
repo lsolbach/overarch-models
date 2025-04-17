@@ -26,9 +26,9 @@ cloud, platform
 | [Cloud Provider](../../software-development/cloud/cloud-provider.md) | provides | [Cloud Computing Platform](../../software-development/cloud/cloud-computing-platform.md) | A cloud provider provides a cloud computing platform. |
 
 ## Concept Map
-![Cloud Computing Concept Map](../../software-development/cloud/concept-view.png)
+![Concept Map for Cloud Computing](../../software-development/cloud/concept-view.png)
 
-[Cloud Computing Concept Map](../../software-development/cloud/concept-view.md)
+[Concept Map for Cloud Computing](../../software-development/cloud/concept-view.md)
 
 
 ## Navigation

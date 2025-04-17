@@ -14,9 +14,9 @@ strategy
 | [Refactor](../../../software-development/cloud/migration/refactor.md) | synonym of | [Replatform](../../../software-development/cloud/migration/replatform.md) |  |
 
 ## Concept Map
-![Cloud  Migration Concept Map](../../../software-development/cloud/migration/concept-view.png)
+![Concept Map for Cloud Migration](../../../software-development/cloud/migration/concept-view.png)
 
-[Cloud  Migration Concept Map](../../../software-development/cloud/migration/concept-view.md)
+[Concept Map for Cloud Migration](../../../software-development/cloud/migration/concept-view.md)
 
 
 ## Navigation

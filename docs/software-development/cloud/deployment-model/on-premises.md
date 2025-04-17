@@ -9,9 +9,9 @@ Refers to the deployment of software or services on a company's own
 cloud, model, deployment
 
 ## Concept Map
-![Cloud Deployment Models Concept Map](../../../software-development/cloud/deployment-model/concept-view.png)
+![Concept Map for Cloud Deployment Models](../../../software-development/cloud/deployment-model/concept-view.png)
 
-[Cloud Deployment Models Concept Map](../../../software-development/cloud/deployment-model/concept-view.md)
+[Concept Map for Cloud Deployment Models](../../../software-development/cloud/deployment-model/concept-view.md)
 
 
 ## Navigation

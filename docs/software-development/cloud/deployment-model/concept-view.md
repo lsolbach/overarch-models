@@ -1,7 +1,7 @@
-# Cloud Deployment Models Concept Map
+# Concept Map for Cloud Deployment Models
 
 ## Diagram
-![Cloud Deployment Models Concept Map](../../../software-development/cloud/deployment-model/concept-view.png)
+![Concept Map for Cloud Deployment Models](../../../software-development/cloud/deployment-model/concept-view.png)
 
 ## Description
 Shows the concepts related to cloud deployment models and their relationships.

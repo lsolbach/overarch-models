@@ -13,9 +13,9 @@ IBM Cloud is a suite of cloud computing services from IBM that offers both platf
 | [IBM](../../../software-development/cloud/provider/ibm.md) | provides | [IBM Cloud](../../../software-development/cloud/platform/ibm-cloud.md) |  |
 
 ## Concept Map
-![Cloud Providers Concept Map](../../../software-development/cloud/provider/concept-view.png)
+![Cloud Providers Concept View](../../../software-development/cloud/provider/concept-view.png)
 
-[Cloud Providers Concept Map](../../../software-development/cloud/provider/concept-view.md)
+[Cloud Providers Concept View](../../../software-development/cloud/provider/concept-view.md)
 
 
 ## Navigation

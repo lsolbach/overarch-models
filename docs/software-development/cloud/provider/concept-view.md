@@ -1,7 +1,7 @@
-# Cloud Providers Concept Map
+# Cloud Providers Concept View
 
 ## Diagram
-![Cloud Providers Concept Map](../../../software-development/cloud/provider/concept-view.png)
+![Cloud Providers Concept View](../../../software-development/cloud/provider/concept-view.png)
 
 ## Description
 Shows the concepts related to cloud providers and their relationships.

@@ -8,8 +8,8 @@
                       {:to-namespace-prefix "software-development.cloud.service-model"}]
           :include :related
           :layout :left-right}
-   :name "Concept View for Cloud Service Models"
-   :title "Cloud Service Models Concept Map"
+   :name "Cloud Service Models Concept Views"
+   :title "Concept Map for Cloud Service Models"
    :desc "Shows the concepts related to cloud service models and their relationships."}
   ;
   }

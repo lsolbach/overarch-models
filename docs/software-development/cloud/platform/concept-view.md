@@ -1,7 +1,7 @@
-# Cloud Platforms Concept Map
+# Concept Map for Cloud Platforms
 
 ## Diagram
-![Cloud Platforms Concept Map](../../../software-development/cloud/platform/concept-view.png)
+![Concept Map for Cloud Platforms](../../../software-development/cloud/platform/concept-view.png)
 
 ## Description
 Shows the concepts related to cloud platforms and their relationships.

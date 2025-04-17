@@ -3,12 +3,13 @@
 ## Concept Views
 | Title | Description |
 |---|---|
-| [Concept View for Cloud Migration](./software-development/cloud/migration/concept-view.md) | Shows the concepts related to cloud migration and their relationships. |
-| [Concept View for Cloud Computing](./software-development/cloud/concept-view.md) | Shows the concepts related to Cloud Computing and their relationships. |
-| [Concept View for Cloud Deployment Models](./software-development/cloud/deployment-model/concept-view.md) | Shows the concepts related to cloud deployment models and their relationships. |
-| [Concept View for Cloud Platforms](./software-development/cloud/platform/concept-view.md) | Shows the concepts related to cloud platforms and their relationships. |
-| [Concept View for Cloud Providers](./software-development/cloud/provider/concept-view.md) | Shows the concepts related to cloud providers and their relationships. |
-| [Concept View for Cloud Service Models](./software-development/cloud/service-model/concept-view.md) | Shows the concepts related to cloud service models and their relationships. |
+| [Cloud Providers Concept View](./software-development/cloud/provider/concept-view.md) | Shows the concepts related to cloud providers and their relationships. |
+| [Cloud Computing Concept View](./software-development/cloud/concept-view.md) | Shows the concepts related to Cloud Computing and their relationships. |
+| [Cloud Deployment Models Concept View](./software-development/cloud/deployment-model/concept-view.md) | Shows the concepts related to cloud deployment models and their relationships. |
+| [Cloud Migration Concept View](./software-development/cloud/migration/concept-view.md) | Shows the concepts related to cloud migration and their relationships. |
+| [Cloud Migration Framework Concept View](./software-development/cloud/framework/cmf/concept-view.md) | Shows the concepts related to the cloud migration framework and their relationships. |
+| [Cloud Platforms Concept View](./software-development/cloud/platform/concept-view.md) | Shows the concepts related to cloud platforms and their relationships. |
+| [Cloud Service Models Concept Views](./software-development/cloud/service-model/concept-view.md) | Shows the concepts related to cloud service models and their relationships. |
 | [DORA Concept View](./software-development/dora/concept-view.md) | Shows a concept map of the DevOps Research and Assessment (DORA) State of DevOps model |
 | [DDD Building Blocks Concept View](./software-development/domain-driven-design/building-blocks/concept-view.md) | Shows the building block patterns and their relationships. |
 | [DDD Context Mapping for Strategic Design Concept View](./software-development/domain-driven-design/context-mapping/concept-view.md) | Shows the patterns of context mapping for strategic design and their relationships. |

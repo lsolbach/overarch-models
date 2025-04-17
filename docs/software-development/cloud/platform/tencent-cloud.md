@@ -18,9 +18,9 @@ tencent, cloud, platform
 | [Tencent](../../../software-development/cloud/provider/tencent.md) | provides | [Tencent Cloud](../../../software-development/cloud/platform/tencent-cloud.md) |  |
 
 ## Concept Map
-![Cloud Platforms Concept Map](../../../software-development/cloud/platform/concept-view.png)
+![Concept Map for Cloud Platforms](../../../software-development/cloud/platform/concept-view.png)
 
-[Cloud Platforms Concept Map](../../../software-development/cloud/platform/concept-view.md)
+[Concept Map for Cloud Platforms](../../../software-development/cloud/platform/concept-view.md)
 
 
 ## Navigation

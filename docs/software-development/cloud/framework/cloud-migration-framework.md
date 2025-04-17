@@ -8,6 +8,14 @@ A set of best practices, guidelines, and tools for organizations
 
 ## Tags
 migration
+## Other Relations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Cloud Migration Assessment](../../../software-development/cloud/framework/cmf/cloud-migration-assessment.md) | is a step of | [Cloud Migration Framework](../../../software-development/cloud/framework/cloud-migration-framework.md) |  |
+| [Cloud Migration Plan](../../../software-development/cloud/framework/cmf/cloud-migration-plan.md) | is a step of | [Cloud Migration Framework](../../../software-development/cloud/framework/cloud-migration-framework.md) |  |
+| [Cloud Migration Execution](../../../software-development/cloud/framework/cmf/cloud-migration-execution.md) | is a step of | [Cloud Migration Framework](../../../software-development/cloud/framework/cloud-migration-framework.md) |  |
+| [Cloud Migration Optimization](../../../software-development/cloud/framework/cmf/cloud-migration-optimization.md) | is a step of | [Cloud Migration Framework](../../../software-development/cloud/framework/cloud-migration-framework.md) |  |
+| [Cloud Migration Validation](../../../software-development/cloud/framework/cmf/cloud-migration-validation.md) | is a step of | [Cloud Migration Framework](../../../software-development/cloud/framework/cloud-migration-framework.md) |  |
 
 
 ## Navigation

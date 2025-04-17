@@ -1,7 +1,7 @@
-# Cloud  Migration Concept Map
+# Concept Map for Cloud Migration
 
 ## Diagram
-![Cloud  Migration Concept Map](../../../software-development/cloud/migration/concept-view.png)
+![Concept Map for Cloud Migration](../../../software-development/cloud/migration/concept-view.png)
 
 ## Description
 Shows the concepts related to cloud migration and their relationships.

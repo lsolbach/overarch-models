@@ -10,9 +10,9 @@ A landing zone is a pre-configured environment in the cloud that provides a foun
 landing zone, cloud
 
 ## Concept Map
-![Cloud Computing Concept Map](../../software-development/cloud/concept-view.png)
+![Concept Map for Cloud Computing](../../software-development/cloud/concept-view.png)
 
-[Cloud Computing Concept Map](../../software-development/cloud/concept-view.md)
+[Concept Map for Cloud Computing](../../software-development/cloud/concept-view.md)
 
 
 ## Navigation

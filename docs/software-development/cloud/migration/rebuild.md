@@ -14,9 +14,9 @@ strategy
 | [Rebuild](../../../software-development/cloud/migration/rebuild.md) | synonym of | [Rearchitect](../../../software-development/cloud/migration/rearchitect.md) |  |
 
 ## Concept Map
-![Cloud  Migration Concept Map](../../../software-development/cloud/migration/concept-view.png)
+![Concept Map for Cloud Migration](../../../software-development/cloud/migration/concept-view.png)
 
-[Cloud  Migration Concept Map](../../../software-development/cloud/migration/concept-view.md)
+[Concept Map for Cloud Migration](../../../software-development/cloud/migration/concept-view.md)
 
 
 ## Navigation

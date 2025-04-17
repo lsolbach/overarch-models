@@ -8,8 +8,8 @@
                       {:to-namespace-prefix "software-development.cloud.migration"}]
           :include :related
           :layout :left-right}
-   :name "Concept View for Cloud Migration"
-   :title "Cloud  Migration Concept Map"
+   :name "Cloud Migration Concept View"
+   :title "Concept Map for Cloud Migration"
    :desc "Shows the concepts related to cloud migration and their relationships."}
   ;
   }

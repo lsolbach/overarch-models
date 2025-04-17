@@ -8,6 +8,15 @@ Cloud migration plan is a detailed roadmap for moving applications, data, and ot
 
 ## Tags
 cloud, migration, plan
+## Other Relations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Cloud Migration Plan](../../../../software-development/cloud/framework/cmf/cloud-migration-plan.md) | is a step of | [Cloud Migration Framework](../../../../software-development/cloud/framework/cloud-migration-framework.md) |  |
+
+## Concept Map
+![Concept Map for Cloud Migration Framework](../../../../software-development/cloud/framework/cmf/concept-view.png)
+
+[Concept Map for Cloud Migration Framework](../../../../software-development/cloud/framework/cmf/concept-view.md)
 
 
 ## Navigation

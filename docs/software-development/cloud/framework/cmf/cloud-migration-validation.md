@@ -9,6 +9,15 @@ Cloud migration validation is the process of verifying that applications, data, 
 
 ## Tags
 cloud, validation, migration
+## Other Relations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Cloud Migration Validation](../../../../software-development/cloud/framework/cmf/cloud-migration-validation.md) | is a step of | [Cloud Migration Framework](../../../../software-development/cloud/framework/cloud-migration-framework.md) |  |
+
+## Concept Map
+![Concept Map for Cloud Migration Framework](../../../../software-development/cloud/framework/cmf/concept-view.png)
+
+[Concept Map for Cloud Migration Framework](../../../../software-development/cloud/framework/cmf/concept-view.md)
 
 
 ## Navigation

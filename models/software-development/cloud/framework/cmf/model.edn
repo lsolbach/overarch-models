@@ -52,6 +52,34 @@
    :tags #{"cloud" "migration" "optimization"}}
 
   ;; Relationships
-
+  {:el :rel
+   :id :software-development.cloud.framework.cmf/cloud-migration-assessment-step-in-cloud-migration-framework
+   :from :software-development.cloud.framework.cmf/cloud-migration-assessment
+   :to :software-development.cloud.framework/cloud-migration-framework
+   :name "is a step of"}
+  
+  {:el :rel
+   :id :software-development.cloud.framework.cmf/cloud-migration-plan-step-in-cloud-migration-framework
+   :from :software-development.cloud.framework.cmf/cloud-migration-plan
+   :to :software-development.cloud.framework/cloud-migration-framework
+   :name "is a step of"}
+  
+  {:el :rel
+   :id :software-development.cloud.framework.cmf/cloud-migration-execution-step-in-cloud-migration-framework
+   :from :software-development.cloud.framework.cmf/cloud-migration-execution
+   :to :software-development.cloud.framework/cloud-migration-framework
+   :name "is a step of"}
+  
+  {:el :rel
+   :id :software-development.cloud.framework.cmf/cloud-migration-validation-step-in-cloud-migration-framework
+   :from :software-development.cloud.framework.cmf/cloud-migration-validation
+   :to :software-development.cloud.framework/cloud-migration-framework
+   :name "is a step of"}
+  
+  {:el :rel
+   :id :software-development.cloud.framework.cmf/cloud-migration-optimization-step-in-cloud-migration-framework
+   :from :software-development.cloud.framework.cmf/cloud-migration-optimization
+   :to :software-development.cloud.framework/cloud-migration-framework
+   :name "is a step of"}
   ;
   }

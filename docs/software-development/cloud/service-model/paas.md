@@ -19,9 +19,9 @@ networking services provided by the cloud provider.
 | [Cloud Service Model](../../../software-development/cloud/cloud-service-model.md)| The type of service provided by a cloud provider |
 
 ## Concept Map
-![Cloud Service Models Concept Map](../../../software-development/cloud/service-model/concept-view.png)
+![Concept Map for Cloud Service Models](../../../software-development/cloud/service-model/concept-view.png)
 
-[Cloud Service Models Concept Map](../../../software-development/cloud/service-model/concept-view.md)
+[Concept Map for Cloud Service Models](../../../software-development/cloud/service-model/concept-view.md)
 
 
 ## Navigation

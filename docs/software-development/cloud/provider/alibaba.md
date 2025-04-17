@@ -13,9 +13,9 @@ Alibaba Cloud, also known as Aliyun, is a Chinese cloud computing company, a sub
 | [Alibaba](../../../software-development/cloud/provider/alibaba.md) | provides | [Alibaba Cloud](../../../software-development/cloud/platform/alibaba-cloud.md) |  |
 
 ## Concept Map
-![Cloud Providers Concept Map](../../../software-development/cloud/provider/concept-view.png)
+![Cloud Providers Concept View](../../../software-development/cloud/provider/concept-view.png)
 
-[Cloud Providers Concept Map](../../../software-development/cloud/provider/concept-view.md)
+[Cloud Providers Concept View](../../../software-development/cloud/provider/concept-view.md)
 
 
 ## Navigation

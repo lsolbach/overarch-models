@@ -8,8 +8,8 @@
                       {:to-namespace-prefix "software-development.cloud.provider"}]
           :include :related
           :layout :left-right}
-   :name "Concept View for Cloud Providers"
-   :title "Cloud Providers Concept Map"
+   :name "Cloud Providers Concept View"
+   :title "Cloud Providers Concept View"
    :desc "Shows the concepts related to cloud providers and their relationships."}
   ;
   }

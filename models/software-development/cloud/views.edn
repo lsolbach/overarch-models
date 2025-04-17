@@ -7,8 +7,8 @@
    :spec {:selection {:namespace "software-development.cloud"}
           :include :relations
           :layout :left-right}
-   :name "Concept View for Cloud Computing"
-   :title "Cloud Computing Concept Map"
+   :name "Cloud Computing Concept View"
+   :title "Concept Map for Cloud Computing"
    :desc "Shows the concepts related to Cloud Computing and their relationships."}
   ;
   }

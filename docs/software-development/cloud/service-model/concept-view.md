@@ -1,7 +1,7 @@
-# Cloud Service Models Concept Map
+# Concept Map for Cloud Service Models
 
 ## Diagram
-![Cloud Service Models Concept Map](../../../software-development/cloud/service-model/concept-view.png)
+![Concept Map for Cloud Service Models](../../../software-development/cloud/service-model/concept-view.png)
 
 ## Description
 Shows the concepts related to cloud service models and their relationships.
