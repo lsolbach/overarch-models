@@ -1,5 +1,12 @@
 # Change Log
 
+## 2025-04-16
+* added relations for cloud migration framework
+* refactored views for cloud and twelve factor app
+
+## 2025-04-16
+* added more domain driven design patterns
+
 ## 2025-04-04
 * refactored domain driven design model
 

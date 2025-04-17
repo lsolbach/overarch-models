@@ -7,8 +7,8 @@
                       {:to-namespace-prefix "software-development.twelve-factor-app"}]
           :include :related
           :layout :left-right}
-   :name "Concept View for Twelve Factor Apps"
-   :title "Twelve Factor App Concept Map"
+   :name "Twelve Factor App Concept View"
+   :title "Concept Map for Twelve Factor Apps"
    :desc "Shows the concepts of the Twelve Factor App and their relationships."}
   ;
   }
