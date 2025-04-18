@@ -34,9 +34,9 @@ and which use any combination of backing services (database, queue, memory cache
 | [Port Binding](../../software-development/twelve-factor-app/port-binding.md) | factor of | [12 Factor App](../../software-development/twelve-factor-app/twelve-factor-app.md) | export services via port binding |
 
 ## Concept Map
-![Twelve Factor App Concept Map](../../software-development/twelve-factor-app/concept-view.png)
+![Concept Map for Twelve Factor Apps](../../software-development/twelve-factor-app/concept-view.png)
 
-[Twelve Factor App Concept Map](../../software-development/twelve-factor-app/concept-view.md)
+[Concept Map for Twelve Factor Apps](../../software-development/twelve-factor-app/concept-view.md)
 
 
 ## Navigation

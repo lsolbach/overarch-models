@@ -35,9 +35,9 @@ thus making them identifiable as different deploys of the same app.
 | [Codebase](../../software-development/twelve-factor-app/codebase.md) | factor of | [12 Factor App](../../software-development/twelve-factor-app/twelve-factor-app.md) | always tracked in a version control system |
 
 ## Concept Map
-![Twelve Factor App Concept Map](../../software-development/twelve-factor-app/concept-view.png)
+![Concept Map for Twelve Factor Apps](../../software-development/twelve-factor-app/concept-view.png)
 
-[Twelve Factor App Concept Map](../../software-development/twelve-factor-app/concept-view.md)
+[Concept Map for Twelve Factor Apps](../../software-development/twelve-factor-app/concept-view.md)
 
 
 ## Navigation

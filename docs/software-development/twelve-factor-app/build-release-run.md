@@ -42,9 +42,9 @@ complex, since errors are always in the foreground for a developer who is drivin
 | [Build, Release, Run](../../software-development/twelve-factor-app/build-release-run.md) | factor of | [12 Factor App](../../software-development/twelve-factor-app/twelve-factor-app.md) | strictly separate build and run stages |
 
 ## Concept Map
-![Twelve Factor App Concept Map](../../software-development/twelve-factor-app/concept-view.png)
+![Concept Map for Twelve Factor Apps](../../software-development/twelve-factor-app/concept-view.png)
 
-[Twelve Factor App Concept Map](../../software-development/twelve-factor-app/concept-view.md)
+[Concept Map for Twelve Factor Apps](../../software-development/twelve-factor-app/concept-view.md)
 
 
 ## Navigation

@@ -42,9 +42,9 @@ processes, and handle user-initiated restarts and shutdowns.
 | [Concurrency](../../software-development/twelve-factor-app/concurrency.md) | factor of | [12 Factor App](../../software-development/twelve-factor-app/twelve-factor-app.md) | scale out via the process model |
 
 ## Concept Map
-![Twelve Factor App Concept Map](../../software-development/twelve-factor-app/concept-view.png)
+![Concept Map for Twelve Factor Apps](../../software-development/twelve-factor-app/concept-view.png)
 
-[Twelve Factor App Concept Map](../../software-development/twelve-factor-app/concept-view.md)
+[Concept Map for Twelve Factor Apps](../../software-development/twelve-factor-app/concept-view.md)
 
 
 ## Navigation

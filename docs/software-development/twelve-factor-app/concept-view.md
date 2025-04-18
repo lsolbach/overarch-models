@@ -1,7 +1,7 @@
-# Twelve Factor App Concept Map
+# Concept Map for Twelve Factor Apps
 
 ## Diagram
-![Twelve Factor App Concept Map](../../software-development/twelve-factor-app/concept-view.png)
+![Concept Map for Twelve Factor Apps](../../software-development/twelve-factor-app/concept-view.png)
 
 ## Description
 Shows the concepts of the Twelve Factor App and their relationships.

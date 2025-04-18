@@ -38,9 +38,9 @@ deploy’s execution environment to run such a process.
 | [Admin Processes](../../software-development/twelve-factor-app/admin-processes.md) | factor of | [12 Factor App](../../software-development/twelve-factor-app/twelve-factor-app.md) | run admin/management tasks as one-off processes |
 
 ## Concept Map
-![Twelve Factor App Concept Map](../../software-development/twelve-factor-app/concept-view.png)
+![Concept Map for Twelve Factor Apps](../../software-development/twelve-factor-app/concept-view.png)
 
-[Twelve Factor App Concept Map](../../software-development/twelve-factor-app/concept-view.md)
+[Concept Map for Twelve Factor Apps](../../software-development/twelve-factor-app/concept-view.md)
 
 
 ## Navigation

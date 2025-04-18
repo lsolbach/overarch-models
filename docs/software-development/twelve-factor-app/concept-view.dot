@@ -1,6 +1,6 @@
-digraph "Twelve Factor App Concept Map" {
+digraph "Concept Map for Twelve Factor Apps" {
   labelloc= "t"
-  label="Twelve Factor App Concept Map"
+  label="Concept Map for Twelve Factor Apps"
   rankdir="LR"
 
   layout=dot
