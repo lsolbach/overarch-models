@@ -1,0 +1,12 @@
+;;;;
+;;;; Connascence Views
+#{{:el :concept-view
+   :id :softwaredevelopment.complexity.connascence/concept-view
+   :spec {:selection {:namespace-prefix "softwaredevelopment.complexity.connascence"}
+          :include :related
+          :layout :left-right}
+   :name "Connascence Concept View"
+   :title "Concept view for Connascence"
+   :desc "Shows the concepts of Connascence and their relations"}
+  ;
+  }
