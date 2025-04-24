@@ -1,0 +1,15 @@
+;;;;
+;;;;
+;;;;
+#{;
+  {:el :concept-view
+   :id :softwaredevelopment.complexity/concept-view
+   :spec {:selection {:namespace "softwaredevelopment.complexity"}
+          :include :related
+          :layout :left-right}
+   :name "Complexity Concept View"
+   :title "Concept view for Complexity"
+   :desc "Shows the concepts of Complexity and their relations"}
+
+  ;
+  }
