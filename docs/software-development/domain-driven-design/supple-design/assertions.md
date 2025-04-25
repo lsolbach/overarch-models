@@ -28,6 +28,10 @@ contradictory code.
 Assertions define contracts of services and entity modifiers.
 
 Assertions define invariants on aggregates.
+## Other Relations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Intention-Revealing Interfaces](../../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md) | make side effects explicit with | [Assertions](../../../software-development/domain-driven-design/supple-design/assertions.md) |  |
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Supple Design Patterns](../../../software-development/domain-driven-design/supple-design/concept-view.png)

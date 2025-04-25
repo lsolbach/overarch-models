@@ -26,6 +26,10 @@ control side effects by moving complex logic into value objects when a concept
 fitting the responsibility presents itself.
 
 All operations of a value object should be side-effect-free functions.
+## Other Relations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Intention-Revealing Interfaces](../../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md) | make safe and simple | [Side-Effect-Free Functions](../../../software-development/domain-driven-design/supple-design/side-effect-free-functions.md) |  |
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Supple Design Patterns](../../../software-development/domain-driven-design/supple-design/concept-view.png)

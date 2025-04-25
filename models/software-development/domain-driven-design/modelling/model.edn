@@ -226,6 +226,32 @@ Recognize that a change in the language is a change to the model."}
    :to :software-development.domain-driven-design/c-clean-architecture
    :name "isolate domain expressions with"
    :desc ""}
+  {:el :rel
+   :id :software-development.domain-driven-design.modelling/c-model-driven-design-reduce-cost-of-change-with-conceptual-contours
+   :from :software-development.domain-driven-design.modelling/c-model-driven-design
+   :to :software-development.domain-driven-design.supple-design/conceptual-contours
+   :name "reduce cost of change with"
+   :desc ""}
+  {:el :rel
+   :id :software-development.domain-driven-design.modelling/c-model-driven-design-simplify-interpretion-with-standalone-classes
+   :from :software-development.domain-driven-design.modelling/c-model-driven-design
+   :to :software-development.domain-driven-design.supple-design/standalone-classes
+   :name "simplify interpretion with"
+   :desc ""}
+  {:el :rel
+   :id :software-development.domain-driven-design.modelling/c-model-driven-design-express-model-through-intention-revealing-interfaces
+   :from :software-development.domain-driven-design.modelling/c-model-driven-design
+   :to :software-development.domain-driven-design.supple-design/intention-revealing-interfaces
+   :name "express model through"
+   :desc ""}
+
+  {:el :rel
+   :id :software-development.domain-driven-design.modelling/c-ubiquitous-language-model-out-loud-c-core-domain
+   :from :software-development.domain-driven-design.modelling/c-ubiquitous-language
+   :to :software-development.domain-driven-design.distillation/c-core-domain
+   :name "model out loud"
+   :desc ""}
+
 
   ;
   }

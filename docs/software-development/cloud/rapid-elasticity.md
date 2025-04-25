@@ -15,9 +15,9 @@ cloud, characteristic
 | [Cloud Computing](../../software-development/cloud/cloud-computing.md)| A model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. |
 
 ## Concept Map
-![Concept Map for Cloud Computing](../../software-development/cloud/concept-view.png)
+![Glossary for Cloud Computing](../../software-development/cloud/concept-view.png)
 
-[Concept Map for Cloud Computing](../../software-development/cloud/concept-view.md)
+[Glossary for Cloud Computing](../../software-development/cloud/concept-view.md)
 
 
 ## Navigation

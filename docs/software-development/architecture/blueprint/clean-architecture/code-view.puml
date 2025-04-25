@@ -7,13 +7,6 @@ skinparam linetype ortho
 
 title Code View of the Clean Architecture Blueprint
 
-package "application" as softwareDevelopment_architecture_blueprint_cleanArchitecture_application {
-  interface "RepositoryInterface" as softwareDevelopment_architecture_blueprint_cleanArchitecture_application_repositoryInterface {}
-  interface "DomainEventPublisherInterface" as softwareDevelopment_architecture_blueprint_cleanArchitecture_application_domainEventPublisherInterface {
-    publish()
-  }
-  class "ApplicationService" as softwareDevelopment_architecture_blueprint_cleanArchitecture_application_applicationService {}
-}
 package "adapter" as softwareDevelopment_architecture_blueprint_cleanArchitecture_adapter {
   package "rest" as softwareDevelopment_architecture_blueprint_cleanArchitecture_adapter_rest {
     class "RestController" as softwareDevelopment_architecture_blueprint_cleanArchitecture_adapter_rest_restController {}
@@ -32,6 +25,13 @@ package "domain" as softwareDevelopment_architecture_blueprint_cleanArchitecture
   class "DomainService" as softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainService {}
   class "DomainEntity" as softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainEntity {}
   abstract class "DomainEvent" as softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainEvent {}
+}
+package "application" as softwareDevelopment_architecture_blueprint_cleanArchitecture_application {
+  interface "RepositoryInterface" as softwareDevelopment_architecture_blueprint_cleanArchitecture_application_repositoryInterface {}
+  interface "DomainEventPublisherInterface" as softwareDevelopment_architecture_blueprint_cleanArchitecture_application_domainEventPublisherInterface {
+    publish()
+  }
+  class "ApplicationService" as softwareDevelopment_architecture_blueprint_cleanArchitecture_application_applicationService {}
 }
 softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainAggregate *--> softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainValue
 softwareDevelopment_architecture_blueprint_cleanArchitecture_application_repositoryInterface <|.up. softwareDevelopment_architecture_blueprint_cleanArchitecture_adapter_repository_sqlRepository

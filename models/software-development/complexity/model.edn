@@ -8,7 +8,7 @@
 
   ;; Nodes
   {:el :concept
-   :id :softwaredevelopment.complexity/coupling
+   :id :software-development.complexity/coupling
    :name "Coupling"
    :desc "Coupling is the degree of interdependence between software modules;
             a measure of how closely connected two routines or modules are;
@@ -22,7 +22,7 @@
    :tags #{"generic" "concept" "design"}}
 
   {:el :concept
-   :id :softwaredevelopment.complexity/cohesion
+   :id :software-development.complexity/cohesion
    :name "Cohesion"
    :desc "Cohesion is the degree to which the elements inside a module belong together;
             a measure of how closely the routines in a module are related to each other;

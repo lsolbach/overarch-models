@@ -27,9 +27,9 @@ as well as specialized services such as machine learning, artificial intelligenc
 | [Cloud Provider](../../software-development/cloud/cloud-provider.md) | provides | [Cloud Computing Platform](../../software-development/cloud/cloud-computing-platform.md) | A cloud provider provides a cloud computing platform. |
 
 ## Concept Map
-![Concept Map for Cloud Computing](../../software-development/cloud/concept-view.png)
+![Glossary for Cloud Computing](../../software-development/cloud/concept-view.png)
 
-[Concept Map for Cloud Computing](../../software-development/cloud/concept-view.md)
+[Glossary for Cloud Computing](../../software-development/cloud/concept-view.md)
 
 
 ## Navigation
