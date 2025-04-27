@@ -12,8 +12,8 @@
    :desc "shows the concepts related to Cloud Computing and their relationships"}
 
   {:el :glossary-view
-   :id :software-development.cloud/concept-view
-   :spec {:selection {:namespace "software-development.cloud"}}
+   :id :software-development.cloud/glossary-view
+   :spec {:selection {:namespace-prefix "software-development.cloud"}}
    :name "Cloud Glossary View"
    :title "Glossary for Cloud Computing"
    :desc "shows the concepts of Cloud Computing"}

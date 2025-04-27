@@ -4,12 +4,19 @@
 #{;
   {:el :concept-view
    :id :software-development.complexity/concept-view
-   :spec {:selection {:namespace "software-development.complexity"}
+   :spec {:selection [{:namespace "software-development.complexity"}
+                      {:to-namespace "software-development.complexity"}]
           :include :related
           :layout :left-right}
    :name "Complexity Concept View"
    :title "Concept view for Complexity"
    :desc "Shows the concepts of Complexity and their relations"}
 
+  {:el :glossary-view
+   :id :software-development.complexity/glossary-view
+   :spec {:selection {:namespace-prefix "software-development.complexity"}}
+   :name "Glossary View for Complexity"
+   :title "Glossary for Complexity"
+   :desc "Shows the concepts of software complexity"}
   ;
   }
