@@ -37,6 +37,10 @@ the domain that make it a viable area of knowledge in the first place.
 A supple design based on a deep model yields a simple set of interfaces that
 combine logically to make sensible statements in the ubiquitous language, and
 without the distraction and maintenance burden of irrelevant options.
+## Other Relations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | reduce cost of change with | [Conceptual Contours](../../../software-development/domain-driven-design/supple-design/conceptual-contours.md) |  |
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Supple Design Patterns](../../../software-development/domain-driven-design/supple-design/concept-view.png)

@@ -134,7 +134,7 @@ obvious, so the consequences of a change will be easy to anticipate.
    :desc "Part IV: Context Mapping for Strategic Design"
    :doc ""
    :tags #{"part"}}
-  
+
   {:el :concept
    :id :software-development.domain-driven-design/distillation
    :name "Distillation"
@@ -224,9 +224,7 @@ system concerns."}
 and can be used to solve problems related to that domain."
    :doc ""}
 
-  ;;
   ;; Relations
-  ;;
 
   ;
   }

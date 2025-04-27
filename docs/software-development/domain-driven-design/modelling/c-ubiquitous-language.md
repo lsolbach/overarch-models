@@ -54,7 +54,9 @@ Recognize that a change in the language is a change to the model.
 | From | Name | To | Description |
 |---|---|---|---|
 | [Core Domain](../../../software-development/domain-driven-design/distillation/c-core-domain.md) | culivate rich model with | [Ubiquitous Language](../../../software-development/domain-driven-design/modelling/c-ubiquitous-language.md) |  |
+| [Intention-Revealing Interfaces](../../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md) | draw from | [Ubiquitous Language](../../../software-development/domain-driven-design/modelling/c-ubiquitous-language.md) |  |
 | [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | model gives structure to | [Ubiquitous Language](../../../software-development/domain-driven-design/modelling/c-ubiquitous-language.md) |  |
+| [Ubiquitous Language](../../../software-development/domain-driven-design/modelling/c-ubiquitous-language.md) | model out loud | [Core Domain](../../../software-development/domain-driven-design/distillation/c-core-domain.md) |  |
 | [Bounded Context](../../../software-development/domain-driven-design/modelling/c-bounded-context.md) | names enter | [Ubiquitous Language](../../../software-development/domain-driven-design/modelling/c-ubiquitous-language.md) |  |
 
 ## Concept Map

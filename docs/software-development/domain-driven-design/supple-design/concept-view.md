@@ -15,8 +15,20 @@ Shows the supple design patterns and their relationships.
 | [Declarative Design](../../../software-development/domain-driven-design/supple-design/declarative-design.md)|  |
 | [Established Formalisms](../../../software-development/domain-driven-design/supple-design/established-formalisms.md)|  |
 | [Intention-Revealing Interfaces](../../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md)| name classes and operations to describe their effect and purpose |
+| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md)|  |
 | [Side-Effect-Free Functions](../../../software-development/domain-driven-design/supple-design/side-effect-free-functions.md)| implement logic with functions that return results without observable side effects |
 | [Standalone Classes](../../../software-development/domain-driven-design/supple-design/standalone-classes.md)| when possible create classes that are self-contained and can be understood alone |
+| [Ubiquitous Language](../../../software-development/domain-driven-design/modelling/c-ubiquitous-language.md)| A language around the domain model used by all team members within a bounded context to connect all the activities of the team with the software. |
+
+## Other Relationships
+| From | Name | To | Description |
+|---|---|---|---|
+| [Intention-Revealing Interfaces](../../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md) | draw from | [Ubiquitous Language](../../../software-development/domain-driven-design/modelling/c-ubiquitous-language.md) |  |
+| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | express model through | [Intention-Revealing Interfaces](../../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md) |  |
+| [Intention-Revealing Interfaces](../../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md) | make safe and simple | [Side-Effect-Free Functions](../../../software-development/domain-driven-design/supple-design/side-effect-free-functions.md) |  |
+| [Intention-Revealing Interfaces](../../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md) | make side effects explicit with | [Assertions](../../../software-development/domain-driven-design/supple-design/assertions.md) |  |
+| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | reduce cost of change with | [Conceptual Contours](../../../software-development/domain-driven-design/supple-design/conceptual-contours.md) |  |
+| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | simplify interpretion with | [Standalone Classes](../../../software-development/domain-driven-design/supple-design/standalone-classes.md) |  |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

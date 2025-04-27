@@ -26,9 +26,9 @@ cloud, strategy, migration
 | [Cloud Adoption Framework](../../software-development/cloud/framework/cloud-adoption-framework.md)| A set of best practices, guidelines, and tools for organizations to plan, implement, and manage their cloud adoption journey. The framework provides a structured approach to cloud adoption, including assessment, planning, migration, and optimization phases. |
 
 ## Concept Map
-![Concept Map for Cloud Computing](../../software-development/cloud/concept-view.png)
+![Glossary for Cloud Computing](../../software-development/cloud/concept-view.png)
 
-[Concept Map for Cloud Computing](../../software-development/cloud/concept-view.md)
+[Glossary for Cloud Computing](../../software-development/cloud/concept-view.md)
 
 
 ## Navigation

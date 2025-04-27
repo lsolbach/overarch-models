@@ -24,6 +24,13 @@ client developer of the need to understand the internals. These names should
 conform to the ubiquitous language so that team members can quickly infer their
 meaning. Write a test for a behavior before creating it, to force your thinking
 into client developer mode.
+## Other Relations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Intention-Revealing Interfaces](../../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md) | draw from | [Ubiquitous Language](../../../software-development/domain-driven-design/modelling/c-ubiquitous-language.md) |  |
+| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | express model through | [Intention-Revealing Interfaces](../../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md) |  |
+| [Intention-Revealing Interfaces](../../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md) | make safe and simple | [Side-Effect-Free Functions](../../../software-development/domain-driven-design/supple-design/side-effect-free-functions.md) |  |
+| [Intention-Revealing Interfaces](../../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md) | make side effects explicit with | [Assertions](../../../software-development/domain-driven-design/supple-design/assertions.md) |  |
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Supple Design Patterns](../../../software-development/domain-driven-design/supple-design/concept-view.png)

@@ -20,6 +20,10 @@ Eliminate all other concepts from the picture. Then the class will be
 completely self-contained and can be studied and understood alone. Every
 such self-contained class significantly eases the burden of understanding a
 module.
+## Other Relations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | simplify interpretion with | [Standalone Classes](../../../software-development/domain-driven-design/supple-design/standalone-classes.md) |  |
 
 ## Concept Map
 ![Concept Map of the Domain Driven Design Supple Design Patterns](../../../software-development/domain-driven-design/supple-design/concept-view.png)

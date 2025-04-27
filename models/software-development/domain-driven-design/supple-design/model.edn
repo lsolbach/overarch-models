@@ -144,8 +144,8 @@ effects, or no observable effects at all.
 A supple design can make it possible for the client code to use a declarative
 style of design. To illustrate, the next section will bring together some of
 the patterns in this chapter to make the specification more supple and
-declarative."} 
-  
+declarative."}
+
   {:el :concept
    :id :software-development.domain-driven-design.supple-design/established-formalisms
    :tags #{"tip"}
@@ -203,11 +203,27 @@ A supple design based on a deep model yields a simple set of interfaces that
 combine logically to make sensible statements in the ubiquitous language, and
 without the distraction and maintenance burden of irrelevant options."}
 
-
-
-
-
   ;; Relationships
+  {:el :rel
+   :id :software-development.domain-driven-design.supple-design/intention-revealing-interfaces-draw-from-c-ubiquitous-language
+   :from :software-development.domain-driven-design.supple-design/intention-revealing-interfaces
+   :to :software-development.domain-driven-design.modelling/c-ubiquitous-language
+   :name "draw from"
+   :desc ""}
+
+  {:el :rel
+   :id :software-development.domain-driven-design.supple-design/intention-revealing-interfaces-make-safe-and-simple-side-effect-free-functions
+   :from :software-development.domain-driven-design.supple-design/intention-revealing-interfaces
+   :to :software-development.domain-driven-design.supple-design/side-effect-free-functions
+   :name "make safe and simple"
+   :desc ""}
+
+  {:el :rel
+   :id :software-development.domain-driven-design.supple-design/intention-revealing-interfaces-make-side-effects-explicit-with-assertions
+   :from :software-development.domain-driven-design.supple-design/intention-revealing-interfaces
+   :to :software-development.domain-driven-design.supple-design/assertions
+   :name "make side effects explicit with"
+   :desc ""}
 
   ;
   }
