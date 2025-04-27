@@ -1,8 +1,8 @@
 ;;;;
 ;;;; Connascence Views
 #{{:el :concept-view
-   :id :softwaredevelopment.complexity.connascence/concept-view
-   :spec {:selection {:namespace-prefix "softwaredevelopment.complexity.connascence"}
+   :id :software-development.complexity.connascence/concept-view
+   :spec {:selection {:namespace-prefix "software-development.complexity.connascence"}
           :include :related
           :layout :left-right}
    :name "Connascence Concept View"

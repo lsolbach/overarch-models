@@ -3,8 +3,8 @@
 ;;;;
 #{;
   {:el :concept-view
-   :id :softwaredevelopment.complexity/concept-view
-   :spec {:selection {:namespace "softwaredevelopment.complexity"}
+   :id :software-development.complexity/concept-view
+   :spec {:selection {:namespace "software-development.complexity"}
           :include :related
           :layout :left-right}
    :name "Complexity Concept View"

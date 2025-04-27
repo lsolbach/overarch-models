@@ -2,7 +2,7 @@
 ;;;; Connascence Concepts
 ;;;;
 #{{:el :concept
-   :id :softwaredevelopment.complexity.connascence/connascence
+   :id :software-development.complexity.connascence/connascence
    :name "Connascence"
    :desc "A software quality metric that measures the degree of coupling between software modules"
    :doc "Connascence is a software quality metric that measures the degree of
@@ -19,27 +19,27 @@ of implementation, connascence of interface, and connascence of protocol."
 
   {:el :concept
    :name "Connascence Degree"
-   :id :softwaredevelopment.complexity.connascence/connascence-degree
+   :id :software-development.complexity.connascence/connascence-degree
    :desc "A measure of the degree of coupling between two software modules"
    :doc "Connascence Degree is a measure of the degree of coupling between two software modules. It is a measure of the degree of coupling between two software modules."
    :tags #{"generic" "metric" "design" "connascence"}}
 
   {:el :concept
    :name "Connascence Strength"
-   :id :softwaredevelopment.complexity.connascence/connascence-strength
+   :id :software-development.complexity.connascence/connascence-strength
    :desc "A measure of the strength of the relationship between two software modules"
    :doc "Connascence Strength is a measure of the strength of the relationship between two software modules. It is a measure of the strength of the relationship between two software modules."
    :tags #{"generic" "metric" "design" "connascence"}}
 
   {:el :concept
    :name "Connascence Locality"
-   :id :softwaredevelopment.complexity.connascence/connascence-locality
+   :id :software-development.complexity.connascence/connascence-locality
    :desc "A measure of the locality of connascence between two software modules."
    :doc "Connascence Locality is a measure of the locality of connascence between two software modules. It is a measure of the locality of connascence between two software modules."
    :tags #{"generic" "metric" "design" "connascence"}}
 
   {:el :concept
-   :id :softwaredevelopment.complexity.connascence/connascence-of-name
+   :id :software-development.complexity.connascence/connascence-of-name
    :name "Connascence of Name"
    :desc "A type of connascence that occurs when two or more modules must agree on the name of a variable, constant, or method."
    :doc "Connascence of Name is a type of connascence that occurs when two or more modules
@@ -65,7 +65,7 @@ class must agree on the name of the `square` method in the `Math` class."
    :tags #{"generic" "concept" "design" "connascence"}}
 
   {:el :concept
-   :id :softwaredevelopment.complexity.connascence/connascence-of-meaning
+   :id :software-development.complexity.connascence/connascence-of-meaning
    :name "Connascence of Meaning"
    :desc "Connascence of Meaning is a type of connascence that occurs when two or more modules must agree on the meaning of a variable, constant, or method."
    :doc "Connascence of Meaning is a type of connascence that occurs when two or more modules
@@ -97,7 +97,7 @@ The `Renderer` class must agree on the meaning of the format integer with the `A
    :tags #{"generic" "concept" "design" "connascence"}}
 
   {:el :concept
-   :id :softwaredevelopment.complexity.connascence/connascence-of-type
+   :id :software-development.complexity.connascence/connascence-of-type
    :name "Connascence of Type"
    :desc "Connascence of Type is a type of connascence that occurs when two or more modules
 must agree on the type of a variable, constant, or method.
@@ -109,70 +109,70 @@ Java Example:
    :tags #{"generic" "concept" "design" "connascence"}}
 
   {:el :concept
-   :id :softwaredevelopment.complexity.connascence/connascence-of-position
+   :id :software-development.complexity.connascence/connascence-of-position
    :name "Connascence of Position"
    :desc "Connascence of Position is a type of connascence that occurs when two or more modules
 must agree on the position of a variable, constant, or method."
    :tags #{"generic" "concept" "design" "connascence"}}
 
   {:el :concept
-   :id :softwaredevelopment.complexity.connascence/connascence-of-algorithm
+   :id :software-development.complexity.connascence/connascence-of-algorithm
    :name "Connascence of Algorithm"
    :desc "Connascence of Algorithm is a type of connascence that occurs when two or more modules
 must agree on the algorithm used to solve a problem."
    :tags #{"generic" "concept" "design" "connascence"}}
 
   {:el :concept
-   :id :softwaredevelopment.complexity.connascence/connascence-of-execution
+   :id :software-development.complexity.connascence/connascence-of-execution
    :name "Connascence of Execution"
    :desc "Connascence of Execution is a type of connascence that occurs when two or more modules
 must agree on the order in which they are executed."
    :tags #{"generic" "concept" "design" "connascence"}}
 
   {:el :concept
-   :id :softwaredevelopment.complexity.connascence/connascence-of-identity
+   :id :software-development.complexity.connascence/connascence-of-identity
    :name "Connascence of Identity"
    :desc "Connascence of Identity is a type of connascence that occurs when two or more modules
 must agree on the identity of an object."
    :tags #{"generic" "concept" "design" "connascence"}}
 
   {:el :concept
-   :id :softwaredevelopment.complexity.connascence/connascence-of-value
+   :id :software-development.complexity.connascence/connascence-of-value
    :name "Connascence of Value"
    :desc "Connascence of Value is a type of connascence that occurs when two or more modules
 must agree on the value of a variable, constant, or method."
    :tags #{"generic" "concept" "design" "connascence"}}
 
   {:el :concept
-   :id :softwaredevelopment.complexity.connascence/connascence-of-time
+   :id :software-development.complexity.connascence/connascence-of-time
    :name "Connascence of Time"
    :desc "Connascence of Time is a type of connascence that occurs when two or more modules
 must agree on the timing of an event."
    :tags #{"generic" "concept" "design" "connascence"}}
 
   {:el :concept
-   :id :softwaredevelopment.complexity.connascence/connascence-of-space
+   :id :software-development.complexity.connascence/connascence-of-space
    :name "Connascence of Space"
    :desc "Connascence of Space is a type of connascence that occurs when two or more modules
 must agree on the location of an object."
    :tags #{"generic" "concept" "design" "connascence"}}
 
   {:el :concept
-   :id :softwaredevelopment.complexity.connascence/connascence-of-implementation
+   :id :software-development.complexity.connascence/connascence-of-implementation
    :name "Connascence of Implementation"
    :desc "Connascence of Implementation is a type of connascence that occurs when two or more
 modules must agree on the implementation details of a feature."
    :tags #{"generic" "concept" "design" "connascence"}}
 
   {:el :concept
-   :id :softwaredevelopment.complexity.connascence/connascence-of-interface
+   :id :software-development.complexity.connascence/connascence-of-interface
    :name "Connascence of Interface"
    :desc "Connascence of Interface is a type of connascence that occurs when two or more modules
 must agree on the interface of a component."
    :tags #{"generic" "concept" "design" "connascence"}}
 
   {:el :concept
-   :id :softwaredevelopment.complexity.connascence/connascence-of-protocol
+   :id :software-development.complexity.connascence/connascence-of-protocol
    :name "Connascence of Protocol"
    :desc "Connascence of Protocol is a type of connascence that occurs when two or more modules
 must agree on the protocol used to communicate."
@@ -180,102 +180,102 @@ must agree on the protocol used to communicate."
 
   ;; Relationships
   {:el :rel
-   :id :softwaredevelopment.complexity.connascence/connascence-measure-of-coupling
-   :from :softwaredevelopment.complexity.connascence/connascence
-   :to :softwaredevelopment.complexity/coupling
+   :id :software-development.complexity.connascence/connascence-measure-of-coupling
+   :from :software-development.complexity.connascence/connascence
+   :to :software-development.complexity/coupling
    :name "measure of"
    :desc "Connascence is a measure of coupling between software modules."
    :doc "Connascence is a software quality metric that measures the degree of coupling between software modules. It is a measure of the strength of the relationships between modules."
    :tags #{"generic" "metric" "design" "connascence"}}
   {:el :rel
-   :id :softwaredevelopment.complexity.connascence/connascence-degree-measure-of--of-connascense
-   :from :softwaredevelopment.complexity.connascence/connascence-degree
-   :to :softwaredevelopment.complexity.connascence/connascence
+   :id :software-development.complexity.connascence/connascence-degree-measure-of--of-connascense
+   :from :software-development.complexity.connascence/connascence-degree
+   :to :software-development.complexity.connascence/connascence
    :name "is a measure of"
    :doc "Connascence Degree is a measure of the degree of coupling between two software modules."
    :tags #{"generic" "metric" "design" "connascence"}}
   {:el :rel
-   :id :softwaredevelopment.complexity.connascence/connascence-strength-measure-of-connascense
-   :from :softwaredevelopment.complexity.connascence/connascence-strength
-   :to :softwaredevelopment.complexity.connascence/connascence
+   :id :software-development.complexity.connascence/connascence-strength-measure-of-connascense
+   :from :software-development.complexity.connascence/connascence-strength
+   :to :software-development.complexity.connascence/connascence
    :name "is a measure of"
    :doc "Connascence Strength is a measure of the strength of the relationship between two software modules."
    :tags #{"generic" "metric" "design" "connascence"}}
   {:el :rel
-   :id :softwaredevelopment.complexity.connascence/connascence-locality-measure-of-connascense
-   :from :softwaredevelopment.complexity.connascence/connascence-locality
-   :to :softwaredevelopment.complexity.connascence/connascence
+   :id :software-development.complexity.connascence/connascence-locality-measure-of-connascense
+   :from :software-development.complexity.connascence/connascence-locality
+   :to :software-development.complexity.connascence/connascence
    :name "is a measure of"
    :desc "Connascence Locality is a measure of the locality of connascence between two software modules."
    :tags #{"generic" "metric" "design" "connascence"}}
   {:el :is-a
-   :id :softwaredevelopment.complexity.connascence/connascence-of-name-is-a-connascence
-   :from :softwaredevelopment.complexity.connascence/connascence-of-name
-   :to :softwaredevelopment.complexity.connascence/connascence
+   :id :software-development.complexity.connascence/connascence-of-name-is-a-connascence
+   :from :software-development.complexity.connascence/connascence-of-name
+   :to :software-development.complexity.connascence/connascence
    :name "is a"
    :desc "type of connascence."
    :tags #{"generic" "concept" "design" "connascence"}
    :index 1}
   {:el :is-a
-   :id :softwaredevelopment.complexity.connascence/connascence-of-meaning-is-a-connascence
-   :from :softwaredevelopment.complexity.connascence/connascence-of-meaning
-   :to :softwaredevelopment.complexity.connascence/connascence
+   :id :software-development.complexity.connascence/connascence-of-meaning-is-a-connascence
+   :from :software-development.complexity.connascence/connascence-of-meaning
+   :to :software-development.complexity.connascence/connascence
    :name "is a"
    :desc "type of connascence."
    :tags #{"generic" "concept" "design" "connascence"}}
   {:el :is-a
-   :id :softwaredevelopment.complexity.connascence/connascence-of-type-is-a-connascence
-   :from :softwaredevelopment.complexity.connascence/connascence-of-type
-   :to :softwaredevelopment.complexity.connascence/connascence
+   :id :software-development.complexity.connascence/connascence-of-type-is-a-connascence
+   :from :software-development.complexity.connascence/connascence-of-type
+   :to :software-development.complexity.connascence/connascence
    :name "is a"
    :desc "type of connascence."
    :tags #{"generic" "concept" "design" "connascence"}}
   {:el :is-a
-   :id :softwaredevelopment.complexity.connascence/connascence-of-position-is-a-connascence
-   :from :softwaredevelopment.complexity.connascence/connascence-of-position
-   :to :softwaredevelopment.complexity.connascence/connascence
+   :id :software-development.complexity.connascence/connascence-of-position-is-a-connascence
+   :from :software-development.complexity.connascence/connascence-of-position
+   :to :software-development.complexity.connascence/connascence
    :name "is a"
    :desc "type of connascence."
    :tags #{"generic" "concept" "design" "connascence"}}
   {:el :is-a
-   :id :softwaredevelopment.complexity.connascence/connascence-of-value-is-a-connascence
-   :from :softwaredevelopment.complexity.connascence/connascence-of-value
-   :to :softwaredevelopment.complexity.connascence/connascence
+   :id :software-development.complexity.connascence/connascence-of-value-is-a-connascence
+   :from :software-development.complexity.connascence/connascence-of-value
+   :to :software-development.complexity.connascence/connascence
    :name "is a"
    :desc "type of connascence."
    :tags #{"generic" "concept" "design" "connascence"}}
   {:el :is-a
-   :id :softwaredevelopment.complexity.connascence/connascence-of-algorithm-is-a-connascence
-   :from :softwaredevelopment.complexity.connascence/connascence-of-algorithm
-   :to :softwaredevelopment.complexity.connascence/connascence
+   :id :software-development.complexity.connascence/connascence-of-algorithm-is-a-connascence
+   :from :software-development.complexity.connascence/connascence-of-algorithm
+   :to :software-development.complexity.connascence/connascence
    :name "is a"
    :desc "type of connascence."
    :tags #{"generic" "concept" "design" "connascence"}}
   {:el :is-a
-   :id :softwaredevelopment.complexity.connascence/connascence-of-execution-is-a-connascence
-   :from :softwaredevelopment.complexity.connascence/connascence-of-execution
-   :to :softwaredevelopment.complexity.connascence/connascence
+   :id :software-development.complexity.connascence/connascence-of-execution-is-a-connascence
+   :from :software-development.complexity.connascence/connascence-of-execution
+   :to :software-development.complexity.connascence/connascence
    :name "is a"
    :desc "type of connascence."
    :tags #{"generic" "concept" "design" "connascence"}}
   {:el :is-a
-   :id :softwaredevelopment.complexity.connascence/connascence-of-identity-is-a-connascence
-   :from :softwaredevelopment.complexity.connascence/connascence-of-identity
-   :to :softwaredevelopment.complexity.connascence/connascence
+   :id :software-development.complexity.connascence/connascence-of-identity-is-a-connascence
+   :from :software-development.complexity.connascence/connascence-of-identity
+   :to :software-development.complexity.connascence/connascence
    :name "is a"
    :desc "type of connascence."
    :tags #{"generic" "concept" "design" "connascence"}}
   {:el :is-a
-   :id :softwaredevelopment.complexity.connascence/connascence-of-time-is-a-connascence
-   :from :softwaredevelopment.complexity.connascence/connascence-of-time
-   :to :softwaredevelopment.complexity.connascence/connascence
+   :id :software-development.complexity.connascence/connascence-of-time-is-a-connascence
+   :from :software-development.complexity.connascence/connascence-of-time
+   :to :software-development.complexity.connascence/connascence
    :name "is a"
    :desc "type of connascence."
    :tags #{"generic" "concept" "design" "connascence"}}
   {:el :is-a
-   :id :softwaredevelopment.complexity.connascence/connascence-of-space-is-a-connascence
-   :from :softwaredevelopment.complexity.connascence/connascence-of-space
-   :to :softwaredevelopment.complexity.connascence/connascence
+   :id :software-development.complexity.connascence/connascence-of-space-is-a-connascence
+   :from :software-development.complexity.connascence/connascence-of-space
+   :to :software-development.complexity.connascence/connascence
    :name "is a"
    :desc "type of connascence."
    :tags #{"generic" "concept" "design" "connascence"}}}
