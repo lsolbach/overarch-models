@@ -4,7 +4,17 @@ digraph "Concept view for Complexity" {
   rankdir="LR"
 
   layout=dot
+software_development_complexity__coupling [shape=ellipse style=filled fillcolor="#dddddd" label=<<B> Coupling </B><BR/><FONT POINT-SIZE="10"><I> Coupling is the degree of<BR/>interdependence between software<BR/>modules; the strength of the<BR/>relationships between modules. </I></FONT>>]
+software_development_complexity__cohesion [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Cohesion</B><BR/><FONT POINT-SIZE="10"><I>Cohesion is the degree to which the<BR/>elements inside a module belong<BR/>together; the strength of the<BR/>relationships within a module. </I></FONT>>]
+software_development_complexity__complexity [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Complexity</B><BR/><FONT POINT-SIZE="10"><I>degree of interdependence between<BR/>software modules. </I></FONT>>]
+software_development_complexity__accidental_complexity [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Accidental Complexity</B><BR/><FONT POINT-SIZE="10"><I>complexity caused by the design or<BR/>implementation of the software system. </I></FONT>>]
+software_development_complexity__inherent_complexity [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Inherent Complexity</B><BR/><FONT POINT-SIZE="10"><I>complexity intrinsic to the problem<BR/>domain. </I></FONT>>]
+software_development_complexity_connascence__connascence [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Connascence</B><BR/><FONT POINT-SIZE="10"><I>A software quality metric that measures<BR/>the degree of coupling between software<BR/>modules </I></FONT>>]
  
+software_development_complexity__coupling -> software_development_complexity__accidental_complexity [label=<leads to<BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_complexity_connascence__connascence -> software_development_complexity__coupling [label=<measure of<BR/><FONT POINT-SIZE="10"><I>coupling between software modules </I></FONT>>]
+software_development_complexity__inherent_complexity -> software_development_complexity__complexity [label=<is a<BR/><FONT POINT-SIZE="10"><I>type of complexity </I></FONT>>]
+software_development_complexity__accidental_complexity -> software_development_complexity__complexity [label=<is a<BR/><FONT POINT-SIZE="10"><I>type of complexity </I></FONT>>]
  
 }
 

@@ -9,5 +9,12 @@
    :name "DORA Concept View"
    :title "Concept Map for DevOps Research and Assessment (DORA)"
    :desc "Shows a concept map of the DevOps Research and Assessment (DORA) State of DevOps model"}
+
+  {:el :glossary-view
+   :id :software-development.dora/glossary-view
+   :spec {:selection {:namespace-prefix "software-development.dora"}}
+   :name "DORA Glossary View"
+   :title "Glossary for DevOps Research and Assessment (DORA)"
+   :desc "shows the concepts of the DevOps Research and Assessment (DORA) State of DevOps model"}
    ;
   }

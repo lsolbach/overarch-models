@@ -28,9 +28,9 @@ cloud
 | [Cloud Computing Platform](../../software-development/cloud/cloud-computing-platform.md) | implements | [Cloud Computing](../../software-development/cloud/cloud-computing.md) | A cloud computing platform implements cloud computing. |
 
 ## Concept Map
-![Glossary for Cloud Computing](../../software-development/cloud/concept-view.png)
+![Concept Map for Cloud Computing](../../software-development/cloud/concept-view.png)
 
-[Glossary for Cloud Computing](../../software-development/cloud/concept-view.md)
+[Concept Map for Cloud Computing](../../software-development/cloud/concept-view.md)
 
 
 ## Navigation

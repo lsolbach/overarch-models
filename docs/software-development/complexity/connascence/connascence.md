@@ -37,7 +37,7 @@ of implementation, connascence of interface, and connascence of protocol.
 | [Connascence Degree](../../../software-development/complexity/connascence/connascence-degree.md) | is a measure of | [Connascence](../../../software-development/complexity/connascence/connascence.md) |  |
 | [Connascence Strength](../../../software-development/complexity/connascence/connascence-strength.md) | is a measure of | [Connascence](../../../software-development/complexity/connascence/connascence.md) |  |
 | [Connascence Locality](../../../software-development/complexity/connascence/connascence-locality.md) | is a measure of | [Connascence](../../../software-development/complexity/connascence/connascence.md) | Connascence Locality is a measure of the locality of connascence between two software modules. |
-| [Connascence](../../../software-development/complexity/connascence/connascence.md) | measure of | [Coupling](../../../software-development/complexity/coupling.md) | coupling between software modules |
+| [Connascence](../../../software-development/complexity/connascence/connascence.md) | measure of | [ Coupling ](../../../software-development/complexity/coupling.md) | coupling between software modules |
 
 ## Concept Map
 ![Concept view for Connascence](../../../software-development/complexity/connascence/concept-view.png)

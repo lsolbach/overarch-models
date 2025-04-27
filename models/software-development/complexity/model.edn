@@ -8,15 +8,41 @@
 
   ;; Nodes
   {:el :concept
+   :id :software-development.complexity/complexity
+   :name "Complexity"
+   :desc "degree of interdependence between software modules."
+   :doc "Complexity is the degree of difficulty in understanding, designing, and maintaining a software system."}
+
+  {:el :concept
+   :id :software-development.complexity/inherent-complexity
+   :name "Inherent Complexity"
+   :desc "complexity intrinsic to the problem domain."
+   :doc "Inherent complexity is the complexity that is intrinsic to the problem domain.
+It is the complexity that is caused by the problem domain itself, not caused by
+the design or implementation of the software system."}
+
+  {:el :concept
+   :id :software-development.complexity/accidental-complexity
+   :name "Accidental Complexity"
+   :desc "complexity caused by the design or implementation of the software system."
+   :doc "Accidental complexity is the complexity that is caused by the design or implementation of the software system.
+It is the complexity that is not intrinsic to the problem domain, but is caused by
+the design or implementation of the software system.
+It is the complexity that is caused by the choices made by the software
+developer or by the tools and technologies used to implement the software
+system."}
+
+  {:el :concept
    :id :software-development.complexity/coupling
-   :name "Coupling"
-   :desc "Coupling is the degree of interdependence between software modules; the strength of the relationships between modules."
+   :name " Coupling "
+   :desc " Coupling is the degree of interdependence between software modules; the strength of the relationships between modules."
    :doc "Coupling is the degree of interdependence between software modules.
-  It is a measure of how closely connected two routines or modules are.
-  It is a measure of the strength of the relationships between modules.
-  There are several types of coupling, including data coupling, control coupling,
-  common coupling, content coupling, and stamp coupling.
-  Coupling also has the properties coupling degree, coupling strength, and coupling locality."
+It is a measure of the strength of the relationships between modules, of how closely connected two routines or modules are.
+There are several types of coupling, including data coupling, control coupling.
+The goal of software design is to minimize coupling, which reduces complexity
+and makes the system easier to understand and maintain.
+
+Coupling can be measured by Connascence."
    :tags #{"generic" "concept" "design"}}
 
   {:el :concept
@@ -24,13 +50,32 @@
    :name "Cohesion"
    :desc "Cohesion is the degree to which the elements inside a module belong together; the strength of the relationships within a module."
    :doc "Cohesion is the degree to which the elements inside a module belong together.
-  It is a measure of how closely the routines in a module are related to each other.
-  It is a measure of the strength of the relationships within a module.
-  There are several types of cohesion, including functional cohesion, sequential
-  cohesion, communicational cohesion, procedural cohesion, temporal cohesion,
-  logical cohesion, coincidental cohesion, and informational cohesion.
-  Cohesion also has the properties cohesion degree, cohesion strength, and cohesion locality."
+It is a measure of the strength of the relationships within a module, a measure
+of how closely the elements in a module are related to each other.
+The cohesion of a module should be high, meaning that the elements inside the module
+are closely related to each other."
    :tags #{"generic" "concept" "design"}}
 
+  ;; Relationships
+  {:el :is-a
+   :id :software-development.complexity/inherent-complexity-is-a-complexity
+   :from :software-development.complexity/inherent-complexity
+   :to :software-development.complexity/complexity
+   :name "is a"
+   :desc "type of complexity"}
+
+  {:el :is-a
+   :id :software-development.complexity/accidental-complexity-is-a-complexity
+   :from :software-development.complexity/accidental-complexity
+   :to :software-development.complexity/complexity
+   :name "is a"
+   :desc "type of complexity"}
+
+  {:el :rel
+   :id :software-development.complexity/coupling-leads-to-accidental-complexity
+   :from :software-development.complexity/coupling
+   :to :software-development.complexity/accidental-complexity
+   :name "leads to"
+   :desc ""}
   ;
   }

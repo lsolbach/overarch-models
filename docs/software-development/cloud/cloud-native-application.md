@@ -11,9 +11,9 @@ A cloud-native application is an application that is designed and built specific
 cloud, architecture, application
 
 ## Concept Map
-![Glossary for Cloud Computing](../../software-development/cloud/concept-view.png)
+![Concept Map for Cloud Computing](../../software-development/cloud/concept-view.png)
 
-[Glossary for Cloud Computing](../../software-development/cloud/concept-view.md)
+[Concept Map for Cloud Computing](../../software-development/cloud/concept-view.md)
 
 
 ## Navigation
