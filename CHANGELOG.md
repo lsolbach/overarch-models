@@ -1,5 +1,9 @@
 # Change Log
 
+## 2025-04-27
+* added complexity concepts
+* added glossary views
+
 ## 2025-04-24
 * added complexity concepts
 
