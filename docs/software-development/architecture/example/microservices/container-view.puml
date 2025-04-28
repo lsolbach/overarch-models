@@ -14,7 +14,6 @@ LAYOUT_TOP_DOWN()
 
 title Container view for the Microservices example
 System_Ext(softwareDevelopment_architecture_example_microservices_logisticsSystem, "Logistics System", $descr="Handles shipping with DHL, UPS, etc.")
-System_Ext(softwareDevelopment_architecture_example_microservices_paymentSystem, "Payment System", $descr="Handles Credit Card, PayPal, etc.")
 System_Boundary(softwareDevelopment_architecture_example_microservices_onlineShop, "Online Shop") {
   ContainerQueue(softwareDevelopment_architecture_example_microservices_accountTopic, "Account Topic", $descr="Account Events", $techn="Kafka", $sprite="kafka")
   Container(softwareDevelopment_architecture_example_microservices_paymentService, "Payment Service", $descr="Handles payments", $techn="Kotlin, Quarkus")
@@ -39,6 +38,7 @@ System_Boundary(softwareDevelopment_architecture_example_microservices_onlineSho
   Container(softwareDevelopment_architecture_example_microservices_productCatalogService, "Product Catalog Service", $descr="Handles the product catalog", $techn="Java, Spring Boot")
   ContainerDb(softwareDevelopment_architecture_example_microservices_shoppingCartDb, "Shopping Cart Database", $descr="Stores the shopping cart", $techn="MongoDB", $sprite="mongodb")
 }
+System_Ext(softwareDevelopment_architecture_example_microservices_paymentSystem, "Payment System", $descr="Handles Credit Card, PayPal, etc.")
 Person(softwareDevelopment_architecture_example_microservices_customer, "Customer", $descr="A customer of the online shop")
 System_Ext(softwareDevelopment_architecture_example_microservices_emailSystem, "Email System", $descr="Sends Emails e.g. to customers")
 Rel_L(softwareDevelopment_architecture_example_microservices_accountService, softwareDevelopment_architecture_example_microservices_accountDb, "store", $descr="Account Data", $techn="JDBC")

@@ -14,6 +14,13 @@ package "application" as softwareDevelopment_architecture_blueprint_cleanArchite
   }
   class "ApplicationService" as softwareDevelopment_architecture_blueprint_cleanArchitecture_application_applicationService {}
 }
+package "domain" as softwareDevelopment_architecture_blueprint_cleanArchitecture_domain {
+  class "DomainAggregate" as softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainAggregate {}
+  class "DomainValue" as softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainValue {}
+  class "DomainService" as softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainService {}
+  class "DomainEntity" as softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainEntity {}
+  abstract class "DomainEvent" as softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainEvent {}
+}
 package "adapter" as softwareDevelopment_architecture_blueprint_cleanArchitecture_adapter {
   package "rest" as softwareDevelopment_architecture_blueprint_cleanArchitecture_adapter_rest {
     class "RestController" as softwareDevelopment_architecture_blueprint_cleanArchitecture_adapter_rest_restController {}
@@ -25,13 +32,6 @@ package "adapter" as softwareDevelopment_architecture_blueprint_cleanArchitectur
   package "event-publisher" as softwareDevelopment_architecture_blueprint_cleanArchitecture_adapter_eventPublisher {
     class "KafkaEventPublisher" as softwareDevelopment_architecture_blueprint_cleanArchitecture_adapter_eventPublisher_kafkaEventPublisher {}
   }
-}
-package "domain" as softwareDevelopment_architecture_blueprint_cleanArchitecture_domain {
-  class "DomainAggregate" as softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainAggregate {}
-  class "DomainValue" as softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainValue {}
-  class "DomainService" as softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainService {}
-  class "DomainEntity" as softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainEntity {}
-  abstract class "DomainEvent" as softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainEvent {}
 }
 softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainAggregate *--> softwareDevelopment_architecture_blueprint_cleanArchitecture_domain_domainValue
 softwareDevelopment_architecture_blueprint_cleanArchitecture_application_repositoryInterface <|.up. softwareDevelopment_architecture_blueprint_cleanArchitecture_adapter_repository_sqlRepository

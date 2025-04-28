@@ -15,12 +15,12 @@ LAYOUT_LEFT_RIGHT()
 
 title Container view for the Online Shop modulith example
 System_Ext(softwareDevelopment_architecture_example_modulith_emailSystem, "Email System", $descr="Sends Emails e.g. to customers")
-Person(softwareDevelopment_architecture_example_modulith_customer, "Customer", $descr="A customer who buys products from the online shop.")
 System_Boundary(softwareDevelopment_architecture_example_modulith_onlineShopSystem, "Online Shop") {
   Container(softwareDevelopment_architecture_example_modulith_onlineShopFrontend, "Online Shop Frontend Application", $techn="AngularJS", $sprite="angularjs")
   Container(softwareDevelopment_architecture_example_modulith_onlineShopBackend, "Online Shop Backend Application", $techn="Java EE")
   ContainerDb(softwareDevelopment_architecture_example_modulith_onlineShopDb, "Online Shop Database", $descr="Stores products, orders, payments, etc.", $techn="DB/2")
 }
+Person(softwareDevelopment_architecture_example_modulith_customer, "Customer", $descr="A customer who buys products from the online shop.")
 System_Ext(softwareDevelopment_architecture_example_modulith_logisticsSystem, "Logistics System", $descr="Handles shipping with DHL, UPS, etc.")
 System_Ext(softwareDevelopment_architecture_example_modulith_paymentSystem, "Payment System", $descr="Handles Credit Card, PayPal, etc.")
 Rel(softwareDevelopment_architecture_example_modulith_onlineShopBackend, softwareDevelopment_architecture_example_modulith_logisticsSystem, "ship", $descr="order", $techn="REST")
