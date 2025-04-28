@@ -1,7 +1,7 @@
 
 # Tencent (Concept)
 ## Description
-Tencent Cloud is a cloud computing service provided by Tencent, a Chinese multinational conglomerate holding company. Tencent Cloud provides a wide range of cloud services, including computing, storage, databases, security, and networking, to help businesses build and deploy applications in the cloud.
+Tencent is a Chinese multinational conglomerate holding company with subsidiaries in various internet-related services and products, entertainment, AI, and technology. Tencent Cloud is a cloud computing service provider owned by Tencent.
 
 ## Superordinates
 | Concept | Description |

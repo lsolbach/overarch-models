@@ -1,7 +1,7 @@
 
 # IBM (Concept)
 ## Description
-IBM Cloud is a suite of cloud computing services from IBM that offers both platform as a service (PaaS) and infrastructure as a service (IaaS) options.
+IBM is a multinational technology and consulting company that offers a wide range of cloud computing services, including infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS) through its IBM Cloud platform.
 
 ## Superordinates
 | Concept | Description |

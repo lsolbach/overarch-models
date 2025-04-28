@@ -1,7 +1,7 @@
 
 # Microsoft (Concept)
 ## Description
-Microsoft Azure, commonly referred to as Azure, is a cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services through Microsoft-managed data centers.
+Microsoft is a multinational technology company that produces computer software, consumer electronics, personal computers, and related services. Microsoft Azure is a cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services through Microsoft-managed data centers.
 
 ## Superordinates
 | Concept | Description |

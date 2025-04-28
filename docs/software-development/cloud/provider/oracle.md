@@ -1,7 +1,7 @@
 
 # Oracle (Concept)
 ## Description
-Oracle Cloud is a cloud computing service offered by Oracle Corporation providing servers, storage, network, applications, and services through a global network of Oracle Corporation managed data centers.
+Oracle is a multinational computer technology corporation that offers a comprehensive and fully integrated stack of cloud applications, platform services, and engineered systems. Oracle Cloud is a cloud computing service offered by Oracle Corporation providing servers, storage, network, applications, and services through a global network of Oracle Corporation managed data centers.
 
 ## Superordinates
 | Concept | Description |

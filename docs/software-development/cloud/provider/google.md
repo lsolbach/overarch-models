@@ -1,7 +1,7 @@
 
 # Google (Concept)
 ## Description
-Google Cloud Platform, offered by Google, is a suite of cloud computing services that runs on the same infrastructure that Google uses internally for its end-user products, such as Google Search, Gmail, file storage, and YouTube.
+Google is a multinational technology company that specializes in Internet-related services and products. Google Cloud Platform (GCP) is a suite of cloud computing services that runs on the same infrastructure that Google uses internally for its end-user products.
 
 ## Superordinates
 | Concept | Description |

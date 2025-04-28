@@ -4,7 +4,7 @@
 ## A
 
 ### [Alibaba](../../software-development/cloud/provider/alibaba.md) (Concept)
-Alibaba Cloud, also known as Aliyun, is a Chinese cloud computing company, a subsidiary of Alibaba Group. Alibaba Cloud provides a comprehensive suite of global cloud computing services to power both international customers’ online businesses and Alibaba Group’s own e-commerce ecosystem.
+Alibaba is a Chinese multinational conglomerate specializing in e-commerce, retail, internet, and technology. Alibaba Cloud, also known as Aliyun, is a cloud computing service provider, a subsidiary of Alibaba Group.
 
 ### [Alibaba Cloud](../../software-development/cloud/platform/alibaba-cloud.md) (Concept)
 A cloud computing platform and service created by Alibaba. Alibaba Cloud offers a wide
@@ -12,7 +12,7 @@ A cloud computing platform and service created by Alibaba. Alibaba Cloud offers 
           as developer tools and services for building, deploying, and managing applications on the cloud.
 
 ### [Amazon](../../software-development/cloud/provider/amazon.md) (Concept)
-Amazon Web Services (AWS) is a subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis.
+Amazon is a multinational technology company that focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence. Amazon Web Services (AWS) is a subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, and governments.
 
 ### [Amazon Web Services (AWS)](../../software-development/cloud/platform/aws.md) (Concept)
 A cloud computing platform and service created by Amazon. AWS offers
@@ -118,7 +118,7 @@ Allows users to run pieces of code in response to events or triggers in a server
 ## G
 
 ### [Google](../../software-development/cloud/provider/google.md) (Concept)
-Google Cloud Platform, offered by Google, is a suite of cloud computing services that runs on the same infrastructure that Google uses internally for its end-user products, such as Google Search, Gmail, file storage, and YouTube.
+Google is a multinational technology company that specializes in Internet-related services and products. Google Cloud Platform (GCP) is a suite of cloud computing services that runs on the same infrastructure that Google uses internally for its end-user products.
 
 ### [Google Cloud](../../software-development/cloud/platform/google-cloud.md) (Concept)
 A cloud computing platform and service created by Google. Google Cloud offers a wide
@@ -133,7 +133,7 @@ A cloud computing environment that combines public cloud services with private c
 ## I
 
 ### [IBM](../../software-development/cloud/provider/ibm.md) (Concept)
-IBM Cloud is a suite of cloud computing services from IBM that offers both platform as a service (PaaS) and infrastructure as a service (IaaS) options.
+IBM is a multinational technology and consulting company that offers a wide range of cloud computing services, including infrastructure as a service (IaaS), platform as a service (PaaS), and software as a service (SaaS) through its IBM Cloud platform.
 
 ### [IBM Cloud](../../software-development/cloud/platform/ibm-cloud.md) (Concept)
 A cloud computing platform and service created by IBM. IBM Cloud offers a wide range of
@@ -165,7 +165,7 @@ Cloud systems automatically control and optimize resource use by leveraging
           transparency for both the provider and consumer of the utilized service.
 
 ### [Microsoft](../../software-development/cloud/provider/microsoft.md) (Concept)
-Microsoft Azure, commonly referred to as Azure, is a cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services through Microsoft-managed data centers.
+Microsoft is a multinational technology company that produces computer software, consumer electronics, personal computers, and related services. Microsoft Azure is a cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services through Microsoft-managed data centers.
 
 ### [Multi-Cloud](../../software-development/cloud/deployment-model/multi-cloud.md) (Concept)
 A cloud computing strategy that involves using multiple cloud services from different providers.
@@ -182,7 +182,7 @@ A consumer can unilaterally provision computing capabilities, such as server
           interaction with each service provider.
 
 ### [Oracle](../../software-development/cloud/provider/oracle.md) (Concept)
-Oracle Cloud is a cloud computing service offered by Oracle Corporation providing servers, storage, network, applications, and services through a global network of Oracle Corporation managed data centers.
+Oracle is a multinational computer technology corporation that offers a comprehensive and fully integrated stack of cloud applications, platform services, and engineered systems. Oracle Cloud is a cloud computing service offered by Oracle Corporation providing servers, storage, network, applications, and services through a global network of Oracle Corporation managed data centers.
 
 ### [Oracle Cloud](../../software-development/cloud/platform/oracle-cloud.md) (Concept)
 A cloud computing platform and service created by Oracle. Oracle Cloud offers a wide
@@ -275,7 +275,7 @@ A software distribution model in which a third-party provider hosts applications
 ## T
 
 ### [Tencent](../../software-development/cloud/provider/tencent.md) (Concept)
-Tencent Cloud is a cloud computing service provided by Tencent, a Chinese multinational conglomerate holding company. Tencent Cloud provides a wide range of cloud services, including computing, storage, databases, security, and networking, to help businesses build and deploy applications in the cloud.
+Tencent is a Chinese multinational conglomerate holding company with subsidiaries in various internet-related services and products, entertainment, AI, and technology. Tencent Cloud is a cloud computing service provider owned by Tencent.
 
 ### [Tencent Cloud](../../software-development/cloud/platform/tencent-cloud.md) (Concept)
 A cloud computing platform and service created by Tencent. Tencent Cloud offers a wide

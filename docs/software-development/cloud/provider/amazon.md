@@ -1,7 +1,7 @@
 
 # Amazon (Concept)
 ## Description
-Amazon Web Services (AWS) is a subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis.
+Amazon is a multinational technology company that focuses on e-commerce, cloud computing, digital streaming, and artificial intelligence. Amazon Web Services (AWS) is a subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, and governments.
 
 ## Superordinates
 | Concept | Description |
