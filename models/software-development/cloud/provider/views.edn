@@ -5,7 +5,7 @@
   {:el :concept-view
    :id :software-development.cloud.provider/concept-view
    :spec {:selection [{:namespace-prefix "software-development.cloud.provider"}
-                      {:to-namespace-prefix "software-development.cloud.provider"}]
+                      {:to {:namespace-prefix "software-development.cloud.provider"}}]
           :include :related
           :layout :left-right}
    :name "Cloud Providers Concept View"

@@ -8,7 +8,7 @@
   {:el :concept-view
    :id :software-development.domain-driven-design.large-scale-structure/concept-view
    :spec {:selection [{:namespace-prefix "software-development.domain-driven-design.large-scale-structure"}
-                      {:to-namespace-prefix "software-development.domain-driven-design.large-scale-structure"}]
+                      {:to {:namespace-prefix "software-development.domain-driven-design.large-scale-structure"}}]
           :include :related
           :layout :left-right
           ;:graphviz {:engine :neato}

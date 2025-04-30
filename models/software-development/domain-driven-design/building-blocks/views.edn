@@ -8,7 +8,7 @@
   {:el :concept-view
    :id :software-development.domain-driven-design.building-blocks/concept-view
    :spec {:selection [{:namespace-prefix "software-development.domain-driven-design.building-blocks"}
-                      {:to-namespace-prefix "software-development.domain-driven-design.building-blocks"}]
+                      {:to {:namespace-prefix "software-development.domain-driven-design.building-blocks"}}]
           :include :related
           :layout :left-right
           ;:graphviz {:engine :neato}

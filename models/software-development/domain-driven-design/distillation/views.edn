@@ -8,7 +8,7 @@
   {:el :concept-view
    :id :software-development.domain-driven-design.distillation/concept-view
    :spec {:selection [{:namespace-prefix "software-development.domain-driven-design.distillation"}
-                      {:to-namespace-prefix "software-development.domain-driven-design.distillation"}]
+                      {:to {:namespace-prefix "software-development.domain-driven-design.distillation"}}]
           :include :related
           :layout :left-right
           ;:graphviz {:engine :neato}

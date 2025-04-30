@@ -8,7 +8,7 @@
   {:el :concept-view
    :id :software-development.domain-driven-design.modelling/concept-view
    :spec {:selection [{:namespace-prefix "software-development.domain-driven-design.modelling"}
-                      {:to-namespace-prefix "software-development.domain-driven-design.modelling"}]
+                      {:to {:namespace-prefix "software-development.domain-driven-design.modelling"}}]
           :include :related
           :layout :left-right
           ;:graphviz {:engine :neato}

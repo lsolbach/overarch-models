@@ -5,7 +5,7 @@
   {:el :concept-view
    :id :software-development.cloud.service-model/concept-view
    :spec {:selection [{:namespace-prefix "software-development.cloud.service-model"}
-                      {:to-namespace-prefix "software-development.cloud.service-model"}]
+                      {:to {:namespace-prefix "software-development.cloud.service-model"}}]
           :include :related
           :layout :left-right}
    :name "Cloud Service Models Concept Views"

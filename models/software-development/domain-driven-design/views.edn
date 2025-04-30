@@ -8,7 +8,7 @@
   {:el :concept-view
    :id :software-development.domain-driven-design/concept-view
    :spec {:selection [{:namespace-prefix "software-development.domain-driven-design"}
-                      {:to-namespace-prefix "software-development.domain-driven-design"}]
+                      {:to {:namespace-prefix "software-development.domain-driven-design"}}]
           :include :relations
           :layout :left-right
           ;:graphviz {:engine :neato}
@@ -16,6 +16,13 @@
    :name "Domain Driven Design Patterns Concept View"
    :title "Concept Map of the Domain Driven Design Patterns"
    :desc "Shows the concepts of Domain Driven Design and their relationships."}
+
+  {:el :glossary-view
+   :id :software-development.domain-driven-design/glossary-view
+   :spec {:selection {:namespace-prefix "software-development.domain-driven-design"}}
+   :name "Domain Driven Design Glossary View"
+   :title "Glossary for Domain Driven Design"
+   :desc "shows the concepts of Domain Driven Design"}
 
   ;
   }

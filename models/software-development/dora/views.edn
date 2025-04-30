@@ -4,7 +4,7 @@
 #{;
   {:el :concept-view
    :id :software-development.dora/concept-view
-   :spec {:selection {:namespace-prefix "software-development.dora"}
+   :spec {:selection {:namespace "software-development.dora"}
           :layout :left-right}
    :name "DORA Concept View"
    :title "Concept Map for DevOps Research and Assessment (DORA)"

@@ -4,7 +4,7 @@
   {:el :concept-view
    :id :software-development.twelve-factor-app/concept-view
    :spec {:selection [{:namespace-prefix "software-development.twelve-factor-app"}
-                      {:to-namespace-prefix "software-development.twelve-factor-app"}]
+                      {:to {:namespace-prefix "software-development.twelve-factor-app"}}]
           :include :related
           :layout :left-right}
    :name "Twelve Factor App Concept View"
@@ -13,10 +13,7 @@
 
   {:el :glossary-view
    :id :software-development.twelve-factor-app/glossary-view
-   :spec {:selection [{:namespace-prefix "software-development.twelve-factor-app"}
-                      {:to-namespace-prefix "software-development.twelve-factor-app"}]
-          :include :related
-          :layout :left-right}
+   :spec {:selection {:namespace-prefix "software-development.twelve-factor-app"}}
    :name "Twelve Factor App Glossary View"
    :title "Glossary for Twelve Factor Apps"
    :desc "shows the concepts of the Twelve Factor App"}
