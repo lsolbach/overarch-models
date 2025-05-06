@@ -60,6 +60,7 @@
 | [Cloud Glossary View](./software-development/cloud/glossary-view.md) | shows the concepts of Cloud Computing |
 | [Glossary View for Complexity](./software-development/complexity/glossary-view.md) | Shows the concepts of software complexity |
 | [DORA Glossary View](./software-development/dora/glossary-view.md) | shows the concepts of the DevOps Research and Assessment (DORA) State of DevOps model |
+| [Domain Driven Design Glossary View](./software-development/domain-driven-design/glossary-view.md) | shows the concepts of Domain Driven Design |
 | [Twelve Factor App Glossary View](./software-development/twelve-factor-app/glossary-view.md) | shows the concepts of the Twelve Factor App |
 
 

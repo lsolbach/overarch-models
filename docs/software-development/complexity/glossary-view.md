@@ -1,5 +1,5 @@
 # Glossary for Complexity
-[ ](# ) [A](#A) [C](#C) [I](#I) 
+[ ](# ) [A](#A) [C](#C) [D](#D) [I](#I) [S](#S) 
 
 ##  
 
@@ -40,12 +40,6 @@ occurs when two or more modules must agree on the order in which they are execut
 ### [Connascence of Identity](../../software-development/complexity/connascence/connascence-of-identity.md) (Concept)
 occurs when two or more modules must agree on the identity of an object
 
-### [Connascence of Implementation](../../software-development/complexity/connascence/connascence-of-implementation.md) (Concept)
-occurs when two or more modules must agree on the implementation details of a feature.
-
-### [Connascence of Interface](../../software-development/complexity/connascence/connascence-of-interface.md) (Concept)
-occurs when two or more modules must agree on the interface of a component.
-
 ### [Connascence of Meaning](../../software-development/complexity/connascence/connascence-of-meaning.md) (Concept)
 occurs when two or more modules must agree on the meaning of a variable, constant, or method.
 
@@ -54,12 +48,6 @@ occurs when two or more modules must agree on the name of a variable, constant, 
 
 ### [Connascence of Position](../../software-development/complexity/connascence/connascence-of-position.md) (Concept)
 occurs when two or more modules must agree on the position of a variable, constant, or method
-
-### [Connascence of Protocol](../../software-development/complexity/connascence/connascence-of-protocol.md) (Concept)
-occurs when two or more modules must agree on the protocol used to communicate.
-
-### [Connascence of Space](../../software-development/complexity/connascence/connascence-of-space.md) (Concept)
-occurs when two or more modules must agree on the location of an object.
 
 ### [Connascence of Time](../../software-development/complexity/connascence/connascence-of-time.md) (Concept)
 occurs when two or more modules must agree on the timing of an event
@@ -70,10 +58,20 @@ occurs when two or more modules must agree on the type of a variable, constant, 
 ### [Connascence of Value](../../software-development/complexity/connascence/connascence-of-value.md) (Concept)
 occurs when two or more modules must agree on the value of a variable, constant, or method
 
+## D
+
+### [Dynamic Connascence](../../software-development/complexity/connascence/dynamic-connascence.md) (Concept)
+depends on the runtime attributes of the cod
+
 ## I
 
 ### [Inherent Complexity](../../software-development/complexity/inherent-complexity.md) (Concept)
 complexity intrinsic to the problem domain.
+
+## S
+
+### [Static Connascence](../../software-development/complexity/connascence/static-connascence.md) (Concept)
+does not depend on the runtime attributes of the code
 
 
 

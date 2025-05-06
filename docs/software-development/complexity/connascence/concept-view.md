@@ -17,30 +17,29 @@ Shows the concepts of Connascence and their relations
 | [Connascence of Algorithm](../../../software-development/complexity/connascence/connascence-of-algorithm.md)| occurs when two or more modules must agree on the algorithm used to solve a problem |
 | [Connascence of Execution](../../../software-development/complexity/connascence/connascence-of-execution.md)| occurs when two or more modules must agree on the order in which they are executed |
 | [Connascence of Identity](../../../software-development/complexity/connascence/connascence-of-identity.md)| occurs when two or more modules must agree on the identity of an object |
-| [Connascence of Implementation](../../../software-development/complexity/connascence/connascence-of-implementation.md)| occurs when two or more modules must agree on the implementation details of a feature. |
-| [Connascence of Interface](../../../software-development/complexity/connascence/connascence-of-interface.md)| occurs when two or more modules must agree on the interface of a component. |
 | [Connascence of Meaning](../../../software-development/complexity/connascence/connascence-of-meaning.md)| occurs when two or more modules must agree on the meaning of a variable, constant, or method. |
 | [Connascence of Name](../../../software-development/complexity/connascence/connascence-of-name.md)| occurs when two or more modules must agree on the name of a variable, constant, or method |
 | [Connascence of Position](../../../software-development/complexity/connascence/connascence-of-position.md)| occurs when two or more modules must agree on the position of a variable, constant, or method |
-| [Connascence of Protocol](../../../software-development/complexity/connascence/connascence-of-protocol.md)| occurs when two or more modules must agree on the protocol used to communicate. |
-| [Connascence of Space](../../../software-development/complexity/connascence/connascence-of-space.md)| occurs when two or more modules must agree on the location of an object. |
 | [Connascence of Time](../../../software-development/complexity/connascence/connascence-of-time.md)| occurs when two or more modules must agree on the timing of an event |
 | [Connascence of Type](../../../software-development/complexity/connascence/connascence-of-type.md)| occurs when two or more modules must agree on the type of a variable, constant, or method |
 | [Connascence of Value](../../../software-development/complexity/connascence/connascence-of-value.md)| occurs when two or more modules must agree on the value of a variable, constant, or method |
+| [Dynamic Connascence](../../../software-development/complexity/connascence/dynamic-connascence.md)| depends on the runtime attributes of the cod |
+| [Static Connascence](../../../software-development/complexity/connascence/static-connascence.md)| does not depend on the runtime attributes of the code |
 
 ## Generalizations
 | From | Name | To | Description |
 |---|---|---|---|
-| [Connascence of Type](../../../software-development/complexity/connascence/connascence-of-type.md) | is a | [Connascence](../../../software-development/complexity/connascence/connascence.md) | type of connascence. |
-| [Connascence of Space](../../../software-development/complexity/connascence/connascence-of-space.md) | is a | [Connascence](../../../software-development/complexity/connascence/connascence.md) | type of connascence. |
-| [Connascence of Value](../../../software-development/complexity/connascence/connascence-of-value.md) | is a | [Connascence](../../../software-development/complexity/connascence/connascence.md) | type of connascence. |
-| [Connascence of Name](../../../software-development/complexity/connascence/connascence-of-name.md) | is a | [Connascence](../../../software-development/complexity/connascence/connascence.md) | type of connascence. |
-| [Connascence of Meaning](../../../software-development/complexity/connascence/connascence-of-meaning.md) | is a | [Connascence](../../../software-development/complexity/connascence/connascence.md) | type of connascence. |
-| [Connascence of Identity](../../../software-development/complexity/connascence/connascence-of-identity.md) | is a | [Connascence](../../../software-development/complexity/connascence/connascence.md) | type of connascence. |
-| [Connascence of Position](../../../software-development/complexity/connascence/connascence-of-position.md) | is a | [Connascence](../../../software-development/complexity/connascence/connascence.md) | type of connascence. |
-| [Connascence of Algorithm](../../../software-development/complexity/connascence/connascence-of-algorithm.md) | is a | [Connascence](../../../software-development/complexity/connascence/connascence.md) | type of connascence. |
-| [Connascence of Execution](../../../software-development/complexity/connascence/connascence-of-execution.md) | is a | [Connascence](../../../software-development/complexity/connascence/connascence.md) | type of connascence. |
-| [Connascence of Time](../../../software-development/complexity/connascence/connascence-of-time.md) | is a | [Connascence](../../../software-development/complexity/connascence/connascence.md) | type of connascence. |
+| [Connascence of Value](../../../software-development/complexity/connascence/connascence-of-value.md) | is a | [Dynamic Connascence](../../../software-development/complexity/connascence/dynamic-connascence.md) | type of connascence. |
+| [Dynamic Connascence](../../../software-development/complexity/connascence/dynamic-connascence.md) | is a | [Connascence](../../../software-development/complexity/connascence/connascence.md) | form of |
+| [Connascence of Type](../../../software-development/complexity/connascence/connascence-of-type.md) | is a | [Static Connascence](../../../software-development/complexity/connascence/static-connascence.md) | type of |
+| [Connascence of Name](../../../software-development/complexity/connascence/connascence-of-name.md) | is a | [Static Connascence](../../../software-development/complexity/connascence/static-connascence.md) | type of |
+| [Connascence of Algorithm](../../../software-development/complexity/connascence/connascence-of-algorithm.md) | is a | [Static Connascence](../../../software-development/complexity/connascence/static-connascence.md) | type of connascence. |
+| [Connascence of Meaning](../../../software-development/complexity/connascence/connascence-of-meaning.md) | is a | [Static Connascence](../../../software-development/complexity/connascence/static-connascence.md) | type of |
+| [Connascence of Time](../../../software-development/complexity/connascence/connascence-of-time.md) | is a | [Dynamic Connascence](../../../software-development/complexity/connascence/dynamic-connascence.md) | type of connascence. |
+| [Static Connascence](../../../software-development/complexity/connascence/static-connascence.md) | is a | [Connascence](../../../software-development/complexity/connascence/connascence.md) | form of |
+| [Connascence of Execution](../../../software-development/complexity/connascence/connascence-of-execution.md) | is a | [Dynamic Connascence](../../../software-development/complexity/connascence/dynamic-connascence.md) | type of connascence. |
+| [Connascence of Identity](../../../software-development/complexity/connascence/connascence-of-identity.md) | is a | [Dynamic Connascence](../../../software-development/complexity/connascence/dynamic-connascence.md) | type of connascence. |
+| [Connascence of Position](../../../software-development/complexity/connascence/connascence-of-position.md) | is a | [Static Connascence](../../../software-development/complexity/connascence/static-connascence.md) | type of |
 
 ## Other Relationships
 | From | Name | To | Description |
