@@ -1,5 +1,8 @@
 # Change Log
 
+## 2025-05-06
+* updated connascence model
+
 ## 2025-04-28
 * updated overarch
 
