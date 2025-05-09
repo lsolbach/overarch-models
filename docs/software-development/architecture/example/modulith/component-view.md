@@ -6,6 +6,14 @@
 ## Description
 Shows the components of the Online Shop Modulith example and their relations
 
+## Subdomains/Bounded Contexts
+| Subdomain/Bounded Context | Description |
+|---|---|
+| [Inventory Context](../../../../software-development/architecture/example/modulith/inventory.md)|  |
+| [Orders Context](../../../../software-development/architecture/example/modulith/orders.md)|  |
+| [Payment Context](../../../../software-development/architecture/example/modulith/payment.md)|  |
+| [Shipping Context](../../../../software-development/architecture/example/modulith/shipping.md)|  |
+
 ## Roles
 | Person/Role | Description |
 |---|---|
