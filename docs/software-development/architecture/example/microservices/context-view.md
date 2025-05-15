@@ -22,8 +22,8 @@ Shows the systems of the Microservices example and their relations
 ## Synchronous Requests
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md) |  | [Email System](../../../../software-development/architecture/example/microservices/email-system.md) | SMTP | calls |
 | [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md) |  | [Payment System](../../../../software-development/architecture/example/microservices/payment-system.md) |  | calls |
+| [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md) |  | [Email System](../../../../software-development/architecture/example/microservices/email-system.md) | SMTP | calls |
 | [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md) |  | [Logistics System](../../../../software-development/architecture/example/microservices/logistics-system.md) |  | calls |
 | [Customer](../../../../software-development/architecture/example/microservices/customer.md) | uses | [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md) |  | browse products, place orders |
 

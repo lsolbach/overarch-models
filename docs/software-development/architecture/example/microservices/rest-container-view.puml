@@ -5,12 +5,12 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
-!include <tupadr3/devicons2/go>
-!include <tupadr3/font-awesome-5/java>
-!include <tupadr3/font-awesome-5/react>
 !include <tupadr3/devicons2/mongodb>
-!include <tupadr3/devicons2/kotlin>
+!include <tupadr3/font-awesome-5/java>
 !include <tupadr3/devicons2/postgresql>
+!include <tupadr3/font-awesome-5/react>
+!include <tupadr3/devicons2/go>
+!include <tupadr3/devicons2/kotlin>
 
 
 
@@ -19,47 +19,47 @@
 
 
 title Container View for the REST Microservices Example
-Container(softwareDevelopment_architecture_example_microservices_shippingService, "Shipping Service", $descr="Handles shipping", $techn="Go", $sprite="go")
-Container(softwareDevelopment_architecture_example_microservices_inventoryService, "Inventory Service", $descr="Handles inventory", $techn="Java, Spring Boot", $sprite="java")
-System_Ext(softwareDevelopment_architecture_example_microservices_logisticsSystem, "Logistics System", $descr="Handles shipping with DHL, UPS, etc.")
-Container(softwareDevelopment_architecture_example_microservices_shopFrontend, "Shop Frontend", $descr="The frontend of the online shop", $techn="React", $sprite="react")
-Container(softwareDevelopment_architecture_example_microservices_orderService, "Order Service", $descr="Handles orders", $techn="Java, Spring Boot", $sprite="java")
-ContainerDb(softwareDevelopment_architecture_example_microservices_shoppingCartDb, "Shopping Cart Database", $descr="Stores the shopping cart", $techn="MongoDB", $sprite="mongodb")
-ContainerDb(softwareDevelopment_architecture_example_microservices_productCatalogDb, "Product Catalog Database", $descr="Stores the product catalog", $techn="MongoDB", $sprite="mongodb")
-Container(softwareDevelopment_architecture_example_microservices_paymentService, "Payment Service", $descr="Handles payments", $techn="Kotlin, Quarkus", $sprite="kotlin")
 ContainerDb(softwareDevelopment_architecture_example_microservices_shippingDb, "Shipping Database", $descr="Stores the shipping data", $techn="MongoDB", $sprite="mongodb")
+System_Ext(softwareDevelopment_architecture_example_microservices_logisticsSystem, "Logistics System", $descr="Handles shipping with DHL, UPS, etc.")
+ContainerDb(softwareDevelopment_architecture_example_microservices_productCatalogDb, "Product Catalog Database", $descr="Stores the product catalog", $techn="MongoDB", $sprite="mongodb")
 System_Ext(softwareDevelopment_architecture_example_microservices_paymentSystem, "Payment System", $descr="Handles Credit Card, PayPal, etc.")
+Container(softwareDevelopment_architecture_example_microservices_inventoryService, "Inventory Service", $descr="Handles inventory", $techn="Java, Spring Boot", $sprite="java")
+ContainerDb(softwareDevelopment_architecture_example_microservices_accountDb, "Account Database", $descr="Stores user accounts", $techn="PostgreSQL", $sprite="postgresql")
 Container(softwareDevelopment_architecture_example_microservices_shoppingCartService, "Shopping Cart Service", $descr="Handles the shopping cart")
+Container(softwareDevelopment_architecture_example_microservices_shopFrontend, "Shop Frontend", $descr="The frontend of the online shop", $techn="React", $sprite="react")
 Container(softwareDevelopment_architecture_example_microservices_accountService, "Account Service", $descr="Handles user accounts")
+ContainerDb(softwareDevelopment_architecture_example_microservices_inventoryDb, "Inventory Database", $descr="Stores the inventory", $techn="PostgreSQL", $sprite="postgresql")
+ContainerDb(softwareDevelopment_architecture_example_microservices_shoppingCartDb, "Shopping Cart Database", $descr="Stores the shopping cart", $techn="MongoDB", $sprite="mongodb")
+Container(softwareDevelopment_architecture_example_microservices_shippingService, "Shipping Service", $descr="Handles shipping", $techn="Go", $sprite="go")
 ContainerDb(softwareDevelopment_architecture_example_microservices_paymentDb, "Payment DB", $descr="Stores payments", $techn="PostgreSQL", $sprite="postgresql")
-Container(softwareDevelopment_architecture_example_microservices_productCatalogService, "Product Catalog Service", $descr="Handles the product catalog", $techn="Java, Spring Boot", $sprite="java")
+Container(softwareDevelopment_architecture_example_microservices_orderService, "Order Service", $descr="Handles orders", $techn="Java, Spring Boot", $sprite="java")
 Container(softwareDevelopment_architecture_example_microservices_notificationService, "Notification Service", $descr="Handles notifications")
 ContainerDb(softwareDevelopment_architecture_example_microservices_orderDb, "Order Database", $descr="Stores the orders", $techn="PostgreSQL", $sprite="postgresql")
+Container(softwareDevelopment_architecture_example_microservices_paymentService, "Payment Service", $descr="Handles payments", $techn="Kotlin, Quarkus", $sprite="kotlin")
 Person(softwareDevelopment_architecture_example_microservices_customer, "Customer", $descr="A customer of the online shop")
 System_Ext(softwareDevelopment_architecture_example_microservices_emailSystem, "Email System", $descr="Sends Emails e.g. to customers")
-ContainerDb(softwareDevelopment_architecture_example_microservices_accountDb, "Account Database", $descr="Stores user accounts", $techn="PostgreSQL", $sprite="postgresql")
-ContainerDb(softwareDevelopment_architecture_example_microservices_inventoryDb, "Inventory Database", $descr="Stores the inventory", $techn="PostgreSQL", $sprite="postgresql")
+Container(softwareDevelopment_architecture_example_microservices_productCatalogService, "Product Catalog Service", $descr="Handles the product catalog", $techn="Java, Spring Boot", $sprite="java")
+Rel(softwareDevelopment_architecture_example_microservices_notificationService, softwareDevelopment_architecture_example_microservices_accountService, "request", $descr="Email for Account", $techn="REST")
+Rel(softwareDevelopment_architecture_example_microservices_notificationService, softwareDevelopment_architecture_example_microservices_emailSystem, "request", $descr="Send Email", $techn="SMTP")
+Rel(softwareDevelopment_architecture_example_microservices_shopFrontend, softwareDevelopment_architecture_example_microservices_orderService, "calls", $descr="get products, place orders")
+Rel_L(softwareDevelopment_architecture_example_microservices_shoppingCartService, softwareDevelopment_architecture_example_microservices_shoppingCartDb, "store", $descr="Shopping Cart Data", $techn="MongoDB", $sprite="mongodb,scale=0.5")
+Rel_L(softwareDevelopment_architecture_example_microservices_inventoryService, softwareDevelopment_architecture_example_microservices_inventoryDb, "store", $descr="Inventory Data", $techn="JDBC")
+Rel(softwareDevelopment_architecture_example_microservices_shoppingCartService, softwareDevelopment_architecture_example_microservices_productCatalogService, "request", $descr="Product Data", $techn="REST")
+Rel(softwareDevelopment_architecture_example_microservices_orderService, softwareDevelopment_architecture_example_microservices_shippingService, "request", $descr="Ship Order", $techn="REST")
+Rel(softwareDevelopment_architecture_example_microservices_orderService, softwareDevelopment_architecture_example_microservices_notificationService, "request", $descr="Notify Customer", $techn="REST")
+Rel_L(softwareDevelopment_architecture_example_microservices_productCatalogService, softwareDevelopment_architecture_example_microservices_productCatalogDb, "store", $descr="Product Catalog", $techn="MongoDB", $sprite="mongodb,scale=0.5")
+Rel(softwareDevelopment_architecture_example_microservices_shoppingCartService, softwareDevelopment_architecture_example_microservices_orderService, "request", $descr="Create Order", $techn="REST")
+Rel_L(softwareDevelopment_architecture_example_microservices_shippingService, softwareDevelopment_architecture_example_microservices_shippingDb, "store", $descr="Shipping Data", $techn="MongoDB", $sprite="mongodb,scale=0.5")
+Rel_L(softwareDevelopment_architecture_example_microservices_paymentService, softwareDevelopment_architecture_example_microservices_paymentDb, "store", $descr="Payment Data", $techn="JDBC")
+Rel(softwareDevelopment_architecture_example_microservices_productCatalogService, softwareDevelopment_architecture_example_microservices_inventoryService, "request", $descr="Check Inventory", $techn="REST")
+Rel(softwareDevelopment_architecture_example_microservices_paymentService, softwareDevelopment_architecture_example_microservices_accountService, "request", $descr="Payment Data", $techn="REST")
+Rel(softwareDevelopment_architecture_example_microservices_shippingService, softwareDevelopment_architecture_example_microservices_logisticsSystem, "request", $descr="Ship Order", $techn="REST")
+Rel_L(softwareDevelopment_architecture_example_microservices_accountService, softwareDevelopment_architecture_example_microservices_accountDb, "store", $descr="Account Data", $techn="JDBC")
+Rel(softwareDevelopment_architecture_example_microservices_shippingService, softwareDevelopment_architecture_example_microservices_accountService, "request", $descr="Account Address", $techn="REST")
+Rel(softwareDevelopment_architecture_example_microservices_customer, softwareDevelopment_architecture_example_microservices_shopFrontend, "uses", $descr="browse products, place orders")
 Rel_L(softwareDevelopment_architecture_example_microservices_orderService, softwareDevelopment_architecture_example_microservices_orderDb, "store", $descr="Order Data", $techn="JDBC")
 Rel(softwareDevelopment_architecture_example_microservices_paymentService, softwareDevelopment_architecture_example_microservices_paymentSystem, "request", $descr="Trigger Payment", $techn="REST")
-Rel(softwareDevelopment_architecture_example_microservices_shopFrontend, softwareDevelopment_architecture_example_microservices_orderService, "calls", $descr="get products, place orders")
 Rel(softwareDevelopment_architecture_example_microservices_orderService, softwareDevelopment_architecture_example_microservices_inventoryService, "request", $descr="Update Inventory", $techn="REST")
-Rel(softwareDevelopment_architecture_example_microservices_notificationService, softwareDevelopment_architecture_example_microservices_accountService, "request", $descr="Email for Account", $techn="REST")
-Rel(softwareDevelopment_architecture_example_microservices_shippingService, softwareDevelopment_architecture_example_microservices_logisticsSystem, "request", $descr="Ship Order", $techn="REST")
-Rel_L(softwareDevelopment_architecture_example_microservices_inventoryService, softwareDevelopment_architecture_example_microservices_inventoryDb, "store", $descr="Inventory Data", $techn="JDBC")
-Rel_L(softwareDevelopment_architecture_example_microservices_productCatalogService, softwareDevelopment_architecture_example_microservices_productCatalogDb, "store", $descr="Product Catalog", $techn="MongoDB", $sprite="mongodb,scale=0.5")
-Rel(softwareDevelopment_architecture_example_microservices_shoppingCartService, softwareDevelopment_architecture_example_microservices_productCatalogService, "request", $descr="Product Data", $techn="REST")
 Rel(softwareDevelopment_architecture_example_microservices_orderService, softwareDevelopment_architecture_example_microservices_paymentService, "request", $descr="Payment for Order", $techn="REST")
-Rel(softwareDevelopment_architecture_example_microservices_shippingService, softwareDevelopment_architecture_example_microservices_accountService, "request", $descr="Account Address", $techn="REST")
-Rel(softwareDevelopment_architecture_example_microservices_shoppingCartService, softwareDevelopment_architecture_example_microservices_orderService, "request", $descr="Create Order", $techn="REST")
-Rel_L(softwareDevelopment_architecture_example_microservices_accountService, softwareDevelopment_architecture_example_microservices_accountDb, "store", $descr="Account Data", $techn="JDBC")
-Rel_L(softwareDevelopment_architecture_example_microservices_shoppingCartService, softwareDevelopment_architecture_example_microservices_shoppingCartDb, "store", $descr="Shopping Cart Data", $techn="MongoDB", $sprite="mongodb,scale=0.5")
-Rel(softwareDevelopment_architecture_example_microservices_orderService, softwareDevelopment_architecture_example_microservices_notificationService, "request", $descr="Notify Customer", $techn="REST")
-Rel(softwareDevelopment_architecture_example_microservices_notificationService, softwareDevelopment_architecture_example_microservices_emailSystem, "request", $descr="Send Email", $techn="SMTP")
-Rel(softwareDevelopment_architecture_example_microservices_customer, softwareDevelopment_architecture_example_microservices_shopFrontend, "uses", $descr="browse products, place orders")
-Rel_L(softwareDevelopment_architecture_example_microservices_paymentService, softwareDevelopment_architecture_example_microservices_paymentDb, "store", $descr="Payment Data", $techn="JDBC")
-Rel_L(softwareDevelopment_architecture_example_microservices_shippingService, softwareDevelopment_architecture_example_microservices_shippingDb, "store", $descr="Shipping Data", $techn="MongoDB", $sprite="mongodb,scale=0.5")
-Rel(softwareDevelopment_architecture_example_microservices_paymentService, softwareDevelopment_architecture_example_microservices_accountService, "request", $descr="Payment Data", $techn="REST")
-Rel(softwareDevelopment_architecture_example_microservices_orderService, softwareDevelopment_architecture_example_microservices_shippingService, "request", $descr="Ship Order", $techn="REST")
-Rel(softwareDevelopment_architecture_example_microservices_productCatalogService, softwareDevelopment_architecture_example_microservices_inventoryService, "request", $descr="Check Inventory", $techn="REST")
 SHOW_LEGEND()
 @enduml

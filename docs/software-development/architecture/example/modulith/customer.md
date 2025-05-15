@@ -6,8 +6,8 @@ A customer who buys products from the online shop.
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Customer](../../../../software-development/architecture/example/modulith/customer.md) | uses | [Online Shop Frontend Application](../../../../software-development/architecture/example/modulith/online-shop-frontend.md) | HTTPS | browse products, place orders |
 | [Customer](../../../../software-development/architecture/example/modulith/customer.md) | uses | [Online Shop](../../../../software-development/architecture/example/modulith/online-shop-system.md) | HTTPS | browse products, place orders |
+| [Customer](../../../../software-development/architecture/example/modulith/customer.md) | uses | [Online Shop Frontend Application](../../../../software-development/architecture/example/modulith/online-shop-frontend.md) | HTTPS | browse products, place orders |
 
 
 ## Navigation

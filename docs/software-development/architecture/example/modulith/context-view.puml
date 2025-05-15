@@ -18,9 +18,9 @@ System(softwareDevelopment_architecture_example_modulith_onlineShopSystem, "Onli
 Person(softwareDevelopment_architecture_example_modulith_customer, "Customer", $descr="A customer who buys products from the online shop.")
 System_Ext(softwareDevelopment_architecture_example_modulith_logisticsSystem, "Logistics System", $descr="Handles shipping with DHL, UPS, etc.")
 System_Ext(softwareDevelopment_architecture_example_modulith_paymentSystem, "Payment System", $descr="Handles Credit Card, PayPal, etc.")
-Rel(softwareDevelopment_architecture_example_modulith_onlineShopSystem, softwareDevelopment_architecture_example_modulith_logisticsSystem, "ship", $descr="products", $techn="REST")
+Rel(softwareDevelopment_architecture_example_modulith_onlineShopSystem, softwareDevelopment_architecture_example_modulith_paymentSystem, "trigger payment", $descr="credit card, paypal", $techn="REST")
 Rel(softwareDevelopment_architecture_example_modulith_onlineShopSystem, softwareDevelopment_architecture_example_modulith_emailSystem, "sends email", $descr="order confirmation, shipping notification")
 Rel(softwareDevelopment_architecture_example_modulith_customer, softwareDevelopment_architecture_example_modulith_onlineShopSystem, "uses", $descr="browse products, place orders", $techn="HTTPS")
-Rel(softwareDevelopment_architecture_example_modulith_onlineShopSystem, softwareDevelopment_architecture_example_modulith_paymentSystem, "trigger payment", $descr="credit card, paypal", $techn="REST")
+Rel(softwareDevelopment_architecture_example_modulith_onlineShopSystem, softwareDevelopment_architecture_example_modulith_logisticsSystem, "ship", $descr="products", $techn="REST")
 SHOW_LEGEND()
 @enduml

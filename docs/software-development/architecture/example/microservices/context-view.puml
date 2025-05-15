@@ -13,9 +13,9 @@ System(softwareDevelopment_architecture_example_microservices_onlineShop, "Onlin
 System_Ext(softwareDevelopment_architecture_example_microservices_paymentSystem, "Payment System", $descr="Handles Credit Card, PayPal, etc.")
 Person(softwareDevelopment_architecture_example_microservices_customer, "Customer", $descr="A customer of the online shop")
 System_Ext(softwareDevelopment_architecture_example_microservices_emailSystem, "Email System", $descr="Sends Emails e.g. to customers")
-Rel(softwareDevelopment_architecture_example_microservices_onlineShop, softwareDevelopment_architecture_example_microservices_emailSystem, "", $descr="calls", $techn="SMTP")
 Rel(softwareDevelopment_architecture_example_microservices_customer, softwareDevelopment_architecture_example_microservices_onlineShop, "uses", $descr="browse products, place orders")
 Rel(softwareDevelopment_architecture_example_microservices_onlineShop, softwareDevelopment_architecture_example_microservices_paymentSystem, "", $descr="calls")
+Rel(softwareDevelopment_architecture_example_microservices_onlineShop, softwareDevelopment_architecture_example_microservices_emailSystem, "", $descr="calls", $techn="SMTP")
 Rel(softwareDevelopment_architecture_example_microservices_onlineShop, softwareDevelopment_architecture_example_microservices_logisticsSystem, "", $descr="calls")
 SHOW_LEGEND()
 @enduml
