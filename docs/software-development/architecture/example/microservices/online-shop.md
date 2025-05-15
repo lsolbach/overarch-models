@@ -38,8 +38,8 @@ This is a simple online shop system that consists of several microservices. It s
 ## Outgoing Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md) |  | [Payment System](../../../../software-development/architecture/example/microservices/payment-system.md) |  | calls |
 | [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md) |  | [Email System](../../../../software-development/architecture/example/microservices/email-system.md) | SMTP | calls |
+| [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md) |  | [Payment System](../../../../software-development/architecture/example/microservices/payment-system.md) |  | calls |
 | [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md) |  | [Logistics System](../../../../software-development/architecture/example/microservices/logistics-system.md) |  | calls |
 
 ## System Context View

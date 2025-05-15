@@ -6,6 +6,7 @@
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
 !include <tupadr3/devicons2/angularjs>
+!include <logos/oracle>
 
 
 LAYOUT_LEFT_RIGHT()
@@ -24,10 +25,10 @@ System_Boundary(softwareDevelopment_architecture_example_monolith_onlineShopSyst
   Container(softwareDevelopment_architecture_example_monolith_onlineShopFrontend, "Online Shop Frontend Application", $techn="AngularJS", $sprite="angularjs")
 }
 Rel(softwareDevelopment_architecture_example_monolith_onlineShopBackend, softwareDevelopment_architecture_example_monolith_emailSystem, "sends email", $descr="order confirmation, shipping notification")
+Rel(softwareDevelopment_architecture_example_monolith_onlineShopBackend, softwareDevelopment_architecture_example_monolith_paymentSystem, "process payment", $descr="credit card, paypal", $techn="REST")
 Rel(softwareDevelopment_architecture_example_monolith_onlineShopFrontend, softwareDevelopment_architecture_example_monolith_onlineShopBackend, "calls", $descr="get products, place orders.", $techn="HTTPS")
+Rel(softwareDevelopment_architecture_example_monolith_onlineShopBackend, softwareDevelopment_architecture_example_monolith_logisticsSystem, "ship", $descr="order", $techn="REST")
 Rel(softwareDevelopment_architecture_example_monolith_customer, softwareDevelopment_architecture_example_monolith_onlineShopFrontend, "uses", $descr="browse products, place orders", $techn="HTTPS")
 Rel_L(softwareDevelopment_architecture_example_monolith_onlineShopBackend, softwareDevelopment_architecture_example_monolith_onlineShopDb, "store and query", $descr="products, orders", $techn="JDBC")
-Rel(softwareDevelopment_architecture_example_monolith_onlineShopBackend, softwareDevelopment_architecture_example_monolith_paymentSystem, "process payment", $descr="credit card, paypal", $techn="REST")
-Rel(softwareDevelopment_architecture_example_monolith_onlineShopBackend, softwareDevelopment_architecture_example_monolith_logisticsSystem, "ship", $descr="order", $techn="REST")
 SHOW_LEGEND()
 @enduml
