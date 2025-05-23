@@ -16,7 +16,7 @@
    :id :software-development.architecture.example.monolith/online-shop-system
    :name "Online Shop"
    :desc "An online shop system that sells products to customers."
-   :tech "Java EE, Oracle, AngularJS"
+   :tech "Java, AngularJS, DB/2"
    :ct #{{:el :container
           :id :software-development.architecture.example.monolith/online-shop-frontend
           :name "Online Shop Frontend Application"

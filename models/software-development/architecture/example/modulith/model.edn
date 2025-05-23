@@ -15,6 +15,7 @@
   {:el :system
    :id :software-development.architecture.example.modulith/online-shop-system
    :name "Online Shop"
+   :tech "Java, AngularJS, DB/2"
    :desc "An online shop system that sells products to customers."
    :ct #{{:el :container
           :id :software-development.architecture.example.modulith/online-shop-frontend
@@ -248,12 +249,12 @@
    :desc "process payment"
    :tech "REST"}
   #_{:el :request
-   :id :software-development.architecture.example.modulith/shipping-component-calls-email-system
-   :from :software-development.architecture.example.modulith/shipping-component
-   :to :software-development.architecture.example.modulith/email-system
-   :name "calls"
-   :desc "send shipping notification"
-   :tech "SMTP"}
+     :id :software-development.architecture.example.modulith/shipping-component-calls-email-system
+     :from :software-development.architecture.example.modulith/shipping-component
+     :to :software-development.architecture.example.modulith/email-system
+     :name "calls"
+     :desc "send shipping notification"
+     :tech "SMTP"}
 
 
   ;;;

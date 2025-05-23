@@ -5,8 +5,8 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
-!include <logos/oracle>
 !include <tupadr3/devicons2/angularjs>
+!include <tupadr3/font-awesome-5/java>
 
 
 LAYOUT_LEFT_RIGHT()
@@ -15,15 +15,15 @@ LAYOUT_LEFT_RIGHT()
 
 
 title Component view for the Online Shop Monolith example
+Person(softwareDevelopment_architecture_example_monolith_customer, "Customer", $descr="A customer who buys products from the online shop.")
+System_Ext(softwareDevelopment_architecture_example_monolith_paymentSystem, "Payment System", $descr="Handles Credit Card, PayPal, etc.")
+System_Ext(softwareDevelopment_architecture_example_monolith_logisticsSystem, "Logistics System", $descr="Handles shipping with DHL, UPS, etc.")
+System_Ext(softwareDevelopment_architecture_example_monolith_emailSystem, "Email System", $descr="Sends Emails e.g. to customers")
 System_Boundary(softwareDevelopment_architecture_example_monolith_onlineShopSystem, "Online Shop") {
   Container(softwareDevelopment_architecture_example_monolith_onlineShopBackend, "Online Shop Backend Application", $techn="Java EE")
   ContainerDb(softwareDevelopment_architecture_example_monolith_onlineShopDb, "Online Shop Database", $techn="DB/2")
   Container(softwareDevelopment_architecture_example_monolith_onlineShopFrontend, "Online Shop Frontend Application", $techn="AngularJS", $sprite="angularjs")
 }
-Person(softwareDevelopment_architecture_example_monolith_customer, "Customer", $descr="A customer who buys products from the online shop.")
-System_Ext(softwareDevelopment_architecture_example_monolith_paymentSystem, "Payment System", $descr="Handles Credit Card, PayPal, etc.")
-System_Ext(softwareDevelopment_architecture_example_monolith_logisticsSystem, "Logistics System", $descr="Handles shipping with DHL, UPS, etc.")
-System_Ext(softwareDevelopment_architecture_example_monolith_emailSystem, "Email System", $descr="Sends Emails e.g. to customers")
 Rel(softwareDevelopment_architecture_example_monolith_onlineShopBackend, softwareDevelopment_architecture_example_monolith_emailSystem, "sends email", $descr="order confirmation, shipping notification")
 Rel(softwareDevelopment_architecture_example_monolith_onlineShopFrontend, softwareDevelopment_architecture_example_monolith_onlineShopBackend, "calls", $descr="get products, place orders.", $techn="HTTPS")
 Rel(softwareDevelopment_architecture_example_monolith_onlineShopBackend, softwareDevelopment_architecture_example_monolith_logisticsSystem, "ship", $descr="order", $techn="REST")

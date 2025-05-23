@@ -5,7 +5,7 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
-!include <logos/oracle>
+!include <tupadr3/font-awesome-5/java>
 !include <tupadr3/devicons2/angularjs>
 
 
@@ -15,11 +15,11 @@ LAYOUT_LEFT_RIGHT()
 
 
 title Context view for the Online Shop Monolith example
-System(softwareDevelopment_architecture_example_monolith_onlineShopSystem, "Online Shop", $descr="An online shop system that sells products to customers.", $type="Java EE, Oracle, AngularJS")
 Person(softwareDevelopment_architecture_example_monolith_customer, "Customer", $descr="A customer who buys products from the online shop.")
 System_Ext(softwareDevelopment_architecture_example_monolith_paymentSystem, "Payment System", $descr="Handles Credit Card, PayPal, etc.")
 System_Ext(softwareDevelopment_architecture_example_monolith_logisticsSystem, "Logistics System", $descr="Handles shipping with DHL, UPS, etc.")
 System_Ext(softwareDevelopment_architecture_example_monolith_emailSystem, "Email System", $descr="Sends Emails e.g. to customers")
+System(softwareDevelopment_architecture_example_monolith_onlineShopSystem, "Online Shop", $descr="An online shop system that sells products to customers.", $type="Java, AngularJS, DB/2", $sprite="java")
 Rel(softwareDevelopment_architecture_example_monolith_onlineShopSystem, softwareDevelopment_architecture_example_monolith_emailSystem, "sends email", $descr="order confirmation, shipping notification")
 Rel(softwareDevelopment_architecture_example_monolith_customer, softwareDevelopment_architecture_example_monolith_onlineShopSystem, "uses", $descr="browse products, place orders", $techn="HTTPS")
 Rel(softwareDevelopment_architecture_example_monolith_onlineShopSystem, softwareDevelopment_architecture_example_monolith_logisticsSystem, "ship", $descr="products", $techn="REST")

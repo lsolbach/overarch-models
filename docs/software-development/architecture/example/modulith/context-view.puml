@@ -5,6 +5,8 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
+!include <tupadr3/font-awesome-5/java>
+!include <tupadr3/devicons2/angularjs>
 
 
 LAYOUT_LEFT_RIGHT()
@@ -14,8 +16,8 @@ LAYOUT_LEFT_RIGHT()
 
 title Context view for the Online Shop modulith example
 System_Ext(softwareDevelopment_architecture_example_modulith_emailSystem, "Email System", $descr="Sends Emails e.g. to customers")
-System(softwareDevelopment_architecture_example_modulith_onlineShopSystem, "Online Shop", $descr="An online shop system that sells products to customers.")
 Person(softwareDevelopment_architecture_example_modulith_customer, "Customer", $descr="A customer who buys products from the online shop.")
+System(softwareDevelopment_architecture_example_modulith_onlineShopSystem, "Online Shop", $descr="An online shop system that sells products to customers.", $type="Java, AngularJS, DB/2", $sprite="java")
 System_Ext(softwareDevelopment_architecture_example_modulith_logisticsSystem, "Logistics System", $descr="Handles shipping with DHL, UPS, etc.")
 System_Ext(softwareDevelopment_architecture_example_modulith_paymentSystem, "Payment System", $descr="Handles Credit Card, PayPal, etc.")
 Rel(softwareDevelopment_architecture_example_modulith_onlineShopSystem, softwareDevelopment_architecture_example_modulith_paymentSystem, "trigger payment", $descr="credit card, paypal", $techn="REST")
