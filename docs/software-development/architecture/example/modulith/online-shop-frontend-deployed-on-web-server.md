@@ -1,21 +1,12 @@
 
-# Web VM 1 (Node)
+# Online Shop Frontend Deployed on Web Server (Node)
 ## Description
-Web Server Virtual Machine 1
+The Online Shop Frontend is deployed on the Web Server.
 
-## Parent
-[Perimeter Network](../../../../software-development/architecture/example/modulith/perimeter-network.md)
-
-## Technology
-VMware vSphere
 ## Nodes
 | Node | Description |
 |---|---|
 | [Web Server](../../../../software-development/architecture/example/modulith/web-server.md)|  |
-
-
-## Deployment
-[Deployment view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/deployment-view.md)
 
 
 ## Navigation

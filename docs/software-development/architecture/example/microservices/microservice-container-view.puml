@@ -27,8 +27,8 @@ Container(softwareDevelopment_architecture_example_microservices_orderService, "
 ContainerDb(softwareDevelopment_architecture_example_microservices_orderDb, "Order Database", $descr="Stores the orders", $techn="PostgreSQL", $sprite="postgresql")
 Container(softwareDevelopment_architecture_example_microservices_paymentService, "Payment Service", $descr="Handles payments", $techn="Kotlin, Quarkus", $sprite="kotlin")
 Rel_D(softwareDevelopment_architecture_example_microservices_inventoryService, softwareDevelopment_architecture_example_microservices_inventoryDb, "store", $descr="Inventory Data", $techn="JDBC")
-Rel_D(softwareDevelopment_architecture_example_microservices_shippingService, softwareDevelopment_architecture_example_microservices_shippingDb, "store", $descr="Shipping Data", $techn="MongoDB", $sprite="mongodb,scale=0.5")
-Rel_D(softwareDevelopment_architecture_example_microservices_orderService, softwareDevelopment_architecture_example_microservices_orderDb, "store", $descr="Order Data", $techn="JDBC")
+Rel_D(softwareDevelopment_architecture_example_microservices_shippingService, softwareDevelopment_architecture_example_microservices_shippingDb, "stores/queries", $descr="Shipping Data", $techn="MongoDB", $sprite="mongodb,scale=0.5")
+Rel_D(softwareDevelopment_architecture_example_microservices_orderService, softwareDevelopment_architecture_example_microservices_orderDb, "stores/queries", $descr="Order Data", $techn="JDBC")
 Rel_D(softwareDevelopment_architecture_example_microservices_paymentService, softwareDevelopment_architecture_example_microservices_paymentDb, "store", $descr="Payment Data", $techn="JDBC")
 SHOW_LEGEND()
 @enduml

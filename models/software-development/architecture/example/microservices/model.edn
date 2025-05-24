@@ -3,14 +3,30 @@
 ;;;;
 #{;
   ;;;
-  ;;; Architecture Model Nodes
+  ;;; Roles
   ;;;
+
+  ;; Nodes
   {:el :person
    :id :software-development.architecture.example.microservices/customer
    :name "Customer"
    :desc "A customer of the online shop"
    :tags #{"simple"}}
 
+  ;; Relationships
+  {:el :request
+   :id :software-development.architecture.example.microservices/customer-uses-online-shop
+   :from :software-development.architecture.example.microservices/customer
+   :to :software-development.architecture.example.microservices/online-shop
+   :name "uses"
+   :desc "browse products, place orders"
+   :tags #{"system relation"}}
+
+  ;;;
+  ;;; Architecture
+  ;;;
+
+  ;; Nodes
   {:el :system
    :id :software-development.architecture.example.microservices/online-shop
    :name "Online Shop"
@@ -20,13 +36,14 @@
           :id :software-development.architecture.example.microservices/shop-frontend
           :name "Shop Frontend"
           :desc "The frontend of the online shop"
-          :tech "React"
+          :tech "React, Typescript"
           :tags #{"UI" "simple"}}
 
          {:el :container
           :id :software-development.architecture.example.microservices/account-service
           :name "Account Service"
           :desc "Handles user accounts"
+          :tech "Java, Spring Boot"
           :tags #{"microservice" "advanced"}}
          {:el :container
           :id :software-development.architecture.example.microservices/account-db
@@ -104,6 +121,7 @@
           :id :software-development.architecture.example.microservices/shopping-cart-service
           :name "Shopping Cart Service"
           :desc "Handles the shopping cart"
+          :tech "Java, Spring Boot"
           :tags #{"microservice" "advanced"}}
          {:el :container
           :id :software-development.architecture.example.microservices/shopping-cart-db
@@ -194,20 +212,9 @@ system to handle the actual shipping with companies like DHL or UPS."
    :desc "Sends Emails e.g. to customers"
    :doc "This is an external email system that is used by the online shop system."
    :tags #{"simple"}}
-
-  ;;;
-  ;;; Architecture Model Relations
-  ;;;
-  ;;
-  ;; System Relations
-  ;;
-  {:el :request
-   :id :software-development.architecture.example.microservices/customer-uses-online-shop
-   :from :software-development.architecture.example.microservices/customer
-   :to :software-development.architecture.example.microservices/online-shop
-   :name "uses"
-   :desc "browse products, place orders"
-   :tags #{"system relation"}}
+  
+  ;; Relationships
+  ;; System Relationships
   {:el :request
    :id :software-development.architecture.example.microservices/online-shop-uses-payment-system
    :from :software-development.architecture.example.microservices/online-shop
@@ -215,6 +222,7 @@ system to handle the actual shipping with companies like DHL or UPS."
    :desc "calls"
    :doc "The online shop system uses the payment system for payments"
    :tags #{"system relation" "restful"}}
+
   {:el :request
    :id :software-development.architecture.example.microservices/online-shop-uses-shipping-system
    :from :software-development.architecture.example.microservices/online-shop
@@ -222,6 +230,7 @@ system to handle the actual shipping with companies like DHL or UPS."
    :desc "calls"
    :doc "The online shop system uses the logistics system for shipping"
    :tags #{"system relation" "restful"}}
+
   {:el :request
    :id :software-development.architecture.example.microservices/online-shop-uses-email-system
    :from :software-development.architecture.example.microservices/online-shop
@@ -286,7 +295,7 @@ system to handle the actual shipping with companies like DHL or UPS."
    :id :software-development.architecture.example.microservices/order-service-uses-order-db
    :from :software-development.architecture.example.microservices/order-service
    :to :software-development.architecture.example.microservices/order-db
-   :name "store"
+   :name "stores/queries"
    :desc "Order Data"
    :doc "Stores order data in the database."
    :tech "JDBC"
@@ -297,7 +306,7 @@ system to handle the actual shipping with companies like DHL or UPS."
    :id :software-development.architecture.example.microservices/product-catalog-service-uses-product-catalog-db
    :from :software-development.architecture.example.microservices/product-catalog-service
    :to :software-development.architecture.example.microservices/product-catalog-db
-   :name "store"
+   :name "stores/queries"
    :desc "Product Catalog"
    :doc "Reads the product catalog from the database"
    :tech "MongoDB"
@@ -308,7 +317,7 @@ system to handle the actual shipping with companies like DHL or UPS."
    :id :software-development.architecture.example.microservices/shipping-service-uses-shipping-db
    :from :software-development.architecture.example.microservices/shipping-service
    :to :software-development.architecture.example.microservices/shipping-db
-   :name "store"
+   :name "stores/queries"
    :desc "Shipping Data"
    :doc "Stores shipping data in the database"
    :tech "MongoDB"
@@ -319,7 +328,7 @@ system to handle the actual shipping with companies like DHL or UPS."
    :id :software-development.architecture.example.microservices/shopping-cart-service-uses-shopping-cart-db
    :from :software-development.architecture.example.microservices/shopping-cart-service
    :to :software-development.architecture.example.microservices/shopping-cart-db
-   :name "store"
+   :name "stores/queries"
    :desc "Shopping Cart Data"
    :doc "Stores shopping cart data in the database."
    :tech "MongoDB"

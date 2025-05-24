@@ -1,5 +1,9 @@
 # Change Log
 
+## 2025-05-24
+* updated overarch
+* added technologies in architecture examples
+
 ## 2025-05-23
 * updated overarch
 * changed technologies in architecture examples

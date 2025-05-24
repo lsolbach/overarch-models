@@ -3,11 +3,10 @@
 ;;;;
 #{;
   ;;;
-  ;;; Architecture Model
+  ;;; Architecture
   ;;;
-  ;;
+
   ;; Nodes
-  ;;
   {:el :person
    :id :software-development.architecture.example.monolith/customer
    :name "Customer"
@@ -46,10 +45,8 @@
    :name "Payment System"
    :desc "Handles Credit Card, PayPal, etc."}
 
-  ;;
-  ;; Relations
-  ;; 
-  ;; system relations
+  ;; Relationships
+  ;; System relationships
   {:el :request
    :id :software-development.architecture.example.monolith/customer-uses-online-shop-system
    :from :software-development.architecture.example.monolith/customer
@@ -81,7 +78,7 @@
    :name "sends email"
    :desc "order confirmation, shipping notification"}
 
-  ;; container relations
+  ;; Container relationships
   {:el :request
    :id :software-development.architecture.example.monolith/customer-uses-online-shop-frontend
    :from :software-development.architecture.example.monolith/customer
@@ -130,8 +127,10 @@
    :tech "REST"}
 
   ;;;
-  ;;; Deployment Model
+  ;;; Deployment
   ;;;
+
+  ;; Nodes
   {:el :node
    :id :software-development.architecture.example.monolith/data-center
    :name "Data Center"
@@ -143,6 +142,7 @@
                  :id :software-development.architecture.example.monolith/web-vm1
                  :name "Web VM 1"
                  :desc "Web Server Virtual Machine 1"
+                 :tech "VMware vSphere"
                  :ct #{{:el :node
                         :id :software-development.architecture.example.monolith/web-server
                         :name "Web Server"
@@ -154,6 +154,7 @@
                  :id :software-development.architecture.example.monolith/app-vm1
                  :name "App VM 1"
                  :desc "Application Server Virtual Machine 1"
+                 :tech "VMware vSphere"
                  :ct #{{:el :node
                         :id :software-development.architecture.example.monolith/application-server
                         :name "Application Server"
@@ -162,11 +163,13 @@
                  :id :software-development.architecture.example.monolith/db-vm1
                  :name "DB VM 1"
                  :desc "Database Server Virtual Machine 1"
+                 :tech "VMware vSphere"
                  :ct #{{:el :node
                         :id :software-development.architecture.example.monolith/db-server
                         :name "Database Server"
                         :tech "DB/2"}}}}}}}
-
+  
+  ;; Relationships
   {:el :link
    :from :software-development.architecture.example.monolith/perimeter-network
    :to :software-development.architecture.example.monolith/internal-network

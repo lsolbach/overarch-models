@@ -5,6 +5,9 @@ Application Server Virtual Machine 1
 
 ## Parent
 [Internal Network](../../../../software-development/architecture/example/monolith/internal-network.md)
+
+## Technology
+VMware vSphere
 ## Nodes
 | Node | Description |
 |---|---|

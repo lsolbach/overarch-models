@@ -22,9 +22,9 @@ Shows the containers of a simple Microservice
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Inventory Service](../../../../software-development/architecture/example/microservices/inventory-service.md) | store | [Inventory Database](../../../../software-development/architecture/example/microservices/inventory-db.md) | JDBC | Inventory Data |
-| [Shipping Service](../../../../software-development/architecture/example/microservices/shipping-service.md) | store | [Shipping Database](../../../../software-development/architecture/example/microservices/shipping-db.md) | MongoDB | Shipping Data |
-| [Order Service](../../../../software-development/architecture/example/microservices/order-service.md) | store | [Order Database](../../../../software-development/architecture/example/microservices/order-db.md) | JDBC | Order Data |
 | [Payment Service](../../../../software-development/architecture/example/microservices/payment-service.md) | store | [Payment DB](../../../../software-development/architecture/example/microservices/payment-db.md) | JDBC | Payment Data |
+| [Shipping Service](../../../../software-development/architecture/example/microservices/shipping-service.md) | stores/queries | [Shipping Database](../../../../software-development/architecture/example/microservices/shipping-db.md) | MongoDB | Shipping Data |
+| [Order Service](../../../../software-development/architecture/example/microservices/order-service.md) | stores/queries | [Order Database](../../../../software-development/architecture/example/microservices/order-db.md) | JDBC | Order Data |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

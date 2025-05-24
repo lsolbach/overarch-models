@@ -7,6 +7,7 @@
 !include <tupadr3/common>
 !include <tupadr3/font-awesome-5/java>
 !include <tupadr3/font-awesome-5/react>
+!include <tupadr3/devicons2/typescript>
 !include <tupadr3/devicons2/go>
 !include <tupadr3/devicons2/kotlin>
 
@@ -18,7 +19,7 @@ LAYOUT_LEFT_RIGHT()
 
 title Container View for the simple RESTful Communication Microservices Example
 Container(softwareDevelopment_architecture_example_microservices_inventoryService, "Inventory Service", $descr="Handles inventory", $techn="Java, Spring Boot", $sprite="java")
-Container(softwareDevelopment_architecture_example_microservices_shopFrontend, "Shop Frontend", $descr="The frontend of the online shop", $techn="React", $sprite="react")
+Container(softwareDevelopment_architecture_example_microservices_shopFrontend, "Shop Frontend", $descr="The frontend of the online shop", $techn="React, Typescript", $sprite="react")
 Container(softwareDevelopment_architecture_example_microservices_shippingService, "Shipping Service", $descr="Handles shipping", $techn="Go", $sprite="go")
 Container(softwareDevelopment_architecture_example_microservices_orderService, "Order Service", $descr="Handles orders", $techn="Java, Spring Boot", $sprite="java")
 Container(softwareDevelopment_architecture_example_microservices_notificationService, "Notification Service", $descr="Handles notifications")

@@ -1,21 +1,12 @@
 
-# DB VM 1 (Node)
+# Online Shop Database Deployed on Database Server (Node)
 ## Description
-Database Server Virtual Machine 1
+The Online Shop Database is deployed on the Database Server.
 
-## Parent
-[Internal Network](../../../../software-development/architecture/example/modulith/internal-network.md)
-
-## Technology
-VMware vSphere
 ## Nodes
 | Node | Description |
 |---|---|
 | [Database Server](../../../../software-development/architecture/example/modulith/db-server.md)|  |
-
-
-## Deployment
-[Deployment view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/deployment-view.md)
 
 
 ## Navigation

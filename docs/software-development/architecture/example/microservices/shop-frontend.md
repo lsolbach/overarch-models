@@ -7,7 +7,7 @@ The frontend of the online shop
 [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md)
 
 ## Technology
-React
+React, Typescript
 
 ## Tags
 UI, simple

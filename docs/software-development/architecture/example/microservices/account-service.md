@@ -6,6 +6,9 @@ Handles user accounts
 ## Parent
 [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md)
 
+## Technology
+Java, Spring Boot
+
 ## Tags
 advanced, microservice
 ## Incoming Synchronous Requests 

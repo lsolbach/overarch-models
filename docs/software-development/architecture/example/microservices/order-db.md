@@ -14,7 +14,7 @@ datastore, simple
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
-| [Order Service](../../../../software-development/architecture/example/microservices/order-service.md) | store | [Order Database](../../../../software-development/architecture/example/microservices/order-db.md) | JDBC | Order Data |
+| [Order Service](../../../../software-development/architecture/example/microservices/order-service.md) | stores/queries | [Order Database](../../../../software-development/architecture/example/microservices/order-db.md) | JDBC | Order Data |
 
 ## Container View
 ![Container view for the Microservices example](../../../../software-development/architecture/example/microservices/container-view.png)
