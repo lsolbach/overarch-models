@@ -19,7 +19,8 @@ LAYOUT_LEFT_RIGHT()
 
 
 
-
+skinparam nodesep 60
+skinparam ranksep 60
 title Container View for the Event Driven Microservices Example
 ContainerQueue(softwareDevelopment_architecture_example_microservices_inventoryTopic, "Inventory Topic", $descr="Inventory Events", $techn="Kafka", $sprite="kafka")
 ContainerDb(softwareDevelopment_architecture_example_microservices_shippingDb, "Shipping Database", $descr="Stores the shipping data", $techn="MongoDB", $sprite="mongodb")

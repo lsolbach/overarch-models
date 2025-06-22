@@ -4,6 +4,7 @@
 | Title | Description |
 |---|---|
 | [Cloud Providers Concept View](./software-development/cloud/provider/concept-view.md) | Shows the concepts related to cloud providers and their relationships. |
+| [Climate for Learning Concept View](./software-development/dora/capability/climate-for-learning/concept-view.md) | Shows the concepts related to climate for learning capabilities and their relationships. |
 | [Cloud Computing Concept View](./software-development/cloud/concept-view.md) | shows the concepts related to Cloud Computing and their relationships |
 | [Cloud Deployment Models Concept View](./software-development/cloud/deployment-model/concept-view.md) | Shows the concepts related to cloud deployment models and their relationships. |
 | [Cloud Migration Concept View](./software-development/cloud/migration/concept-view.md) | Shows the concepts related to cloud migration and their relationships. |
@@ -11,6 +12,8 @@
 | [Cloud Platforms Concept View](./software-development/cloud/platform/concept-view.md) | Shows the concepts related to cloud platforms and their relationships. |
 | [Cloud Service Models Concept Views](./software-development/cloud/service-model/concept-view.md) | Shows the concepts related to cloud service models and their relationships. |
 | [DORA Concept View](./software-development/dora/concept-view.md) | Shows a concept map of the DevOps Research and Assessment (DORA) State of DevOps model |
+| [Fast Feedback Concept View](./software-development/dora/capability/fast-feedback/concept-view.md) | Shows the concepts related to fast feedback capabilities and their relationships. |
+| [Fast Flow Concept View](./software-development/dora/capability/fast-flow/concept-view.md) | Shows the concepts related to fast flow capabilities and their relationships. |
 | [Twelve Factor App Concept View](./software-development/twelve-factor-app/concept-view.md) | shows the concepts of the Twelve Factor App and their relationships |
 | [DDD Building Blocks Concept View](./software-development/domain-driven-design/building-blocks/concept-view.md) | Shows the building block patterns and their relationships. |
 | [DDD Context Mapping for Strategic Design Concept View](./software-development/domain-driven-design/context-mapping/concept-view.md) | Shows the patterns of context mapping for strategic design and their relationships. |

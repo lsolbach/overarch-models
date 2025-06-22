@@ -18,7 +18,8 @@
 
 
 
-
+skinparam nodesep 60
+skinparam ranksep 60
 title Container View for the REST Microservices Example
 ContainerDb(softwareDevelopment_architecture_example_microservices_shippingDb, "Shipping Database", $descr="Stores the shipping data", $techn="MongoDB", $sprite="mongodb")
 System_Ext(softwareDevelopment_architecture_example_microservices_logisticsSystem, "Logistics System", $descr="Handles shipping with DHL, UPS, etc.")

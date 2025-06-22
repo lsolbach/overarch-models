@@ -16,7 +16,8 @@
 
 
 
-
+skinparam nodesep 50
+skinparam ranksep 50
 title Container View for an Example Microservice
 ContainerDb(softwareDevelopment_architecture_example_microservices_shippingDb, "Shipping Database", $descr="Stores the shipping data", $techn="MongoDB", $sprite="mongodb")
 Container(softwareDevelopment_architecture_example_microservices_inventoryService, "Inventory Service", $descr="Handles inventory", $techn="Java, Spring Boot", $sprite="java")
