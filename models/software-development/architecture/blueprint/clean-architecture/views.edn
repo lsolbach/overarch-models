@@ -4,8 +4,8 @@
 #{;
   {:el :code-view
    :id :software-development.architecture.blueprint.clean-architecture/code-view
-   :spec {:selection {:namespace-prefix "software-development.architecture.blueprint.clean-architecture"}
-          :linetype :orthogonal}
+   :selection {:namespace-prefix "software-development.architecture.blueprint.clean-architecture"}
+   :linetype :orthogonal
    :name "Clean Architecture Blueprint Code View"
    :title "Code View of the Clean Architecture Blueprint"
    :desc "Shows the packages, interfaces and classes of the Clean Architecture Blueprint"

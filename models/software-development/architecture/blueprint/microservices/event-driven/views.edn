@@ -4,10 +4,9 @@
 #{;
   {:el :container-view
    :id :software-development.architecture.blueprint.microservices.event-driven/container-view
-   :spec {:selection {:namespace-prefix "software-development.architecture.blueprint.microservices.event-driven"}
-          :layout :left-right
-          ;:linetype :orthogonal
-          }
+   :selection {:namespace-prefix "software-development.architecture.blueprint.microservices.event-driven"}
+   :layout :left-right
+   ;:linetype :orthogonal
    :name "Event Driven Microservices Blueprint Container View"
    :title "Container View of the Event Driven Microservices Blueprint"
    :desc "Shows the containers of the Event Driven Microservices Blueprint"}

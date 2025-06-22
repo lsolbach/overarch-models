@@ -5,7 +5,15 @@
   ;;;
   ;;;
   ;;;
-
+  {:el :concept-view
+   :id :software-development.dora.capability.fast-feedback/concept-view
+   :selection [{:namespace-prefix "software-development.dora.capability.fast-feedback"}
+               {:to {:namespace-prefix "software-development.dora.capability.fast-feedback"}}]
+   :include :related
+   :layout :left-right
+   :name "Fast Feedback Concept View"
+   :title "Concept Map for Fast Feedback Capabilities"
+   :desc "Shows the concepts related to fast feedback capabilities and their relationships."}
 
   ;
   }

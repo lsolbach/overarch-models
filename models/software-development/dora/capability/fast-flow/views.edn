@@ -5,7 +5,15 @@
   ;;;
   ;;;
   ;;;
-
+  {:el :concept-view
+   :id :software-development.dora.capability.fast-flow/concept-view
+   :selection [{:namespace-prefix "software-development.dora.capability.fast-flow"}
+               {:to {:namespace-prefix "software-development.dora.capability.fast-flow"}}]
+   :include :related
+   :layout :left-right
+   :name "Fast Flow Concept View"
+   :title "Concept Map for Fast Flow Capabilities"
+   :desc "Shows the concepts related to fast flow capabilities and their relationships."}
 
   ;
   }

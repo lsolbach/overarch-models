@@ -7,14 +7,13 @@
   ;;;
   {:el :concept-view
    :id :software-development.domain-driven-design.modelling/concept-view
-   :spec {:selection [{:namespace-prefix "software-development.domain-driven-design.modelling"}
-                      {:to {:namespace-prefix "software-development.domain-driven-design.modelling"}}]
-          :include :related
-          :layout :left-right
-          ;:graphviz {:engine :neato}
-          :markdown {:references true}}
+   :selection [{:namespace-prefix "software-development.domain-driven-design.modelling"}
+               {:to {:namespace-prefix "software-development.domain-driven-design.modelling"}}]
+   :include :related
+   :layout :left-right
+   ;:graphviz {:engine :neato}
    :name "DDD Putting the Model to Work Concept View"
    :title "Concept Map of the Domain Driven Design Putting the Model To Work Patterns"
    :desc "Shows the modelling patterns and their relationships."}
 
-}
+  }

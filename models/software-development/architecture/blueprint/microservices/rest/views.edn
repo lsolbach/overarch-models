@@ -4,9 +4,8 @@
 #{;
   {:el :container-view
    :id :software-development.architecture.blueprint.microservices.rest/container-view
-   :spec {:selection {:namespace-prefix "software-development.architecture.blueprint.microservices.rest"}
-          ;:linetype :orthogonal
-          }
+   :selection {:namespace-prefix "software-development.architecture.blueprint.microservices.rest"}
+   ;:linetype :orthogonal
    :name "REST Microservices Blueprint Container View"
    :title "Container View of the REST Microservices Blueprint"
    :desc "Shows the containers of the REST Microservices Blueprint"}
