@@ -7,8 +7,8 @@ Handles shipping with DHL, UPS, etc.
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
 | [Shipping Component](../../../../software-development/architecture/example/modulith/shipping-component.md) | calls | [Logistics System](../../../../software-development/architecture/example/modulith/logistics-system.md) | REST | process shipping |
-| [Online Shop Backend Application](../../../../software-development/architecture/example/modulith/online-shop-backend.md) | ship | [Logistics System](../../../../software-development/architecture/example/modulith/logistics-system.md) | REST | order |
 | [Online Shop](../../../../software-development/architecture/example/modulith/online-shop-system.md) | ship | [Logistics System](../../../../software-development/architecture/example/modulith/logistics-system.md) | REST | products |
+| [Online Shop Backend Application](../../../../software-development/architecture/example/modulith/online-shop-backend.md) | ship | [Logistics System](../../../../software-development/architecture/example/modulith/logistics-system.md) | REST | order |
 
 ## System Context View
 ![Context view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/context-view.png)

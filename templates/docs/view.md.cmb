@@ -90,7 +90,7 @@
 (defn technical-relation-description-table-row
   "Generates the markdown for a description table row for the technical `relation` in the `model`."
   [node rel]
-%>| <%= (md/relative-element-link node (referrer model rel)) %> | <%= (:name rel) %> | <%= (md/relative-element-link node (referred model rel)) %> | <%= (:tech rel) %> | <%= (t/single-line (:desc rel)) %> |
+%>| <%= (md/relative-element-link node (referrer model rel)) %> | <%= (:name rel) %> | <%= (md/relative-element-link node (referred model rel)) %> | <%= (str/join ", " (:tech rel)) %> | <%= (t/single-line (:desc rel)) %> |
 <%
   )
 
@@ -125,6 +125,18 @@
 <%= (:doc e) %>
 <%
   )
+
+  (when-let [nodes (seq (filter #(= :enterprise-boundary (:el %)) model-nodes))]
+%>
+## Enterprise Boundaries
+<%
+    (node-description-table e :enterprise-boundary nodes))
+
+  (when-let [nodes (seq (filter #(= :context-boundary (:el %)) model-nodes))]
+%>
+## Subdomains/Bounded Contexts
+<%
+    (node-description-table e :context-boundary nodes))
 
   (when-let [nodes (seq (filter #(= :concept (:el %)) model-nodes))]
 %>

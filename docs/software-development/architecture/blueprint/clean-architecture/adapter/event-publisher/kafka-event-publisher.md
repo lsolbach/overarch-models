@@ -11,9 +11,6 @@ The KafkaEventPublisher implements the DomainEventPublisherInterface for a Kafka
 It acts as a Kafka producer for the domain events produced by the domain core.
 The KafkaEventPublisher is a driven adapter for the application services.
 
-## Extended/Implemented Interfaces
-[DomainEventPublisherInterface](../../../../../../software-development/architecture/blueprint/clean-architecture/application/domain-event-publisher-interface.md)
-
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

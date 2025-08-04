@@ -7,14 +7,14 @@
   ;;;
   {:el :concept-view
    :id :software-development.domain-driven-design.distillation/concept-view
-   :spec {:selection [{:namespace-prefix "software-development.domain-driven-design.distillation"}
-                      {:to-namespace-prefix "software-development.domain-driven-design.distillation"}]
-          :include :related
-          :layout :left-right
-          ;:graphviz {:engine :neato}
-          :markdown {:references true}}
+   :selection [{:namespace-prefix "software-development.domain-driven-design.distillation"}
+               {:to {:namespace-prefix "software-development.domain-driven-design.distillation"}}]
+   :include :related
+   :layout :left-right
+   ;:graphviz {:engine :neato}
+   :markdown {:references true}
    :name "DDD Distillation for Strategic Design Concept View"
    :title "Concept Map of the Domain Driven Design Distillation for Strategic Design Patterns"
    :desc "Shows the distilation patterns and their relationships."}
 
-}
+  }

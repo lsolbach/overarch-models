@@ -3,18 +3,16 @@
 ;;;;
 #{{:el :context-view
    :id :software-development.architecture.example.modulith/context-view
-   :spec {:selection {:namespace-prefix "software-development.architecture.example.modulith"}
-          :layout :left-right
-          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :selection {:namespace-prefix "software-development.architecture.example.modulith"}
+   :layout :left-right
    :name "Online Shop Modulith Example Context View"
    :title "Context view for the Online Shop modulith example"
    :desc "Shows the systems of the Online Shop modulith example and their relations"}
 
   {:el :container-view
    :id :software-development.architecture.example.modulith/container-view
-   :spec {:selection {:namespace-prefix "software-development.architecture.example.modulith"}
-          :layout :left-right
-          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :selection {:namespace-prefix "software-development.architecture.example.modulith"}
+   :layout :left-right
    :name "Online Shop Modulith Example Container View"
    :title "Container view for the Online Shop modulith example"
    :desc "Shows the containers of the Online Shop modulith example and their relations"
@@ -22,12 +20,11 @@
 
   {:el :component-view
    :id :software-development.architecture.example.modulith/component-view
-   :spec {:selection {:namespace-prefix "software-development.architecture.example.modulith"}
-          :layout :left-right
-          :linetype :orthogonal
-          :plantuml {:sprite-libs [:awslib :azure :devicons]
-                     :skinparams {"nodesep" 120
-                                  "ranksep" 120}}}
+   :selection {:namespace-prefix "software-development.architecture.example.modulith"}
+   :layout :left-right
+   :linetype :orthogonal
+   :plantuml {:skinparams {"nodesep" 120
+                           "ranksep" 120}}
    :name "Online Shop Modulith Example Component View"
    :title "Component view for the Online Shop Modulith example"
    :desc "Shows the components of the Online Shop Modulith example and their relations"
@@ -36,15 +33,14 @@
         ;{:ref :software-development.architecture.example.modulith/payment-component-uses-online-shop-db :direction :right}
         ;{:ref :software-development.architecture.example.modulith/shipping-component-uses-online-shop-db :direction :right}
         ;{:ref :software-development.architecture.example.modulith/order-component-calls-email-system}
-        ]} 
+        ]}
 
   {:el :deployment-view
    :id :software-development.architecture.example.modulith/deployment-view
-   :spec {:selection [{:namespace-prefix "software-development.architecture.example.modulith"
-                       :els #{:node}}
-                      {:namespace-prefix "software-development.architecture.example.modulith"
-                       :els #{:link}}]
-          :plantuml {:sprite-libs [:awslib :azure :devicons]}}
+   :selection [{:namespace-prefix "software-development.architecture.example.modulith"
+                :els #{:node}}
+               {:namespace-prefix "software-development.architecture.example.modulith"
+                :els #{:link}}]
    :name "Online Shop Modulith Example Deployment View"
    :title "Deployment view for the Online Shop modulith example"
    :desc "Shows the deployment of the Online Shop modulith example"}

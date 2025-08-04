@@ -17,7 +17,7 @@ Java Example:
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Connascence](../../../software-development/complexity/connascence/connascence.md)| A software quality metric that measures the degree of coupling between software modules |
+| [Static Connascence](../../../software-development/complexity/connascence/static-connascence.md)| does not depend on the runtime attributes of the code |
 
 ## Concept Map
 ![Concept view for Connascence](../../../software-development/complexity/connascence/concept-view.png)

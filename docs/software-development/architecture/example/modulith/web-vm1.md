@@ -5,6 +5,9 @@ Web Server Virtual Machine 1
 
 ## Parent
 [Perimeter Network](../../../../software-development/architecture/example/modulith/perimeter-network.md)
+
+## Technology
+VMware vSphere
 ## Nodes
 | Node | Description |
 |---|---|

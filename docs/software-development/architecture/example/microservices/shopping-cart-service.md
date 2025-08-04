@@ -6,6 +6,9 @@ Handles the shopping cart
 ## Parent
 [Online Shop](../../../../software-development/architecture/example/microservices/online-shop.md)
 
+## Technology
+Java, Spring Boot
+
 ## Tags
 advanced, microservice
 ## Outgoing Synchronous Requests 
@@ -13,7 +16,7 @@ advanced, microservice
 |---|---|---|---|---|
 | [Shopping Cart Service](../../../../software-development/architecture/example/microservices/shopping-cart-service.md) | request | [Product Catalog Service](../../../../software-development/architecture/example/microservices/product-catalog-service.md) | REST | Product Data |
 | [Shopping Cart Service](../../../../software-development/architecture/example/microservices/shopping-cart-service.md) | request | [Order Service](../../../../software-development/architecture/example/microservices/order-service.md) | REST | Create Order |
-| [Shopping Cart Service](../../../../software-development/architecture/example/microservices/shopping-cart-service.md) | store | [Shopping Cart Database](../../../../software-development/architecture/example/microservices/shopping-cart-db.md) | MongoDB | Shopping Cart Data |
+| [Shopping Cart Service](../../../../software-development/architecture/example/microservices/shopping-cart-service.md) | stores/queries | [Shopping Cart Database](../../../../software-development/architecture/example/microservices/shopping-cart-db.md) | MongoDB | Shopping Cart Data |
 ## Outgoing Asynchronous Publish/Produce
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

@@ -3,6 +3,9 @@
 ## Description
 An online shop system that sells products to customers.
 
+
+## Technology
+Java, AngularJS, DB/2
 ## Containers
 | Container | Description |
 |---|---|

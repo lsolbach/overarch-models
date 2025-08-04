@@ -4,10 +4,10 @@
 #{;
   {:el :concept-view
    :id :software-development.cloud.framework.cmf/concept-view
-   :spec {:selection [{:namespace-prefix "software-development.cloud.framework.cmf"}
-                      {:to-namespace-prefix "software-development.cloud.framework.cmf"}]
-          :include :related
-          :layout :left-right}
+   :selection [{:namespace-prefix "software-development.cloud.framework.cmf"}
+               {:to {:namespace-prefix "software-development.cloud.framework.cmf"}}]
+   :include :related
+   :layout :left-right
    :name "Cloud Migration Framework Concept View"
    :title "Concept Map for Cloud Migration Framework"
    :desc "Shows the concepts related to the cloud migration framework and their relationships."}

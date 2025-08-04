@@ -9,6 +9,9 @@ The interface for the repository adapters
 ## Documentation
 
 
+## Extended/Implemented Interfaces
+[InMemoryRepository](../../../../../software-development/architecture/blueprint/clean-architecture/adapter/repository/in-memory-repository.md), [SqlRepository](../../../../../software-development/architecture/blueprint/clean-architecture/adapter/repository/sql-repository.md)
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

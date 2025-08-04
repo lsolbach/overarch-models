@@ -9,6 +9,9 @@ The interface for the domain event publisher adapters
 ## Documentation
 
 
+## Extended/Implemented Interfaces
+[KafkaEventPublisher](../../../../../software-development/architecture/blueprint/clean-architecture/adapter/event-publisher/kafka-event-publisher.md)
+
 ## Methods
 ###  publish
  publish(publish)

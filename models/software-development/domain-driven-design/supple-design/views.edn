@@ -7,14 +7,13 @@
   ;;;
   {:el :concept-view
    :id :software-development.domain-driven-design.supple-design/concept-view
-   :spec {:selection [{:namespace-prefix "software-development.domain-driven-design.supple-design"}
-                      {:to-namespace-prefix "software-development.domain-driven-design.supple-design"}]
-          :include :related
-          :layout :left-right
-          ;:graphviz {:engine :neato}
-          :markdown {:references true}}
+   :selection [{:namespace-prefix "software-development.domain-driven-design.supple-design"}
+               {:to {:namespace-prefix "software-development.domain-driven-design.distillation"}}]
+   :include :related
+   :layout :left-right
+   ;:graphviz {:engine :neato}
    :name "DDD Supple Design Concept View"
    :title "Concept Map of the Domain Driven Design Supple Design Patterns"
    :desc "Shows the supple design patterns and their relationships."}
 
-}
+  }

@@ -12,10 +12,13 @@ Shows the supple design patterns and their relationships.
 | [Assertions](../../../software-development/domain-driven-design/supple-design/assertions.md)| state post-conditions of operations and invariants of classes and aggregates |
 | [Closure of Operations](../../../software-development/domain-driven-design/supple-design/closure-of-operations.md)| define an operation whose return type is the same as the type of its argument(s) |
 | [Conceptual Contours](../../../software-development/domain-driven-design/supple-design/conceptual-contours.md)| decompose design elements into cohesive units |
+| [Core Domain](../../../software-development/domain-driven-design/distillation/c-core-domain.md)| The most valuable part of the domain model. |
 | [Declarative Design](../../../software-development/domain-driven-design/supple-design/declarative-design.md)|  |
+| [Domain Vision Statement](../../../software-development/domain-driven-design/distillation/c-domain-vision-statement.md)| A short description of the core domain and the value it will bring. |
 | [Established Formalisms](../../../software-development/domain-driven-design/supple-design/established-formalisms.md)|  |
+| [Evolving Order](../../../software-development/domain-driven-design/large-scale-structure/c-evolving-order.md)| A conceptual large-scale structure that evolves with the application, possibly changing to a completely different type of structure along the way. |
+| [Generic Subdomains](../../../software-development/domain-driven-design/distillation/c-generic-subdomains.md)| A cohesive subdomain that is not the motivation for the project and does not capoure specialized knowledge. |
 | [Intention-Revealing Interfaces](../../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md)| name classes and operations to describe their effect and purpose |
-| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md)|  |
 | [Side-Effect-Free Functions](../../../software-development/domain-driven-design/supple-design/side-effect-free-functions.md)| implement logic with functions that return results without observable side effects |
 | [Standalone Classes](../../../software-development/domain-driven-design/supple-design/standalone-classes.md)| when possible create classes that are self-contained and can be understood alone |
 | [Ubiquitous Language](../../../software-development/domain-driven-design/modelling/c-ubiquitous-language.md)| A language around the domain model used by all team members within a bounded context to connect all the activities of the team with the software. |
@@ -23,12 +26,13 @@ Shows the supple design patterns and their relationships.
 ## Other Relationships
 | From | Name | To | Description |
 |---|---|---|---|
+| [Core Domain](../../../software-development/domain-driven-design/distillation/c-core-domain.md) | avoid overinvesting in | [Generic Subdomains](../../../software-development/domain-driven-design/distillation/c-generic-subdomains.md) |  |
+| [Evolving Order](../../../software-development/domain-driven-design/large-scale-structure/c-evolving-order.md) | concepts enter | [Core Domain](../../../software-development/domain-driven-design/distillation/c-core-domain.md) |  |
 | [Intention-Revealing Interfaces](../../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md) | draw from | [Ubiquitous Language](../../../software-development/domain-driven-design/modelling/c-ubiquitous-language.md) |  |
-| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | express model through | [Intention-Revealing Interfaces](../../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md) |  |
 | [Intention-Revealing Interfaces](../../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md) | make safe and simple | [Side-Effect-Free Functions](../../../software-development/domain-driven-design/supple-design/side-effect-free-functions.md) |  |
 | [Intention-Revealing Interfaces](../../../software-development/domain-driven-design/supple-design/intention-revealing-interfaces.md) | make side effects explicit with | [Assertions](../../../software-development/domain-driven-design/supple-design/assertions.md) |  |
-| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | reduce cost of change with | [Conceptual Contours](../../../software-development/domain-driven-design/supple-design/conceptual-contours.md) |  |
-| [Model Driven Design](../../../software-development/domain-driven-design/modelling/c-model-driven-design.md) | simplify interpretion with | [Standalone Classes](../../../software-development/domain-driven-design/supple-design/standalone-classes.md) |  |
+| [Ubiquitous Language](../../../software-development/domain-driven-design/modelling/c-ubiquitous-language.md) | model out loud | [Core Domain](../../../software-development/domain-driven-design/distillation/c-core-domain.md) |  |
+| [Core Domain](../../../software-development/domain-driven-design/distillation/c-core-domain.md) | point the way with | [Domain Vision Statement](../../../software-development/domain-driven-design/distillation/c-domain-vision-statement.md) |  |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
@@ -36,5 +40,5 @@ Shows the supple design patterns and their relationships.
 [List of all Views](../../../views.md)
 
 
-(generated by [Overarch](https://github.com/soulspace-org/overarch) with template docs/views/view.md.cmb)
+(generated by [Overarch](https://github.com/soulspace-org/overarch) with template docs/view.md.cmb)
 

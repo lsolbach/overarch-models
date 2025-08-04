@@ -5,6 +5,9 @@ Database Server Virtual Machine 1
 
 ## Parent
 [Internal Network](../../../../software-development/architecture/example/modulith/internal-network.md)
+
+## Technology
+VMware vSphere
 ## Nodes
 | Node | Description |
 |---|---|

@@ -9,9 +9,6 @@ Implements the repository interface for an in-memory data store for testing purp
 ## Documentation
 
 
-## Extended/Implemented Interfaces
-[RepositoryInterface](../../../../../../software-development/architecture/blueprint/clean-architecture/application/repository-interface.md)
-
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

@@ -18,25 +18,39 @@ of implementation, connascence of interface, and connascence of protocol."
    :tags #{"generic" "metric" "design" "connascence"}}
 
   {:el :concept
-   :name "Connascence Degree"
    :id :software-development.complexity.connascence/connascence-degree
+   :name "Connascence Degree"
    :desc "measures the degree of coupling between two software modules"
    :doc "Connascence Degree is a measure of the degree of coupling between two software modules. It is a measure of the degree of coupling between two software modules."
    :tags #{"generic" "metric" "design" "connascence"}}
 
   {:el :concept
-   :name "Connascence Strength"
    :id :software-development.complexity.connascence/connascence-strength
+   :name "Connascence Strength"
    :desc "measures the strength of the relationship between two software modules"
    :doc "Connascence Strength is a measure of the strength of the relationship between two software modules. It is a measure of the strength of the relationship between two software modules."
    :tags #{"generic" "metric" "design" "connascence"}}
 
   {:el :concept
-   :name "Connascence Locality"
    :id :software-development.complexity.connascence/connascence-locality
+   :name "Connascence Locality"
    :desc "measures the locality of connascence between two software modules"
    :doc "Connascence Locality is a measure of the locality of connascence between two software modules. It is a measure of the locality of connascence between two software modules."
    :tags #{"generic" "metric" "design" "connascence"}}
+
+  {:el :concept
+   :id :software-development.complexity.connascence/static-connascence
+   :name "Static Connascence"
+   :desc "does not depend on the runtime attributes of the code"
+   :doc "A Static Connascence does not depend on the runtime attributes of the system.
+         It is a weaker form than dynamic connascence."}
+
+  {:el :concept
+   :id :software-development.complexity.connascence/dynamic-connascence
+   :name "Dynamic Connascence"
+   :desc "depends on the runtime attributes of the cod"
+   :doc "A Dynamic Connascence depends on the runtime attributes of the system.
+         It is a stronger form than static connascence."}
 
   {:el :concept
    :id :software-development.complexity.connascence/connascence-of-name
@@ -150,28 +164,28 @@ Java Example:
    :doc ""
    :tags #{"generic" "concept" "design" "connascence"}}
 
-  {:el :concept
+  #_{:el :concept
    :id :software-development.complexity.connascence/connascence-of-space
    :name "Connascence of Space"
    :desc "occurs when two or more modules must agree on the location of an object."
    :doc ""
    :tags #{"generic" "concept" "design" "connascence"}}
 
-  {:el :concept
+  #_{:el :concept
    :id :software-development.complexity.connascence/connascence-of-implementation
    :name "Connascence of Implementation"
    :desc "occurs when two or more modules must agree on the implementation details of a feature."
    :doc ""
    :tags #{"generic" "concept" "design" "connascence"}}
 
-  {:el :concept
+  #_{:el :concept
    :id :software-development.complexity.connascence/connascence-of-interface
    :name "Connascence of Interface"
    :desc "occurs when two or more modules must agree on the interface of a component."
    :doc ""
    :tags #{"generic" "concept" "design" "connascence"}}
 
-  {:el :concept
+  #_{:el :concept
    :id :software-development.complexity.connascence/connascence-of-protocol
    :name "Connascence of Protocol"
    :desc "occurs when two or more modules must agree on the protocol used to communicate."
@@ -187,6 +201,7 @@ Java Example:
    :desc "coupling between software modules"
    :doc "Connascence is a software quality metric that measures the degree of coupling between software modules. It is a measure of the strength of the relationships between modules."
    :tags #{"generic" "metric" "design" "connascence"}}
+
   {:el :rel
    :id :software-development.complexity.connascence/connascence-degree-measure-of--of-connascense
    :from :software-development.complexity.connascence/connascence-degree
@@ -194,6 +209,7 @@ Java Example:
    :name "is a measure of"
    :doc "Connascence Degree is a measure of the degree of coupling between two software modules."
    :tags #{"generic" "metric" "design" "connascence"}}
+
   {:el :rel
    :id :software-development.complexity.connascence/connascence-strength-measure-of-connascense
    :from :software-development.complexity.connascence/connascence-strength
@@ -201,6 +217,7 @@ Java Example:
    :name "is a measure of"
    :doc "Connascence Strength is a measure of the strength of the relationship between two software modules."
    :tags #{"generic" "metric" "design" "connascence"}}
+
   {:el :rel
    :id :software-development.complexity.connascence/connascence-locality-measure-of-connascense
    :from :software-development.complexity.connascence/connascence-locality
@@ -208,74 +225,110 @@ Java Example:
    :name "is a measure of"
    :desc "Connascence Locality is a measure of the locality of connascence between two software modules."
    :tags #{"generic" "metric" "design" "connascence"}}
+
   {:el :is-a
-   :id :software-development.complexity.connascence/connascence-of-name-is-a-connascence
-   :from :software-development.complexity.connascence/connascence-of-name
+   :id :software-development.complexity.connascence/static-connascence-form-of-connascence
+   :from :software-development.complexity.connascence/static-connascence
    :to :software-development.complexity.connascence/connascence
    :name "is a"
-   :desc "type of connascence."
-   :tags #{"generic" "concept" "design" "connascence"}
+   :desc "form of"
+   :tags #{"generic" "metric" "design" "connascence"}
+   :index 0}
+
+  {:el :is-a
+   :id :software-development.complexity.connascence/dynamic-connascence-form-of-connascence
+   :from :software-development.complexity.connascence/dynamic-connascence
+   :to :software-development.complexity.connascence/connascence
+   :name "is a"
+   :desc "form of"
+   :tags #{"generic" "metric" "design" "connascence"}
    :index 1}
+
   {:el :is-a
-   :id :software-development.complexity.connascence/connascence-of-meaning-is-a-connascence
-   :from :software-development.complexity.connascence/connascence-of-meaning
-   :to :software-development.complexity.connascence/connascence
+   :id :software-development.complexity.connascence/connascence-of-name-is-a-static-connascence
+   :from :software-development.complexity.connascence/connascence-of-name
+   :to :software-development.complexity.connascence/static-connascence
    :name "is a"
-   :desc "type of connascence."
-   :tags #{"generic" "concept" "design" "connascence"}}
+   :desc "type of"
+   :tags #{"concrete" "design" "connascence"}
+   :index 0}
+
   {:el :is-a
-   :id :software-development.complexity.connascence/connascence-of-type-is-a-connascence
+   :id :software-development.complexity.connascence/connascence-of-type-is-a-static-connascence
    :from :software-development.complexity.connascence/connascence-of-type
-   :to :software-development.complexity.connascence/connascence
+   :to :software-development.complexity.connascence/static-connascence
    :name "is a"
-   :desc "type of connascence."
-   :tags #{"generic" "concept" "design" "connascence"}}
+   :desc "type of"
+   :tags #{"concrete" "design" "connascence"}
+   :index 1}
+
   {:el :is-a
-   :id :software-development.complexity.connascence/connascence-of-position-is-a-connascence
+   :id :software-development.complexity.connascence/connascence-of-meaning-is-a-static-connascence
+   :from :software-development.complexity.connascence/connascence-of-meaning
+   :to :software-development.complexity.connascence/static-connascence
+   :name "is a"
+   :desc "type of"
+   :tags #{"concrete" "design" "connascence"}
+   :index 2}
+
+  {:el :is-a
+   :id :software-development.complexity.connascence/connascence-of-position-is-a-static-connascence
    :from :software-development.complexity.connascence/connascence-of-position
-   :to :software-development.complexity.connascence/connascence
+   :to :software-development.complexity.connascence/static-connascence
    :name "is a"
-   :desc "type of connascence."
-   :tags #{"generic" "concept" "design" "connascence"}}
+   :desc "type of"
+   :tags #{"concrete" "design" "connascence"}
+   :index 3}
+
   {:el :is-a
-   :id :software-development.complexity.connascence/connascence-of-value-is-a-connascence
-   :from :software-development.complexity.connascence/connascence-of-value
-   :to :software-development.complexity.connascence/connascence
-   :name "is a"
-   :desc "type of connascence."
-   :tags #{"generic" "concept" "design" "connascence"}}
-  {:el :is-a
-   :id :software-development.complexity.connascence/connascence-of-algorithm-is-a-connascence
+   :id :software-development.complexity.connascence/connascence-of-algorithm-is-a-static-connascence
    :from :software-development.complexity.connascence/connascence-of-algorithm
-   :to :software-development.complexity.connascence/connascence
+   :to :software-development.complexity.connascence/static-connascence
    :name "is a"
    :desc "type of connascence."
-   :tags #{"generic" "concept" "design" "connascence"}}
+   :tags #{"concrete" "design" "connascence"}
+   :index 5}
+
   {:el :is-a
-   :id :software-development.complexity.connascence/connascence-of-execution-is-a-connascence
+   :id :software-development.complexity.connascence/connascence-of-execution-is-a-dynamic-connascence
    :from :software-development.complexity.connascence/connascence-of-execution
-   :to :software-development.complexity.connascence/connascence
+   :to :software-development.complexity.connascence/dynamic-connascence
    :name "is a"
    :desc "type of connascence."
-   :tags #{"generic" "concept" "design" "connascence"}}
+   :tags #{"concrete" "design" "connascence"}
+   :index 0}
+
   {:el :is-a
-   :id :software-development.complexity.connascence/connascence-of-identity-is-a-connascence
-   :from :software-development.complexity.connascence/connascence-of-identity
-   :to :software-development.complexity.connascence/connascence
-   :name "is a"
-   :desc "type of connascence."
-   :tags #{"generic" "concept" "design" "connascence"}}
-  {:el :is-a
-   :id :software-development.complexity.connascence/connascence-of-time-is-a-connascence
+   :id :software-development.complexity.connascence/connascence-of-time-is-a-dynamic-connascence
    :from :software-development.complexity.connascence/connascence-of-time
-   :to :software-development.complexity.connascence/connascence
+   :to :software-development.complexity.connascence/dynamic-connascence
    :name "is a"
    :desc "type of connascence."
-   :tags #{"generic" "concept" "design" "connascence"}}
+   :tags #{"concrete" "design" "connascence"}
+   :index 1}
+
   {:el :is-a
-   :id :software-development.complexity.connascence/connascence-of-space-is-a-connascence
-   :from :software-development.complexity.connascence/connascence-of-space
-   :to :software-development.complexity.connascence/connascence
+   :id :software-development.complexity.connascence/connascence-of-value-is-a-dynamic-connascence
+   :from :software-development.complexity.connascence/connascence-of-value
+   :to :software-development.complexity.connascence/dynamic-connascence
    :name "is a"
    :desc "type of connascence."
-   :tags #{"generic" "concept" "design" "connascence"}}}
+   :tags #{"concrete" "design" "connascence"}
+   :index 2}
+
+  {:el :is-a
+   :id :software-development.complexity.connascence/connascence-of-identity-is-a-dynamic-connascence
+   :from :software-development.complexity.connascence/connascence-of-identity
+   :to :software-development.complexity.connascence/dynamic-connascence
+   :name "is a"
+   :desc "type of connascence."
+   :tags #{"concrete" "design" "connascence"}
+   :index 3}
+
+  #_{:el :is-a
+   :id :software-development.complexity.connascence/connascence-of-space-is-a-dynamic-connascence
+   :from :software-development.complexity.connascence/connascence-of-space
+   :to :software-development.complexity.connascence/dynamic-connascence
+   :name "is a"
+   :desc "type of connascence."
+   :tags #{"concrete" "design" "connascence"}}}

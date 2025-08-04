@@ -5,7 +5,7 @@ An online shop system that sells products to customers.
 
 
 ## Technology
-Java EE, Oracle, AngularJS
+Java, AngularJS, DB/2
 ## Containers
 | Container | Description |
 |---|---|

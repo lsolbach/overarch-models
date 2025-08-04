@@ -1,0 +1,19 @@
+;;;;
+;;;; Views for DORA State of DevOps Climate for Learning Capabilities
+;;;;
+#{;
+  ;;;
+  ;;;
+  ;;;
+  {:el :concept-view
+   :id :software-development.dora.capability.climate-for-learning/concept-view
+   :selection [{:namespace-prefix "software-development.dora.capability.climate-for-learning"}
+               {:to {:namespace-prefix "software-development.dora.capability.climate-for-learning"}}]
+   :include :related
+   :layout :left-right
+   :name "Climate for Learning Concept View"
+   :title "Concept Map for Climate for Learning Capabilities"
+   :desc "Shows the concepts related to climate for learning capabilities and their relationships."}
+
+  ;
+  }

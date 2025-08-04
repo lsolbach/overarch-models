@@ -12,7 +12,7 @@ generic, concept, design, connascence
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Connascence](../../../software-development/complexity/connascence/connascence.md)| A software quality metric that measures the degree of coupling between software modules |
+| [Dynamic Connascence](../../../software-development/complexity/connascence/dynamic-connascence.md)| depends on the runtime attributes of the cod |
 
 ## Concept Map
 ![Concept view for Connascence](../../../software-development/complexity/connascence/concept-view.png)

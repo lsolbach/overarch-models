@@ -1,9 +1,7 @@
 
 # Cohesion (Concept)
 ## Description
-Cohesion is the degree to which the elements inside a module belong together;
-            a measure of how closely the routines in a module are related to each other;
-            the strength of the relationships within a module.
+Cohesion is the degree to which the elements inside a module belong together; the strength of the relationships within a module.
 
 
 ## Tags
@@ -11,12 +9,10 @@ generic, concept, design
 
 ## Documentation
 Cohesion is the degree to which the elements inside a module belong together.
-  It is a measure of how closely the routines in a module are related to each other.
-  It is a measure of the strength of the relationships within a module.
-  There are several types of cohesion, including functional cohesion, sequential
-  cohesion, communicational cohesion, procedural cohesion, temporal cohesion,
-  logical cohesion, coincidental cohesion, and informational cohesion.
-  Cohesion also has the properties cohesion degree, cohesion strength, and cohesion locality.
+It is a measure of the strength of the relationships within a module, a measure
+of how closely the elements in a module are related to each other.
+The cohesion of a module should be high, meaning that the elements inside the module
+are closely related to each other.
 
 ## Concept Map
 ![Concept view for Complexity](../../software-development/complexity/concept-view.png)

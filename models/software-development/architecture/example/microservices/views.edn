@@ -2,20 +2,20 @@
 ;;;; Views for the Microservices Blueprint Model
 ;;;;
 #{;
-
+  
   ;;;
   ;;; Architecture Views
   ;;;
   {:el :context-view
    :id :software-development.architecture.example.microservices/context-view
-   :spec {:selection {:namespace-prefix "software-development.architecture.example.microservices"}}
+   :selection {:namespace-prefix "software-development.architecture.example.microservices"}
    :name "Microservices Example Context View"
    :title "Context view for the Microservices example"
    :desc "Shows the systems of the Microservices example and their relations"}
 
   {:el :container-view
    :id :software-development.architecture.example.microservices/container-view
-   :spec {:selection {:namespace-prefix "software-development.architecture.example.microservices"}}
+   :selection {:namespace-prefix "software-development.architecture.example.microservices"}
    :name "Microservices Example Container View"
    :title "Container view for the Microservices example"
    :desc "Shows the containers of the Microservices example and their relations"}
@@ -25,10 +25,9 @@
   ;;
   {:el :container-view
    :id :software-development.architecture.example.microservices/microservice-container-view
-   :spec {:include :related
-          :plantuml {:sprite-libs [:awslib :azure :devicons]
-                     :skinparams {"nodesep" 50
-                                  "ranksep" 50}}}
+   :include :related
+   :plantuml {:skinparams {"nodesep" 50
+                           "ranksep" 50}}
    :name "Microservice Container View"
    :title "Container View for an Example Microservice"
    :desc "Shows the containers of a simple Microservice"
@@ -39,12 +38,11 @@
 
   {:el :container-view
    :id :software-development.architecture.example.microservices/simple-restful-container-view
-   :spec {:include :related
-          :layout :left-right
+   :include :related
+   :layout :left-right
           ;:linetype :orthogonal
-          :plantuml {:sprite-libs [:awslib :azure :devicons]
-                     :skinparams {"nodesep" 50
-                                  "ranksep" 50}}}
+   :plantuml {:skinparams {"nodesep" 50
+                           "ranksep" 50}}
    :name "Simple RESTful Communication Microservices Container View"
    :title "Container View for the simple RESTful Communication Microservices Example"
    :desc "Shows the containers of the simple Microservices Example and their RESTful communication."
@@ -69,12 +67,11 @@
 
   {:el :container-view
    :id :software-development.architecture.example.microservices/simple-eventdriven-container-view
-   :spec {:include :related
-          :layout :left-right
+   :include :related
+   :layout :left-right
           ;:linetype :orthogonal
-          :plantuml {:sprite-libs [:awslib :azure :devicons]
-                     :skinparams {"nodesep" 50
-                                  "ranksep" 50}}}
+   :plantuml {:skinparams {"nodesep" 50
+                           "ranksep" 50}}
    :name "Simple Event Driven Communication Microservices Container View"
    :title "Container View for the simple Event Driven Communication Microservices Example"
    :desc "Shows the containers of the simple Microservices Example and their event driven communication."
@@ -110,31 +107,29 @@ This is also called a 'Pipes and Filters' architecture."
   ;;;
   {:el :container-view
    :id :software-development.architecture.example.microservices/rest-container-view
-   :spec {:selection [{:el :request
-                       :namespace "software-development.architecture.example.microservices"}
-                      {:el :request
-                       :namespace "software-development.architecture.example.microservices.rest"}]
-          :include :related
+   :selection [{:el :request
+                :namespace "software-development.architecture.example.microservices"}
+               {:el :request
+                :namespace "software-development.architecture.example.microservices.rest"}]
+   :include :related
           ;:linetype :orthogonal
-          :plantuml {:sprite-libs [:awslib :azure :devicons]
-                     :skinparams {"nodesep" 60
-                                  "ranksep" 60}}}
+   :plantuml {:skinparams {"nodesep" 60
+                           "ranksep" 60}}
    :name "REST Microservices Example Container View"
    :title "Container View for the REST Microservices Example"
    :desc "Shows the containers of the Microservices Example and their RESTful communication"}
 
   {:el :container-view
    :id :software-development.architecture.example.microservices/event-driven-container-view
-   :spec {:selection [{:el :architecture-model-relation
-                       :namespace "software-development.architecture.example.microservices"}
-                      {:el :architecture-model-relation
-                       :namespace "software-development.architecture.example.microservices.event-driven"}]
-          :include :related
-          :layout :left-right
+   :selection [{:el :architecture-model-relation
+                :namespace "software-development.architecture.example.microservices"}
+               {:el :architecture-model-relation
+                :namespace "software-development.architecture.example.microservices.event-driven"}]
+   :include :related
+   :layout :left-right
           ;:linetype :orthogonal
-          :plantuml {:sprite-libs [:awslib :azure :devicons]
-                     :skinparams {"nodesep" 60
-                                  "ranksep" 60}}}
+   :plantuml {:skinparams {"nodesep" 60
+                           "ranksep" 60}}
    :name "Event Driven Microservices Example Container View"
    :title "Container View for the Event Driven Microservices Example"
    :desc "Shows the containers of the Microservices Example and their event driven communication"}

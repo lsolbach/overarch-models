@@ -1,7 +1,7 @@
 
 # Alibaba (Concept)
 ## Description
-Alibaba Cloud, also known as Aliyun, is a Chinese cloud computing company, a subsidiary of Alibaba Group. Alibaba Cloud provides a comprehensive suite of global cloud computing services to power both international customers’ online businesses and Alibaba Group’s own e-commerce ecosystem.
+Alibaba is a Chinese multinational conglomerate specializing in e-commerce, retail, internet, and technology. Alibaba Cloud, also known as Aliyun, is a cloud computing service provider, a subsidiary of Alibaba Group.
 
 ## Superordinates
 | Concept | Description |

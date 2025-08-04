@@ -1,9 +1,7 @@
 
-# Coupling (Concept)
+#  Coupling  (Concept)
 ## Description
-Coupling is the degree of interdependence between software modules;
-            a measure of how closely connected two routines or modules are;
-            the strength of the relationships between modules.
+ Coupling is the degree of interdependence between software modules; the strength of the relationships between modules.
 
 
 ## Tags
@@ -11,15 +9,17 @@ generic, concept, design
 
 ## Documentation
 Coupling is the degree of interdependence between software modules.
-  It is a measure of how closely connected two routines or modules are.
-  It is a measure of the strength of the relationships between modules.
-  There are several types of coupling, including data coupling, control coupling,
-  common coupling, content coupling, and stamp coupling.
-  Coupling also has the properties coupling degree, coupling strength, and coupling locality.
+It is a measure of the strength of the relationships between modules, of how closely connected two routines or modules are.
+There are several types of coupling, including data coupling, control coupling.
+The goal of software design is to minimize coupling, which reduces complexity
+and makes the system easier to understand and maintain.
+
+Coupling can be measured by Connascence.
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|
-| [Connascence](../../software-development/complexity/connascence/connascence.md) | measure of | [Coupling](../../software-development/complexity/coupling.md) | coupling between software modules |
+| [ Coupling ](../../software-development/complexity/coupling.md) | leads to | [Accidental Complexity](../../software-development/complexity/accidental-complexity.md) |  |
+| [Connascence](../../software-development/complexity/connascence/connascence.md) | measure of | [ Coupling ](../../software-development/complexity/coupling.md) | coupling between software modules |
 
 ## Concept Map
 ![Concept view for Complexity](../../software-development/complexity/concept-view.png)
