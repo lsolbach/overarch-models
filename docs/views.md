@@ -24,6 +24,7 @@
 | [DDD Supple Design Concept View](./software-development/domain-driven-design/supple-design/concept-view.md) | Shows the supple design patterns and their relationships. |
 | [Complexity Concept View](./software-development/complexity/concept-view.md) | Shows the concepts of Complexity and their relations |
 | [Connascence Concept View](./software-development/complexity/connascence/concept-view.md) | Shows the concepts of Connascence and their relations |
+| [Quantum Computing Concept View](./software-development/quantum-computing/concept-view.md) | contains general classical and quantum computing concepts |
 ## System Context Views
 | Title | Description |
 |---|---|

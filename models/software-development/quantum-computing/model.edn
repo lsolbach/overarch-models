@@ -36,7 +36,7 @@
    :desc ""}
 
   {:el :concept
-   :id :software-development.quantum-computing/quantum-algorithm
+   :id :software-development.quantum-computing/hybrid-algorithm
    :name "Hybrid Algorithm"
    :desc ""}
 
