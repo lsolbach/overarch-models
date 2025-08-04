@@ -1,8 +1,17 @@
 
 # Hybrid Algorithm (Concept)
 ## Description
+combines classical and quantum computing techniques, leveraging the strengths of both classical and quantum computers.
 
-
+## Subordinates
+| Concept | Description |
+|---|---|
+| [Algorithm](../../software-development/quantum-computing/algorithm.md)| a set of rules or instructions to solve a problem or perform a task. |
+## Features
+| Concept | Description |
+|---|---|
+| [Classical Algorithm](../../software-development/quantum-computing/classical-algorithm.md)| runs on classical computers, using classical bits. |
+| [Quantum Algorithm](../../software-development/quantum-computing/quantum-algorithm.md)| designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena. |
 
 ## Concept Map
 ![General Quantum Computing Concepts](../../software-development/quantum-computing/concept-view.png)

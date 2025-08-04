@@ -1,8 +1,16 @@
 
 # Classical Computer (Concept)
 ## Description
+uses classical bits to process information.
 
-
+## Subordinates
+| Concept | Description |
+|---|---|
+| [Computer](../../software-development/quantum-computing/computer.md)| processes data and executes algorithms. |
+## Other Relations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Classical Computer](../../software-development/quantum-computing/classical-computer.md) | runs | [Classical Algorithm](../../software-development/quantum-computing/classical-algorithm.md) | executes classical algorithms |
 
 ## Concept Map
 ![General Quantum Computing Concepts](../../software-development/quantum-computing/concept-view.png)

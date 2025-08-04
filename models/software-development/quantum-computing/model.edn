@@ -4,41 +4,95 @@
 #{;
 
 
-  ;; 
+  ;; Nodes
   {:el :concept
    :id :software-development.quantum-computing/computer
    :name "Computer"
-   :desc ""}
+   :desc "processes data and executes algorithms."}
 
   {:el :concept
    :id :software-development.quantum-computing/classical-computer
    :name "Classical Computer"
-   :desc ""}
+   :desc "uses classical bits to process information."}
 
   {:el :concept
    :id :software-development.quantum-computing/quantum-computer
    :name "Quantum Computer"
-   :desc ""}
+   :desc "uses quantum bits (qubits) to perform computations based on quantum mechanics."}
 
   {:el :concept
    :id :software-development.quantum-computing/algorithm
    :name "Algorithm"
-   :desc ""}
+   :desc "a set of rules or instructions to solve a problem or perform a task."}
 
   {:el :concept
    :id :software-development.quantum-computing/classical-algorithm
    :name "Classical Algorithm"
-   :desc ""}
+   :desc "runs on classical computers, using classical bits."}
 
   {:el :concept
    :id :software-development.quantum-computing/quantum-algorithm
    :name "Quantum Algorithm"
-   :desc ""}
+   :desc "designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena."}
 
   {:el :concept
    :id :software-development.quantum-computing/hybrid-algorithm
    :name "Hybrid Algorithm"
-   :desc ""}
+   :desc "combines classical and quantum computing techniques, leveraging the strengths of both classical and quantum computers."}
 
-  ;
+  ;; Relationships
+  {:el :is-a 
+   :from :software-development.quantum-computing/computer
+   :to :software-development.quantum-computing/classical-computer
+   :name "is a"
+   :desc "type of"}
+
+  {:el :is-a 
+   :from :software-development.quantum-computing/computer
+   :to :software-development.quantum-computing/quantum-computer
+   :name "is a"
+   :desc "type of"}
+
+  {:el :is-a 
+   :from :software-development.quantum-computing/algorithm
+   :to :software-development.quantum-computing/classical-algorithm
+   :name "is a"
+   :desc "type of"}
+
+  {:el :is-a 
+   :from :software-development.quantum-computing/algorithm
+   :to :software-development.quantum-computing/quantum-algorithm
+   :name "is a"
+   :desc "type of"}
+
+  {:el :is-a 
+   :from :software-development.quantum-computing/algorithm
+   :to :software-development.quantum-computing/hybrid-algorithm
+   :name "is a"
+   :desc "type of"}
+  
+  {:el :rel
+   :from :software-development.quantum-computing/quantum-computer
+   :to :software-development.quantum-computing/quantum-algorithm
+   :name "runs"
+   :desc "executes quantum algorithms"}
+
+  {:el :rel
+   :from :software-development.quantum-computing/classical-computer
+   :to :software-development.quantum-computing/classical-algorithm
+   :name "runs"
+   :desc "executes classical algorithms"}
+
+  {:el :has
+   :from :software-development.quantum-computing/hybrid-algorithm
+   :to :software-development.quantum-computing/classical-algorithm
+   :name "uses"
+   :desc "incorporates classical algorithms in its execution"}
+  
+  {:el :has
+   :from :software-development.quantum-computing/hybrid-algorithm
+   :to :software-development.quantum-computing/quantum-algorithm
+   :name "uses"
+   :desc "incorporates quantum algorithms in its execution"}
+
   }

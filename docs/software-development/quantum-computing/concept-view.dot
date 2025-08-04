@@ -3,7 +3,23 @@ digraph "General Quantum Computing Concepts" {
   label="General Quantum Computing Concepts"
 
   layout=dot
+software_development_quantum_computing__classical_computer [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Classical Computer</B><BR/><FONT POINT-SIZE="10"><I>uses classical bits to process<BR/>information. </I></FONT>>]
+software_development_quantum_computing__quantum_computer [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Quantum Computer</B><BR/><FONT POINT-SIZE="10"><I>uses quantum bits (qubits) to perform<BR/>computations based on quantum mechanics. </I></FONT>>]
+software_development_quantum_computing__quantum_algorithm [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Quantum Algorithm</B><BR/><FONT POINT-SIZE="10"><I>designed to run on quantum computers,<BR/>utilizing quantum bits (qubits) and<BR/>quantum phenomena. </I></FONT>>]
+software_development_quantum_computing__algorithm [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Algorithm</B><BR/><FONT POINT-SIZE="10"><I>a set of rules or instructions to solve<BR/>a problem or perform a task. </I></FONT>>]
+software_development_quantum_computing__classical_algorithm [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Classical Algorithm</B><BR/><FONT POINT-SIZE="10"><I>runs on classical computers, using<BR/>classical bits. </I></FONT>>]
+software_development_quantum_computing__computer [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Computer</B><BR/><FONT POINT-SIZE="10"><I>processes data and executes algorithms. </I></FONT>>]
+software_development_quantum_computing__hybrid_algorithm [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Hybrid Algorithm</B><BR/><FONT POINT-SIZE="10"><I>combines classical and quantum computing<BR/>techniques, leveraging the strengths of<BR/>both classical and quantum computers. </I></FONT>>]
  
+software_development_quantum_computing__quantum_computer -> software_development_quantum_computing__quantum_algorithm [label=<runs<BR/><FONT POINT-SIZE="10"><I>executes quantum algorithms </I></FONT>>]
+software_development_quantum_computing__classical_computer -> software_development_quantum_computing__classical_algorithm [label=<runs<BR/><FONT POINT-SIZE="10"><I>executes classical algorithms </I></FONT>>]
+software_development_quantum_computing__hybrid_algorithm -> software_development_quantum_computing__classical_algorithm [label=<uses<BR/><FONT POINT-SIZE="10"><I>incorporates classical algorithms in its<BR/>execution </I></FONT>>]
+software_development_quantum_computing__algorithm -> software_development_quantum_computing__classical_algorithm [label=<is a<BR/><FONT POINT-SIZE="10"><I>type of </I></FONT>>]
+software_development_quantum_computing__computer -> software_development_quantum_computing__classical_computer [label=<is a<BR/><FONT POINT-SIZE="10"><I>type of </I></FONT>>]
+software_development_quantum_computing__algorithm -> software_development_quantum_computing__hybrid_algorithm [label=<is a<BR/><FONT POINT-SIZE="10"><I>type of </I></FONT>>]
+software_development_quantum_computing__hybrid_algorithm -> software_development_quantum_computing__quantum_algorithm [label=<uses<BR/><FONT POINT-SIZE="10"><I>incorporates quantum algorithms in its<BR/>execution </I></FONT>>]
+software_development_quantum_computing__computer -> software_development_quantum_computing__quantum_computer [label=<is a<BR/><FONT POINT-SIZE="10"><I>type of </I></FONT>>]
+software_development_quantum_computing__algorithm -> software_development_quantum_computing__quantum_algorithm [label=<is a<BR/><FONT POINT-SIZE="10"><I>type of </I></FONT>>]
  
 }
 

@@ -1,0 +1,128 @@
+;;;;
+;;;; Model for Quantum Computing Algorithms
+;;;;
+#{{:el :concept
+   :id :software-development.quantum-computing.algorithm/deutsch-algorithm
+   :name "Deutsch Algorithm"
+   :desc "A quantum algorithm that solves the Deutsch problem, determining if a function is constant or balanced with one query."
+   :doc "Deutsch's algorithm is a foundational quantum algorithm that demonstrates the power of quantum computing over classical computing for specific problems.
+         It uses quantum superposition and interference to determine the nature of a function with fewer queries than any classical algorithm could achieve.
+         The algorithm operates on a single qubit and uses a quantum oracle to evaluate the function, showcasing the principles of quantum parallelism and entanglement.
+         This algorithm is significant in the study of quantum computing as it illustrates the potential for quantum algorithms to outperform classical counterparts in specific tasks.
+         It serves as a stepping stone for more complex quantum algorithms and is often one of the first examples introduced in quantum computing education.
+         The Deutsch algorithm is a simple yet powerful example of how quantum mechanics can be harnessed for computational advantage.
+         It is often used to introduce the concepts of quantum gates, superposition, and measurement in quantum computing courses."}
+
+  {:el :concept
+   :id :software-development.quantum-computing.algorithm/deutsch-jozsa-algorithm
+   :name "Deutsch-Jozsa Algorithm"
+   :desc "A quantum algorithm that generalizes the Deutsch algorithm to determine if a function is constant or balanced with fewer queries."
+   :doc "The Deutsch-Jozsa algorithm extends the Deutsch algorithm to handle functions with multiple inputs, allowing it to determine if a function is constant or balanced with only one query.
+           It demonstrates the power of quantum computing in solving problems that would require exponentially more queries in classical computing.
+           The algorithm uses quantum superposition and interference to evaluate the function, showcasing the principles of quantum parallelism.
+           It is a significant example in quantum computing as it highlights the potential for quantum algorithms to outperform classical algorithms in specific tasks.
+           The Deutsch-Jozsa algorithm is often used in educational contexts to illustrate the advantages of quantum computing and the concept of quantum oracles."}
+
+  {:el :concept
+   :id :software-development.quantum-computing.algorithm/bernstein-vazirani-algorithm
+   :name "Bernstein-Vazirani Algorithm"
+   :desc "A quantum algorithm that determines a hidden binary string with a single query to the oracle."
+   :doc "The Bernstein-Vazirani algorithm is a quantum algorithm that efficiently determines a hidden binary string encoded in a quantum oracle.
+         It demonstrates the power of quantum computing in solving problems that would require multiple queries in classical computing.
+         The algorithm uses quantum superposition and interference to extract the hidden string with only one query, showcasing the principles of quantum parallelism.
+         It is a significant example in quantum computing as it highlights the potential for quantum algorithms to outperform classical algorithms in specific tasks.
+         The Bernstein-Vazirani algorithm is often used in educational contexts to illustrate the advantages of quantum computing and the concept of quantum oracles.
+         It serves as a foundational example in the study of quantum algorithms, illustrating how quantum mechanics can be harnessed for computational advantage."}
+
+  {:el :concept
+   :id :software-development.quantum-computing.algorithm/grover-algorithm
+   :name "Grover's Algorithm"
+   :desc "A quantum algorithm that searches an unsorted database with quadratic speedup over classical algorithms."
+   :doc "Grover's algorithm is a quantum algorithm that provides a quadratic speedup
+         for searching an unsorted database, making it one of the most well-known quantum algorithms.
+         It operates by using quantum superposition and interference to evaluate multiple entries in the database simultaneously.
+         The algorithm is particularly useful for problems where the solution is not easily identifiable, such as searching
+         for a specific item in a large dataset.
+         Grover's algorithm is significant in the study of quantum computing as it demonstrates the potential for quantum algorithms to outperform classical algorithms in search problems.
+         It is often used as an example in quantum computing education to illustrate the principles of quantum parallelism and the concept of quantum oracles.
+         The algorithm is applicable in various fields, including cryptography, optimization, and machine learning, where searching through large datasets is a common task.
+         Grover's algorithm is a foundational example in quantum computing,
+         illustrating how quantum mechanics can be leveraged for computational advantage in search problems."}
+
+  {:el :concept
+   :id :software-development.quantum-computing.algorithm/shor-algorithm
+   :name "Shor's Algorithm"
+   :desc "A quantum algorithm for integer factorization that runs in polynomial time, breaking RSA encryption."
+   :doc "Shor's algorithm is a groundbreaking quantum algorithm that efficiently factors large integers
+         in polynomial time, posing a significant threat to classical cryptographic systems like RSA.
+         It operates by using quantum Fourier transform and modular arithmetic to find the period of a function,
+         which is crucial for determining the factors of a number.
+         The algorithm is particularly effective for large integers, making it a powerful tool in the field of
+         quantum computing and cryptography.
+         Shor's algorithm is significant in the study of quantum computing as it demonstrates the potential for
+         quantum algorithms to outperform classical algorithms in number-theoretic problems.
+         It is often used as a prime example in quantum computing education to illustrate the principles of quantum
+         parallelism, entanglement, and the concept of quantum oracles.
+         The algorithm has far-reaching implications for cryptography, as it can break widely used encryption schemes
+         and necessitates the development of new quantum-resistant cryptographic methods.
+         Shor's algorithm is a foundational example in quantum computing, illustrating how quantum mechanics can be
+         harnessed for computational advantage in number factorization and cryptography."}
+
+  {:el :concept
+   :id :software-development.quantum-computing.algorithm/quantum-fourier-transform
+   :name "Quantum Fourier Transform"
+   :desc "A quantum algorithm that performs the discrete Fourier transform on quantum states, crucial for
+              many quantum algorithms, including Shor's algorithm."
+   :doc "The Quantum Fourier Transform (QFT) is a quantum algorithm that efficiently computes the discrete Fourier transform
+          on quantum states, playing a crucial role in many quantum algorithms, including Shor's algorithm.
+          It operates by transforming a quantum state into its frequency domain representation, allowing for efficient
+          manipulation and analysis of quantum information.
+          The QFT is significant in the study of quantum computing as it demonstrates the power of quantum parallelism and interference,
+          enabling the extraction of periodicity and other properties from quantum states.
+          It is often used as a foundational example in quantum computing education to illustrate the principles of quantum
+          algorithms and the concept of quantum gates.
+          The QFT is applicable in various fields, including cryptography, signal processing, and quantum simulation,
+          where efficient Fourier transforms are essential for analyzing and processing quantum data.
+          The algorithm is a key component in many quantum algorithms, showcasing how quantum mechanics can be leveraged
+          for computational advantage in tasks that involve periodicity and frequency analysis.
+          The Quantum Fourier Transform is a foundational example in quantum computing, illustrating the principles of quantum
+          parallelism and the potential for quantum algorithms to outperform classical counterparts in specific tasks."}
+
+  {:el :concept
+   :id :software-development.quantum-computing.algorithm/quantum-phase-estimation
+   :name "Quantum Phase Estimation"
+   :desc "A quantum algorithm that estimates the eigenvalues of a unitary operator, used in many quantum algorithms."
+   :doc "Quantum Phase Estimation (QPE) is a quantum algorithm that estimates the eigenvalues of a unitary operator,
+          playing a crucial role in many quantum algorithms, including Shor's algorithm and quantum simulation.
+          It operates by preparing a quantum state and applying controlled unitary operations to extract phase information,
+          allowing for the estimation of eigenvalues with high precision.
+          QPE is significant in the study of quantum computing as it demonstrates the power of quantum parallelism and interference,
+          enabling the extraction of spectral properties from quantum states.
+          It is often used as a foundational example in quantum computing education to illustrate the principles of quantum
+          algorithms and the concept of quantum gates.
+          The algorithm is applicable in various fields, including quantum chemistry, optimization, and machine learning,
+          where estimating eigenvalues is essential for analyzing and processing quantum data.
+          Quantum Phase Estimation is a key component in many quantum algorithms, showcasing how quantum mechanics can be
+          leveraged for computational advantage in tasks that involve spectral analysis and eigenvalue estimation.
+          It is a foundational example in quantum computing, illustrating the principles of quantum parallelism and the potential
+          for quantum algorithms to outperform classical counterparts in specific tasks."}
+
+  {:el :concept
+   :id :software-development.quantum-computing.algorithm/hhl-algorithm
+   :name "HHL Algorithm"
+   :desc "A quantum algorithm for solving linear systems of equations, providing exponential speedup over classical algorithms."
+   :doc "The HHL algorithm, named after its inventors Harrow, Hassidim, and Lloyd, is a quantum algorithm designed to solve linear systems of equations.
+         It provides an exponential speedup over classical algorithms for certain types of linear systems, making it
+         a significant breakthrough in quantum computing.
+         The algorithm operates by encoding the linear system into a quantum state and using quantum phase estimation to
+         extract the solution efficiently.
+         HHL is particularly useful for problems in quantum chemistry, optimization, and machine learning, where
+         solving linear systems is a common task.
+         It demonstrates the power of quantum parallelism and interference, showcasing how quantum mechanics can be
+         harnessed for computational advantage in solving complex mathematical problems.
+         The HHL algorithm is often used as a prime example in quantum computing education to illustrate the
+         principles of quantum algorithms, quantum gates, and the concept of quantum oracles.
+         It is a foundational example in quantum computing, illustrating how quantum algorithms can outperform classical
+         algorithms in specific tasks, particularly in the realm of linear algebra and numerical analysis."}
+  ;
+  }

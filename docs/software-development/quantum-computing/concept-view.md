@@ -6,6 +6,38 @@
 ## Description
 contains general classical and quantum computing concepts
 
+## Concepts
+| Concept | Description |
+|---|---|
+| [Algorithm](../../software-development/quantum-computing/algorithm.md)| a set of rules or instructions to solve a problem or perform a task. |
+| [Classical Algorithm](../../software-development/quantum-computing/classical-algorithm.md)| runs on classical computers, using classical bits. |
+| [Classical Computer](../../software-development/quantum-computing/classical-computer.md)| uses classical bits to process information. |
+| [Computer](../../software-development/quantum-computing/computer.md)| processes data and executes algorithms. |
+| [Hybrid Algorithm](../../software-development/quantum-computing/hybrid-algorithm.md)| combines classical and quantum computing techniques, leveraging the strengths of both classical and quantum computers. |
+| [Quantum Algorithm](../../software-development/quantum-computing/quantum-algorithm.md)| designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena. |
+| [Quantum Computer](../../software-development/quantum-computing/quantum-computer.md)| uses quantum bits (qubits) to perform computations based on quantum mechanics. |
+
+## Generalizations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Algorithm](../../software-development/quantum-computing/algorithm.md) | is a | [Classical Algorithm](../../software-development/quantum-computing/classical-algorithm.md) | type of |
+| [Computer](../../software-development/quantum-computing/computer.md) | is a | [Classical Computer](../../software-development/quantum-computing/classical-computer.md) | type of |
+| [Algorithm](../../software-development/quantum-computing/algorithm.md) | is a | [Hybrid Algorithm](../../software-development/quantum-computing/hybrid-algorithm.md) | type of |
+| [Computer](../../software-development/quantum-computing/computer.md) | is a | [Quantum Computer](../../software-development/quantum-computing/quantum-computer.md) | type of |
+| [Algorithm](../../software-development/quantum-computing/algorithm.md) | is a | [Quantum Algorithm](../../software-development/quantum-computing/quantum-algorithm.md) | type of |
+
+## Features
+| From | Name | To | Description |
+|---|---|---|---|
+| [Hybrid Algorithm](../../software-development/quantum-computing/hybrid-algorithm.md) | uses | [Classical Algorithm](../../software-development/quantum-computing/classical-algorithm.md) | incorporates classical algorithms in its execution |
+| [Hybrid Algorithm](../../software-development/quantum-computing/hybrid-algorithm.md) | uses | [Quantum Algorithm](../../software-development/quantum-computing/quantum-algorithm.md) | incorporates quantum algorithms in its execution |
+
+## Other Relationships
+| From | Name | To | Description |
+|---|---|---|---|
+| [Quantum Computer](../../software-development/quantum-computing/quantum-computer.md) | runs | [Quantum Algorithm](../../software-development/quantum-computing/quantum-algorithm.md) | executes quantum algorithms |
+| [Classical Computer](../../software-development/quantum-computing/classical-computer.md) | runs | [Classical Algorithm](../../software-development/quantum-computing/classical-algorithm.md) | executes classical algorithms |
+
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
 

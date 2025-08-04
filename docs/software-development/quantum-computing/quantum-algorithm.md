@@ -1,8 +1,20 @@
 
 # Quantum Algorithm (Concept)
 ## Description
+designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena.
 
-
+## Subordinates
+| Concept | Description |
+|---|---|
+| [Algorithm](../../software-development/quantum-computing/algorithm.md)| a set of rules or instructions to solve a problem or perform a task. |
+## Feature of
+| Concept | Description |
+|---|---|
+| [Hybrid Algorithm](../../software-development/quantum-computing/hybrid-algorithm.md)| combines classical and quantum computing techniques, leveraging the strengths of both classical and quantum computers. |
+## Other Relations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Quantum Computer](../../software-development/quantum-computing/quantum-computer.md) | runs | [Quantum Algorithm](../../software-development/quantum-computing/quantum-algorithm.md) | executes quantum algorithms |
 
 ## Concept Map
 ![General Quantum Computing Concepts](../../software-development/quantum-computing/concept-view.png)

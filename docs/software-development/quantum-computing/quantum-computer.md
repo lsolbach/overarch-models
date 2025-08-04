@@ -1,8 +1,16 @@
 
 # Quantum Computer (Concept)
 ## Description
+uses quantum bits (qubits) to perform computations based on quantum mechanics.
 
-
+## Subordinates
+| Concept | Description |
+|---|---|
+| [Computer](../../software-development/quantum-computing/computer.md)| processes data and executes algorithms. |
+## Other Relations
+| From | Name | To | Description |
+|---|---|---|---|
+| [Quantum Computer](../../software-development/quantum-computing/quantum-computer.md) | runs | [Quantum Algorithm](../../software-development/quantum-computing/quantum-algorithm.md) | executes quantum algorithms |
 
 ## Concept Map
 ![General Quantum Computing Concepts](../../software-development/quantum-computing/concept-view.png)

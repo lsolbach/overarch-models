@@ -1,8 +1,13 @@
 
 # Computer (Concept)
 ## Description
+processes data and executes algorithms.
 
-
+## Superordinates
+| Concept | Description |
+|---|---|
+| [Classical Computer](../../software-development/quantum-computing/classical-computer.md)| uses classical bits to process information. |
+| [Quantum Computer](../../software-development/quantum-computing/quantum-computer.md)| uses quantum bits (qubits) to perform computations based on quantum mechanics. |
 
 ## Concept Map
 ![General Quantum Computing Concepts](../../software-development/quantum-computing/concept-view.png)
