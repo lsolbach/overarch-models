@@ -1,5 +1,8 @@
 # Change Log
 
+## 2025-08-04
+* added quantum computing concepts
+
 ## 2025-04-16
 * added relations for cloud migration framework
 * refactored views for cloud and twelve factor app

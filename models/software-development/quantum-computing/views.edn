@@ -1,0 +1,13 @@
+;;;;
+;;;; Views for the software-development.quantum-computing namespace
+;;;;
+#{
+  {:el :concept-view
+   :id :software-development.quantum-computing/concept-view
+   :selection {:namespace-prefix "software-development.quantum-computing"
+               :to {:namespace-prefix "software-development.quantum-computing"}}
+   :include :related
+   :name "Quantum Computing Concept View"
+   :title "General Quantum Computing Concepts"
+   :desc "contains general classical and quantum computing concepts"}
+}

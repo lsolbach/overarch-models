@@ -1,0 +1,44 @@
+;;;;
+;;;; Model for Quantum Computing
+;;;;
+#{;
+
+
+  ;; 
+  {:el :concept
+   :id :software-development.quantum-computing/computer
+   :name "Computer"
+   :desc ""}
+
+  {:el :concept
+   :id :software-development.quantum-computing/classical-computer
+   :name "Classical Computer"
+   :desc ""}
+
+  {:el :concept
+   :id :software-development.quantum-computing/quantum-computer
+   :name "Quantum Computer"
+   :desc ""}
+
+  {:el :concept
+   :id :software-development.quantum-computing/algorithm
+   :name "Algorithm"
+   :desc ""}
+
+  {:el :concept
+   :id :software-development.quantum-computing/classical-algorithm
+   :name "Classical Algorithm"
+   :desc ""}
+
+  {:el :concept
+   :id :software-development.quantum-computing/quantum-algorithm
+   :name "Quantum Algorithm"
+   :desc ""}
+
+  {:el :concept
+   :id :software-development.quantum-computing/quantum-algorithm
+   :name "Hybrid Algorithm"
+   :desc ""}
+
+  ;
+  }
