@@ -25,6 +25,7 @@
 | [Complexity Concept View](./software-development/complexity/concept-view.md) | Shows the concepts of Complexity and their relations |
 | [Connascence Concept View](./software-development/complexity/connascence/concept-view.md) | Shows the concepts of Connascence and their relations |
 | [Quantum Computing Concept View](./software-development/quantum-computing/concept-view.md) | contains general classical and quantum computing concepts |
+| [Quantum Computing Algorithms Concept View](./software-development/quantum-computing/algorithm/concept-view.md) | contains concepts related to quantum computing algorithms, including classical, quantum, and hybrid algorithms. |
 ## System Context Views
 | Title | Description |
 |---|---|

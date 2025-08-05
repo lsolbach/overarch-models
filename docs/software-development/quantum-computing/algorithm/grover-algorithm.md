@@ -15,6 +15,15 @@ Grover's algorithm is a quantum algorithm that provides a quadratic speedup
          The algorithm is applicable in various fields, including cryptography, optimization, and machine learning, where searching through large datasets is a common task.
          Grover's algorithm is a foundational example in quantum computing,
          illustrating how quantum mechanics can be leveraged for computational advantage in search problems.
+## Superordinates
+| Concept | Description |
+|---|---|
+| [Quantum Algorithm](../../../software-development/quantum-computing/algorithm/quantum-algorithm.md)| designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena. |
+
+## Concept Map
+![Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.png)
+
+[Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.md)
 
 
 ## Navigation

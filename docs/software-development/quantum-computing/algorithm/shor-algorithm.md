@@ -19,6 +19,15 @@ Shor's algorithm is a groundbreaking quantum algorithm that efficiently factors 
          and necessitates the development of new quantum-resistant cryptographic methods.
          Shor's algorithm is a foundational example in quantum computing, illustrating how quantum mechanics can be
          harnessed for computational advantage in number factorization and cryptography.
+## Superordinates
+| Concept | Description |
+|---|---|
+| [Quantum Algorithm](../../../software-development/quantum-computing/algorithm/quantum-algorithm.md)| designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena. |
+
+## Concept Map
+![Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.png)
+
+[Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.md)
 
 
 ## Navigation

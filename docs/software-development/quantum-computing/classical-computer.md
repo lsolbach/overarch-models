@@ -10,7 +10,7 @@ uses classical bits to process information.
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|
-| [Classical Computer](../../software-development/quantum-computing/classical-computer.md) | runs | [Classical Algorithm](../../software-development/quantum-computing/classical-algorithm.md) | executes classical algorithms |
+| [Classical Computer](../../software-development/quantum-computing/classical-computer.md) | runs | [Classical Algorithm](../../software-development/quantum-computing/algorithm/classical-algorithm.md) | executes classical algorithms |
 
 ## Concept Map
 ![General Quantum Computing Concepts](../../software-development/quantum-computing/concept-view.png)

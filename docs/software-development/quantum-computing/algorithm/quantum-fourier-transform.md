@@ -20,6 +20,15 @@ The Quantum Fourier Transform (QFT) is a quantum algorithm that efficiently comp
           for computational advantage in tasks that involve periodicity and frequency analysis.
           The Quantum Fourier Transform is a foundational example in quantum computing, illustrating the principles of quantum
           parallelism and the potential for quantum algorithms to outperform classical counterparts in specific tasks.
+## Superordinates
+| Concept | Description |
+|---|---|
+| [Quantum Algorithm](../../../software-development/quantum-computing/algorithm/quantum-algorithm.md)| designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena. |
+
+## Concept Map
+![Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.png)
+
+[Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.md)
 
 
 ## Navigation

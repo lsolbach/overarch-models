@@ -1,0 +1,12 @@
+#{;
+  
+  {:el :concept-view
+   :id :software-development.quantum-computing.algorithm/concept-view
+   :selection {:namespace-prefix "software-development.quantum-computing.algorithm"
+               :to {:namespace-prefix "software-development.quantum-computing.algorithm"}}
+    :include :related
+    :name "Quantum Computing Algorithms Concept View"
+    :title "Quantum Computing Algorithms Concepts"
+    :desc "contains concepts related to quantum computing algorithms, including classical, quantum, and hybrid algorithms."}
+  ;
+}

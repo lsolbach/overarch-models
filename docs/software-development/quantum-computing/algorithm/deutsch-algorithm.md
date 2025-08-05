@@ -12,6 +12,15 @@ Deutsch's algorithm is a foundational quantum algorithm that demonstrates the po
          It serves as a stepping stone for more complex quantum algorithms and is often one of the first examples introduced in quantum computing education.
          The Deutsch algorithm is a simple yet powerful example of how quantum mechanics can be harnessed for computational advantage.
          It is often used to introduce the concepts of quantum gates, superposition, and measurement in quantum computing courses.
+## Superordinates
+| Concept | Description |
+|---|---|
+| [Quantum Algorithm](../../../software-development/quantum-computing/algorithm/quantum-algorithm.md)| designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena. |
+
+## Concept Map
+![Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.png)
+
+[Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.md)
 
 
 ## Navigation

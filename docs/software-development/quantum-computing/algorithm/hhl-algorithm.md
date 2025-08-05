@@ -18,6 +18,15 @@ The HHL algorithm, named after its inventors Harrow, Hassidim, and Lloyd, is a q
          principles of quantum algorithms, quantum gates, and the concept of quantum oracles.
          It is a foundational example in quantum computing, illustrating how quantum algorithms can outperform classical
          algorithms in specific tasks, particularly in the realm of linear algebra and numerical analysis.
+## Superordinates
+| Concept | Description |
+|---|---|
+| [Quantum Algorithm](../../../software-development/quantum-computing/algorithm/quantum-algorithm.md)| designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena. |
+
+## Concept Map
+![Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.png)
+
+[Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.md)
 
 
 ## Navigation

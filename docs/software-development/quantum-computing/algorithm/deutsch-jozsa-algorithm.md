@@ -11,6 +11,11 @@ The Deutsch-Jozsa algorithm extends the Deutsch algorithm to handle functions wi
            It is a significant example in quantum computing as it highlights the potential for quantum algorithms to outperform classical algorithms in specific tasks.
            The Deutsch-Jozsa algorithm is often used in educational contexts to illustrate the advantages of quantum computing and the concept of quantum oracles.
 
+## Concept Map
+![Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.png)
+
+[Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.md)
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

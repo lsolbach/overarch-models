@@ -10,7 +10,7 @@ uses quantum bits (qubits) to perform computations based on quantum mechanics.
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|
-| [Quantum Computer](../../software-development/quantum-computing/quantum-computer.md) | runs | [Quantum Algorithm](../../software-development/quantum-computing/quantum-algorithm.md) | executes quantum algorithms |
+| [Quantum Computer](../../software-development/quantum-computing/quantum-computer.md) | runs | [Quantum Algorithm](../../software-development/quantum-computing/algorithm/quantum-algorithm.md) | executes quantum algorithms |
 
 ## Concept Map
 ![General Quantum Computing Concepts](../../software-development/quantum-computing/concept-view.png)

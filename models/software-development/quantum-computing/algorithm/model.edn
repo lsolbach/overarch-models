@@ -1,7 +1,34 @@
 ;;;;
 ;;;; Model for Quantum Computing Algorithms
 ;;;;
-#{{:el :concept
+#{;
+
+  ;;; 
+  ;;; Concepts
+  ;;;
+
+  ;; Nodes
+  {:el :concept
+   :id :software-development.quantum-computing.algorithm/algorithm
+   :name "Algorithm"
+   :desc "a set of rules or instructions to solve a problem or perform a task."}
+
+  {:el :concept
+   :id :software-development.quantum-computing.algorithm/classical-algorithm
+   :name "Classical Algorithm"
+   :desc "runs on classical computers, using classical bits."}
+
+  {:el :concept
+   :id :software-development.quantum-computing.algorithm/quantum-algorithm
+   :name "Quantum Algorithm"
+   :desc "designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena."}
+
+  {:el :concept
+   :id :software-development.quantum-computing.algorithm/hybrid-algorithm
+   :name "Hybrid Algorithm"
+   :desc "combines classical and quantum computing techniques, leveraging the strengths of both classical and quantum computers."}
+
+  {:el :concept
    :id :software-development.quantum-computing.algorithm/deutsch-algorithm
    :name "Deutsch Algorithm"
    :desc "A quantum algorithm that solves the Deutsch problem, determining if a function is constant or balanced with one query."
@@ -33,6 +60,17 @@
          It is a significant example in quantum computing as it highlights the potential for quantum algorithms to outperform classical algorithms in specific tasks.
          The Bernstein-Vazirani algorithm is often used in educational contexts to illustrate the advantages of quantum computing and the concept of quantum oracles.
          It serves as a foundational example in the study of quantum algorithms, illustrating how quantum mechanics can be harnessed for computational advantage."}
+
+  {:el :concept
+   :id :software-development.quantum-computing.algorithm/simon-algorithm
+   :name "Simon Algorithm"
+   :desc "A quantum algorithm that solves the Simon problem, finding a hidden period of a function with exponential speedup over classical algorithms."
+   :doc "Simon's algorithm is a quantum algorithm that efficiently solves the Simon problem, which involves finding a hidden period of a function.
+         It provides an exponential speedup over classical algorithms, demonstrating the power of quantum computing in solving specific problems.
+         The algorithm operates by using quantum superposition and interference to evaluate multiple inputs simultaneously, extracting the hidden period with fewer queries than any classical algorithm could achieve.
+         Simon's algorithm is significant in the study of quantum computing as it illustrates the potential for quantum algorithms to outperform classical counterparts in specific tasks.
+         It is often used as a prime example in quantum computing education to illustrate the principles of quantum parallelism and the concept of quantum oracles.
+         The algorithm has implications in cryptography, particularly in the context of quantum-resistant cryptographic systems, as it can break certain types of encryption based on periodic functions."}
 
   {:el :concept
    :id :software-development.quantum-computing.algorithm/grover-algorithm
@@ -124,5 +162,98 @@
          principles of quantum algorithms, quantum gates, and the concept of quantum oracles.
          It is a foundational example in quantum computing, illustrating how quantum algorithms can outperform classical
          algorithms in specific tasks, particularly in the realm of linear algebra and numerical analysis."}
+
+  {:el :concept
+   :id :software-development.quantum-computing.algorithm/variational-quantum-eigensolver
+   :name "Variational Quantum Eigensolver"
+   :desc "A hybrid quantum-classical algorithm for finding the ground state energy of a quantum system."
+   :doc "The Variational Quantum Eigensolver (VQE) is a hybrid quantum-classical algorithm designed to find the ground state energy of a quantum system.
+         It combines classical optimization techniques with quantum computing to efficiently explore the energy landscape of quantum systems.
+         VQE operates by preparing a parameterized quantum state and using classical optimization algorithms to minimize the energy expectation value,
+         allowing for the determination of the ground state energy with high precision.
+         The algorithm is particularly useful in quantum chemistry, material science, and optimization problems, where finding the ground state energy is essential.
+         VQE demonstrates the power of hybrid quantum-classical approaches, showcasing how quantum mechanics can be leveraged for computational advantage in solving complex problems.
+         It is often used as a foundational example in quantum computing education to illustrate the principles of variational methods, quantum gates, and the concept of quantum oracles.
+         The Variational Quantum Eigensolver is a key component in many quantum algorithms, illustrating how hybrid approaches can outperform classical counterparts in specific tasks,
+         particularly in the realm of quantum simulation and optimization."}
+
+  ;; Relationships
+  {:el :is-a
+   :from :software-development.quantum-computing.algorithm/algorithm
+   :to :software-development.quantum-computing.algorithm/classical-algorithm
+   :name "is a"
+   :desc "type of"}
+
+  {:el :is-a
+   :from :software-development.quantum-computing.algorithm/algorithm
+   :to :software-development.quantum-computing.algorithm/quantum-algorithm
+   :name "is a"
+   :desc "type of"}
+
+  {:el :is-a
+   :from :software-development.quantum-computing.algorithm/algorithm
+   :to :software-development.quantum-computing.algorithm/hybrid-algorithm
+   :name "is a"
+   :desc "type of"}
+
+  {:el :has
+   :from :software-development.quantum-computing.algorithm/hybrid-algorithm
+   :to :software-development.quantum-computing.algorithm/classical-algorithm
+   :name "uses"
+   :desc "incorporates classical algorithms in its execution"}
+
+  {:el :has
+   :from :software-development.quantum-computing.algorithm/hybrid-algorithm
+   :to :software-development.quantum-computing.algorithm/quantum-algorithm
+   :name "uses"
+   :desc "incorporates quantum algorithms in its execution"}
+
+  {:el :is-a
+   :from :software-development.quantum-computing.algorithm/deutsch-algorithm
+   :to :software-development.quantum-computing.algorithm/quantum-algorithm
+   :name "is a"
+   :desc ""}
+
+  {:el :is-a
+   :from :software-development.quantum-computing.algorithm/bernstein-vazirani-algorithm
+   :to :software-development.quantum-computing.algorithm/quantum-algorithm
+   :name "is a"
+   :desc ""}
+
+  {:el :is-a
+   :from :software-development.quantum-computing.algorithm/grover-algorithm
+   :to :software-development.quantum-computing.algorithm/quantum-algorithm
+   :name "is a"
+   :desc ""}
+
+  {:el :is-a
+   :from :software-development.quantum-computing.algorithm/shor-algorithm
+   :to :software-development.quantum-computing.algorithm/quantum-algorithm
+   :name "is a"
+   :desc ""}
+
+  {:el :is-a
+   :from :software-development.quantum-computing.algorithm/quantum-fourier-transform
+   :to :software-development.quantum-computing.algorithm/quantum-algorithm
+   :name "is a"
+   :desc ""}
+
+  {:el :is-a
+   :from :software-development.quantum-computing.algorithm/quantum-phase-estimation
+   :to :software-development.quantum-computing.algorithm/quantum-algorithm
+   :name "is a"
+   :desc ""}
+
+  {:el :is-a
+   :from :software-development.quantum-computing.algorithm/hhl-algorithm
+   :to :software-development.quantum-computing.algorithm/quantum-algorithm
+   :name "is a"
+   :desc ""}
+
+  {:el :is-a
+   :from :software-development.quantum-computing.algorithm/variational-quantum-eigensolver
+   :to :software-development.quantum-computing.algorithm/hybrid-algorithm
+   :name "is a"}
+
   ;
   }

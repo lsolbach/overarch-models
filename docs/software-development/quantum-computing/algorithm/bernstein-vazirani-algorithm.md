@@ -11,6 +11,15 @@ The Bernstein-Vazirani algorithm is a quantum algorithm that efficiently determi
          It is a significant example in quantum computing as it highlights the potential for quantum algorithms to outperform classical algorithms in specific tasks.
          The Bernstein-Vazirani algorithm is often used in educational contexts to illustrate the advantages of quantum computing and the concept of quantum oracles.
          It serves as a foundational example in the study of quantum algorithms, illustrating how quantum mechanics can be harnessed for computational advantage.
+## Superordinates
+| Concept | Description |
+|---|---|
+| [Quantum Algorithm](../../../software-development/quantum-computing/algorithm/quantum-algorithm.md)| designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena. |
+
+## Concept Map
+![Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.png)
+
+[Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.md)
 
 
 ## Navigation

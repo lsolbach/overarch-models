@@ -1,6 +1,9 @@
 # Change Log
 
 ## 2025-08-04
+* added quantum computing algorithms
+
+## 2025-08-04
 * added quantum computing concepts
 
 ## 2025-06-22
