@@ -1,3 +1,3 @@
 # Versions
-* overarch: 0.39.0-SNAPSHOT
-* plantuml: 1.2023.13
+* overarch: 0.40.0-SNAPSHOT
+* plantuml: 1.2025.7
