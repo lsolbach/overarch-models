@@ -1,0 +1,15 @@
+;;;;
+;;;; Views for the ITIL 4 Monitoring and Event Management practice 
+;;;;
+#{;
+  {:el :concept-view
+   :id :software-development.itil4.configuration-managment/concept-view
+   :selection {:namespace-prefix "software-development.itil4.monitoring"
+               :to {:namespace-prefix "software-development.itil4.monitoring"}}
+   :include :related
+   :name "Monitoring and Event Management Concept Map"
+   :title "Concept Map for Monitoring and Event Management"
+   :desc "Shows the concepts of the ITIL 4 practice 'Monitoring and Event Management'"}
+  
+  ;
+  }

@@ -1,0 +1,41 @@
+;;;;
+;;;; Overarch Model for Monitoring and Event Management
+;;;;
+#{;
+  ;;;
+  ;;; Concepts
+  ;;;
+
+  ;; Nodes
+  {:el :concept
+   :id :software-development.itil4.monitoring/log
+   :name "Log"
+   :desc "stores relevant events"}
+
+  {:el :concept
+   :id :software-development.itil4.monitoring/app-log
+   :name "Application Log"
+   :desc "stores relevant application events"}
+
+  {:el :concept
+   :id :software-development.itil4.monitoring/audit-log
+   :name "Audit Log"
+   :desc "stores relevant events regarding the actions of a user, e.g. accessing or changing personally identifiable data"}
+
+  ;; Relations
+  {:el :is-a
+   :id :software-development.itil4.monitoring/app-log-to-log
+   :from :software-development.itil4.monitoring/app-log
+   :to :software-development.itil4.monitoring/log
+   :name "is a"
+   :desc "specialization of"}
+
+  {:el :is-a
+   :id :software-development.itil4.monitoring/audit-log-to-log
+   :from :software-development.itil4.monitoring/audit-log
+   :to :software-development.itil4.monitoring/log
+   :name "is a"
+   :desc "specialization of"}
+
+  ;
+  }
