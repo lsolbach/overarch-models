@@ -90,16 +90,16 @@
     "style=filled fillcolor=black"
 
     (contains? #{:domain-event} (:el e))
-    "style=filled fillcolor=\"#FF7700\""
+    "style=filled fillcolor=\"#ff7700\""
 
     (contains? #{:aggregate} (:el e))
-    style=filled fillcolor=\"#DDDD00\""
+    "style=filled fillcolor=\"#dddd00\""
 
     (contains? #{:policy} (:el e))
-    style=filled fillcolor=\"#7700FF\""
+    "style=filled fillcolor=\"#7700ff\""
 
     (contains? #{:command} (:el e))
-    style=filled fillcolor=\"#88BBFF\""
+    "style=filled fillcolor=\"#88bbff\""
 
     :else
     ""))
