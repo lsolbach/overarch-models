@@ -3,7 +3,7 @@
 ;;;;
 #{;
   {:el :concept-view
-   :id :software-development.itil4.configuration-managment/concept-view
+   :id :software-development.itil4.monitoring/concept-view
    :selection {:namespace-prefix "software-development.itil4.monitoring"
                :to {:namespace-prefix "software-development.itil4.monitoring"}}
    :include :related

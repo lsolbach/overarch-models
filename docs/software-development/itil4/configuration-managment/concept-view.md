@@ -1,28 +1,22 @@
-# Concept Map for Monitoring and Event Management
+# Concept Map for Configuration Management
 
 ## Diagram
-![Concept Map for Monitoring and Event Management](../../../software-development/itil4/configuration-managment/concept-view.png)
+![Concept Map for Configuration Management](../../../software-development/itil4/configuration-managment/concept-view.png)
 
 ## Description
-Shows the concepts of the ITIL 4 practice 'Monitoring and Event Management'
+Shows the concepts of the ITIL 4 practice 'Configuration Management'
 
 ## Concepts
 | Concept | Description |
 |---|---|
-| [Application Log](../../../software-development/itil4/monitoring/app-log.md)| stores relevant application events |
-| [Audit Log](../../../software-development/itil4/monitoring/audit-log.md)| stores relevant events regarding the actions of a user, e.g. accessing or changing personally identifiable data |
-| [Health Metric](../../../software-development/itil4/monitoring/health-metric.md)| measurable value that indicates the health of a system |
-| [Log](../../../software-development/itil4/monitoring/log.md)| stores relevant events |
-| [Metric](../../../software-development/itil4/monitoring/metric.md)| measurable value that indicates the performance or health of a system |
-| [Performance Metric](../../../software-development/itil4/monitoring/performance-metric.md)| measurable value that indicates the performance of a system |
+| [Configuration Item](../../../software-development/itil4/configuration-managment/config-item.md)|  |
+| [Version](../../../software-development/itil4/configuration-managment/version.md)| version identfier of a configuration item |
 
-## Generalizations
+## Features
 | From | Name | To | Description |
 |---|---|---|---|
-| [Application Log](../../../software-development/itil4/monitoring/app-log.md) | is a | [Log](../../../software-development/itil4/monitoring/log.md) | specialization of |
-| [Performance Metric](../../../software-development/itil4/monitoring/performance-metric.md) | is a | [Metric](../../../software-development/itil4/monitoring/metric.md) | specialization of |
-| [Health Metric](../../../software-development/itil4/monitoring/health-metric.md) | is a | [Metric](../../../software-development/itil4/monitoring/metric.md) | specialization of |
-| [Audit Log](../../../software-development/itil4/monitoring/audit-log.md) | is a | [Log](../../../software-development/itil4/monitoring/log.md) | specialization of |
+| [Configuration Item](../../../software-development/itil4/configuration-managment/config-item.md) | has | [Configuration Item](../../../software-development/itil4/configuration-managment/config-item.md) | hierarchical structure |
+| [Configuration Item](../../../software-development/itil4/configuration-managment/config-item.md) | has a | [Version](../../../software-development/itil4/configuration-managment/version.md) | versioned |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

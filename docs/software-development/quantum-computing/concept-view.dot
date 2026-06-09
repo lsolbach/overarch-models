@@ -3,9 +3,9 @@ digraph "General Quantum Computing Concepts" {
   label="General Quantum Computing Concepts"
 
   layout=dot
-software_development_quantum_computing__classical_computer [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Classical Computer</B><BR/><FONT POINT-SIZE="10"><I>uses classical bits to process<BR/>information. </I></FONT>>]
-software_development_quantum_computing__quantum_computer [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Quantum Computer</B><BR/><FONT POINT-SIZE="10"><I>uses quantum bits (qubits) to perform<BR/>computations based on quantum mechanics. </I></FONT>>]
-software_development_quantum_computing__computer [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Computer</B><BR/><FONT POINT-SIZE="10"><I>processes data and executes algorithms. </I></FONT>>]
+software_development_quantum_computing__classical_computer [shape=box style=filled fillcolor="#dddddd" label=<<B>Classical Computer</B><BR/><FONT POINT-SIZE="10"><I>uses classical bits to process<BR/>information. </I></FONT>>]
+software_development_quantum_computing__quantum_computer [shape=box style=filled fillcolor="#dddddd" label=<<B>Quantum Computer</B><BR/><FONT POINT-SIZE="10"><I>uses quantum bits (qubits) to perform<BR/>computations based on quantum mechanics. </I></FONT>>]
+software_development_quantum_computing__computer [shape=box style=filled fillcolor="#dddddd" label=<<B>Computer</B><BR/><FONT POINT-SIZE="10"><I>processes data and executes algorithms. </I></FONT>>]
  
 software_development_quantum_computing__computer -> software_development_quantum_computing__classical_computer [label=<is a<BR/><FONT POINT-SIZE="10"><I>type of </I></FONT>>]
 software_development_quantum_computing__computer -> software_development_quantum_computing__quantum_computer [label=<is a<BR/><FONT POINT-SIZE="10"><I>type of </I></FONT>>]

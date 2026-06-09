@@ -4,6 +4,11 @@
 records the sequence of events or interactions in a system
 
 
+## Concept Map
+![Concept Map for Monitoring and Event Management](../../../software-development/itil4/monitoring/concept-view.png)
+
+[Concept Map for Monitoring and Event Management](../../../software-development/itil4/monitoring/concept-view.md)
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

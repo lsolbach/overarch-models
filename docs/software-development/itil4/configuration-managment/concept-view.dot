@@ -1,19 +1,13 @@
-digraph "Concept Map for Monitoring and Event Management" {
+digraph "Concept Map for Configuration Management" {
   labelloc= "t"
-  label="Concept Map for Monitoring and Event Management"
+  label="Concept Map for Configuration Management"
 
   layout=dot
-software_development_itil4_monitoring__performance_metric [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Performance Metric</B><BR/><FONT POINT-SIZE="10"><I>measurable value that indicates the<BR/>performance of a system </I></FONT>>]
-software_development_itil4_monitoring__metric [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Metric</B><BR/><FONT POINT-SIZE="10"><I>measurable value that indicates the<BR/>performance or health of a system </I></FONT>>]
-software_development_itil4_monitoring__health_metric [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Health Metric</B><BR/><FONT POINT-SIZE="10"><I>measurable value that indicates the<BR/>health of a system </I></FONT>>]
-software_development_itil4_monitoring__app_log [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Application Log</B><BR/><FONT POINT-SIZE="10"><I>stores relevant application events </I></FONT>>]
-software_development_itil4_monitoring__audit_log [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Audit Log</B><BR/><FONT POINT-SIZE="10"><I>stores relevant events regarding the<BR/>actions of a user, e.g. accessing or<BR/>changing personally identifiable data </I></FONT>>]
-software_development_itil4_monitoring__log [shape=ellipse style=filled fillcolor="#dddddd" label=<<B>Log</B><BR/><FONT POINT-SIZE="10"><I>stores relevant events </I></FONT>>]
+software_development_itil4_configuration_managment__config_item [shape=box style=filled fillcolor="#dddddd" label=<<B>Configuration Item</B><BR/><FONT POINT-SIZE="10"><I> </I></FONT>>]
+software_development_itil4_configuration_managment__version [shape=box style=filled fillcolor="#dddddd" label=<<B>Version</B><BR/><FONT POINT-SIZE="10"><I>version identfier of a configuration<BR/>item </I></FONT>>]
  
-software_development_itil4_monitoring__app_log -> software_development_itil4_monitoring__log [label=<is a<BR/><FONT POINT-SIZE="10"><I>specialization of </I></FONT>>]
-software_development_itil4_monitoring__performance_metric -> software_development_itil4_monitoring__metric [label=<is a<BR/><FONT POINT-SIZE="10"><I>specialization of </I></FONT>>]
-software_development_itil4_monitoring__health_metric -> software_development_itil4_monitoring__metric [label=<is a<BR/><FONT POINT-SIZE="10"><I>specialization of </I></FONT>>]
-software_development_itil4_monitoring__audit_log -> software_development_itil4_monitoring__log [label=<is a<BR/><FONT POINT-SIZE="10"><I>specialization of </I></FONT>>]
+software_development_itil4_configuration_managment__config_item -> software_development_itil4_configuration_managment__version [label=<has a<BR/><FONT POINT-SIZE="10"><I>versioned </I></FONT>>]
+software_development_itil4_configuration_managment__config_item -> software_development_itil4_configuration_managment__config_item [label=<has<BR/><FONT POINT-SIZE="10"><I>hierarchical structure </I></FONT>>]
  
 }
 

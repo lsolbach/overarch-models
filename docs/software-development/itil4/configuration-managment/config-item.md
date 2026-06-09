@@ -14,9 +14,9 @@
 | [Configuration Item](../../../software-development/itil4/configuration-managment/config-item.md)|  |
 
 ## Concept Map
-![Concept Map for Monitoring and Event Management](../../../software-development/itil4/configuration-managment/concept-view.png)
+![Concept Map for Configuration Management](../../../software-development/itil4/configuration-managment/concept-view.png)
 
-[Concept Map for Monitoring and Event Management](../../../software-development/itil4/configuration-managment/concept-view.md)
+[Concept Map for Configuration Management](../../../software-development/itil4/configuration-managment/concept-view.md)
 
 
 ## Navigation

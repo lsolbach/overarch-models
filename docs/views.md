@@ -15,7 +15,7 @@
 | [DORA Concept View](./software-development/dora/concept-view.md) | Shows a concept map of the DevOps Research and Assessment (DORA) State of DevOps model |
 | [Fast Feedback Concept View](./software-development/dora/capability/fast-feedback/concept-view.md) | Shows the concepts related to fast feedback capabilities and their relationships. |
 | [Fast Flow Concept View](./software-development/dora/capability/fast-flow/concept-view.md) | Shows the concepts related to fast flow capabilities and their relationships. |
-| [Monitoring and Event Management Concept Map](./software-development/itil4/configuration-managment/concept-view.md) | Shows the concepts of the ITIL 4 practice 'Monitoring and Event Management' |
+| [Monitoring and Event Management Concept Map](./software-development/itil4/monitoring/concept-view.md) | Shows the concepts of the ITIL 4 practice 'Monitoring and Event Management' |
 | [Twelve Factor App Concept View](./software-development/twelve-factor-app/concept-view.md) | shows the concepts of the Twelve Factor App and their relationships |
 | [DDD Building Blocks Concept View](./software-development/domain-driven-design/building-blocks/concept-view.md) | Shows the building block patterns and their relationships. |
 | [DDD Context Mapping for Strategic Design Concept View](./software-development/domain-driven-design/context-mapping/concept-view.md) | Shows the patterns of context mapping for strategic design and their relationships. |

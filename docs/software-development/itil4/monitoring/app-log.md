@@ -8,6 +8,11 @@ stores relevant application events
 |---|---|
 | [Log](../../../software-development/itil4/monitoring/log.md)| stores relevant events |
 
+## Concept Map
+![Concept Map for Monitoring and Event Management](../../../software-development/itil4/monitoring/concept-view.png)
+
+[Concept Map for Monitoring and Event Management](../../../software-development/itil4/monitoring/concept-view.md)
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)
