@@ -6,6 +6,10 @@
 ;;;;  :per-element true
 ;;;;  :id-as-name  true
 ;;;;
+
+(require '[lib.text :as t])
+(require '[lib.graphviz :as gv])
+
 (defn element-shape
   [e]
   (cond
@@ -90,16 +94,16 @@
     "style=filled fillcolor=black"
 
     (contains? #{:domain-event} (:el e))
-    "style=filled fillcolor=\"#ff7700\""
+    "style=filled fillcolor=\"#FF7700\""
 
     (contains? #{:aggregate} (:el e))
-    "style=filled fillcolor=\"#dddd00\""
+    "style=filled fillcolor=\"#DDDD00\""
 
     (contains? #{:policy} (:el e))
-    "style=filled fillcolor=\"#7700ff\""
+    "style=filled fillcolor=\"#7700FF\""
 
     (contains? #{:command} (:el e))
-    "style=filled fillcolor=\"#88bbff\""
+    "style=filled fillcolor=\"#88BBFF\""
 
     :else
     ""))
