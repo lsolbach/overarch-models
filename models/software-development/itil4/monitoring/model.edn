@@ -1,0 +1,75 @@
+;;;;
+;;;; Overarch Model for Monitoring and Event Management
+;;;;
+#{;
+  ;;;
+  ;;; Concepts
+  ;;;
+
+  ;; Nodes
+  {:el :concept
+   :id :software-development.itil4.monitoring/log
+   :name "Log"
+   :desc "stores relevant events"}
+
+  {:el :concept
+   :id :software-development.itil4.monitoring/app-log
+   :name "Application Log"
+   :desc "stores relevant application events"}
+
+  {:el :concept
+   :id :software-development.itil4.monitoring/audit-log
+   :name "Audit Log"
+   :desc "stores relevant events regarding the actions of a user, e.g. accessing or changing personally identifiable data"}
+
+  {:el :concept
+   :id :software-development.itil4.monitoring/metric
+   :name "Metric"
+   :desc "measurable value that indicates the performance or health of a system"}
+
+  {:el :concept
+   :id :software-development.itil4.monitoring/performance-metric
+   :name "Performance Metric"
+   :desc "measurable value that indicates the performance of a system"}
+
+  {:el :concept
+   :id :software-development.itil4.monitoring/health-metric
+   :name "Health Metric"
+   :desc "measurable value that indicates the health of a system"}
+
+  {:el :concept
+   :id :software-development.itil4.monitoring/trace
+   :name "Trace"
+   :desc "records the sequence of events or interactions in a system"}
+
+  ;; Relations
+  {:el :is-a
+   :id :software-development.itil4.monitoring/app-log-to-log
+   :from :software-development.itil4.monitoring/app-log
+   :to :software-development.itil4.monitoring/log
+   :name "is a"
+   :desc "specialization of"}
+
+  {:el :is-a
+   :id :software-development.itil4.monitoring/audit-log-to-log
+   :from :software-development.itil4.monitoring/audit-log
+   :to :software-development.itil4.monitoring/log
+   :name "is a"
+   :desc "specialization of"}
+
+  {:el :is-a
+   :id :software-development.itil4.monitoring/performance-metric-to-metric
+   :from :software-development.itil4.monitoring/performance-metric
+   :to :software-development.itil4.monitoring/metric
+   :name "is a"
+   :desc "specialization of"}
+
+  {:el :is-a
+   :id :software-development.itil4.monitoring/health-metric-to-metric
+   :from :software-development.itil4.monitoring/health-metric
+   :to :software-development.itil4.monitoring/metric
+   :name "is a"
+   :desc "specialization of"}
+  
+  ;
+  }

@@ -1,0 +1,34 @@
+;;;;
+;;;; Model for the ITIL 4 Configuration Management practice
+;;;; 
+#{;
+  ;;;
+  ;;; Concepts
+  ;;;
+
+  ;; Nodes
+  {:el :concept
+   :id :software-development.itil4.configuration-managment/config-item
+   :name "Configuration Item"
+   :desc ""}
+
+  {:el :concept
+   :id :software-development.itil4.configuration-managment/version
+   :name "Version"
+   :desc "version identfier of a configuration item"}
+
+  ;; Relations
+  {:el :has
+   :id :software-development.itil4.configuration-managment/config-item-has-version
+   :from :software-development.itil4.configuration-managment/config-item
+   :to :software-development.itil4.configuration-managment/version
+   :name "has a"
+   :desc "versioned"}
+
+  {:el :has
+   :id :software-development.itil4.configuration-managment/config-item-has-config-item
+   :from :software-development.itil4.configuration-managment/config-item
+   :to :software-development.itil4.configuration-managment/config-item
+   :name "has"
+   :desc "hierarchical structure"}
+  }

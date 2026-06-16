@@ -3,7 +3,6 @@
 ;;;;
 #{;
 
-
   ;; Nodes
   {:el :concept
    :id :software-development.quantum-computing/computer

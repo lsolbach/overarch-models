@@ -7,6 +7,9 @@
 ;;;;  :id-as-name  true
 ;;;;
 
+(require '[lib.text :as t])
+(require '[lib.markdown :as md])
+
 ;;;
 ;;; definitions
 ;;;
@@ -15,25 +18,13 @@
   "Maps an element type to a display name."
   {:person   "Person/Role"
    :use-case "Use Case"
-   :context-boundary "Subdomain/Bounded Context"})
+   :context-boundary "Subdomain/Bounded Context"
+   :subject "Subject"
+   :type "Type"})
 
 ;;;
 ;;; functions
 ;;;
-
-;;
-;; model navigation functions
-;; 
-
-(defn referrer
-  "Resolves the referrer node (:from) of the `relation` in the `model`."
-  [model relation]
-  (m/resolve-element model (:from relation)))
-
-(defn referred
-  "Resolves the referred node (:to) of the `relation` in the `model`."
-  [model relation]
-  (m/resolve-element model (:to relation)))
 
 ;;
 ;; markdown generation functions
@@ -74,7 +65,7 @@
 (defn relation-description-table-row
   "Generates the markdown for a description table row for the `relation` in the `model`."
   [node rel]
-%>| <%= (md/relative-element-link node (referrer model rel)) %> | <%= (:name rel) %> | <%= (md/relative-element-link node (referred model rel)) %> | <%= (t/single-line (:desc rel)) %> |
+%>| <%= (md/relative-element-link node (m/referrer model rel)) %> | <%= (:name rel) %> | <%= (md/relative-element-link node (m/referred model rel)) %> | <%= (t/single-line (:desc rel)) %> |
 <%
   )
 
@@ -90,7 +81,7 @@
 (defn technical-relation-description-table-row
   "Generates the markdown for a description table row for the technical `relation` in the `model`."
   [node rel]
-%>| <%= (md/relative-element-link node (referrer model rel)) %> | <%= (:name rel) %> | <%= (md/relative-element-link node (referred model rel)) %> | <%= (str/join ", " (:tech rel)) %> | <%= (t/single-line (:desc rel)) %> |
+%>| <%= (md/relative-element-link node (m/referrer model rel)) %> | <%= (:name rel) %> | <%= (md/relative-element-link node (m/referred model rel)) %> | <%= (str/join ", " (:tech rel)) %> | <%= (t/single-line (:desc rel)) %> |
 <%
   )
 
@@ -122,6 +113,10 @@
       requires (m/referring-nodes model e {:el :required-for})
       role-in (m/referred-nodes model e {:el :role-in})
       roles (m/referring-nodes model e {:el :role-in})
+      instance-of (m/referred-nodes model e {:el :instance-of})
+      instances (m/referring-nodes model e {:el :instance-of})
+      version-of (m/referred-nodes model e {:el :version-of})
+      versions (m/referring-nodes model e {:el :version-of})
       ]
 %>
 # <%= (:name e) %> (<%= (m/element-type e) %>)
@@ -531,6 +526,38 @@
     (node-description-table e :process processes))
 
 ;;
+;; artifacts 
+;;
+
+  (when-let [artifacts (seq (m/referring-nodes model e {:el :artifact-of}))]
+%>## Artifacts
+<%  
+    (node-description-table e :artifact artifacts)
+  )
+
+  (when-let [subject (seq (m/referred-nodes model e {:el :artifact-of}))]
+%>## Artifact of
+<%  
+    (node-description-table e :subject subject)
+  )
+
+;;
+;; versions
+;;
+
+  (when-let [versions (seq (m/referring-nodes model e {:el :version-of}))]
+%>## Versions
+<%  
+    (node-description-table e :version versions)
+  )
+
+  (when-let [artifacts (seq (m/referred-nodes model e {:el :version-of}))]
+%>## Version of
+<%  
+    (node-description-table e :artifact artifacts)
+  )
+
+;;
 ;; architecture
 ;;
 
@@ -583,6 +610,22 @@
 %>## Outgoing Dataflows
 <%
     (technical-relation-description-table model e dataflows))
+
+;;
+;; instances
+;;
+
+  (when-let [instances (seq (m/referring-nodes model e {:el :instance-of}))]
+%>## Instances
+<%  
+    (node-description-table e :version instances)
+  )
+
+  (when-let [subject (seq (m/referred-nodes model e {:el :instance-of}))]
+%>## Instance of
+<%  
+    (node-description-table e :type subject)
+  )
 
 ;;
 ;; deployment

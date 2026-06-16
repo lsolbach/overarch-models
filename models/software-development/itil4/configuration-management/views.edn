@@ -1,0 +1,15 @@
+;;;;
+;;;; Views for the ITIL 4 Configuration Management practice 
+;;;;
+#{;
+  {:el :concept-view
+   :id :software-development.itil4.configuration-managment/concept-view
+   :selection {:namespace-prefix "software-development.itil4.configuration-managment"
+               :to {:namespace-prefix "software-development.itil4.configuration-managment"}}
+   :include :related
+   :name "Configuration Management Concept Map"
+   :title "Concept Map for Configuration Management"
+   :desc "Shows the concepts of the ITIL 4 practice 'Configuration Management'"}
+
+  ;
+  }
