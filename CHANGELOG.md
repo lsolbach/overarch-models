@@ -1,5 +1,10 @@
 # Change Log
 
+## 2026-06-17
+* updated overarch
+* updated templates
+* added some ITIL4 concepts
+
 ## 2025-08-04
 * added quantum computing algorithms
 
