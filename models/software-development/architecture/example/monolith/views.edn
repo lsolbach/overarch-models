@@ -37,4 +37,13 @@
    :title "Deployment view for the Online Shop Monolith example"
    :desc "Shows the deployment of the Online Shop Monolith example"}
   ;
+
+  {:el :system-structure-view
+   :id :software-development.architecture.example.monolith/system-structure-view
+   :selection {:id :software-development.architecture.example.monolith/online-shop-system}
+   :name "Online Shop Monolith Example System Structure View"
+   :title "System Structure View for the Online Shop Monolith example"
+   :desc "Shows the structure of the Online Shop Monolith example"}
+  
+  ;
   }
