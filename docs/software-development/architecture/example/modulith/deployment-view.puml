@@ -5,6 +5,7 @@
 !include <azure/AzureCommon>
 !include <azure/AzureC4Integration>
 !include <tupadr3/common>
+!include <tupadr3/devicons2/angularjs>
 
 
 
@@ -34,6 +35,12 @@ Node(softwareDevelopment_architecture_example_modulith_dataCenter, "Data Center"
     }
   }
 }
+Container(softwareDevelopment_architecture_example_modulith_onlineShopFrontend, "Online Shop Frontend Application", $techn="AngularJS", $sprite="angularjs")
+ContainerDb(softwareDevelopment_architecture_example_modulith_onlineShopDb, "Online Shop Database", $descr="Stores products, orders, payments, etc.", $techn="DB/2")
+Container(softwareDevelopment_architecture_example_modulith_onlineShopBackend, "Online Shop Backend Application", $techn="Java EE")
+
+
 Rel(softwareDevelopment_architecture_example_modulith_perimeterNetwork, softwareDevelopment_architecture_example_modulith_internalNetwork, "links to", $descr="The Perimeter Network links to the Internal Network via firewall.")
+
 SHOW_LEGEND()
 @enduml
