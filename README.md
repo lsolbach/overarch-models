@@ -32,6 +32,8 @@ the model path for changes. When changed files are detected, the generation of
 the artifacts will be triggered. This script does not generate any images, but you
 can use the preview features/plugins of your editor or IDE to see the images.
 
+On Windows the *git bash* can be used to execute the scripts. 
+
 ## Copyright and Licenses
 The model files are © 2024 Ludger Solbach.
 Licensed under [CC BY](https://creativecommons.org/licenses/by/4.0/).
