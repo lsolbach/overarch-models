@@ -6,6 +6,13 @@
 ## Description
 Shows the deployment of the Online Shop Monolith example
 
+## Containers
+| Container | Description |
+|---|---|
+| [Online Shop Backend Application](../../../../software-development/architecture/example/monolith/online-shop-backend.md)|  |
+| [Online Shop Database](../../../../software-development/architecture/example/monolith/online-shop-db.md)|  |
+| [Online Shop Frontend Application](../../../../software-development/architecture/example/monolith/online-shop-frontend.md)|  |
+
 ## Deployment Nodes
 | Node | Description |
 |---|---|
@@ -18,6 +25,13 @@ Shows the deployment of the Online Shop Monolith example
 | [Perimeter Network](../../../../software-development/architecture/example/monolith/perimeter-network.md)|  |
 | [Web Server](../../../../software-development/architecture/example/monolith/web-server.md)|  |
 | [Web VM 1](../../../../software-development/architecture/example/monolith/web-vm1.md)| Web Server Virtual Machine 1 |
+
+## Deployed Containers
+| From | Name | To | Description |
+|---|---|---|---|
+| [Online Shop Database](../../../../software-development/architecture/example/monolith/online-shop-db.md) | deployed on | [Database Server](../../../../software-development/architecture/example/monolith/db-server.md) | The Online Shop Database is deployed on the Database Server |
+| [Online Shop Backend Application](../../../../software-development/architecture/example/monolith/online-shop-backend.md) | deployed on | [Application Server](../../../../software-development/architecture/example/monolith/application-server.md) | The Online Shop Backend is deployed on the Application Server |
+| [Online Shop Frontend Application](../../../../software-development/architecture/example/monolith/online-shop-frontend.md) | deployed on | [Web Server](../../../../software-development/architecture/example/monolith/web-server.md) | The Online Shop Frontend is deployed on the Web Server |
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

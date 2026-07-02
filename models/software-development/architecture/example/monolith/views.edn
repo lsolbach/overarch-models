@@ -29,10 +29,8 @@
 
   {:el :deployment-view
    :id :software-development.architecture.example.monolith/deployment-view
-   :selection [{:namespace-prefix "software-development.architecture.example.monolith"
-                :els #{:node}}
-               {:namespace-prefix "software-development.architecture.example.monolith"
-                :els #{:link}}]
+   :selection [{:namespace-prefix "software-development.architecture.example.monolith"}
+               {:namespace-prefix "software-development.architecture.example.monolith"}]
    :name "Online Shop Monolith Example Deployment View"
    :title "Deployment view for the Online Shop Monolith example"
    :desc "Shows the deployment of the Online Shop Monolith example"}

@@ -2,7 +2,7 @@
 ;;;; Views for the Microservices Blueprint Model
 ;;;;
 #{;
-  
+
   ;;;
   ;;; Architecture Views
   ;;;
@@ -99,8 +99,16 @@ This is also called a 'Pipes and Filters' architecture."
         {:ref :software-development.architecture.example.microservices/shipping-service-subscribes-to-payment-topic}
         {:ref :software-development.architecture.example.microservices/notification-service-subscribes-to-payment-topic :direction :left}
         {:ref :software-development.architecture.example.microservices/shipping-service-publishes-to-shipping-topic :direction :right}
-        {:ref :software-development.architecture.example.microservices/notification-service-subscribes-to-shipping-topic :direction :right}
-        ]}
+        {:ref :software-development.architecture.example.microservices/notification-service-subscribes-to-shipping-topic :direction :right}]}
+
+  #_{:el :deployment-view
+   :id :software-development.architecture.example.microservices/deployment-view
+   :selection [{:namespace-prefix "software-development.architecture.example.microservices"}
+               {:namespace-prefix "software-development.architecture.example.microservices"}]
+   :name "Online Shop Microservices Example Deployment View"
+   :title "Deployment View for the Online Shop microservices example"
+   :desc "Shows the deployment of the Online Shop microservices example"}
+
 
   ;;;
   ;;; Advanced Examples
