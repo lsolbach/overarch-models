@@ -1,0 +1,62 @@
+;;;;
+;;;; Overarch model for regulations in the European Union (EU)
+;;;;
+#{;
+  ;;;
+  ;;; 
+  ;;;
+
+  ;; Nodes
+  {:el :regulation
+   :id :regulation.eu/dora
+   :name "DORA"
+   :desc "The Digital Operational Resilience Act (DORA) aims to strengthen the digital operational resilience of financial entities."
+   :doc "The Digital Operational Resilience Act (DORA) is a regulation that
+         aims to strengthen the digital operational resilience of financial
+         entities. It establishes a comprehensive framework for the management
+         of ICT risks, including requirements for ICT risk management, incident
+         reporting, digital operational resilience testing, and information
+         sharing. DORA applies to a wide range of financial entities, including
+         banks, insurance companies, investment firms, and payment service
+         providers."}
+
+  {:el :regulation
+   :id :regulation.eu/gdpr
+   :name "GDPR"
+   :desc "The General Data Protection Regulation (GDPR) aims to protect the privacy and personal data of individuals."
+   :doc "The General Data Protection Regulation (GDPR) is a regulation that
+         aims to protect the privacy and personal data of individuals in the
+         European Union. It establishes rules for the collection, processing,
+         and storage of personal data, and grants individuals certain rights
+         regarding their personal data. The GDPR applies to organizations that
+         process personal data of individuals in the EU, regardless of where
+         the organization is located."}
+
+  {:el :regulation
+   :id :regulation.eu/cloud-act
+   :name "Cloud Act"
+   :desc "The Clarifying Lawful Overseas Use of Data Act (Cloud Act) aims to clarify the legal framework for cross-border data access and sharing."
+   :doc "The Clarifying Lawful Overseas Use of Data Act (Cloud Act) is a
+         regulation that aims to clarify the legal framework for cross-border
+         data access and sharing. It establishes rules for the access and
+         disclosure of data stored by service providers in foreign countries,
+         and provides a legal basis for law enforcement agencies to request
+         data from service providers. The Cloud Act applies to service
+         providers that store data in the United States, as well as to foreign
+         service providers that have a substantial connection to the United
+         States."}
+
+  {:el :regulation
+   :id :regulation.eu/ai-act
+   :name "AI Act"
+   :desc "The AI Act aims to establish a legal framework for artificial intelligence (AI)."
+   :doc "The AI Act is a proposed regulation by the European Commission that
+         aims to establish a legal framework for artificial intelligence (AI)
+         in the European Union. The regulation seeks to ensure that AI systems
+         are safe, transparent, and respect fundamental rights. It introduces a
+         risk-based approach to AI regulation, categorizing AI systems into
+         different risk levels and imposing corresponding obligations on
+         providers and users of AI systems."}
+
+  ;
+  }

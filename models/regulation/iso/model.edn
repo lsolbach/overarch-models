@@ -1,0 +1,20 @@
+;;;;
+;;;; Overarch model for regulations of the International Organization for Standardization (ISO)
+;;;;
+#{;
+  ;;;
+  ;;;
+  ;;;
+  {:el :regulation
+   :id :regulation.iso/iso-iec-27001
+   :name "ISO/IEC 27001"
+   :desc "an international standard for information security management systems (ISMS)."
+   :doc "ISO/IEC 27001 is an international standard that provides a framework
+         for establishing, implementing, maintaining, and continually improving
+         an information security management system (ISMS). It specifies the
+         requirements for managing sensitive company information so that it
+         remains secure. The standard includes requirements for risk
+         assessment, security controls, and management processes to ensure the
+         confidentiality, integrity, and availability of information."}
+  
+  }
