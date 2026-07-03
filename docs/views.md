@@ -52,6 +52,10 @@
 |---|---|
 | [Online Shop Modulith Example Component View](./software-development/architecture/example/modulith/component-view.md) | Shows the components of the Online Shop Modulith example and their relations |
 | [Online Shop Monolith Example Component View](./software-development/architecture/example/monolith/component-view.md) | Shows the components of the Online Shop Monolith example and their relations |
+## System Structure Views
+| Title | Description |
+|---|---|
+| [Online Shop Monolith Example System Structure View](./software-development/architecture/example/monolith/system-structure-view.md) | Shows the structure of the Online Shop Monolith example |
 ## Code Views
 | Title | Description |
 |---|---|
