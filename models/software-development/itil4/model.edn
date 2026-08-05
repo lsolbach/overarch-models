@@ -1,0 +1,345 @@
+;;;;
+;;;; Model for ITIL 4
+;;;;
+#{;
+
+  ;;;
+  ;;; Concepts
+  ;;;
+
+  ;; Nodes
+  {:el :concept
+   :id :software-development.itil4/itil4
+   :name "ITIL 4"
+   :desc "ITIL (a.k.a Information Technology Infrastructure Library) is a framework with a set of practices (formerly processes) for information technology (IT) activities such as IT service management (ITSM) and IT asset management (ITAM) that focus on aligning IT services with the needs of a business."
+   :tags #{"itil4"}}
+
+  {:el :concept
+   :id :software-development.itil4/service-value-system
+   :name "Service Value System"
+   :desc "The ITIL service value system describes how all the components and activities of the organization work together as a system to enable value creation. Each organization’s service value system has interfaces with other organizations, forming an ecosystem that can, in turn, facilitate value for those organizations, their customers, and other stakeholders."
+   :tags #{"itil4"}}
+
+  {:el :concept
+   :id :software-development.itil4/service-value-chain
+   :name "Service Value Chain"
+   :desc "The central element of the service value system is the service value chain, an operating model which outlines the key activities required to respond to demand and facilitate value realization through the creation and management of products and services."
+   :tags #{"itil4"}}
+
+  {:el :concept
+   :id :software-development.itil4/governance
+   :name "Governance"
+   :desc ""
+   :tags #{"itil4"}}
+
+  {:el :concept
+   :id :software-development.itil4/guiding-principles
+   :name "Guiding Principles"
+   :desc ""
+   :tags #{"itil4" "guiding principles"}}
+
+  {:el :concept
+   :id :software-development.itil4/focus-on-value-principle
+   :name "Focus on value"
+   :desc ""
+   :tags #{"itil4" "guiding principles"}}
+
+  {:el :concept
+   :id :software-development.itil4/start-where-you-are-principle
+   :name "Start where you are"
+   :desc ""
+   :tags #{"itil4" "guiding principles"}}
+
+  {:el :concept
+   :id :software-development.itil4/progress-iteratively-with-feedback-principle
+   :name "Progress iteratively with feedback"
+   :desc ""
+   :tags #{"itil4" "guiding principles"}}
+
+  {:el :concept
+   :id :software-development.itil4/collaborate-and-promote-visibility-principle
+   :name "Collaborate and promote visibility"
+   :desc ""
+   :tags #{"itil4" "guiding principles"}}
+
+  {:el :concept
+   :id :software-development.itil4/think-and-work-holistically-principle
+   :name "Think and work holistically"
+   :desc ""
+   :tags #{"itil4" "guiding principles"}}
+
+  {:el :concept
+   :id :software-development.itil4/keep-it-simple-and-practical-principle
+   :name "Keep it simple and practical"
+   :desc ""
+   :tags #{"itil4" "guiding principles"}}
+
+  {:el :concept
+   :id :software-development.itil4/optimize-and-automate-principle
+   :name "Optimize and automate"
+   :desc ""
+   :tags #{"itil4" "guiding principles"}}
+
+  {:el :concept
+   :id :software-development.itil4/continual-improvement
+   :name "Continual Improvement"
+   :desc ""
+   :tags #{"itil4"}}
+
+  {:el :concept
+   :id :software-development.itil4/management-practices
+   :name "Management Practices"
+   :desc "In ITIL, a management practice is a set of organizational resources designed for performing work or accomplishing an objective."
+   :tags #{"itil4" "management"}}
+
+  {:el :concept
+   :id :software-development.itil4/general-management-practices
+   :name "General Management Practices"
+   :desc "General management practices have been adopted and adapted for service management from general business management domains."
+   :tags #{"itil4" "general management"}}
+
+  {:el :concept
+   :id :software-development.itil4/service-management-practices
+   :name "Service Management Practices"
+   :desc "Service management practices have been developed in service management and ITSM industries."
+   :tags #{"itil4" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/technical-management-practices
+   :name "Technical Management Practices"
+   :desc "Practices to support IT operations and infrastructure."
+   :tags #{"itil4" "technical management"}}
+
+  {:el :concept
+   :id :software-development.itil4/architecture-management-practice
+   :name "Architecture Management"
+   :desc "Ensure the organization’s architecture supports strategy and enables change."
+   :tags #{"itil4" "practice" "general management"}}
+
+  {:el :concept
+   :id :software-development.itil4/continual-improvement-practice
+   :name "Continual Improvement"
+   :desc "Align practices and services with changing business needs through ongoing improvement."
+   :tags #{"itil4" "practice" "general management"}}
+
+  {:el :concept
+   :id :software-development.itil4/information-security-management-practice
+   :name "Information Security Management"
+   :desc "Protect information by ensuring confidentiality, integrity, and availability."
+   :tags #{"itil4" "practice" "general management"}}
+
+  {:el :concept
+   :id :software-development.itil4/knowledge-management-practice
+   :name "Knowledge Management"
+   :desc "Maintain and improve the effective use of information and knowledge."
+   :tags #{"itil4" "practice" "general management"}}
+
+  {:el :concept
+   :id :software-development.itil4/measurement-and-reporting-practice
+   :name "Measurement and Reporting"
+   :desc "Support decision-making through data collection, analysis, and reporting."
+   :tags #{"itil4" "practice" "general management"}}
+
+  {:el :concept
+   :id :software-development.itil4/organizational-change-management-practice
+   :name "Organizational Change Management"
+   :desc "Ensure changes are smoothly implemented with minimal disruption."
+   :tags #{"itil4" "practice" "general management"}}
+
+  {:el :concept
+   :id :software-development.itil4/portfolio-management-practice
+   :name "Portfolio Management"
+   :desc "Ensure the organization has the right mix of programs, projects, and services."
+   :tags #{"itil4" "practice" "general management"}}
+
+  {:el :concept
+   :id :software-development.itil4/project-management-practice
+   :name "Project Management"
+   :desc "Ensure projects are delivered successfully, on time, and within budget."
+   :tags #{"itil4" "practice" "general management"}}
+
+  {:el :concept
+   :id :software-development.itil4/relationship-management-practice
+   :name "Relationship Management"
+   :desc "Build and nurture relationships with stakeholders."
+   :tags #{"itil4" "practice" "general management"}}
+
+  {:el :concept
+   :id :software-development.itil4/risk-management-practice
+   :name "Risk Management"
+   :desc "Identify, assess, and control risks."
+   :tags #{"itil4" "practice" "general management"}}
+
+  {:el :concept
+   :id :software-development.itil4/service-financial-management-practice
+   :name "Service Financial Management"
+   :desc "Support financial planning and management of service costs."
+   :tags #{"itil4" "practice" "general management"}}
+
+  {:el :concept
+   :id :software-development.itil4/strategy-management-practice
+   :name "Strategy Management"
+   :desc "Define and maintain the organization’s direction and priorities."
+   :tags #{"itil4" "practice" "general management"}}
+
+  {:el :concept
+   :id :software-development.itil4/supplier-management-practice
+   :name "Supplier Management"
+   :desc "Ensure suppliers deliver value and meet contractual commitments."
+   :tags #{"itil4" "practice" "general management"}}
+
+  {:el :concept
+   :id :software-development.itil4/workforce-and-talent-management-practice
+   :name "Workforce and Talent Management"
+   :desc "Ensure the organization has the right people with the right skills."
+   :tags #{"itil4" "practice" "general management"}}
+
+  {:el :concept
+   :id :software-development.itil4/availability-management-practice
+   :name "Availability Management"
+   :desc "Ensure services meet agreed availability targets."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/business-analysis-practice
+   :name "Business Analysis"
+   :desc "Analyze business needs and recommend solutions."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/capacity-and-performance-management-practice
+   :name "Capacity and Performance Management"
+   :desc "Ensure services perform efficiently and meet demand."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/change-enablement-practice
+   :name "Change Enablement"
+   :desc "Maximize successful changes while minimizing risk."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/incident-management-practice
+   :name "Incident Management"
+   :desc "Restore normal service as quickly as possible."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/it-asset-management-practice
+   :name "IT Asset Management"
+   :desc "Plan and manage the lifecycle of IT assets."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/monitoring-and-event-management-practice
+   :name "Monitoring and Event Management"
+   :desc "Observe services and respond to events."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/problem-management-practice
+   :name "Problem Management"
+   :desc "Reduce the likelihood and impact of incidents by identifying root causes."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/release-management-practice
+   :name "Release Management"
+   :desc "Make new and changed services available for use."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/service-catalog-management-practice
+   :name "Service Catalog Management"
+   :desc "Provide a single source of consistent service information."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/service-configuration-management-practice
+   :name "Service Configuration Management"
+   :desc "Ensure accurate information about configuration items."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/service-continuity-management-practice
+   :name "Service Continuity Management"
+   :desc "Ensure service availability during major disruptions."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/service-design-practice
+   :name "Service Design"
+   :desc "Design services that meet business and user requirements."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/service-desk-practice
+   :name "Service Desk"
+   :desc "Provide a single point of contact for users."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/service-level-management-practice
+   :name "Service Level Management"
+   :desc "Set clear service targets and ensure they are met."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/service-request-management-practice
+   :name "Service Request Management"
+   :desc "Handle user requests effectively and efficiently."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/service-validation-and-testing-practice
+   :name "Service Validation and Testing"
+   :desc "Ensure services meet requirements and are fit for use."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/deployment-management-practice
+   :name "Deployment Management"
+   :desc "Move new or changed components into live environments."
+   :tags #{"itil4" "practice" "technical management"}}
+
+  {:el :concept
+   :id :software-development.itil4/infrastructure-and-platform-management-practice
+   :name "Infrastructure and Platform Management"
+   :desc "Oversee infrastructure to support services."
+   :tags #{"itil4" "practice" "service management"}}
+
+  {:el :concept
+   :id :software-development.itil4/software-development-and-management-practice
+   :name "Software Development and Management"
+   :desc "Ensure applications meet stakeholder needs and are maintained."
+   :tags #{"itil4" "practice" "technical management"}}
+
+  ;; Relationships
+  ;; TODO specify
+  {:el :has
+   :from :software-development.itil4/itil4
+   :to :software-development.itil4/service-value-system
+   :name "has"}
+
+  {:el :has
+   :from :software-development.itil4/itil4
+   :to :software-development.itil4/guiding-principles
+   :name "has"}
+
+  {:el :has
+   :from :software-development.itil4/itil4
+   :to :software-development.itil4/service-value-chain
+   :name "has"}
+
+  {:el :has
+   :from :software-development.itil4/itil4
+   :to :software-development.itil4/management-practices
+   :name "has"}
+
+  {:el :has
+   :from :software-development.itil4/itil4
+   :to :software-development.itil4/continual-improvement
+   :name "has"}
+
+  ;
+  }

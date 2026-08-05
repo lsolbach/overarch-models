@@ -1,0 +1,46 @@
+;;;;
+;;;; Views for ITIL 4
+;;;;
+
+#{;
+  {:el :concept-view
+   :id :software-development.itil4/concept-view
+   :selection {:namespace "software-development.itil4"}
+   :name "ITIL 4 Concept View"
+   :title "Concept Map for ITIL 4"
+   :desc "contains the primary concepts of ITIL 4"}
+
+  {:el :concept-view
+   :id :software-development.itil4/general-management-concept-view
+   :selection {:namespace "software-development.itil4"
+               :tags #{"general management"}}
+   :name "ITIL 4 General Management Practices Concept View"
+   :title "Concept Map for ITIL 4 General Management Practices"
+   :desc "Contains the general management practices of ITIL 4"}
+
+  {:el :concept-view
+   :id :software-development.itil4/service-management-concept-view
+   :selection {:namespace "software-development.itil4"
+               :tags #{"service management"}}
+   :name "ITIL 4 Service Management Practices Concept View"
+   :title "Concept Map for ITIL 4 Service Management Practices"
+   :desc "Contains the service management practices of ITIL 4"}
+
+  {:el :concept-view
+   :id :software-development.itil4/technical-management-concept-view
+   :selection {:namespace "software-development.itil4"
+               :tags #{"technical management"}}
+   :name "ITIL 4 Technical Management Practices Concept View"
+   :title "Concept Map for ITIL 4 Technical Management Practices"
+   :desc "Contains the technical management practices of ITIL 4"}
+
+  {:el :glossary-view
+   :id :software-development.itil4/glossary-view
+   :selection {:namespace-prefix "software-development.itil4"}
+   :name "ITIL 4 Glossary"
+   :title "ITIL 4 Glossary"
+   :desc "Contains the description of ITIL 4 concepts"
+   }
+
+  ;
+  }
