@@ -14,6 +14,9 @@ Handles Credit Card, PayPal, etc.
 
 [Context view for the Online Shop Monolith example](../../../../software-development/architecture/example/monolith/context-view.md)
 
+## System Structure
+[System Structure View for the Online Shop Monolith example](../../../../software-development/architecture/example/monolith/system-structure-view.md)
+
 
 ## Navigation
 [List of views in namespace](./views-in-namespace.md)

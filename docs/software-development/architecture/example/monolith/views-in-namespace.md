@@ -12,6 +12,10 @@
 | Title | Description |
 |---|---|
 | [Component view for the Online Shop Monolith example](component-view.md) | Shows the components of the Online Shop Monolith example and their relations |
+## System Structure Views
+| Title | Description |
+|---|---|
+| [System Structure View for the Online Shop Monolith example](system-structure-view.md) | Shows the structure of the Online Shop Monolith example |
 ## Deployment Views
 | Title | Description |
 |---|---|
