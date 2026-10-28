@@ -1,7 +1,10 @@
 ;;;;
 ;;;; ITIL (Version 5) concept model for Overarch
 ;;;;
-#{  ;; Nodes
+#{;
+
+  ;; Nodes
+  ;; TODO use tags for categories and types
   {:el :concept
    :id :software-development.itil-v5/framework
    :name "ITIL (Version 5)"
@@ -228,6 +231,7 @@
    :itilv5/category "General Management"}
 
   ;; Relationships
+  ;; TODO: use :has instead of :rel for hierarchy relations
   {:el :rel
    :id :software-development.itil-v5/framework-uses-lifecycle-model
    :from :software-development.itil-v5/framework
