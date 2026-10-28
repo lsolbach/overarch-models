@@ -12,10 +12,10 @@ Java EE
 ## Subdomains/Bounded Contexts
 | Subdomain/Bounded Context | Description |
 |---|---|
-| [Inventory Context](../../../../software-development/architecture/example/modulith/inventory.md)|  |
-| [Orders Context](../../../../software-development/architecture/example/modulith/orders.md)|  |
-| [Payment Context](../../../../software-development/architecture/example/modulith/payment.md)|  |
-| [Shipping Context](../../../../software-development/architecture/example/modulith/shipping.md)|  |
+| [Inventory Context](../../../../software-development/architecture/example/modulith/inventory.md) |  |
+| [Orders Context](../../../../software-development/architecture/example/modulith/orders.md) |  |
+| [Payment Context](../../../../software-development/architecture/example/modulith/payment.md) |  |
+| [Shipping Context](../../../../software-development/architecture/example/modulith/shipping.md) |  |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
@@ -30,7 +30,7 @@ Java EE
 ## Deployed to
 | Node | Description |
 |---|---|
-| [Application Server](../../../../software-development/architecture/example/modulith/application-server.md)|  |
+| [Application Server](../../../../software-development/architecture/example/modulith/application-server.md) |  |
 
 ## Container View
 ![Container view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/container-view.png)

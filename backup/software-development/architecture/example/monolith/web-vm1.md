@@ -11,10 +11,12 @@ VMware vSphere
 ## Nodes
 | Node | Description |
 |---|---|
-| [Web Server](../../../../software-development/architecture/example/monolith/web-server.md)|  |
+| [Web Server](../../../../software-development/architecture/example/monolith/web-server.md) |  |
 
 
 ## Deployment
+![Deployment view for the Online Shop Monolith example](../../../../software-development/architecture/example/monolith/deployment-view.png)
+
 [Deployment view for the Online Shop Monolith example](../../../../software-development/architecture/example/monolith/deployment-view.md)
 
 

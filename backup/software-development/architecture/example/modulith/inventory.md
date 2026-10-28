@@ -11,7 +11,7 @@ The inventory context is responsible for managing the inventory of products.
 ## Components
 | Component | Description |
 |---|---|
-| [Inventory Component](../../../../software-development/architecture/example/modulith/inventory-component.md)| Handles the inventory checks and updates |
+| [Inventory Component](../../../../software-development/architecture/example/modulith/inventory-component.md) | Handles the inventory checks and updates |
 
 ## Container View
 ![Container view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/container-view.png)

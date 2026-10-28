@@ -11,10 +11,12 @@ DB/2
 ## Deployed Containers
 | Container | Description |
 |---|---|
-| [Online Shop Database](../../../../software-development/architecture/example/monolith/online-shop-db.md)|  |
+| [Online Shop Database](../../../../software-development/architecture/example/monolith/online-shop-db.md) |  |
 
 
 ## Deployment
+![Deployment view for the Online Shop Monolith example](../../../../software-development/architecture/example/monolith/deployment-view.png)
+
 [Deployment view for the Online Shop Monolith example](../../../../software-development/architecture/example/monolith/deployment-view.md)
 
 

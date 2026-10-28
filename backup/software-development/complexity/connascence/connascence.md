@@ -21,8 +21,8 @@ of implementation, connascence of interface, and connascence of protocol.
 ## Subordinates
 | Concept | Description |
 |---|---|
-| [Dynamic Connascence](../../../software-development/complexity/connascence/dynamic-connascence.md)| depends on the runtime attributes of the cod |
-| [Static Connascence](../../../software-development/complexity/connascence/static-connascence.md)| does not depend on the runtime attributes of the code |
+| [Dynamic Connascence](../../../software-development/complexity/connascence/dynamic-connascence.md) | depends on the runtime attributes of the cod |
+| [Static Connascence](../../../software-development/complexity/connascence/static-connascence.md) | does not depend on the runtime attributes of the code |
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|

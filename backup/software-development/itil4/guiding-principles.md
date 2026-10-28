@@ -9,7 +9,7 @@ guiding principles, itil4
 ## Feature of
 | Concept | Description |
 |---|---|
-| [ITIL 4](../../software-development/itil4/itil4.md)| ITIL (a.k.a Information Technology Infrastructure Library) is a framework with a set of practices (formerly processes) for information technology (IT) activities such as IT service management (ITSM) and IT asset management (ITAM) that focus on aligning IT services with the needs of a business. |
+| [ITIL 4](../../software-development/itil4/itil4.md) | ITIL (a.k.a Information Technology Infrastructure Library) is a framework with a set of practices (formerly processes) for information technology (IT) activities such as IT service management (ITSM) and IT asset management (ITAM) that focus on aligning IT services with the needs of a business. |
 
 ## Concept Map
 ![Concept Map for ITIL 4](../../software-development/itil4/concept-view.png)

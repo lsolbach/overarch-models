@@ -6,7 +6,7 @@ stores relevant events regarding the actions of a user, e.g. accessing or changi
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Log](../../../software-development/itil4/monitoring/log.md)| stores relevant events |
+| [Log](../../../software-development/itil4/monitoring/log.md) | stores relevant events |
 
 ## Concept Map
 ![Concept Map for Monitoring and Event Management](../../../software-development/itil4/monitoring/concept-view.png)

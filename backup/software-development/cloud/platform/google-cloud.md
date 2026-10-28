@@ -11,7 +11,7 @@ cloud, google, platform
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Cloud Computing Platform](../../../software-development/cloud/cloud-computing-platform.md)| A  set of tools, services, and infrastructure that enables developers to build, deploy, and manage applications on the cloud. Cloud computing platforms may include services such as virtual machines, databases, AI, machine learning, and IoT, as well as developer tools for building and deploying applications. |
+| [Cloud Computing Platform](../../../software-development/cloud/cloud-computing-platform.md) | A  set of tools, services, and infrastructure that enables developers to build, deploy, and manage applications on the cloud. Cloud computing platforms may include services such as virtual machines, databases, AI, machine learning, and IoT, as well as developer tools for building and deploying applications. |
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|

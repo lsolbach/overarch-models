@@ -11,7 +11,7 @@ The payment context is responsible for managing the payments.
 ## Components
 | Component | Description |
 |---|---|
-| [Payment Component](../../../../software-development/architecture/example/modulith/payment-component.md)| Handles the payment process |
+| [Payment Component](../../../../software-development/architecture/example/modulith/payment-component.md) | Handles the payment process |
 
 ## Container View
 ![Container view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/container-view.png)

@@ -22,7 +22,7 @@ Java EE
 ## Deployed to
 | Node | Description |
 |---|---|
-| [Application Server](../../../../software-development/architecture/example/monolith/application-server.md)|  |
+| [Application Server](../../../../software-development/architecture/example/monolith/application-server.md) |  |
 
 ## Container View
 ![Container view for the Online Shop Monolith example](../../../../software-development/architecture/example/monolith/container-view.png)

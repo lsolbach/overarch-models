@@ -6,13 +6,13 @@ combines classical and quantum computing techniques, leveraging the strengths of
 ## Subordinates
 | Concept | Description |
 |---|---|
-| [Algorithm](../../../software-development/quantum-computing/algorithm/algorithm.md)| a set of rules or instructions to solve a problem or perform a task. |
-| [Variational Quantum Eigensolver](../../../software-development/quantum-computing/algorithm/variational-quantum-eigensolver.md)| A hybrid quantum-classical algorithm for finding the ground state energy of a quantum system. |
+| [Algorithm](../../../software-development/quantum-computing/algorithm/algorithm.md) | a set of rules or instructions to solve a problem or perform a task. |
+| [Variational Quantum Eigensolver](../../../software-development/quantum-computing/algorithm/variational-quantum-eigensolver.md) | A hybrid quantum-classical algorithm for finding the ground state energy of a quantum system. |
 ## Features
 | Concept | Description |
 |---|---|
-| [Classical Algorithm](../../../software-development/quantum-computing/algorithm/classical-algorithm.md)| runs on classical computers, using classical bits. |
-| [Quantum Algorithm](../../../software-development/quantum-computing/algorithm/quantum-algorithm.md)| designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena. |
+| [Classical Algorithm](../../../software-development/quantum-computing/algorithm/classical-algorithm.md) | runs on classical computers, using classical bits. |
+| [Quantum Algorithm](../../../software-development/quantum-computing/algorithm/quantum-algorithm.md) | designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena. |
 
 ## Concept Map
 ![Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.png)

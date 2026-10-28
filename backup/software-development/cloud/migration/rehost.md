@@ -12,7 +12,7 @@ strategy
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md)| A plan for moving applications, data, and other business elements to a cloud computing environment. A cloud migration strategy typically includes an assessment of the current environment, identification of workloads to be migrated, selection of the appropriate cloud deployment model, and implementation of the migration plan. |
+| [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) | A plan for moving applications, data, and other business elements to a cloud computing environment. A cloud migration strategy typically includes an assessment of the current environment, identification of workloads to be migrated, selection of the appropriate cloud deployment model, and implementation of the migration plan. |
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|

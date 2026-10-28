@@ -11,10 +11,12 @@ Apache Tomcat
 ## Deployed Containers
 | Container | Description |
 |---|---|
-| [Online Shop Frontend Application](../../../../software-development/architecture/example/modulith/online-shop-frontend.md)|  |
+| [Online Shop Frontend Application](../../../../software-development/architecture/example/modulith/online-shop-frontend.md) |  |
 
 
 ## Deployment
+![Deployment view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/deployment-view.png)
+
 [Deployment view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/deployment-view.md)
 
 

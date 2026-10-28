@@ -10,14 +10,14 @@ A Dynamic Connascence depends on the runtime attributes of the system.
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Connascence](../../../software-development/complexity/connascence/connascence.md)| A software quality metric that measures the degree of coupling between software modules |
+| [Connascence](../../../software-development/complexity/connascence/connascence.md) | A software quality metric that measures the degree of coupling between software modules |
 ## Subordinates
 | Concept | Description |
 |---|---|
-| [Connascence of Execution](../../../software-development/complexity/connascence/connascence-of-execution.md)| occurs when two or more modules must agree on the order in which they are executed |
-| [Connascence of Identity](../../../software-development/complexity/connascence/connascence-of-identity.md)| occurs when two or more modules must agree on the identity of an object |
-| [Connascence of Time](../../../software-development/complexity/connascence/connascence-of-time.md)| occurs when two or more modules must agree on the timing of an event |
-| [Connascence of Value](../../../software-development/complexity/connascence/connascence-of-value.md)| occurs when two or more modules must agree on the value of a variable, constant, or method |
+| [Connascence of Execution](../../../software-development/complexity/connascence/connascence-of-execution.md) | occurs when two or more modules must agree on the order in which they are executed |
+| [Connascence of Identity](../../../software-development/complexity/connascence/connascence-of-identity.md) | occurs when two or more modules must agree on the identity of an object |
+| [Connascence of Time](../../../software-development/complexity/connascence/connascence-of-time.md) | occurs when two or more modules must agree on the timing of an event |
+| [Connascence of Value](../../../software-development/complexity/connascence/connascence-of-value.md) | occurs when two or more modules must agree on the value of a variable, constant, or method |
 
 ## Concept Map
 ![Concept view for Connascence](../../../software-development/complexity/connascence/concept-view.png)

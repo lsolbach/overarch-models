@@ -21,7 +21,7 @@ The HHL algorithm, named after its inventors Harrow, Hassidim, and Lloyd, is a q
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Quantum Algorithm](../../../software-development/quantum-computing/algorithm/quantum-algorithm.md)| designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena. |
+| [Quantum Algorithm](../../../software-development/quantum-computing/algorithm/quantum-algorithm.md) | designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena. |
 
 ## Concept Map
 ![Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.png)

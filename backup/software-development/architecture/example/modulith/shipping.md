@@ -11,7 +11,7 @@ The shipping context is responsible for managing the shipping.
 ## Components
 | Component | Description |
 |---|---|
-| [Shipping Component](../../../../software-development/architecture/example/modulith/shipping-component.md)| Handles the shipping process |
+| [Shipping Component](../../../../software-development/architecture/example/modulith/shipping-component.md) | Handles the shipping process |
 
 ## Container View
 ![Container view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/container-view.png)

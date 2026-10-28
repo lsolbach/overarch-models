@@ -1,5 +1,5 @@
 # Glossary for Complexity
-[ ](# ) [A](#A) [C](#C) [D](#D) [I](#I) [S](#S) 
+[ ](# ) [A](#a) [C](#c) [D](#d) [I](#i) [S](#s) 
 
 ##  
 

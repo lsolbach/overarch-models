@@ -9,9 +9,9 @@ Java, AngularJS, DB/2
 ## Containers
 | Container | Description |
 |---|---|
-| [Online Shop Backend Application](../../../../software-development/architecture/example/modulith/online-shop-backend.md)|  |
-| [Online Shop Database](../../../../software-development/architecture/example/modulith/online-shop-db.md)| Stores products, orders, payments, etc. |
-| [Online Shop Frontend Application](../../../../software-development/architecture/example/modulith/online-shop-frontend.md)|  |
+| [Online Shop Backend Application](../../../../software-development/architecture/example/modulith/online-shop-backend.md) |  |
+| [Online Shop Database](../../../../software-development/architecture/example/modulith/online-shop-db.md) | Stores products, orders, payments, etc. |
+| [Online Shop Frontend Application](../../../../software-development/architecture/example/modulith/online-shop-frontend.md) |  |
 ## Incoming Synchronous Requests 
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|

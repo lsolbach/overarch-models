@@ -1,0 +1,454 @@
+;;;;
+;;;; ITIL (Version 5) concept model for Overarch
+;;;;
+#{  ;; Nodes
+  {:el :concept
+   :id :software-development.itil-v5/framework
+   :name "ITIL (Version 5)"
+   :desc "A framework for managing digital products and services and creating value."}
+  {:el :concept
+   :id :software-development.itil-v5/lifecycle-model
+   :name "Product and Service Lifecycle Model"
+   :desc "An eight-activity model for managing digital products and services end to end."}
+  {:el :concept
+   :id :software-development.itil-v5/product-service-practices
+   :name "Product and Service Management practices"
+   :desc "The official group of 22 ITIL (Version 5) management practices focused on products and services."}
+  {:el :concept
+   :id :software-development.itil-v5/general-practices
+   :name "General Management practices"
+   :desc "The official group of 12 ITIL (Version 5) management practices supporting management across the organization."}
+  {:el :concept
+   :id :software-development.itil-v5.lifecycle/discover
+   :name "Discover"
+   :desc "Explore needs, opportunities, context and priorities that may justify creating or changing a digital product or service."
+   :itilv5/type "Lifecycle activity"}
+  {:el :concept
+   :id :software-development.itil-v5.lifecycle/design
+   :name "Design"
+   :desc "Develop product and service solutions that meet stakeholder needs, including functionality, experience, architecture, security and operability."
+   :itilv5/type "Lifecycle activity"}
+  {:el :concept
+   :id :software-development.itil-v5.lifecycle/acquire
+   :name "Acquire"
+   :desc "Obtain or allocate the resources, components, capabilities and supplier services needed to create or change a product or service."
+   :itilv5/type "Lifecycle activity"}
+  {:el :concept
+   :id :software-development.itil-v5.lifecycle/build
+   :name "Build"
+   :desc "Create, configure, integrate and test the product or its components, preparing them for transition into use."
+   :itilv5/type "Lifecycle activity"}
+  {:el :concept
+   :id :software-development.itil-v5.lifecycle/transition
+   :name "Transition"
+   :desc "Move a new or changed product into the live environment in a controlled and prepared way."
+   :itilv5/type "Lifecycle activity"}
+  {:el :concept
+   :id :software-development.itil-v5.lifecycle/operate
+   :name "Operate"
+   :desc "Run and maintain products and supporting systems in the live environment, meeting performance, reliability and operational needs."
+   :itilv5/type "Lifecycle activity"}
+  {:el :concept
+   :id :software-development.itil-v5.lifecycle/deliver
+   :name "Deliver"
+   :desc "Make digital services available to consumers and enable the agreed service outcomes and experience."
+   :itilv5/type "Lifecycle activity"}
+  {:el :concept
+   :id :software-development.itil-v5.lifecycle/support
+   :name "Support"
+   :desc "Help consumers and restore normal operation when issues affect products or service delivery."
+   :itilv5/type "Lifecycle activity"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/availability-management
+   :name "Availability Management"
+   :desc "Ensures products and services meet agreed availability needs through availability planning, resilience and downtime reduction."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/business-analysis
+   :name "Business Analysis"
+   :desc "Identifies business needs, analyses stakeholder requirements and evaluates solution options to support valuable outcomes."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/capacity-and-performance-management
+   :name "Capacity and Performance Management"
+   :desc "Ensures products and services have appropriate capacity and performance as demand and business needs change."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/change-enablement
+   :name "Change Enablement"
+   :desc "Assesses change risk and authorizes changes appropriately to increase successful changes while minimizing disruption."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/deployment-management
+   :name "Deployment Management"
+   :desc "Moves new or changed components into target environments, such as test, staging and production."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/information-security-management
+   :name "Information Security Management"
+   :desc "Protects information and manages security risks affecting confidentiality, integrity, availability and related objectives."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/it-asset-management
+   :name "IT Asset Management"
+   :desc "Manages the lifecycle of IT assets to optimize their use, cost, risk and value."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/monitoring-and-event-management
+   :name "Monitoring and Event Management"
+   :desc "Observes products, services and infrastructure, identifies meaningful state changes and triggers appropriate action."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/release-management
+   :name "Release Management"
+   :desc "Plans and coordinates making new or changed products, features or services available for use."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/service-catalogue-management
+   :name "Service Catalogue Management"
+   :desc "Maintains accurate information about available services and how consumers can access or request them."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/service-continuity-management
+   :name "Service Continuity Management"
+   :desc "Prepares the organization to maintain or recover products and services after serious disruptions."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/service-design
+   :name "Service Design"
+   :desc "Designs services to meet stakeholder needs, considering experience, operations, security, performance and cost."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/service-desk
+   :name "Service Desk"
+   :desc "Provides a central point of contact for users and coordinates communications, assistance and support."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/service-financial-management
+   :name "Service Financial Management"
+   :desc "Manages service-related budgeting, costing, forecasting and financial accountability."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept :id :software-development.itil-v5.practice/service-configuration-management
+   :name "Service Configuration Management"
+   :desc "Maintains information about configuration items and their relationships to support effective service management."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/service-level-management
+   :name "Service Level Management"
+   :desc "Establishes business-aligned service targets and monitors performance against agreed commitments."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/service-request-management
+   :name "Service Request Management"
+   :desc "Handles predefined user requests for information, access, standard services or other agreed fulfilment activities."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/service-validation-and-testing
+   :name "Service Validation and Testing"
+   :desc "Checks that new or changed products and services meet requirements and are fit for their intended use."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/software-development-and-management
+   :name "Software Development and Management"
+   :desc "Develops, maintains and evolves software to meet stakeholder needs and required quality standards."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/incident-management
+   :name "Incident Management"
+   :desc "Restores normal service as quickly as practical after an interruption or degradation, minimizing business impact."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/problem-management
+   :name "Problem Management"
+   :desc "Identifies and manages causes of incidents, investigates recurring failures and helps prevent future incidents."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/infrastructure-and-platform-management
+   :name "Infrastructure and Platform Management"
+   :desc "Manages the infrastructure and platforms underpinning digital products and services, including their operation and evolution."
+   :itilv5/category "Product and Service Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/architecture-management
+   :name "Architecture Management"
+   :desc "Defines and evolves structures, standards and relationships so business and technology components work coherently."
+   :itilv5/category "General Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/continual-improvement
+   :name "Continual Improvement"
+   :desc "Identifies, prioritizes, implements and evaluates improvements to products, services, practices and performance."
+   :itilv5/category "General Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/knowledge-management
+   :name "Knowledge Management"
+   :desc "Ensures useful knowledge and information are created, maintained, shared and accessible to those who need them."
+   :itilv5/category "General Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/measurement-and-reporting
+   :name "Measurement and Reporting"
+   :desc "Defines measures, collects reliable data and reports performance to support decisions and demonstrate outcomes."
+   :itilv5/category "General Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/organizational-change-management
+   :name "Organizational Change Management"
+   :desc "Helps people and organizations adopt changes through engagement, communication, preparation and support."
+   :itilv5/category "General Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/portfolio-management
+   :name "Portfolio Management"
+   :desc "Evaluates and prioritizes investments, initiatives, products and services so resources support organizational objectives."
+   :itilv5/category "General Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/project-management
+   :name "Project Management"
+   :desc "Plans, coordinates and controls projects to deliver agreed outcomes within defined constraints and acceptable risk."
+   :itilv5/category "General Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/relationship-management
+   :name "Relationship Management"
+   :desc "Builds and maintains effective relationships with stakeholders, customers and other parties to align needs and expectations."
+   :itilv5/category "General Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/risk-management
+   :name "Risk Management"
+   :desc "Identifies, assesses and treats uncertainty that could affect objectives, including threats and opportunities."
+   :itilv5/category "General Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/strategy-management
+   :name "Strategy Management"
+   :desc "Defines organizational direction and aligns plans, capabilities and investments with long-term goals."
+   :itilv5/category "General Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/supplier-management
+   :name "Supplier Management"
+   :desc "Manages supplier relationships and performance to ensure external products and services meet business and contractual needs." :itilv5/category "General Management"}
+  {:el :concept
+   :id :software-development.itil-v5.practice/workforce-and-talent-management
+   :name "Workforce and Talent Management"
+   :desc "Ensures the organization has the skills, capacity, roles and working environment needed to achieve its objectives."
+   :itilv5/category "General Management"}
+
+  ;; Relationships
+  {:el :rel
+   :id :software-development.itil-v5/framework-uses-lifecycle-model
+   :from :software-development.itil-v5/framework
+   :to :software-development.itil-v5/lifecycle-model
+   :name "uses"}
+  {:el :rel
+   :id :software-development.itil-v5/framework-includes-product-service-practices
+   :from :software-development.itil-v5/framework
+   :to :software-development.itil-v5/product-service-practices
+   :name "includes"}
+  {:el :rel
+   :id :software-development.itil-v5/framework-includes-general-practices
+   :from :software-development.itil-v5/framework
+   :to :software-development.itil-v5/general-practices
+   :name "includes"}
+  {:el :rel
+   :id :software-development.itil-v5/lifecycle-model-includes-discover
+   :from :software-development.itil-v5/lifecycle-model
+   :to :software-development.itil-v5.lifecycle/discover
+   :name "includes activity"}
+  {:el :rel
+   :id :software-development.itil-v5/lifecycle-model-includes-design
+   :from :software-development.itil-v5/lifecycle-model
+   :to :software-development.itil-v5.lifecycle/design
+   :name "includes activity"}
+  {:el :rel
+   :id :software-development.itil-v5/lifecycle-model-includes-acquire
+   :from :software-development.itil-v5/lifecycle-model
+   :to :software-development.itil-v5.lifecycle/acquire
+   :name "includes activity"}
+  {:el :rel
+   :id :software-development.itil-v5/lifecycle-model-includes-build
+   :from :software-development.itil-v5/lifecycle-model
+   :to :software-development.itil-v5.lifecycle/build
+   :name "includes activity"}
+  {:el :rel
+   :id :software-development.itil-v5/lifecycle-model-includes-transition
+   :from :software-development.itil-v5/lifecycle-model
+   :to :software-development.itil-v5.lifecycle/transition
+   :name "includes activity"}
+  {:el :rel
+   :id :software-development.itil-v5/lifecycle-model-includes-operate
+   :from :software-development.itil-v5/lifecycle-model
+   :to :software-development.itil-v5.lifecycle/operate
+   :name "includes activity"}
+  {:el :rel
+   :id :software-development.itil-v5/lifecycle-model-includes-deliver
+   :from :software-development.itil-v5/lifecycle-model
+   :to :software-development.itil-v5.lifecycle/deliver
+   :name "includes activity"}
+  {:el :rel
+   :id :software-development.itil-v5/lifecycle-model-includes-support
+   :from :software-development.itil-v5/lifecycle-model
+   :to :software-development.itil-v5.lifecycle/support
+   :name "includes activity"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-availability-management
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/availability-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-business-analysis
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/business-analysis
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-capacity-and-performance-management
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/capacity-and-performance-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-change-enablement
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/change-enablement
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-deployment-management
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/deployment-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-information-security-management
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/information-security-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-it-asset-management
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/it-asset-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-monitoring-and-event-management
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/monitoring-and-event-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-release-management
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/release-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-service-catalogue-management
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/service-catalogue-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-service-continuity-management
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/service-continuity-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-service-design
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/service-design
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-service-desk
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/service-desk
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-service-financial-management
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/service-financial-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-service-configuration-management
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/service-configuration-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-service-level-management
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/service-level-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-service-request-management
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/service-request-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-service-validation-and-testing
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/service-validation-and-testing
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-software-development-and-management
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/software-development-and-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-incident-management
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/incident-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-problem-management :from :software-development.itil-v5/product-service-practices :to :software-development.itil-v5.practice/problem-management :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/product-service-practices-includes-infrastructure-and-platform-management
+   :from :software-development.itil-v5/product-service-practices
+   :to :software-development.itil-v5.practice/infrastructure-and-platform-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/general-practices-includes-architecture-management
+   :from :software-development.itil-v5/general-practices
+   :to :software-development.itil-v5.practice/architecture-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/general-practices-includes-continual-improvement
+   :from :software-development.itil-v5/general-practices
+   :to :software-development.itil-v5.practice/continual-improvement
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/general-practices-includes-knowledge-management
+   :from :software-development.itil-v5/general-practices
+   :to :software-development.itil-v5.practice/knowledge-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/general-practices-includes-measurement-and-reporting
+   :from :software-development.itil-v5/general-practices
+   :to :software-development.itil-v5.practice/measurement-and-reporting
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/general-practices-includes-organizational-change-management
+   :from :software-development.itil-v5/general-practices
+   :to :software-development.itil-v5.practice/organizational-change-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/general-practices-includes-portfolio-management
+   :from :software-development.itil-v5/general-practices
+   :to :software-development.itil-v5.practice/portfolio-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/general-practices-includes-project-management
+   :from :software-development.itil-v5/general-practices
+   :to :software-development.itil-v5.practice/project-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/general-practices-includes-relationship-management
+   :from :software-development.itil-v5/general-practices
+   :to :software-development.itil-v5.practice/relationship-management
+   :name "includes practice"}
+  {:el :re
+   :id :software-development.itil-v5/general-practices-includes-risk-management
+   :from :software-development.itil-v5/general-practices
+   :to :software-development.itil-v5.practice/risk-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/general-practices-includes-strategy-management
+   :from :software-development.itil-v5/general-practices
+   :to :software-development.itil-v5.practice/strategy-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/general-practices-includes-supplier-management
+   :from :software-development.itil-v5/general-practices
+   :to :software-development.itil-v5.practice/supplier-management
+   :name "includes practice"}
+  {:el :rel
+   :id :software-development.itil-v5/general-practices-includes-workforce-and-talent-management
+   :from :software-development.itil-v5/general-practices
+   :to :software-development.itil-v5.practice/workforce-and-talent-management
+   :name "includes practice"}
+  ;
+  }
