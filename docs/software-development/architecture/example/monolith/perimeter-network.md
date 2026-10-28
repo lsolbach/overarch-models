@@ -8,7 +8,7 @@
 ## Nodes
 | Node | Description |
 |---|---|
-| [Web VM 1](../../../../software-development/architecture/example/monolith/web-vm1.md)| Web Server Virtual Machine 1 |
+| [Web VM 1](../../../../software-development/architecture/example/monolith/web-vm1.md) | Web Server Virtual Machine 1 |
 ## Links to
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
@@ -16,6 +16,8 @@
 
 
 ## Deployment
+![Deployment view for the Online Shop Monolith example](../../../../software-development/architecture/example/monolith/deployment-view.png)
+
 [Deployment view for the Online Shop Monolith example](../../../../software-development/architecture/example/monolith/deployment-view.md)
 
 

@@ -6,7 +6,7 @@ measurable value that indicates the performance of a system
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Metric](../../../software-development/itil4/monitoring/metric.md)| measurable value that indicates the performance or health of a system |
+| [Metric](../../../software-development/itil4/monitoring/metric.md) | measurable value that indicates the performance or health of a system |
 
 ## Concept Map
 ![Concept Map for Monitoring and Event Management](../../../software-development/itil4/monitoring/concept-view.png)

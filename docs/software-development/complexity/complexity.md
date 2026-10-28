@@ -9,8 +9,8 @@ Complexity is the degree of difficulty in understanding, designing, and maintain
 ## Subordinates
 | Concept | Description |
 |---|---|
-| [Accidental Complexity](../../software-development/complexity/accidental-complexity.md)| complexity caused by the design or implementation of the software system. |
-| [Inherent Complexity](../../software-development/complexity/inherent-complexity.md)| complexity intrinsic to the problem domain. |
+| [Accidental Complexity](../../software-development/complexity/accidental-complexity.md) | complexity caused by the design or implementation of the software system. |
+| [Inherent Complexity](../../software-development/complexity/inherent-complexity.md) | complexity intrinsic to the problem domain. |
 
 ## Concept Map
 ![Concept view for Complexity](../../software-development/complexity/concept-view.png)

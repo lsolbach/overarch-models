@@ -1,5 +1,5 @@
 # Glossary for Domain Driven Design
-[A](#A) [B](#B) [C](#C) [D](#D) [E](#E) [F](#F) [G](#G) [H](#H) [I](#I) [K](#K) [L](#L) [M](#M) [O](#O) [P](#P) [R](#R) [S](#S) [U](#U) [V](#V) 
+[A](#a) [B](#b) [C](#c) [D](#d) [E](#e) [F](#f) [G](#g) [H](#h) [I](#i) [K](#k) [L](#l) [M](#m) [O](#o) [P](#p) [R](#r) [S](#s) [U](#u) [V](#v) 
 
 ## A
 

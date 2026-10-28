@@ -21,7 +21,7 @@ AngularJS
 ## Deployed to
 | Node | Description |
 |---|---|
-| [Web Server](../../../../software-development/architecture/example/modulith/web-server.md)|  |
+| [Web Server](../../../../software-development/architecture/example/modulith/web-server.md) |  |
 
 ## Container View
 ![Container view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/container-view.png)

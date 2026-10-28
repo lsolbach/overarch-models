@@ -11,10 +11,12 @@ VMware vSphere
 ## Nodes
 | Node | Description |
 |---|---|
-| [Application Server](../../../../software-development/architecture/example/modulith/application-server.md)|  |
+| [Application Server](../../../../software-development/architecture/example/modulith/application-server.md) |  |
 
 
 ## Deployment
+![Deployment view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/deployment-view.png)
+
 [Deployment view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/deployment-view.md)
 
 

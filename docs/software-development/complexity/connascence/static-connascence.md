@@ -10,15 +10,15 @@ A Static Connascence does not depend on the runtime attributes of the system.
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Connascence](../../../software-development/complexity/connascence/connascence.md)| A software quality metric that measures the degree of coupling between software modules |
+| [Connascence](../../../software-development/complexity/connascence/connascence.md) | A software quality metric that measures the degree of coupling between software modules |
 ## Subordinates
 | Concept | Description |
 |---|---|
-| [Connascence of Algorithm](../../../software-development/complexity/connascence/connascence-of-algorithm.md)| occurs when two or more modules must agree on the algorithm used to solve a problem |
-| [Connascence of Meaning](../../../software-development/complexity/connascence/connascence-of-meaning.md)| occurs when two or more modules must agree on the meaning of a variable, constant, or method. |
-| [Connascence of Name](../../../software-development/complexity/connascence/connascence-of-name.md)| occurs when two or more modules must agree on the name of a variable, constant, or method |
-| [Connascence of Position](../../../software-development/complexity/connascence/connascence-of-position.md)| occurs when two or more modules must agree on the position of a variable, constant, or method |
-| [Connascence of Type](../../../software-development/complexity/connascence/connascence-of-type.md)| occurs when two or more modules must agree on the type of a variable, constant, or method |
+| [Connascence of Algorithm](../../../software-development/complexity/connascence/connascence-of-algorithm.md) | occurs when two or more modules must agree on the algorithm used to solve a problem |
+| [Connascence of Meaning](../../../software-development/complexity/connascence/connascence-of-meaning.md) | occurs when two or more modules must agree on the meaning of a variable, constant, or method. |
+| [Connascence of Name](../../../software-development/complexity/connascence/connascence-of-name.md) | occurs when two or more modules must agree on the name of a variable, constant, or method |
+| [Connascence of Position](../../../software-development/complexity/connascence/connascence-of-position.md) | occurs when two or more modules must agree on the position of a variable, constant, or method |
+| [Connascence of Type](../../../software-development/complexity/connascence/connascence-of-type.md) | occurs when two or more modules must agree on the type of a variable, constant, or method |
 
 ## Concept Map
 ![Concept view for Connascence](../../../software-development/complexity/connascence/concept-view.png)

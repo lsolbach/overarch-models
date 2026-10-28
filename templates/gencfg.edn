@@ -24,18 +24,26 @@
   :extension "puml"}
 
  ; rendered as plantuml UML
- #_{:view-selection {:els #{:code-view :state-machine-view :use-case-view}}
-    :template "views/uml-view.puml.cmb"
-    :per-element true
-    :id-as-name true
-    :extension "puml"}
+ {:view-selection {:els #{:code-view :state-machine-view :use-case-view}}
+  :template "views/uml-view.puml.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "puml"}
+
+ ; rendered as plantuml C4
+ {:view-selection {:els #{:system-landscape-view :context-view :container-view :component-view
+                          :dynamic-view :deployment-view :deployment-architecture-view}}
+  :template "views/c4-view.puml.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "puml"}
 
  ; rendered as Mermaid treemap
  #_{:view-selection {:els #{:deployment-structure-view :organization-structure-view :system-structure-view}}
-  :template "views/treemap.mm.cmb"
-  :per-element true
-  :id-as-name true
-  :extension "mermaid"}
+    :template "views/treemap.mm.cmb"
+    :per-element true
+    :id-as-name true
+    :extension "mermaid"}
 
  ;;
  ;;  Markdown Generation for Model Elements
@@ -78,6 +86,100 @@
   :per-element true
   :id-as-name true
   :extension "md"}
+
+ ;;;
+ ;;; Markdown Architecture Documentation (arc42)
+ ;;;
+
+ ;; Single Page
+ {:selection {:el :system :external? false}
+  :template "docs/arc42.md.cmb"
+  :per-element true
+  :id-as-name true
+  :suffix "_architecture"
+  :extension "md"
+  :protected-area "PA"}
+
+ ;; Multi Page
+ ;; TODO filenames
+ #_{:selection {:el :system :external? false}
+   :template "docs/arc42/index.md.cmb"
+   :per-element true
+   :id-as-name true
+   :extension "md"
+   :protected-area "PA"}
+
+ #_{:selection {:el :system :external? false}
+  :template "docs/arc42/introduction_goals.md.cmb"
+  :per-element true
+  :id-as-name true
+  :extension "md"
+  :protected-area "PA"}
+
+#_{:selection {:el :system :external? false}
+   :template "docs/arc42/architecture_constraints.md.cmb"
+   :per-element true
+   :id-as-name true
+   :extension "md"
+   :protected-area "PA"}
+
+#_{:selection {:el :system :external? false}
+   :template "docs/arc42/solution_strategy.md.cmb"
+   :per-element true
+   :id-as-name true
+   :extension "md"
+   :protected-area "PA"}
+
+#_{:selection {:el :system :external? false}
+   :template "docs/arc42/building_block_view.md.cmb"
+   :per-element true
+   :id-as-name true
+   :extension "md"
+   :protected-area "PA"}
+
+#_{:selection {:el :system :external? false}
+   :template "docs/arc42/runtime_view.md.cmb"
+   :per-element true
+   :id-as-name true
+   :extension "md"
+   :protected-area "PA"}
+
+#_{:selection {:el :system :external? false}
+   :template "docs/arc42/deployment_view.md.cmb"
+   :per-element true
+   :id-as-name true
+   :extension "md"
+   :protected-area "PA"}
+
+#_{:selection {:el :system :external? false}
+   :template "docs/arc42/crosscutting_concepts.md.cmb"
+   :per-element true
+   :id-as-name true
+   :extension "md"
+   :protected-area "PA"}
+
+#_{:selection {:el :system :external? false}
+   :template "docs/arc42/architecture_decisions.md.cmb"
+   :per-element true
+   :id-as-name true
+   :extension "md"
+   :protected-area "PA"}
+
+#_{:selection {:el :system :external? false}
+   :template "docs/arc42/quality_requirements.md.cmb"
+   :per-element true
+   :id-as-name true
+   :extension "md"
+   :protected-area "PA"}
+
+#_{:selection {:el :system :external? false}
+   :template "docs/arc42/risks_and_technical_debt.md.cmb"
+   :per-element true
+   :id-as-name true
+   :extension "md"
+   :protected-area "PA"}
+
+
 
  ;;;
  ;;; Markdown Reports

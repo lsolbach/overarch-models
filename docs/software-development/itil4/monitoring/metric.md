@@ -6,8 +6,8 @@ measurable value that indicates the performance or health of a system
 ## Subordinates
 | Concept | Description |
 |---|---|
-| [Health Metric](../../../software-development/itil4/monitoring/health-metric.md)| measurable value that indicates the health of a system |
-| [Performance Metric](../../../software-development/itil4/monitoring/performance-metric.md)| measurable value that indicates the performance of a system |
+| [Health Metric](../../../software-development/itil4/monitoring/health-metric.md) | measurable value that indicates the health of a system |
+| [Performance Metric](../../../software-development/itil4/monitoring/performance-metric.md) | measurable value that indicates the performance of a system |
 
 ## Concept Map
 ![Concept Map for Monitoring and Event Management](../../../software-development/itil4/monitoring/concept-view.png)

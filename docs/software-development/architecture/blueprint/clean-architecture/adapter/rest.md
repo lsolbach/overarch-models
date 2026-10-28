@@ -11,7 +11,7 @@ The REST package contains the REST adapter implementations.
 ## Classes
 | Class | Description |
 |---|---|
-| [RestController](../../../../../software-development/architecture/blueprint/clean-architecture/adapter/rest/rest-controller.md)| Implements the REST controller interface for the REST API |
+| [RestController](../../../../../software-development/architecture/blueprint/clean-architecture/adapter/rest/rest-controller.md) | Implements the REST controller interface for the REST API |
 
 
 ## Navigation

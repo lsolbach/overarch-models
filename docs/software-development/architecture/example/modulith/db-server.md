@@ -11,10 +11,12 @@ DB/2
 ## Deployed Containers
 | Container | Description |
 |---|---|
-| [Online Shop Database](../../../../software-development/architecture/example/modulith/online-shop-db.md)| Stores products, orders, payments, etc. |
+| [Online Shop Database](../../../../software-development/architecture/example/modulith/online-shop-db.md) | Stores products, orders, payments, etc. |
 
 
 ## Deployment
+![Deployment view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/deployment-view.png)
+
 [Deployment view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/deployment-view.md)
 
 

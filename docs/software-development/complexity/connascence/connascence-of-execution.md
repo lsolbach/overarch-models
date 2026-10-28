@@ -12,7 +12,7 @@ generic, concept, design, connascence
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Dynamic Connascence](../../../software-development/complexity/connascence/dynamic-connascence.md)| depends on the runtime attributes of the cod |
+| [Dynamic Connascence](../../../software-development/complexity/connascence/dynamic-connascence.md) | depends on the runtime attributes of the cod |
 
 ## Concept Map
 ![Concept view for Connascence](../../../software-development/complexity/connascence/concept-view.png)
