@@ -1,0 +1,243 @@
+<%
+;;;;
+;;;; Markdown Arc42 Documentation Template
+;;;;
+
+(require '[lib.text :as t])
+(require '[lib.markdown :as md])
+
+(let [implements (m/referred-nodes model e {:el :implements})
+      implemented-by (m/referring-nodes model e {:el :implements})
+      goals (m/select-model-elements model {:el :goal})
+      non-goals (m/select-model-elements model {:el :non-goal})
+      architecture-constraints (m/select-model-elements model {:el :constraint})
+      quality-requirements (m/select-model-elements model {:el :requirement :tags #{"quality"}})
+      strategy-decisions (m/select-model-elements model {:el :decision :tags #{"solution strategy"}})
+      architecture-decisions (m/select-model-elements model {:el :decision :tags #{"architecture"}})
+      risks (m/select-model-elements model {:el :risk})
+      technical-depts []]
+
+%>
+# Architecture Documentation for <%= (:name e) %>
+<%= (:desc e) %>
+
+## Table of Content
+1. [Introduction and Goals](#introduction-and-goals)
+1. [Architecture Constraints](#architecture-constraints)
+1. [System Context and Scope](#system-context-and-scope)
+1. [Solution Strategy](#solution-strategy)
+1. [Building Block View](#building-blocks)
+1. [Runtime View](#runtime-view)
+1. [Deployment View](#deployment-view)
+1. [Crosscutting Concepts](#crosscutting-concepts)
+1. [Architectural Decisions](#architecture-decisions)
+1. [Quality Requirements](#quality-requirements)
+1. [Risk and Technical Dept](#risk-and-technical-dept)
+
+## Introduction and Goals
+<!-- PA-BEGIN(Introduction1) -->
+<%= (get protected-areas "Introduction1" "")
+%><!-- PA-END(Introduction1) -->
+
+<%
+  (when (seq goals)
+%>
+### Goals
+<%=
+    (md/node-description-table e :goal (sort-by :priority goals)))
+%>
+
+<%
+  (when (seq non-goals)
+%>
+### Non Goals
+<%=
+    (md/node-description-table e :non-goal (sort-by :name non-goals)))
+%>
+
+<!-- PA-BEGIN(Introduction2) -->
+<%= (get protected-areas "Introduction2" "")
+%><!-- PA-END(Introduction2) -->
+
+## Architecture Constraints
+<!-- PA-BEGIN(ArchitectureConstraints1) -->
+<%= (get protected-areas "ArchitectureConstraints1" "")
+%><!-- PA-END(ArchitectureConstraints1) -->
+
+<%
+  (when (seq architecture-constraints)
+%>
+### Constraints
+<%=
+    (md/node-description-table e :constraint architecture-constraints))
+%>
+
+<!-- PA-BEGIN(ArchitectureConstraints2) -->
+<%= (get protected-areas "ArchitectureConstraints2" "")
+%><!-- PA-END(ArchitectureConstraints2) -->
+
+## System Context and Scope
+<!-- PA-BEGIN(SystemContext1) -->
+<%= (get protected-areas "SystemContext1" "")
+%><!-- PA-END(SystemContext1) -->
+
+<%
+    (when-let [context-view (m/resolve-view model e "context-view")]
+%>
+### System Context View
+<%= (md/relative-diagram-link e context-view) %>
+
+<%= (md/relative-view-link e context-view) %>
+<%
+    )
+%>
+<!-- PA-BEGIN(SystemContext2) -->
+<%= (get protected-areas "SystemContext2" "")
+%><!-- PA-END(SystemContext2) -->
+
+### Scope
+<!-- PA-BEGIN(Scope1) -->
+<%= (get protected-areas "Scope1" "")
+%><!-- PA-END(Scope1) -->
+
+<!-- PA-BEGIN(Scope2) -->
+<%= (get protected-areas "Scope2" "")
+%><!-- PA-END(Scope2) -->
+
+## Solution Strategy
+<!-- PA-BEGIN(SolutionStrategy1) -->
+<%= (get protected-areas "SolutionStrategy1" "")
+%><!-- PA-END(SolutionStrategy1) -->
+<%
+  (when (seq strategy-decisions)
+%>
+### Decisions
+<%=
+    (md/node-description-table e :decision strategy-decisions))
+%>
+
+<!-- PA-BEGIN(SolutionStrategy2) -->
+<%= (get protected-areas "SolutionStrategy2" "")
+%><!-- PA-END(SolutionStrategy2) -->
+
+## Building Blocks
+<!-- PA-BEGIN(BuildingBlocks1) -->
+<%= (get protected-areas "BuildingBlocks1" "")
+%><!-- PA-END(BuildingBlocks1) -->
+
+<%
+    (when-let [container-view (m/resolve-view model e "container-view")]
+%>
+### Container View
+<%= (md/relative-diagram-link e container-view) %>
+
+<%= (md/relative-view-link e container-view) %>
+<%
+    )
+%>
+
+<!-- PA-BEGIN(BuildingBlocks2) -->
+<%= (get protected-areas "BuildingBlocks2" "")
+%><!-- PA-END(BuildingBlocks2) -->
+
+## Runtime View
+<!-- PA-BEGIN(RuntimeView1) -->
+<%= (get protected-areas "RuntimeView1" "")
+%><!-- PA-END(RuntimeView1) -->
+
+<!-- PA-BEGIN(RuntimeView2) -->
+<%= (get protected-areas "RuntimeView2" "")
+%><!-- PA-END(RuntimeView2) -->
+
+## Deployment View
+<!-- PA-BEGIN(DeploymentView1) -->
+<%= (get protected-areas "DeploymentView1" "")
+%><!-- PA-END(DeploymentView1) -->
+<%
+  (when-let [deployment-view (m/resolve-view model e "deployment-view")]
+%>
+### Deployment Diagram
+<%= (md/relative-diagram-link e deployment-view) %>
+
+<%= (md/relative-view-link e deployment-view) %>
+<%
+  )
+%>
+
+<!-- PA-BEGIN(DeploymentView2) -->
+<%= (get protected-areas "DeploymentView2" "")
+%><!-- PA-END(DeploymentView2) -->
+
+## Crosscutting Concepts
+<!-- PA-BEGIN(CrosscuttingConcepts1) -->
+<%= (get protected-areas "CrosscuttingConcepts1" "")
+%><!-- PA-END(CrosscuttingConcepts1) -->
+
+<!-- PA-BEGIN(CrosscuttingConcepts2) -->
+<%= (get protected-areas "CrosscuttingConcepts2" "")
+%><!-- PA-END(CrosscuttingConcepts2) -->
+
+
+## Architecture Decisions
+<!-- PA-BEGIN(ArchitectureDecisions1) -->
+<%= (get protected-areas "ArchitectureDecisions1" "")
+%><!-- PA-END(ArchitectureDecisions1) -->
+
+<%
+  (when (seq architecture-decisions)
+%>
+### Decisions
+<%=
+    (md/node-description-table e :decision architecture-decisions))
+%>
+
+<!-- PA-BEGIN(ArchitectureDecisions2) -->
+<%= (get protected-areas "ArchitectureDecisions2" "")
+%><!-- PA-END(ArchitectureDecisions2) -->
+
+## Quality Requirements
+<!-- PA-BEGIN(QualityRequirements1) -->
+<%= (get protected-areas "QualityRequirements1" "")
+%><!-- PA-END(QualityRequirements1) -->
+
+<%
+  (when (seq quality-requirements)
+%>
+### Requirements
+<%=
+    (md/node-description-table e :requirement quality-requirements))
+%>
+
+<!-- PA-BEGIN(QualityRequirements2) -->
+<%= (get protected-areas "QualityRequirements2" "")
+%><!-- PA-END(QualityRequirements2) -->
+
+## Risk and Technical Dept
+### Risks
+<!-- PA-BEGIN(Risk1) -->
+<%= (get protected-areas "Risk1" "")
+%><!-- PA-END(Risk1) -->
+
+<%
+  (when (seq risks)
+%><%=
+    (md/node-description-table e :risk risks))
+%>
+
+<!-- PA-BEGIN(Risk2) -->
+<%= (get protected-areas "Risk2" "")
+%><!-- PA-END(Risk2) -->
+
+### Technical Dept
+<!-- PA-BEGIN(TechnicalDept1) -->
+<%= (get protected-areas "TechnicalDept1" "")
+%><!-- PA-END(TechnicalDept1) -->
+
+<!-- PA-BEGIN(TechnicalDept2) -->
+<%= (get protected-areas "TechnicalDept2" "")
+%><!-- PA-END(TechnicalDept2) -->
+
+<%
+) ; end of let
+%>
+(generated by [Overarch](https://github.com/soulspace-org/overarch) with template <%= (:template ctx) %>)

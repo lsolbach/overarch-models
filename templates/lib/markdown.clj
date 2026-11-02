@@ -1,4 +1,5 @@
 (ns lib.markdown
+  "Functions for templates generating Markdown files."
   (:require [clojure.string :as str]
             [lib.text :as t]
             [org.soulspace.overarch.adapter.template.model-api :as m]
@@ -7,6 +8,48 @@
 ;;;
 ;;; Markdown Links
 ;;;
+
+;; TODO extract path building (path, relative-path) 
+
+(defn link-path
+  "Returns the path to the element `e`, using the optional `context` for customization.
+   The path contains the basename of the file without the extension."
+  [e context]
+  (str
+   (when (seq (:subdir context))
+     (str (:subdir context) "/"))
+   (when (seq (:namespace-prefix context))
+     (str (:namespace-prefix context) "/"))
+   (when (seq (m/element-namespace-path e))
+     (str (m/element-namespace-path e) "/"))
+   (when (seq (:namespace-suffix context))
+     (str (:namespace-suffix context) "/"))
+   (when (seq (:prefix context))
+     (:prefix context))
+   (name (:id e))
+   (when (seq (:suffix context))
+     (:suffix context)))
+  )
+
+(defn relative-link-path
+  "Returns the relative path from the current element `c` to the element `e`, using the optional `context` for customization.
+   The path contains the basename of the file without the extension."
+  [c e context]
+  (str
+   (when (seq (m/root-path c))
+     (str (m/root-path c) "/"))
+   (when (seq (:namespace-prefix context))
+     (str (:namespace-prefix context) "/"))
+   (when (seq (m/element-namespace-path e))
+     (str (m/element-namespace-path e) "/"))
+   (when (seq (:namespace-suffix context))
+     (str (:namespace-suffix context) "/"))
+   (when (seq (:prefix context))
+     (:prefix context))
+   (name (:id e))
+   (when (seq (:suffix context))
+     (:suffix context))))
+
 (defn element-link
   "Renders a link to the element `e`, using the optional `context` for customization."
   ([e]
@@ -14,19 +57,7 @@
   ([e context]
    (str "[" (:name e) "]"
         "("
-        (when (seq (:subdir context))
-          (str (:subdir context) "/"))
-        (when (seq (:namespace-prefix context))
-          (str (:namespace-prefix context) "/"))
-        (when (seq (m/element-namespace-path e))
-          (str (m/element-namespace-path e) "/"))
-        (when (seq (:namespace-suffix context))
-          (str (:namespace-suffix context) "/"))
-        (when (seq (:prefix context))
-          (:prefix context))
-        (name (:id e))
-        (when (seq (:suffix context))
-          (:suffix context))
+        (link-path e context)
         (if (seq (:extension context))
           (str "." (:extension context))
           ".md")
@@ -39,19 +70,7 @@
   ([c e context]
    (str "[" (:name e) "]"
         "("
-        (when (seq (m/root-path c))
-          (str (m/root-path c) "/"))
-        (when (seq (:namespace-prefix context))
-          (str (:namespace-prefix context) "/"))
-        (when (seq (m/element-namespace-path e))
-          (str (m/element-namespace-path e) "/"))
-        (when (seq (:namespace-suffix context))
-          (str (:namespace-suffix context) "/"))
-        (when (seq (:prefix context))
-          (:prefix context))
-        (name (:id e))
-        (when (seq (:suffix context))
-          (:suffix context))
+        (relative-link-path c e context)
         (if (seq (:extension context))
           (str "." (:extension context))
           ".md")
@@ -64,19 +83,7 @@
   ([v context]
    (str "[" (v/title v) "]"
         "("
-        (when (seq (:subdir context))
-          (str (:subdir context) "/"))
-        (when (seq (:namespace-prefix context))
-          (str (:namespace-prefix context) "/"))
-        (when (seq (m/element-namespace-path v))
-          (str (m/element-namespace-path v) "/"))
-        (when (seq (:namespace-suffix context))
-          (str (:namespace-suffix context) "/"))
-        (when (seq (:prefix context))
-          (:prefix context))
-        (name (:id v))
-        (when (seq (:suffix context))
-          (:suffix context))
+        (link-path v context)
         (if (seq (:extension context))
           (str "." (:extension context))
           ".md")
@@ -89,19 +96,7 @@
   ([c v context]
    (str "[" (v/title v) "]"
         "("
-        (when (seq (m/root-path c))
-          (str (m/root-path c) "/"))
-        (when (seq (:namespace-prefix context))
-          (str (:namespace-prefix context) "/"))
-        (when (seq (m/element-namespace-path v))
-          (str (m/element-namespace-path v) "/"))
-        (when (seq (:namespace-suffix context))
-          (str (:namespace-suffix context) "/"))
-        (when (seq (:prefix context))
-          (:prefix context))
-        (name (:id v))
-        (when (seq (:suffix context))
-          (:suffix context))
+        (relative-link-path c v context)
         (if (seq (:extension context))
           (str "." (:extension context))
           ".md")
@@ -114,19 +109,7 @@
   ([v context]
    (str "![" (v/title v) "]"
         "("
-        (when (seq (:subdir context))
-          (str (:subdir context) "/"))
-        (when (seq (:namespace-prefix context))
-          (str (:namespace-prefix context) "/"))
-        (when (seq (m/element-namespace-path v))
-          (str (m/element-namespace-path v) "/"))
-        (when (seq (:namespace-suffix context))
-          (str (:namespace-suffix context) "/"))
-        (when (seq (:prefix context))
-          (:prefix context))
-        (name (:id v))
-        (when (seq (:suffix context))
-          (:suffix context))
+        (link-path v context)
         (if (seq (:extension context))
           (str "." (:extension context))
           ".png")
@@ -139,19 +122,7 @@
   ([c v context]
    (str "![" (v/title v) "]"
         "("
-        (when (seq (m/root-path c))
-          (str (m/root-path c) "/"))
-        (when (seq (:namespace-prefix context))
-          (str (:namespace-prefix context) "/"))
-        (when (seq (m/element-namespace-path v))
-          (str (m/element-namespace-path v) "/"))
-        (when (seq (:namespace-suffix context))
-          (str (:namespace-suffix context) "/"))
-        (when (seq (:prefix context))
-          (:prefix context))
-        (name (:id v))
-        (when (seq (:suffix context))
-          (:suffix context))
+        (relative-link-path c v context)
         (if (seq (:extension context))
           (str "." (:extension context))
           ".png")
@@ -192,6 +163,10 @@
 ;;;
 ;;; Markdown Tables
 ;;;
+
+;; TODO generic table with vector of keys
+;; TODO criteria as parameter to filter elements
+
 (defn node-description-table-row
   "Generates the markdown for a description table row for `node` and `parent`."
   [parent node]
@@ -208,12 +183,26 @@
                 (str "\n" (node-description-table-row parent node))))))
 
 (defn node-type-description-table-row
-  "Generates the markdown for a description table row for `node` and `parent`."
+  "Generates the markdown for a description table row with type for `node` and `parent`."
   [parent node]
   (str "| " (relative-element-link parent node) " | " (get t/type->name (:type node) (str/capitalize (name (:type node)))) " | " (t/single-line (:desc node)) " |"))
 
 (defn node-type-description-table
-  "Generates the markdown for a description table for nodes of the `type` in `coll` in the context of the `node`."
+  "Generates the markdown for a description table with type for nodes of the `type` in `coll` in the context of the `node`."
+  [parent coll]
+  (str "| Node | Type | Description |\n"
+       "|---|---|---|"
+       (apply str
+              (for [node (sort-by :name coll)]
+                (str "\n" (node-type-description-table-row parent node))))))
+
+(defn node-type-subtype-description-table-row
+  "Generates the markdown for a description table row with type and subtype for `node` and `parent`."
+  [parent node]
+  (str "| " (relative-element-link parent node) " | " (get t/type->name (:type node) (str/capitalize (name (:type node)))) " | " (t/single-line (:desc node)) " |"))
+
+(defn node-type-subtype-description-table
+  "Generates the markdown for a description table with type and subtype for nodes of the `type` in `coll` in the context of the `node`."
   [parent coll]
   (str "| Node | Type | Description |\n"
        "|---|---|---|"
