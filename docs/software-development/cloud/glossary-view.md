@@ -1,5 +1,5 @@
 # Glossary for Cloud Computing
-[A](#A) [B](#B) [C](#C) [F](#F) [G](#G) [H](#H) [I](#I) [L](#L) [M](#M) [O](#O) [P](#P) [R](#R) [S](#S) [T](#T) [W](#W) 
+[A](#a) [B](#b) [C](#c) [F](#f) [G](#g) [H](#h) [I](#i) [L](#l) [M](#m) [O](#o) [P](#p) [R](#r) [S](#s) [T](#t) [W](#w) 
 
 ## A
 

@@ -6,11 +6,13 @@ The data center where the online shop is hosted.
 ## Nodes
 | Node | Description |
 |---|---|
-| [Internal Network](../../../../software-development/architecture/example/modulith/internal-network.md)|  |
-| [Perimeter Network](../../../../software-development/architecture/example/modulith/perimeter-network.md)|  |
+| [Internal Network](../../../../software-development/architecture/example/modulith/internal-network.md) |  |
+| [Perimeter Network](../../../../software-development/architecture/example/modulith/perimeter-network.md) |  |
 
 
 ## Deployment
+![Deployment view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/deployment-view.png)
+
 [Deployment view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/deployment-view.md)
 
 

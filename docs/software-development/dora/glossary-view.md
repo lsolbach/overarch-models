@@ -1,5 +1,5 @@
 # Glossary for DevOps Research and Assessment (DORA)
-[C](#C) [D](#D) [E](#E) [F](#F) [G](#G) [H](#H) [J](#J) [L](#L) [M](#M) [N](#N) [O](#O) [P](#P) [S](#S) [T](#T) [V](#V) [W](#W) 
+[C](#c) [D](#d) [E](#e) [F](#f) [G](#g) [H](#h) [J](#j) [L](#l) [M](#m) [N](#n) [O](#o) [P](#p) [S](#s) [T](#t) [V](#v) [W](#w) 
 
 ## C
 

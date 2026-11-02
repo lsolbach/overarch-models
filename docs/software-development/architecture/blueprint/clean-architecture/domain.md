@@ -11,11 +11,11 @@ completely functional and is independent of any other layer.
 ## Classes
 | Class | Description |
 |---|---|
-| [DomainAggregate](../../../../software-development/architecture/blueprint/clean-architecture/domain/domain-aggregate.md)| The root of a graph of domain entities and domain values with constency rules spanning the whole graph |
-| [DomainEntity](../../../../software-development/architecture/blueprint/clean-architecture/domain/domain-entity.md)| Represents a domain object with an identity |
-| [DomainEvent](../../../../software-development/architecture/blueprint/clean-architecture/domain/domain-event.md)| Represents a relevant event that happened in the domain |
-| [DomainService](../../../../software-development/architecture/blueprint/clean-architecture/domain/domain-service.md)| Implements the domain logic that is not the responsibility of a domain object. |
-| [DomainValue](../../../../software-development/architecture/blueprint/clean-architecture/domain/domain-value.md)| Represents a domain object without an identity |
+| [DomainAggregate](../../../../software-development/architecture/blueprint/clean-architecture/domain/domain-aggregate.md) | The root of a graph of domain entities and domain values with constency rules spanning the whole graph |
+| [DomainEntity](../../../../software-development/architecture/blueprint/clean-architecture/domain/domain-entity.md) | Represents a domain object with an identity |
+| [DomainEvent](../../../../software-development/architecture/blueprint/clean-architecture/domain/domain-event.md) | Represents a relevant event that happened in the domain |
+| [DomainService](../../../../software-development/architecture/blueprint/clean-architecture/domain/domain-service.md) | Implements the domain logic that is not the responsibility of a domain object. |
+| [DomainValue](../../../../software-development/architecture/blueprint/clean-architecture/domain/domain-value.md) | Represents a domain object without an identity |
 
 ## Code View
 ![Code View of the Clean Architecture Blueprint](../../../../software-development/architecture/blueprint/clean-architecture/code-view.png)

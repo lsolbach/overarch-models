@@ -19,12 +19,12 @@ and they call the driven adapters from the adapter layer.
 ## Interfaces
 | Interface | Description |
 |---|---|
-| [DomainEventPublisherInterface](../../../../software-development/architecture/blueprint/clean-architecture/application/domain-event-publisher-interface.md)| The interface for the domain event publisher adapters |
-| [RepositoryInterface](../../../../software-development/architecture/blueprint/clean-architecture/application/repository-interface.md)| The interface for the repository adapters |
+| [DomainEventPublisherInterface](../../../../software-development/architecture/blueprint/clean-architecture/application/domain-event-publisher-interface.md) | The interface for the domain event publisher adapters |
+| [RepositoryInterface](../../../../software-development/architecture/blueprint/clean-architecture/application/repository-interface.md) | The interface for the repository adapters |
 ## Classes
 | Class | Description |
 |---|---|
-| [ApplicationService](../../../../software-development/architecture/blueprint/clean-architecture/application/application-service.md)| Implements the orchestration of a use case |
+| [ApplicationService](../../../../software-development/architecture/blueprint/clean-architecture/application/application-service.md) | Implements the orchestration of a use case |
 
 ## Code View
 ![Code View of the Clean Architecture Blueprint](../../../../software-development/architecture/blueprint/clean-architecture/code-view.png)

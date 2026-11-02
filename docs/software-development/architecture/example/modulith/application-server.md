@@ -11,10 +11,12 @@ IBM WebSphere
 ## Deployed Containers
 | Container | Description |
 |---|---|
-| [Online Shop Backend Application](../../../../software-development/architecture/example/modulith/online-shop-backend.md)|  |
+| [Online Shop Backend Application](../../../../software-development/architecture/example/modulith/online-shop-backend.md) |  |
 
 
 ## Deployment
+![Deployment view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/deployment-view.png)
+
 [Deployment view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/deployment-view.md)
 
 

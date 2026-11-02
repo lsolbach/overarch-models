@@ -6,7 +6,7 @@ uses classical bits to process information.
 ## Subordinates
 | Concept | Description |
 |---|---|
-| [Computer](../../software-development/quantum-computing/computer.md)| processes data and executes algorithms. |
+| [Computer](../../software-development/quantum-computing/computer.md) | processes data and executes algorithms. |
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|

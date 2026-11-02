@@ -17,7 +17,7 @@ The Variational Quantum Eigensolver (VQE) is a hybrid quantum-classical algorith
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Hybrid Algorithm](../../../software-development/quantum-computing/algorithm/hybrid-algorithm.md)| combines classical and quantum computing techniques, leveraging the strengths of both classical and quantum computers. |
+| [Hybrid Algorithm](../../../software-development/quantum-computing/algorithm/hybrid-algorithm.md) | combines classical and quantum computing techniques, leveraging the strengths of both classical and quantum computers. |
 
 ## Concept Map
 ![Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.png)

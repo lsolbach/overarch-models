@@ -6,11 +6,11 @@ runs on classical computers, using classical bits.
 ## Subordinates
 | Concept | Description |
 |---|---|
-| [Algorithm](../../../software-development/quantum-computing/algorithm/algorithm.md)| a set of rules or instructions to solve a problem or perform a task. |
+| [Algorithm](../../../software-development/quantum-computing/algorithm/algorithm.md) | a set of rules or instructions to solve a problem or perform a task. |
 ## Feature of
 | Concept | Description |
 |---|---|
-| [Hybrid Algorithm](../../../software-development/quantum-computing/algorithm/hybrid-algorithm.md)| combines classical and quantum computing techniques, leveraging the strengths of both classical and quantum computers. |
+| [Hybrid Algorithm](../../../software-development/quantum-computing/algorithm/hybrid-algorithm.md) | combines classical and quantum computing techniques, leveraging the strengths of both classical and quantum computers. |
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|

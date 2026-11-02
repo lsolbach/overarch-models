@@ -6,12 +6,12 @@
 ## Features
 | Concept | Description |
 |---|---|
-| [Configuration Item](../../../software-development/itil4/configuration-managment/config-item.md)|  |
-| [Version](../../../software-development/itil4/configuration-managment/version.md)| version identfier of a configuration item |
+| [Configuration Item](../../../software-development/itil4/configuration-managment/config-item.md) |  |
+| [Version](../../../software-development/itil4/configuration-managment/version.md) | version identfier of a configuration item |
 ## Feature of
 | Concept | Description |
 |---|---|
-| [Configuration Item](../../../software-development/itil4/configuration-managment/config-item.md)|  |
+| [Configuration Item](../../../software-development/itil4/configuration-managment/config-item.md) |  |
 
 ## Concept Map
 ![Concept Map for Configuration Management](../../../software-development/itil4/configuration-managment/concept-view.png)

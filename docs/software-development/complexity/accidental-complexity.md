@@ -14,7 +14,7 @@ system.
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Complexity](../../software-development/complexity/complexity.md)| degree of interdependence between software modules. |
+| [Complexity](../../software-development/complexity/complexity.md) | degree of interdependence between software modules. |
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|

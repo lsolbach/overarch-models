@@ -16,7 +16,7 @@ networking services provided by the cloud provider.
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Cloud Service Model](../../../software-development/cloud/cloud-service-model.md)| The type of service provided by a cloud provider |
+| [Cloud Service Model](../../../software-development/cloud/cloud-service-model.md) | The type of service provided by a cloud provider |
 
 ## Concept Map
 ![Concept Map for Cloud Service Models](../../../software-development/cloud/service-model/concept-view.png)

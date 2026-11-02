@@ -31,7 +31,7 @@ class must agree on the name of the `square` method in the `Math` class.
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Static Connascence](../../../software-development/complexity/connascence/static-connascence.md)| does not depend on the runtime attributes of the code |
+| [Static Connascence](../../../software-development/complexity/connascence/static-connascence.md) | does not depend on the runtime attributes of the code |
 
 ## Concept Map
 ![Concept view for Connascence](../../../software-development/complexity/connascence/concept-view.png)

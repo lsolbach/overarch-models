@@ -22,7 +22,7 @@ Quantum Phase Estimation (QPE) is a quantum algorithm that estimates the eigenva
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Quantum Algorithm](../../../software-development/quantum-computing/algorithm/quantum-algorithm.md)| designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena. |
+| [Quantum Algorithm](../../../software-development/quantum-computing/algorithm/quantum-algorithm.md) | designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena. |
 
 ## Concept Map
 ![Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.png)

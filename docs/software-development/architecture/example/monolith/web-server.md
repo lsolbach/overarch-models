@@ -11,10 +11,12 @@ Apache Tomcat
 ## Deployed Containers
 | Container | Description |
 |---|---|
-| [Online Shop Frontend Application](../../../../software-development/architecture/example/monolith/online-shop-frontend.md)|  |
+| [Online Shop Frontend Application](../../../../software-development/architecture/example/monolith/online-shop-frontend.md) |  |
 
 
 ## Deployment
+![Deployment view for the Online Shop Monolith example](../../../../software-development/architecture/example/monolith/deployment-view.png)
+
 [Deployment view for the Online Shop Monolith example](../../../../software-development/architecture/example/monolith/deployment-view.md)
 
 

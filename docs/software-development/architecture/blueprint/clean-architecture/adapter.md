@@ -16,9 +16,9 @@ The driven adapters implement the interfaces defined in the application layer.
 ## Packages
 | Package | Description |
 |---|---|
-| [event-publisher](../../../../software-development/architecture/blueprint/clean-architecture/adapter/event-publisher.md)| Contains the domain event publisher adapter implementations |
-| [repository](../../../../software-development/architecture/blueprint/clean-architecture/adapter/repository.md)| Contains the repository adapter implementations |
-| [rest](../../../../software-development/architecture/blueprint/clean-architecture/adapter/rest.md)| Contains the REST adapter implementations |
+| [event-publisher](../../../../software-development/architecture/blueprint/clean-architecture/adapter/event-publisher.md) | Contains the domain event publisher adapter implementations |
+| [repository](../../../../software-development/architecture/blueprint/clean-architecture/adapter/repository.md) | Contains the repository adapter implementations |
+| [rest](../../../../software-development/architecture/blueprint/clean-architecture/adapter/rest.md) | Contains the REST adapter implementations |
 
 ## Code View
 ![Code View of the Clean Architecture Blueprint](../../../../software-development/architecture/blueprint/clean-architecture/code-view.png)

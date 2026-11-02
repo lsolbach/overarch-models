@@ -8,8 +8,8 @@
 ## Nodes
 | Node | Description |
 |---|---|
-| [App VM 1](../../../../software-development/architecture/example/modulith/app-vm1.md)| Application Server Virtual Machine 1 |
-| [DB VM 1](../../../../software-development/architecture/example/modulith/db-vm1.md)| Database Server Virtual Machine 1 |
+| [App VM 1](../../../../software-development/architecture/example/modulith/app-vm1.md) | Application Server Virtual Machine 1 |
+| [DB VM 1](../../../../software-development/architecture/example/modulith/db-vm1.md) | Database Server Virtual Machine 1 |
 ## Links to
 | From | Name | To | Technology | Description |
 |---|---|---|---|---|
@@ -17,6 +17,8 @@
 
 
 ## Deployment
+![Deployment view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/deployment-view.png)
+
 [Deployment view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/deployment-view.md)
 
 

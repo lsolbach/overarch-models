@@ -19,7 +19,7 @@ AngularJS
 ## Deployed to
 | Node | Description |
 |---|---|
-| [Web Server](../../../../software-development/architecture/example/monolith/web-server.md)|  |
+| [Web Server](../../../../software-development/architecture/example/monolith/web-server.md) |  |
 
 ## Container View
 ![Container view for the Online Shop Monolith example](../../../../software-development/architecture/example/monolith/container-view.png)

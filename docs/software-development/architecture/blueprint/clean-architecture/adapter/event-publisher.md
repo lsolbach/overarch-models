@@ -13,7 +13,7 @@ interfaces defined in the application layer for a concrete event broker.
 ## Classes
 | Class | Description |
 |---|---|
-| [KafkaEventPublisher](../../../../../software-development/architecture/blueprint/clean-architecture/adapter/event-publisher/kafka-event-publisher.md)| Implements the domain event publisher interface for a Kafka event broker. |
+| [KafkaEventPublisher](../../../../../software-development/architecture/blueprint/clean-architecture/adapter/event-publisher/kafka-event-publisher.md) | Implements the domain event publisher interface for a Kafka event broker. |
 
 
 ## Navigation

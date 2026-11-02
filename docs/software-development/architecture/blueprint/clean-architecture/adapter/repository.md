@@ -16,8 +16,8 @@ services.
 ## Classes
 | Class | Description |
 |---|---|
-| [InMemoryRepository](../../../../../software-development/architecture/blueprint/clean-architecture/adapter/repository/in-memory-repository.md)| Implements the repository interface for an in-memory data store for testing purposes |
-| [SqlRepository](../../../../../software-development/architecture/blueprint/clean-architecture/adapter/repository/sql-repository.md)| Implements the repository interface for a SQL database |
+| [InMemoryRepository](../../../../../software-development/architecture/blueprint/clean-architecture/adapter/repository/in-memory-repository.md) | Implements the repository interface for an in-memory data store for testing purposes |
+| [SqlRepository](../../../../../software-development/architecture/blueprint/clean-architecture/adapter/repository/sql-repository.md) | Implements the repository interface for a SQL database |
 
 
 ## Navigation

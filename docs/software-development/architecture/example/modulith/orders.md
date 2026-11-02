@@ -11,7 +11,7 @@ The orders context is responsible for managing the orders.
 ## Components
 | Component | Description |
 |---|---|
-| [Order Component](../../../../software-development/architecture/example/modulith/order-component.md)| Handles the orders |
+| [Order Component](../../../../software-development/architecture/example/modulith/order-component.md) | Handles the orders |
 
 ## Container View
 ![Container view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/container-view.png)

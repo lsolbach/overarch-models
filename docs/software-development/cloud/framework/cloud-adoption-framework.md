@@ -11,11 +11,11 @@ adoption
 ## Features
 | Concept | Description |
 |---|---|
-| [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md)| A plan for moving applications, data, and other business elements to a cloud computing environment. A cloud migration strategy typically includes an assessment of the current environment, identification of workloads to be migrated, selection of the appropriate cloud deployment model, and implementation of the migration plan. |
+| [Cloud Migration Strategy](../../../software-development/cloud/cloud-migration-strategy.md) | A plan for moving applications, data, and other business elements to a cloud computing environment. A cloud migration strategy typically includes an assessment of the current environment, identification of workloads to be migrated, selection of the appropriate cloud deployment model, and implementation of the migration plan. |
 ## Feature of
 | Concept | Description |
 |---|---|
-| [Cloud Computing](../../../software-development/cloud/cloud-computing.md)| A model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. |
+| [Cloud Computing](../../../software-development/cloud/cloud-computing.md) | A model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. |
 
 
 ## Navigation

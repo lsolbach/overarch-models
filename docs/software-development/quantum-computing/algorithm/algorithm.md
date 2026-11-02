@@ -6,9 +6,9 @@ a set of rules or instructions to solve a problem or perform a task.
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Classical Algorithm](../../../software-development/quantum-computing/algorithm/classical-algorithm.md)| runs on classical computers, using classical bits. |
-| [Hybrid Algorithm](../../../software-development/quantum-computing/algorithm/hybrid-algorithm.md)| combines classical and quantum computing techniques, leveraging the strengths of both classical and quantum computers. |
-| [Quantum Algorithm](../../../software-development/quantum-computing/algorithm/quantum-algorithm.md)| designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena. |
+| [Classical Algorithm](../../../software-development/quantum-computing/algorithm/classical-algorithm.md) | runs on classical computers, using classical bits. |
+| [Hybrid Algorithm](../../../software-development/quantum-computing/algorithm/hybrid-algorithm.md) | combines classical and quantum computing techniques, leveraging the strengths of both classical and quantum computers. |
+| [Quantum Algorithm](../../../software-development/quantum-computing/algorithm/quantum-algorithm.md) | designed to run on quantum computers, utilizing quantum bits (qubits) and quantum phenomena. |
 
 ## Concept Map
 ![Quantum Computing Algorithms Concepts](../../../software-development/quantum-computing/algorithm/concept-view.png)

@@ -15,7 +15,7 @@ DB/2
 ## Deployed to
 | Node | Description |
 |---|---|
-| [Database Server](../../../../software-development/architecture/example/monolith/db-server.md)|  |
+| [Database Server](../../../../software-development/architecture/example/monolith/db-server.md) |  |
 
 ## Container View
 ![Container view for the Online Shop Monolith example](../../../../software-development/architecture/example/monolith/container-view.png)

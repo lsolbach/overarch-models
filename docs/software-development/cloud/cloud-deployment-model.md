@@ -10,14 +10,14 @@ model
 ## Subordinates
 | Concept | Description |
 |---|---|
-| [Hybrid Cloud](../../software-development/cloud/deployment-model/hybrid-cloud.md)| A cloud computing environment that combines public cloud services with private cloud services. |
-| [Multi-Cloud](../../software-development/cloud/deployment-model/multi-cloud.md)| A cloud computing strategy that involves using multiple cloud services from different providers. |
-| [Private Cloud](../../software-development/cloud/deployment-model/private-cloud.md)| Type of cloud computing in which resources are dedicated to a single organization or user group. Private cloud services may be hosted on-premises or by a third-party service provider. |
-| [Public Cloud](../../software-development/cloud/deployment-model/public-cloud.md)| Type of cloud computing in which a service provider makes resources such as virtual machines, applications, or storage available to the general public over the internet. Public cloud services may be free or offered on a pay-per-usage model. |
+| [Hybrid Cloud](../../software-development/cloud/deployment-model/hybrid-cloud.md) | A cloud computing environment that combines public cloud services with private cloud services. |
+| [Multi-Cloud](../../software-development/cloud/deployment-model/multi-cloud.md) | A cloud computing strategy that involves using multiple cloud services from different providers. |
+| [Private Cloud](../../software-development/cloud/deployment-model/private-cloud.md) | Type of cloud computing in which resources are dedicated to a single organization or user group. Private cloud services may be hosted on-premises or by a third-party service provider. |
+| [Public Cloud](../../software-development/cloud/deployment-model/public-cloud.md) | Type of cloud computing in which a service provider makes resources such as virtual machines, applications, or storage available to the general public over the internet. Public cloud services may be free or offered on a pay-per-usage model. |
 ## Feature of
 | Concept | Description |
 |---|---|
-| [Cloud Computing](../../software-development/cloud/cloud-computing.md)| A model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. |
+| [Cloud Computing](../../software-development/cloud/cloud-computing.md) | A model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. |
 
 ## Concept Map
 ![Concept Map for Cloud Computing](../../software-development/cloud/concept-view.png)

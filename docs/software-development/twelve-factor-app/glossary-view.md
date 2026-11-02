@@ -1,5 +1,5 @@
 # Glossary for Twelve Factor Apps
-[1](#1) [A](#A) [B](#B) [C](#C) [D](#D) [L](#L) [P](#P) 
+[1](#1) [A](#a) [B](#b) [C](#c) [D](#d) [L](#l) [P](#p) 
 
 ## 1
 

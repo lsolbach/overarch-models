@@ -11,7 +11,7 @@ the design or implementation of the software system.
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Complexity](../../software-development/complexity/complexity.md)| degree of interdependence between software modules. |
+| [Complexity](../../software-development/complexity/complexity.md) | degree of interdependence between software modules. |
 
 ## Concept Map
 ![Concept view for Complexity](../../software-development/complexity/concept-view.png)

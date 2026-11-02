@@ -6,7 +6,7 @@ Alibaba is a Chinese multinational conglomerate specializing in e-commerce, reta
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Cloud Provider](../../../software-development/cloud/cloud-provider.md)| A company that offers cloud computing services, such as virtual machines, storage, databases, and applications, to customers over the internet. |
+| [Cloud Provider](../../../software-development/cloud/cloud-provider.md) | A company that offers cloud computing services, such as virtual machines, storage, databases, and applications, to customers over the internet. |
 ## Other Relations
 | From | Name | To | Description |
 |---|---|---|---|

@@ -37,7 +37,7 @@ The `Renderer` class must agree on the meaning of the format integer with the `A
 ## Superordinates
 | Concept | Description |
 |---|---|
-| [Static Connascence](../../../software-development/complexity/connascence/static-connascence.md)| does not depend on the runtime attributes of the code |
+| [Static Connascence](../../../software-development/complexity/connascence/static-connascence.md) | does not depend on the runtime attributes of the code |
 
 ## Concept Map
 ![Concept view for Connascence](../../../software-development/complexity/connascence/concept-view.png)

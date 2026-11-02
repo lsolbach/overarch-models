@@ -19,7 +19,7 @@ DB/2
 ## Deployed to
 | Node | Description |
 |---|---|
-| [Database Server](../../../../software-development/architecture/example/modulith/db-server.md)|  |
+| [Database Server](../../../../software-development/architecture/example/modulith/db-server.md) |  |
 
 ## Container View
 ![Container view for the Online Shop modulith example](../../../../software-development/architecture/example/modulith/container-view.png)
